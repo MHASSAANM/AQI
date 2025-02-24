@@ -1,0 +1,3922 @@
+15:20:15.449 > [D][main.cpp:98] setup(): 
+15:20:15.449 > Current Version: 1.1.8
+15:20:15.449 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+15:20:15.449 > Commit Date: 15th October 2024
+15:20:15.449 > [D][AQISensor.cpp:95] init(): AHT20 initialized
+15:20:15.449 > [D][AQISensor.cpp:107] init(): BMP280 initialized
+15:20:15.449 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+15:20:15.449 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+15:20:15.449 > [I][main.cpp:202] setup(): ID found!
+15:20:15.449 > Device name: TESTKITAQI
+15:20:15.449 > 
+15:20:15.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:20:15.449 > 
+15:20:15.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:20:15.449 > 
+15:20:17.608 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:20:17.609 > 
+15:20:20.608 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:20:20.608 > 
+15:20:23.603 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:20:23.611 > 
+15:20:26.608 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:20:26.611 > 
+15:20:29.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:20:29.613 > 
+15:20:32.608 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:20:32.613 > 
+15:20:35.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:20:35.612 > 
+15:20:38.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:20:38.609 > 
+15:20:41.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:20:41.607 > 
+15:20:44.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:20:44.612 > 
+15:20:47.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:20:47.608 > 
+15:20:50.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:20:50.612 > 
+15:20:53.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:20:53.607 > 
+15:20:56.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:20:56.605 > 
+15:20:59.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:20:59.609 > 
+15:21:02.607 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:21:02.608 > 
+15:21:05.606 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:21:05.611 > 
+15:21:05.655 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.1, 998.1,28,21,25
+15:21:08.606 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:21:08.606 > 
+15:21:11.606 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:21:11.611 > 
+15:21:14.606 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:21:14.609 > 
+15:21:17.606 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:21:17.606 > 
+15:21:20.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:21:20.609 > 
+15:21:23.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:21:23.607 > 
+15:21:26.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:21:26.606 > 
+15:21:29.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:21:29.606 > 
+15:21:32.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:21:32.606 > 
+15:21:35.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:21:35.610 > 
+15:21:38.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:21:38.610 > 
+15:21:41.605 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:21:41.610 > 
+15:21:44.604 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:21:44.604 > 
+15:21:47.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:21:47.607 > 
+15:21:50.604 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:21:50.605 > 
+15:21:53.604 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:21:53.608 > 
+15:21:56.604 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:21:56.609 > 
+15:21:59.600 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:21:59.608 > 
+15:22:02.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:22:02.610 > 
+15:22:05.591 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:22:05.608 > 
+15:22:05.652 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.2, 998.1,28,21,24
+15:22:08.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:22:08.604 > 
+15:22:11.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:22:11.606 > 
+15:22:14.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:22:14.605 > 
+15:22:17.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:22:17.608 > 
+15:22:20.603 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:22:20.607 > 
+15:22:23.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:22:23.596 > 
+15:22:26.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:22:26.594 > 
+15:22:29.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:22:29.602 > 
+15:22:32.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:22:32.607 > 
+15:22:35.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:22:35.608 > 
+15:22:38.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:22:38.607 > 
+15:22:41.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:22:41.607 > 
+15:22:44.599 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:22:44.599 > 
+15:22:47.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:22:47.607 > 
+15:22:50.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:22:50.602 > 
+15:22:53.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:22:53.606 > 
+15:22:56.603 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:22:56.606 > 
+15:22:59.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:22:59.602 > 
+15:23:02.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:23:02.606 > 
+15:23:05.597 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:23:05.597 > 
+15:23:05.649 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.1, 998.1,28,21,24
+15:23:08.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:23:08.603 > 
+15:23:11.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:23:11.602 > 
+15:23:14.602 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:23:14.605 > 
+15:23:17.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:23:17.604 > 
+15:23:20.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:23:20.605 > 
+15:23:23.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:23:23.603 > 
+15:23:26.597 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:23:26.606 > 
+15:23:29.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:23:29.603 > 
+15:23:32.601 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:23:32.604 > 
+15:23:35.598 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:23:35.598 > 
+15:23:38.597 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:23:38.605 > 
+15:23:41.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:23:41.604 > 
+15:23:44.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:23:44.602 > 
+15:23:47.597 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:23:47.605 > 
+15:23:50.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:23:50.603 > 
+15:23:53.599 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:23:53.599 > 
+15:23:56.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:23:56.600 > 
+15:23:59.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:23:59.603 > 
+15:24:02.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:24:02.604 > 
+15:24:05.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:24:05.604 > 
+15:24:05.646 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.2, 998.1,28,21,24
+15:24:08.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:24:08.604 > 
+15:24:11.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:24:11.604 > 
+15:24:14.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:24:14.604 > 
+15:24:17.599 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:24:17.600 > 
+15:24:20.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:24:20.601 > 
+15:24:23.593 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:24:23.601 > 
+15:24:26.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:24:26.596 > 
+15:24:29.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:24:29.603 > 
+15:24:32.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:24:32.603 > 
+15:24:35.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:24:35.603 > 
+15:24:38.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:24:38.603 > 
+15:24:41.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:24:41.604 > 
+15:24:44.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:24:44.588 > 
+15:24:47.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:24:47.595 > 
+15:24:50.593 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:24:50.602 > 
+15:24:53.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:24:53.602 > 
+15:24:56.597 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:24:56.599 > 
+15:24:59.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:24:59.603 > 
+15:25:02.586 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:25:02.601 > 
+15:25:05.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:25:05.602 > 
+15:25:05.635 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.3, 998.1,28,21,25
+15:25:08.590 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:25:08.590 > 
+15:25:11.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:25:11.587 > 
+15:25:14.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:25:14.598 > 
+15:25:17.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:25:17.598 > 
+15:25:20.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:25:20.587 > 
+15:25:23.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:25:23.598 > 
+15:25:26.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:25:26.588 > 
+15:25:29.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:25:29.592 > 
+15:25:32.594 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:25:32.594 > 
+15:25:35.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:25:35.589 > 
+15:25:38.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:25:38.596 > 
+15:25:41.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:25:41.595 > 
+15:25:44.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:25:44.599 > 
+15:25:47.593 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:25:47.599 > 
+15:25:50.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:25:50.595 > 
+15:25:53.596 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:25:53.596 > 
+15:25:56.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:25:56.600 > 
+15:25:59.593 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:25:59.593 > 
+15:26:02.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:26:02.585 > 
+15:26:05.593 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:26:05.599 > 
+15:26:05.642 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.2, 998.1,28,21,25
+15:26:08.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:26:08.595 > 
+15:26:11.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:26:11.589 > 
+15:26:14.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:26:14.592 > 
+15:26:17.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:26:17.587 > 
+15:26:20.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:26:20.587 > 
+15:26:23.590 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:26:23.598 > 
+15:26:26.591 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:26:26.591 > 
+15:26:29.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:26:29.595 > 
+15:26:32.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:26:32.589 > 
+15:26:35.595 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:26:35.595 > 
+15:26:38.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:26:38.592 > 
+15:26:41.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:26:41.584 > 
+15:26:44.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:26:44.595 > 
+15:26:47.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:26:47.596 > 
+15:26:50.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:26:50.584 > 
+15:26:53.590 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:26:53.590 > 
+15:26:56.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:26:56.589 > 
+15:26:59.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:26:59.588 > 
+15:27:02.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:27:02.592 > 
+15:27:05.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:27:05.593 > 
+15:27:05.640 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.3, 998.1,28,21,25
+15:27:08.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:27:08.596 > 
+15:27:11.591 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:27:11.591 > 
+15:27:14.586 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:27:14.586 > 
+15:27:17.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:27:17.585 > 
+15:27:20.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:27:20.592 > 
+15:27:23.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:27:23.588 > 
+15:27:26.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:27:26.592 > 
+15:27:29.591 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:27:29.591 > 
+15:27:32.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:27:32.592 > 
+15:27:35.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:27:35.592 > 
+15:27:38.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:27:38.592 > 
+15:27:41.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:27:41.582 > 
+15:27:44.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:27:44.594 > 
+15:27:47.583 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:27:47.595 > 
+15:27:50.590 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:27:50.590 > 
+15:27:53.592 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:27:53.596 > 
+15:27:56.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:27:56.588 > 
+15:27:59.586 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:27:59.586 > 
+15:28:02.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:28:02.591 > 
+15:28:05.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:28:05.587 > 
+15:28:05.634 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.2, 998.1,28,21,24
+15:28:08.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:28:08.589 > 
+15:28:11.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:28:11.584 > 
+15:28:14.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:28:14.594 > 
+15:28:17.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:28:17.585 > 
+15:28:20.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:28:20.584 > 
+15:28:23.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:28:23.588 > 
+15:28:26.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:28:26.587 > 
+15:28:29.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:28:29.585 > 
+15:28:32.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:28:32.581 > 
+15:28:35.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:28:35.585 > 
+15:28:38.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:28:38.584 > 
+15:28:41.586 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:28:41.586 > 
+15:28:44.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:28:44.581 > 
+15:28:47.589 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:28:47.589 > 
+15:28:50.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:28:50.581 > 
+15:28:53.590 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:28:53.590 > 
+15:28:56.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:28:56.578 > 
+15:28:59.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:28:59.592 > 
+15:29:02.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:29:02.593 > 
+15:29:05.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:29:05.581 > 
+15:29:05.628 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,25.0, 43.3, 998.1,28,22,30
+15:29:08.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:29:08.585 > 
+15:29:11.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:29:11.585 > 
+15:29:14.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:29:14.580 > 
+15:29:17.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:29:17.579 > 
+15:29:20.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:29:20.588 > 
+15:29:23.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:29:23.588 > 
+15:29:26.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:29:26.588 > 
+15:29:29.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:29:29.579 > 
+15:29:32.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:29:32.584 > 
+15:29:35.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:29:35.592 > 
+15:29:38.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:29:38.590 > 
+15:29:41.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:29:41.591 > 
+15:29:44.588 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:29:44.588 > 
+15:29:47.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:29:47.578 > 
+15:29:50.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:29:50.578 > 
+15:29:53.583 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:29:53.583 > 
+15:29:56.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:29:56.582 > 
+15:29:59.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:29:59.578 > 
+15:30:02.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:30:02.580 > 
+15:30:05.583 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:30:05.583 > 
+15:30:05.630 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.1, 998.1,28,22,29
+15:30:08.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:30:08.582 > 
+15:30:11.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:30:11.587 > 
+15:30:14.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:30:14.578 > 
+15:30:17.587 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:30:17.587 > 
+15:30:20.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:30:20.580 > 
+15:30:23.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:30:23.580 > 
+15:30:26.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:30:26.577 > 
+15:30:29.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:30:29.578 > 
+15:30:32.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:30:32.589 > 
+15:30:35.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:30:35.588 > 
+15:30:38.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:30:38.582 > 
+15:30:41.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:30:41.588 > 
+15:30:44.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:30:44.585 > 
+15:30:47.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:30:47.574 > 
+15:30:50.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:30:50.587 > 
+15:30:53.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:30:53.589 > 
+15:30:56.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:30:56.578 > 
+15:30:59.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:30:59.576 > 
+15:31:02.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:31:02.581 > 
+15:31:05.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:31:05.579 > 
+15:31:05.625 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.0, 998.1,28,22,30
+15:31:08.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:31:08.586 > 
+15:31:11.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:31:11.589 > 
+15:31:14.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:31:14.586 > 
+15:31:17.585 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:31:17.585 > 
+15:31:20.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:31:20.582 > 
+15:31:23.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:31:23.586 > 
+15:31:26.583 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:31:26.583 > 
+15:31:29.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:31:29.584 > 
+15:31:32.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:31:32.582 > 
+15:31:35.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:31:35.574 > 
+15:31:38.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:31:38.575 > 
+15:31:41.584 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:31:41.584 > 
+15:31:44.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:31:44.588 > 
+15:31:47.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:31:47.581 > 
+15:31:50.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:31:50.577 > 
+15:31:53.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:31:53.576 > 
+15:31:56.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:31:56.573 > 
+15:31:59.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:31:59.586 > 
+15:32:02.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:32:02.581 > 
+15:32:05.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:32:05.577 > 
+15:32:05.624 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.0, 998.1,28,22,29
+15:32:08.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:32:08.584 > 
+15:32:11.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:32:11.573 > 
+15:32:14.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:32:14.580 > 
+15:32:17.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:32:17.586 > 
+15:32:20.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:32:20.577 > 
+15:32:23.582 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:32:23.582 > 
+15:32:26.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:32:26.582 > 
+15:32:29.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:32:29.580 > 
+15:32:32.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:32:32.577 > 
+15:32:35.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:32:35.575 > 
+15:32:38.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:32:38.586 > 
+15:32:41.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:32:41.582 > 
+15:32:44.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:32:44.571 > 
+15:32:47.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:32:47.577 > 
+15:32:50.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:32:50.583 > 
+15:32:53.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:32:53.583 > 
+15:32:56.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:32:56.579 > 
+15:32:59.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:32:59.580 > 
+15:33:02.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:33:02.570 > 
+15:33:05.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:33:05.573 > 
+15:33:05.620 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.0, 998.1,28,24,31
+15:33:08.581 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:33:08.581 > 
+15:33:11.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:33:11.574 > 
+15:33:14.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:33:14.581 > 
+15:33:17.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:33:17.573 > 
+15:33:20.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:33:20.570 > 
+15:33:23.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:33:23.579 > 
+15:33:26.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:33:26.578 > 
+15:33:29.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:33:29.585 > 
+15:33:32.580 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:33:32.580 > 
+15:33:35.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:33:35.570 > 
+15:33:38.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:33:38.576 > 
+15:33:41.579 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:33:41.579 > 
+15:33:44.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:33:44.583 > 
+15:33:47.572 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:33:47.572 > 
+15:33:50.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:33:50.576 > 
+15:33:53.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:33:53.577 > 
+15:33:56.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:33:56.583 > 
+15:33:59.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:33:59.583 > 
+15:34:02.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:34:02.575 > 
+15:34:05.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:34:05.579 > 
+15:34:05.627 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.0, 998.1,28,23,30
+15:34:08.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:34:08.581 > 
+15:34:11.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:34:11.581 > 
+15:34:14.567 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:34:14.582 > 
+15:34:17.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:34:17.579 > 
+15:34:20.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:34:20.577 > 
+15:34:23.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:34:23.569 > 
+15:34:26.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:34:26.578 > 
+15:34:29.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:34:29.570 > 
+15:34:32.578 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:34:32.578 > 
+15:34:35.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:34:35.575 > 
+15:34:38.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:34:38.575 > 
+15:34:41.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:34:41.573 > 
+15:34:44.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:34:44.576 > 
+15:34:47.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:34:47.579 > 
+15:34:50.577 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:34:50.577 > 
+15:34:53.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:34:53.578 > 
+15:34:56.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:34:56.575 > 
+15:34:59.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:34:59.575 > 
+15:35:02.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:35:02.569 > 
+15:35:05.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:35:05.566 > 
+15:35:05.613 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 42.9, 998.1,28,23,30
+15:35:08.572 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:35:08.572 > 
+15:35:11.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:35:11.577 > 
+15:35:14.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:35:14.576 > 
+15:35:17.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:35:17.570 > 
+15:35:20.576 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:35:20.579 > 
+15:35:23.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:35:23.568 > 
+15:35:26.572 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:35:26.572 > 
+15:35:29.572 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:35:29.572 > 
+15:35:32.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:35:32.577 > 
+15:35:35.574 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:35:35.574 > 
+15:35:38.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:35:38.575 > 
+15:35:41.575 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:35:41.575 > 
+15:35:44.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:35:44.579 > 
+15:35:47.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:35:47.579 > 
+15:35:50.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:35:50.571 > 
+15:35:53.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:35:53.568 > 
+15:35:56.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:35:56.565 > 
+15:35:59.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:35:59.577 > 
+15:36:02.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:36:02.578 > 
+15:36:05.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:36:05.564 > 
+15:36:05.611 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 42.9, 998.0,28,22,31
+15:36:08.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:36:08.570 > 
+15:36:11.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:36:11.576 > 
+15:36:14.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:36:14.568 > 
+15:36:17.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:36:17.573 > 
+15:36:20.567 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:36:20.567 > 
+15:36:23.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:36:23.565 > 
+15:36:26.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:36:26.569 > 
+15:36:29.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:36:29.569 > 
+15:36:32.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:36:32.568 > 
+15:36:35.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:36:35.576 > 
+15:36:38.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:36:38.576 > 
+15:36:41.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:36:41.573 > 
+15:36:44.573 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:36:44.573 > 
+15:36:47.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:36:47.570 > 
+15:36:50.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:36:50.565 > 
+15:36:53.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:36:53.568 > 
+15:36:56.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:36:56.563 > 
+15:36:59.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:36:59.572 > 
+15:37:02.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:37:02.565 > 
+15:37:05.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:37:05.568 > 
+15:37:05.615 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.0, 998.0,28,23,29
+15:37:08.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:37:08.576 > 
+15:37:11.557 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:37:11.573 > 
+15:37:14.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:37:14.570 > 
+15:37:17.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:37:17.574 > 
+15:37:20.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:37:20.570 > 
+15:37:23.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:37:23.570 > 
+15:37:26.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:37:26.566 > 
+15:37:29.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:37:29.565 > 
+15:37:32.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:37:32.570 > 
+15:37:35.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:37:35.573 > 
+15:37:38.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:37:38.562 > 
+15:37:41.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:37:41.571 > 
+15:37:44.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:37:44.570 > 
+15:37:47.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:37:47.563 > 
+15:37:50.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:37:50.572 > 
+15:37:53.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:37:53.575 > 
+15:37:56.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:37:56.569 > 
+15:37:59.571 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:37:59.571 > 
+15:38:02.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:38:02.560 > 
+15:38:05.570 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:38:05.574 > 
+15:38:05.607 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.0, 998.0,28,22,29
+15:38:08.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:38:08.573 > 
+15:38:11.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:38:11.574 > 
+15:38:14.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:38:14.564 > 
+15:38:17.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:38:17.564 > 
+15:38:20.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:38:20.569 > 
+15:38:23.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:38:23.564 > 
+15:38:26.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:38:26.559 > 
+15:38:29.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:38:29.558 > 
+15:38:32.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:38:32.563 > 
+15:38:35.557 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:38:35.573 > 
+15:38:38.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:38:38.569 > 
+15:38:41.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:38:41.561 > 
+15:38:44.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:38:44.568 > 
+15:38:47.569 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:38:47.573 > 
+15:38:50.568 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:38:50.568 > 
+15:38:53.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:38:53.558 > 
+15:38:56.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:38:56.561 > 
+15:38:59.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:38:59.564 > 
+15:39:02.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:39:02.566 > 
+15:39:05.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:39:05.564 > 
+15:39:05.611 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 42.9, 998.0,28,21,28
+15:39:08.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:39:08.562 > 
+15:39:11.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:39:11.560 > 
+15:39:14.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:39:14.560 > 
+15:39:17.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:39:17.571 > 
+15:39:20.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:39:20.567 > 
+15:39:23.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:39:23.561 > 
+15:39:26.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:39:26.568 > 
+15:39:29.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:39:29.570 > 
+15:39:32.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:39:32.563 > 
+15:39:35.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:39:35.563 > 
+15:39:38.562 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:39:38.562 > 
+15:39:41.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:39:41.566 > 
+15:39:44.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:39:44.570 > 
+15:39:47.567 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:39:47.567 > 
+15:39:50.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:39:50.566 > 
+15:39:53.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:39:53.569 > 
+15:39:56.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:39:56.566 > 
+15:39:59.566 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:39:59.566 > 
+15:40:02.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:40:02.568 > 
+15:40:05.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:40:05.559 > 
+15:40:05.605 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 42.9, 998.0,28,20,26
+15:40:08.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:40:08.566 > 
+15:40:11.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:40:11.567 > 
+15:40:14.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:40:14.565 > 
+15:40:17.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:40:17.568 > 
+15:40:20.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:40:20.569 > 
+15:40:23.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:40:23.561 > 
+15:40:26.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:40:26.565 > 
+15:40:29.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:40:29.560 > 
+15:40:32.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:40:32.565 > 
+15:40:35.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:40:35.556 > 
+15:40:38.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:40:38.565 > 
+15:40:41.565 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:40:41.565 > 
+15:40:44.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:40:44.564 > 
+15:40:47.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:40:47.555 > 
+15:40:50.557 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:40:50.557 > 
+15:40:53.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:40:53.567 > 
+15:40:56.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:40:56.556 > 
+15:40:59.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:40:59.563 > 
+15:41:02.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:41:02.567 > 
+15:41:05.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:41:05.566 > 
+15:41:05.598 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 42.9, 998.0,28,21,29
+15:41:08.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:41:08.561 > 
+15:41:11.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:41:11.558 > 
+15:41:14.564 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:41:14.564 > 
+15:41:17.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:41:17.558 > 
+15:41:20.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:41:20.560 > 
+15:41:23.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:41:23.558 > 
+15:41:26.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:41:26.560 > 
+15:41:29.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:41:29.567 > 
+15:41:32.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:41:32.561 > 
+15:41:35.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:41:35.554 > 
+15:41:38.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:41:38.561 > 
+15:41:41.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:41:41.565 > 
+15:41:44.563 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:41:44.566 > 
+15:41:47.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:41:47.559 > 
+15:41:50.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:41:50.555 > 
+15:41:53.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:41:53.561 > 
+15:41:56.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:41:56.554 > 
+15:41:59.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:41:59.566 > 
+15:42:02.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:42:02.559 > 
+15:42:05.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:42:05.563 > 
+15:42:05.609 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 42.9, 998.0,28,22,28
+15:42:08.561 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:42:08.564 > 
+15:42:11.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:42:11.552 > 
+15:42:14.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:42:14.564 > 
+15:42:17.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:42:17.560 > 
+15:42:20.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:42:20.556 > 
+15:42:23.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:42:23.565 > 
+15:42:26.557 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:42:26.557 > 
+15:42:29.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:42:29.562 > 
+15:42:32.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:42:32.554 > 
+15:42:35.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:42:35.560 > 
+15:42:38.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:42:38.556 > 
+15:42:41.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:42:41.562 > 
+15:42:44.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:42:44.561 > 
+15:42:47.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:42:47.564 > 
+15:42:50.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:42:50.556 > 
+15:42:53.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:42:53.559 > 
+15:42:56.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:42:56.551 > 
+15:42:59.560 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:42:59.560 > 
+15:43:02.548 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:43:02.564 > 
+15:43:05.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:43:05.550 > 
+15:43:05.597 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.0, 998.0,28,22,28
+15:43:08.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:43:08.554 > 
+15:43:11.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:43:11.551 > 
+15:43:14.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:43:14.551 > 
+15:43:17.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:43:17.559 > 
+15:43:20.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:43:20.552 > 
+15:43:23.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:43:23.554 > 
+15:43:26.559 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:43:26.559 > 
+15:43:29.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:43:29.556 > 
+15:43:32.557 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:43:32.563 > 
+15:43:35.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:43:35.560 > 
+15:43:38.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:43:38.556 > 
+15:43:41.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:43:41.559 > 
+15:43:44.558 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:43:44.558 > 
+15:43:47.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:43:47.547 > 
+15:43:50.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:43:50.561 > 
+15:43:53.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:43:53.553 > 
+15:43:56.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:43:56.561 > 
+15:43:59.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:43:59.554 > 
+15:44:02.548 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:44:02.548 > 
+15:44:05.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:44:05.555 > 
+15:44:05.602 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 42.9, 998.0,28,22,31
+15:44:08.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:44:08.551 > 
+15:44:11.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:44:11.547 > 
+15:44:14.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:44:14.561 > 
+15:44:17.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:44:17.561 > 
+15:44:20.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:44:20.561 > 
+15:44:23.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:44:23.561 > 
+15:44:26.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:44:26.561 > 
+15:44:29.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:44:29.561 > 
+15:44:32.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:44:32.561 > 
+15:44:35.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:44:35.556 > 
+15:44:38.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:44:38.549 > 
+15:44:41.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:44:41.559 > 
+15:44:44.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:44:44.549 > 
+15:44:47.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:44:47.553 > 
+15:44:50.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:44:50.560 > 
+15:44:53.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:44:53.550 > 
+15:44:56.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:44:56.552 > 
+15:44:59.555 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:44:59.560 > 
+15:45:02.556 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:45:02.559 > 
+15:45:05.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:45:05.546 > 
+15:45:05.597 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.0, 998.0,28,24,31
+15:45:08.554 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:45:08.559 > 
+15:45:11.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:45:11.551 > 
+15:45:14.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:45:14.559 > 
+15:45:17.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:45:17.550 > 
+15:45:20.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:45:20.553 > 
+15:45:23.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:45:23.553 > 
+15:45:26.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:45:26.547 > 
+15:45:29.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:45:29.553 > 
+15:45:32.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:45:32.552 > 
+15:45:35.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:45:35.555 > 
+15:45:38.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:45:38.545 > 
+15:45:41.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:45:41.546 > 
+15:45:44.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:45:44.550 > 
+15:45:47.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:45:47.552 > 
+15:45:50.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:45:50.547 > 
+15:45:53.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:45:53.558 > 
+15:45:56.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:45:56.557 > 
+15:45:59.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:45:59.558 > 
+15:46:02.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:46:02.549 > 
+15:46:05.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:46:05.543 > 
+15:46:05.589 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.0, 998.0,28,19,25
+15:46:08.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:46:08.547 > 
+15:46:11.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:46:11.557 > 
+15:46:14.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:46:14.545 > 
+15:46:17.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:46:17.546 > 
+15:46:20.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:46:20.550 > 
+15:46:23.553 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:46:23.553 > 
+15:46:26.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:46:26.556 > 
+15:46:29.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:46:29.554 > 
+15:46:32.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:46:32.552 > 
+15:46:35.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:46:35.546 > 
+15:46:38.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:46:38.544 > 
+15:46:41.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:46:41.547 > 
+15:46:44.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:46:44.544 > 
+15:46:47.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:46:47.554 > 
+15:46:50.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:46:50.543 > 
+15:46:53.548 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:46:53.548 > 
+15:46:56.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:46:56.545 > 
+15:46:59.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:46:59.547 > 
+15:47:02.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:47:02.544 > 
+15:47:05.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:47:05.554 > 
+15:47:05.586 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.0,28,19,27
+15:47:08.552 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:47:08.554 > 
+15:47:11.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:47:11.551 > 
+15:47:14.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:47:14.547 > 
+15:47:17.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:47:17.552 > 
+15:47:20.551 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:47:20.551 > 
+15:47:23.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:47:23.540 > 
+15:47:26.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:47:26.549 > 
+15:47:29.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:47:29.555 > 
+15:47:32.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:47:32.544 > 
+15:47:35.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:47:35.550 > 
+15:47:38.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:47:38.541 > 
+15:47:41.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:47:41.543 > 
+15:47:44.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:47:44.554 > 
+15:47:47.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:47:47.551 > 
+15:47:50.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:47:50.542 > 
+15:47:53.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:47:53.540 > 
+15:47:56.550 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:47:56.554 > 
+15:47:59.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:47:59.545 > 
+15:48:02.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:48:02.546 > 
+15:48:05.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:48:05.549 > 
+15:48:05.596 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,21,28
+15:48:08.549 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:48:08.549 > 
+15:48:11.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:48:11.551 > 
+15:48:14.548 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:48:14.548 > 
+15:48:17.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:48:17.545 > 
+15:48:20.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:48:20.539 > 
+15:48:23.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:48:23.548 > 
+15:48:26.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:48:26.552 > 
+15:48:29.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:48:29.546 > 
+15:48:32.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:48:32.539 > 
+15:48:35.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:48:35.544 > 
+15:48:38.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:48:38.547 > 
+15:48:41.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:48:41.538 > 
+15:48:44.548 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:48:44.548 > 
+15:48:47.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:48:47.541 > 
+15:48:50.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:48:50.541 > 
+15:48:53.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:48:53.537 > 
+15:48:56.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:48:56.547 > 
+15:48:59.547 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:48:59.547 > 
+15:49:02.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:49:02.539 > 
+15:49:05.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:49:05.548 > 
+15:49:05.580 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.0, 998.1,28,24,30
+15:49:08.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:49:08.537 > 
+15:49:11.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:49:11.546 > 
+15:49:14.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:49:14.545 > 
+15:49:17.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:49:17.546 > 
+15:49:20.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:49:20.548 > 
+15:49:23.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:49:23.541 > 
+15:49:26.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:49:26.546 > 
+15:49:29.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:49:29.545 > 
+15:49:32.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:49:32.537 > 
+15:49:35.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:49:35.536 > 
+15:49:38.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:49:38.535 > 
+15:49:41.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:49:41.549 > 
+15:49:44.546 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:49:44.546 > 
+15:49:47.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:49:47.539 > 
+15:49:50.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:49:50.548 > 
+15:49:53.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:49:53.540 > 
+15:49:56.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:49:56.535 > 
+15:49:59.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:49:59.542 > 
+15:50:02.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:50:02.537 > 
+15:50:05.545 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:50:05.545 > 
+15:50:05.592 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,20,27
+15:50:08.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:50:08.544 > 
+15:50:11.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:50:11.541 > 
+15:50:14.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:50:14.539 > 
+15:50:17.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:50:17.545 > 
+15:50:20.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:50:20.542 > 
+15:50:23.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:50:23.547 > 
+15:50:26.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:50:26.546 > 
+15:50:29.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:50:29.543 > 
+15:50:32.543 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:50:32.543 > 
+15:50:35.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:50:35.537 > 
+15:50:38.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:50:38.542 > 
+15:50:41.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:50:41.540 > 
+15:50:44.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:50:44.542 > 
+15:50:47.544 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:50:47.544 > 
+15:50:50.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:50:50.538 > 
+15:50:53.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:50:53.540 > 
+15:50:56.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:50:56.534 > 
+15:50:59.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:50:59.534 > 
+15:51:02.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:51:02.540 > 
+15:51:05.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:51:05.540 > 
+15:51:05.587 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,21,29
+15:51:08.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:51:08.533 > 
+15:51:11.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:51:11.533 > 
+15:51:14.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:51:14.533 > 
+15:51:17.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:51:17.532 > 
+15:51:20.531 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:51:20.546 > 
+15:51:23.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:51:23.541 > 
+15:51:26.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:51:26.537 > 
+15:51:29.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:51:29.543 > 
+15:51:32.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:51:32.537 > 
+15:51:35.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:51:35.542 > 
+15:51:38.542 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:51:38.542 > 
+15:51:41.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:51:41.544 > 
+15:51:44.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:51:44.537 > 
+15:51:47.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:51:47.544 > 
+15:51:50.541 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:51:50.543 > 
+15:51:53.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:51:53.533 > 
+15:51:56.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:51:56.533 > 
+15:51:59.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:51:59.538 > 
+15:52:02.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:52:02.538 > 
+15:52:05.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:52:05.532 > 
+15:52:05.579 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,18,24
+15:52:08.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:52:08.537 > 
+15:52:11.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:52:11.532 > 
+15:52:14.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:52:14.533 > 
+15:52:17.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:52:17.532 > 
+15:52:20.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:52:20.544 > 
+15:52:23.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:52:23.540 > 
+15:52:26.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:52:26.532 > 
+15:52:29.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:52:29.534 > 
+15:52:32.540 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:52:32.540 > 
+15:52:35.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:52:35.540 > 
+15:52:38.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:52:38.530 > 
+15:52:41.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:52:41.544 > 
+15:52:44.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:52:44.539 > 
+15:52:47.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:52:47.540 > 
+15:52:50.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:52:50.529 > 
+15:52:53.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:52:53.529 > 
+15:52:56.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:52:56.535 > 
+15:52:59.539 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:52:59.539 > 
+15:53:02.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:53:02.540 > 
+15:53:05.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:53:05.537 > 
+15:53:05.584 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,20,25
+15:53:08.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:53:08.533 > 
+15:53:11.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:53:11.543 > 
+15:53:14.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:53:14.535 > 
+15:53:17.538 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:53:17.539 > 
+15:53:20.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:53:20.539 > 
+15:53:23.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:53:23.530 > 
+15:53:26.537 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:53:26.537 > 
+15:53:29.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:53:29.535 > 
+15:53:32.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:53:32.530 > 
+15:53:35.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:53:35.541 > 
+15:53:38.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:53:38.536 > 
+15:53:41.526 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:53:41.541 > 
+15:53:44.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:53:44.536 > 
+15:53:47.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:53:47.532 > 
+15:53:50.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:53:50.534 > 
+15:53:53.527 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:53:53.527 > 
+15:53:56.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:53:56.540 > 
+15:53:59.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:53:59.530 > 
+15:54:02.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:54:02.540 > 
+15:54:05.531 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:54:05.531 > 
+15:54:05.578 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.0, 998.1,28,21,29
+15:54:08.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:54:08.530 > 
+15:54:11.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:54:11.537 > 
+15:54:14.526 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:54:14.526 > 
+15:54:17.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:54:17.529 > 
+15:54:20.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:54:20.537 > 
+15:54:23.527 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:54:23.527 > 
+15:54:26.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:54:26.539 > 
+15:54:29.536 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:54:29.537 > 
+15:54:32.526 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:54:32.526 > 
+15:54:35.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:54:35.535 > 
+15:54:38.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:54:38.538 > 
+15:54:41.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:54:41.532 > 
+15:54:44.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:54:44.539 > 
+15:54:47.535 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:54:47.537 > 
+15:54:50.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:54:50.539 > 
+15:54:53.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:54:53.537 > 
+15:54:56.527 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:54:56.527 > 
+15:54:59.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:54:59.535 > 
+15:55:02.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:55:02.528 > 
+15:55:05.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:55:05.529 > 
+15:55:05.576 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.1,28,19,25
+15:55:08.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:55:08.536 > 
+15:55:11.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:55:11.529 > 
+15:55:14.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:55:14.537 > 
+15:55:17.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:55:17.532 > 
+15:55:20.534 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:55:20.534 > 
+15:55:23.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:55:23.530 > 
+15:55:26.523 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:55:26.523 > 
+15:55:29.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:55:29.533 > 
+15:55:32.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:55:32.528 > 
+15:55:35.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:55:35.528 > 
+15:55:38.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:55:38.525 > 
+15:55:41.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:55:41.528 > 
+15:55:44.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:55:44.522 > 
+15:55:47.533 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:55:47.533 > 
+15:55:50.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:55:50.536 > 
+15:55:53.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:55:53.525 > 
+15:55:56.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:55:56.537 > 
+15:55:59.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:55:59.528 > 
+15:56:02.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:56:02.532 > 
+15:56:05.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:56:05.525 > 
+15:56:05.580 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.1, 998.2,28,19,26
+15:56:08.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:56:08.536 > 
+15:56:11.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:56:11.529 > 
+15:56:14.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:56:14.532 > 
+15:56:17.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:56:17.535 > 
+15:56:20.523 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:56:20.523 > 
+15:56:23.532 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:56:23.532 > 
+15:56:26.531 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:56:26.531 > 
+15:56:29.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:56:29.522 > 
+15:56:32.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:56:32.530 > 
+15:56:35.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:56:35.532 > 
+15:56:38.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:56:38.534 > 
+15:56:41.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:56:41.528 > 
+15:56:44.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:56:44.533 > 
+15:56:47.531 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:56:47.531 > 
+15:56:50.530 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:56:50.530 > 
+15:56:53.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:56:53.528 > 
+15:56:56.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:56:56.534 > 
+15:56:59.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:56:59.535 > 
+15:57:02.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:57:02.525 > 
+15:57:05.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:57:05.532 > 
+15:57:05.564 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.2,28,21,26
+15:57:08.526 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:57:08.526 > 
+15:57:11.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:57:11.530 > 
+15:57:14.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:57:14.532 > 
+15:57:17.527 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:57:17.527 > 
+15:57:20.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:57:20.531 > 
+15:57:23.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:57:23.531 > 
+15:57:26.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:57:26.529 > 
+15:57:29.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:57:29.533 > 
+15:57:32.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:57:32.525 > 
+15:57:35.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:57:35.520 > 
+15:57:38.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:57:38.534 > 
+15:57:41.529 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:57:41.529 > 
+15:57:44.527 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:57:44.527 > 
+15:57:47.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:57:47.532 > 
+15:57:50.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:57:50.532 > 
+15:57:53.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:57:53.533 > 
+15:57:56.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:57:56.519 > 
+15:57:59.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:57:59.518 > 
+15:58:02.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:58:02.524 > 
+15:58:05.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:58:05.531 > 
+15:58:05.563 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.1,28,22,28
+15:58:08.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:58:08.519 > 
+15:58:11.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:58:11.531 > 
+15:58:14.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:58:14.525 > 
+15:58:17.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:58:17.524 > 
+15:58:20.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:58:20.531 > 
+15:58:23.528 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:58:23.528 > 
+15:58:26.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:58:26.522 > 
+15:58:29.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:58:29.522 > 
+15:58:32.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:58:32.525 > 
+15:58:35.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:58:35.521 > 
+15:58:38.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:58:38.524 > 
+15:58:41.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:58:41.522 > 
+15:58:44.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:58:44.521 > 
+15:58:47.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:58:47.527 > 
+15:58:50.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:58:50.520 > 
+15:58:53.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:58:53.525 > 
+15:58:56.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:58:56.521 > 
+15:58:59.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:58:59.517 > 
+15:59:02.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:59:02.524 > 
+15:59:05.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:59:05.521 > 
+15:59:05.568 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.1,28,22,28
+15:59:08.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:59:08.528 > 
+15:59:11.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:59:11.529 > 
+15:59:14.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:59:14.527 > 
+15:59:17.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:59:17.521 > 
+15:59:20.526 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:59:20.529 > 
+15:59:23.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:59:23.519 > 
+15:59:26.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:59:26.517 > 
+15:59:29.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:59:29.525 > 
+15:59:32.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:59:32.525 > 
+15:59:35.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:59:35.525 > 
+15:59:38.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:59:38.525 > 
+15:59:41.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:59:41.527 > 
+15:59:44.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:59:44.528 > 
+15:59:47.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:59:47.514 > 
+15:59:50.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:59:50.520 > 
+15:59:53.524 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:59:53.524 > 
+15:59:56.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:59:56.519 > 
+15:59:59.525 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:59:59.525 > 
+16:00:02.523 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:00:02.524 > 
+16:00:05.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:00:05.527 > 
+16:00:05.572 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.1,28,20,25
+16:00:08.523 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:00:08.523 > 
+16:00:11.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:00:11.526 > 
+16:00:14.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:00:14.528 > 
+16:00:17.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:00:17.520 > 
+16:00:20.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:00:20.516 > 
+16:00:23.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:00:23.523 > 
+16:00:26.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:00:26.515 > 
+16:00:29.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:00:29.527 > 
+16:00:32.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:00:32.518 > 
+16:00:35.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:00:35.515 > 
+16:00:38.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:00:38.521 > 
+16:00:41.522 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:00:41.522 > 
+16:00:44.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:00:44.526 > 
+16:00:47.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:00:47.515 > 
+16:00:50.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:00:50.520 > 
+16:00:53.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:00:53.518 > 
+16:00:56.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:00:56.513 > 
+16:00:59.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:00:59.523 > 
+16:01:02.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:01:02.513 > 
+16:01:05.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:01:05.514 > 
+16:01:05.561 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.1,28,18,25
+16:01:08.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:01:08.522 > 
+16:01:11.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:01:11.516 > 
+16:01:14.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:01:14.523 > 
+16:01:17.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:01:17.518 > 
+16:01:20.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:01:20.523 > 
+16:01:23.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:01:23.519 > 
+16:01:26.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:01:26.524 > 
+16:01:29.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:01:29.516 > 
+16:01:32.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:01:32.513 > 
+16:01:35.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:01:35.516 > 
+16:01:38.521 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:01:38.521 > 
+16:01:41.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:01:41.518 > 
+16:01:44.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:01:44.511 > 
+16:01:47.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:01:47.517 > 
+16:01:50.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:01:50.523 > 
+16:01:53.520 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:01:53.520 > 
+16:01:56.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:01:56.513 > 
+16:01:59.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:01:59.524 > 
+16:02:02.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:02:02.523 > 
+16:02:05.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:02:05.516 > 
+16:02:05.563 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.2, 998.1,28,20,27
+16:02:08.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:02:08.516 > 
+16:02:11.519 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:02:11.519 > 
+16:02:14.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:02:14.516 > 
+16:02:17.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:02:17.523 > 
+16:02:20.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:02:20.509 > 
+16:02:23.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:02:23.512 > 
+16:02:26.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:02:26.521 > 
+16:02:29.518 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:02:29.518 > 
+16:02:32.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:02:32.510 > 
+16:02:35.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:02:35.522 > 
+16:02:38.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:02:38.522 > 
+16:02:41.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:02:41.514 > 
+16:02:44.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:02:44.509 > 
+16:02:47.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:02:47.513 > 
+16:02:50.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:02:50.508 > 
+16:02:53.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:02:53.517 > 
+16:02:56.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:02:56.510 > 
+16:02:59.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:02:59.516 > 
+16:03:02.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:03:02.521 > 
+16:03:05.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:03:05.508 > 
+16:03:05.554 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.2, 998.1,28,19,26
+16:03:08.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:03:08.520 > 
+16:03:11.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:03:11.514 > 
+16:03:14.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:03:14.509 > 
+16:03:17.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:03:17.514 > 
+16:03:20.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:03:20.507 > 
+16:03:23.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:03:23.518 > 
+16:03:26.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:03:26.507 > 
+16:03:29.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:03:29.509 > 
+16:03:32.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:03:32.514 > 
+16:03:35.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:03:35.521 > 
+16:03:38.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:03:38.509 > 
+16:03:41.517 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:03:41.517 > 
+16:03:44.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:03:44.509 > 
+16:03:47.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:03:47.514 > 
+16:03:50.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:03:50.517 > 
+16:03:53.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:03:53.513 > 
+16:03:56.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:03:56.520 > 
+16:03:59.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:03:59.514 > 
+16:04:02.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:04:02.509 > 
+16:04:05.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:04:05.510 > 
+16:04:05.558 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.2, 998.1,28,21,29
+16:04:08.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:04:08.505 > 
+16:04:11.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:04:11.513 > 
+16:04:14.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:04:14.505 > 
+16:04:17.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:04:17.512 > 
+16:04:20.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:04:20.516 > 
+16:04:23.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:04:23.517 > 
+16:04:26.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:04:26.506 > 
+16:04:29.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:04:29.506 > 
+16:04:32.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:04:32.509 > 
+16:04:35.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:04:35.506 > 
+16:04:38.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:04:38.517 > 
+16:04:41.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:04:41.519 > 
+16:04:44.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:04:44.512 > 
+16:04:47.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:04:47.513 > 
+16:04:50.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:04:50.512 > 
+16:04:53.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:04:53.513 > 
+16:04:56.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:04:56.507 > 
+16:04:59.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:04:59.517 > 
+16:05:02.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:05:02.507 > 
+16:05:05.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:05:05.512 > 
+16:05:05.559 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.2, 998.1,28,19,26
+16:05:08.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:05:08.513 > 
+16:05:11.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:05:11.510 > 
+16:05:14.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:05:14.514 > 
+16:05:17.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:05:17.512 > 
+16:05:20.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:05:20.514 > 
+16:05:23.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:05:23.509 > 
+16:05:26.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:05:26.501 > 
+16:05:29.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:05:29.512 > 
+16:05:32.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:05:32.509 > 
+16:05:35.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:05:35.516 > 
+16:05:38.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:05:38.512 > 
+16:05:41.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:05:41.508 > 
+16:05:44.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:05:44.510 > 
+16:05:47.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:05:47.503 > 
+16:05:50.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:05:50.509 > 
+16:05:53.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:05:53.510 > 
+16:05:56.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:05:56.512 > 
+16:05:59.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:05:59.512 > 
+16:06:02.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:06:02.510 > 
+16:06:05.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:06:05.512 > 
+16:06:05.559 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.1,28,20,26
+16:06:08.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:06:08.511 > 
+16:06:11.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:06:11.511 > 
+16:06:14.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:06:14.515 > 
+16:06:17.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:06:17.507 > 
+16:06:20.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:06:20.507 > 
+16:06:23.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:06:23.507 > 
+16:06:26.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:06:26.505 > 
+16:06:29.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:06:29.504 > 
+16:06:32.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:06:32.510 > 
+16:06:35.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:06:35.512 > 
+16:06:38.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:06:38.511 > 
+16:06:41.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:06:41.507 > 
+16:06:44.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:06:44.514 > 
+16:06:47.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:06:47.504 > 
+16:06:50.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:06:50.503 > 
+16:06:53.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:06:53.500 > 
+16:06:56.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:06:56.513 > 
+16:06:59.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:06:59.504 > 
+16:07:02.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:07:02.512 > 
+16:07:05.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:07:05.509 > 
+16:07:05.556 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.1,28,20,26
+16:07:08.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:07:08.507 > 
+16:07:11.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:07:11.503 > 
+16:07:14.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:07:14.514 > 
+16:07:17.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:07:17.505 > 
+16:07:20.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:07:20.509 > 
+16:07:23.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:07:23.508 > 
+16:07:26.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:07:26.499 > 
+16:07:29.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:07:29.500 > 
+16:07:32.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:07:32.502 > 
+16:07:35.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:07:35.512 > 
+16:07:38.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:07:38.508 > 
+16:07:41.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:07:41.498 > 
+16:07:44.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:07:44.500 > 
+16:07:47.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:07:47.510 > 
+16:07:50.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:07:50.509 > 
+16:07:53.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:07:53.509 > 
+16:07:56.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:07:56.511 > 
+16:07:59.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:07:59.500 > 
+16:08:02.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:08:02.508 > 
+16:08:05.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:08:05.506 > 
+16:08:05.555 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.1,28,21,28
+16:08:08.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:08:08.501 > 
+16:08:11.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:08:11.506 > 
+16:08:14.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:08:14.512 > 
+16:08:17.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:08:17.498 > 
+16:08:20.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:08:20.500 > 
+16:08:23.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:08:23.511 > 
+16:08:26.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:08:26.506 > 
+16:08:29.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:08:29.499 > 
+16:08:32.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:08:32.507 > 
+16:08:35.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:08:35.510 > 
+16:08:38.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:08:38.498 > 
+16:08:41.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:08:41.508 > 
+16:08:44.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:08:44.509 > 
+16:08:47.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:08:47.509 > 
+16:08:50.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:08:50.500 > 
+16:08:53.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:08:53.500 > 
+16:08:56.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:08:56.509 > 
+16:08:59.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:08:59.497 > 
+16:09:02.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:09:02.501 > 
+16:09:05.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:09:05.508 > 
+16:09:05.540 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.2,28,21,27
+16:09:08.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:09:08.505 > 
+16:09:11.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:09:11.505 > 
+16:09:14.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:09:14.496 > 
+16:09:17.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:09:17.503 > 
+16:09:20.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:09:20.504 > 
+16:09:23.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:09:23.504 > 
+16:09:26.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:09:26.496 > 
+16:09:29.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:09:29.494 > 
+16:09:32.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:09:32.500 > 
+16:09:35.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:09:35.508 > 
+16:09:38.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:09:38.509 > 
+16:09:41.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:09:41.504 > 
+16:09:44.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:09:44.503 > 
+16:09:47.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:09:47.506 > 
+16:09:50.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:09:50.496 > 
+16:09:53.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:09:53.499 > 
+16:09:56.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:09:56.493 > 
+16:09:59.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:09:59.507 > 
+16:10:02.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:10:02.500 > 
+16:10:05.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:10:05.497 > 
+16:10:05.544 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.2,28,18,26
+16:10:08.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:10:08.504 > 
+16:10:11.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:10:11.504 > 
+16:10:14.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:10:14.494 > 
+16:10:17.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:10:17.505 > 
+16:10:20.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:10:20.504 > 
+16:10:23.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:10:23.505 > 
+16:10:26.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:10:26.506 > 
+16:10:29.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:10:29.492 > 
+16:10:32.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:10:32.493 > 
+16:10:35.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:10:35.506 > 
+16:10:38.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:10:38.505 > 
+16:10:41.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:10:41.496 > 
+16:10:44.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:10:44.501 > 
+16:10:47.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:10:47.492 > 
+16:10:50.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:10:50.499 > 
+16:10:53.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:10:53.502 > 
+16:10:56.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:10:56.494 > 
+16:10:59.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:10:59.505 > 
+16:11:02.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:11:02.499 > 
+16:11:05.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:11:05.503 > 
+16:11:05.534 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.2,28,18,24
+16:11:08.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:11:08.500 > 
+16:11:11.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:11:11.499 > 
+16:11:14.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:11:14.496 > 
+16:11:17.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:11:17.493 > 
+16:11:20.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:11:20.493 > 
+16:11:23.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:11:23.502 > 
+16:11:26.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:11:26.497 > 
+16:11:29.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:11:29.500 > 
+16:11:32.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:11:32.495 > 
+16:11:35.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:11:35.491 > 
+16:11:38.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:11:38.490 > 
+16:11:41.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:11:41.494 > 
+16:11:44.500 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:11:44.500 > 
+16:11:47.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:11:47.489 > 
+16:11:50.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:11:50.504 > 
+16:11:53.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:11:53.494 > 
+16:11:56.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:11:56.491 > 
+16:11:59.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:11:59.494 > 
+16:12:02.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:12:02.494 > 
+16:12:05.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:12:05.502 > 
+16:12:05.534 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.2,28,17,23
+16:12:08.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:12:08.501 > 
+16:12:11.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:12:11.493 > 
+16:12:14.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:12:14.498 > 
+16:12:17.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:12:17.496 > 
+16:12:20.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:12:20.494 > 
+16:12:23.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:12:23.488 > 
+16:12:26.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:12:26.495 > 
+16:12:29.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:12:29.490 > 
+16:12:32.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:12:32.496 > 
+16:12:35.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:12:35.502 > 
+16:12:38.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:12:38.499 > 
+16:12:41.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:12:41.492 > 
+16:12:44.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:12:44.495 > 
+16:12:47.484 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:12:47.500 > 
+16:12:50.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:12:50.487 > 
+16:12:53.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:12:53.496 > 
+16:12:56.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:12:56.497 > 
+16:12:59.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:12:59.492 > 
+16:13:02.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:13:02.497 > 
+16:13:05.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:13:05.493 > 
+16:13:05.539 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.3, 998.2,28,18,23
+16:13:08.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:13:08.498 > 
+16:13:11.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:13:11.492 > 
+16:13:14.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:13:14.487 > 
+16:13:17.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:13:17.496 > 
+16:13:20.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:13:20.497 > 
+16:13:23.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:13:23.493 > 
+16:13:26.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:13:26.496 > 
+16:13:29.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:13:29.488 > 
+16:13:32.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:13:32.497 > 
+16:13:35.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:13:35.500 > 
+16:13:38.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:13:38.495 > 
+16:13:41.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:13:41.491 > 
+16:13:44.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:13:44.491 > 
+16:13:47.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:13:47.486 > 
+16:13:50.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:13:50.495 > 
+16:13:53.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:13:53.492 > 
+16:13:56.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:13:56.492 > 
+16:13:59.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:13:59.495 > 
+16:14:02.484 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:14:02.484 > 
+16:14:05.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:14:05.495 > 
+16:14:05.542 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.4, 998.2,28,19,27
+16:14:08.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:14:08.493 > 
+16:14:11.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:14:11.497 > 
+16:14:14.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:14:14.488 > 
+16:14:17.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:14:17.493 > 
+16:14:20.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:14:20.494 > 
+16:14:23.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:14:23.490 > 
+16:14:26.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:14:26.497 > 
+16:14:29.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:14:29.486 > 
+16:14:32.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:14:32.485 > 
+16:14:35.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:14:35.494 > 
+16:14:38.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:14:38.493 > 
+16:14:41.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:14:41.489 > 
+16:14:44.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:14:44.493 > 
+16:14:47.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:14:47.495 > 
+16:14:50.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:14:50.496 > 
+16:14:53.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:14:53.494 > 
+16:14:56.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:14:56.497 > 
+16:14:59.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:14:59.495 > 
+16:15:02.493 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:15:02.493 > 
+16:15:05.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:15:05.496 > 
+16:15:05.527 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.4, 998.2,28,22,27
+16:15:08.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:15:08.487 > 
+16:15:11.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:15:11.492 > 
+16:15:14.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:15:14.488 > 
+16:15:17.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:15:17.485 > 
+16:15:20.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:15:20.494 > 
+16:15:23.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:15:23.496 > 
+16:15:26.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:15:26.495 > 
+16:15:29.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:15:29.485 > 
+16:15:32.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:15:32.491 > 
+16:15:35.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:15:35.483 > 
+16:15:38.492 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:15:38.494 > 
+16:15:41.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:15:41.489 > 
+16:15:44.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:15:44.482 > 
+16:15:47.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:15:47.489 > 
+16:15:50.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:15:50.489 > 
+16:15:53.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:15:53.492 > 
+16:15:56.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:15:56.486 > 
+16:15:59.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:15:59.494 > 
+16:16:02.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:16:02.490 > 
+16:16:05.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:16:05.492 > 
+16:16:05.538 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,18,25
+16:16:08.484 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:16:08.484 > 
+16:16:11.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:16:11.486 > 
+16:16:14.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:16:14.483 > 
+16:16:17.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:16:17.491 > 
+16:16:20.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:16:20.494 > 
+16:16:23.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:16:23.487 > 
+16:16:26.484 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:16:26.484 > 
+16:16:29.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:16:29.488 > 
+16:16:32.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:16:32.492 > 
+16:16:35.486 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:16:35.486 > 
+16:16:38.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:16:38.479 > 
+16:16:41.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:16:41.493 > 
+16:16:44.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:16:44.487 > 
+16:16:47.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:16:47.492 > 
+16:16:50.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:16:50.493 > 
+16:16:53.489 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:16:53.492 > 
+16:16:56.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:16:56.485 > 
+16:16:59.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:16:59.480 > 
+16:17:02.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:17:02.485 > 
+16:17:05.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:17:05.487 > 
+16:17:05.533 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,22,27
+16:17:08.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:17:08.482 > 
+16:17:11.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:17:11.490 > 
+16:17:14.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:17:14.479 > 
+16:17:17.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:17:17.489 > 
+16:17:20.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:17:20.477 > 
+16:17:23.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:17:23.488 > 
+16:17:26.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:17:26.489 > 
+16:17:29.488 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:17:29.488 > 
+16:17:32.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:17:32.489 > 
+16:17:35.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:17:35.485 > 
+16:17:38.474 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:17:38.489 > 
+16:17:41.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:17:41.482 > 
+16:17:44.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:17:44.483 > 
+16:17:47.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:17:47.487 > 
+16:17:50.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:17:50.490 > 
+16:17:53.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:17:53.491 > 
+16:17:56.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:17:56.487 > 
+16:17:59.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:17:59.485 > 
+16:18:02.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:18:02.490 > 
+16:18:05.487 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:18:05.487 > 
+16:18:05.534 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,20,29
+16:18:08.485 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:18:08.485 > 
+16:18:11.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:18:11.487 > 
+16:18:14.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:18:14.477 > 
+16:18:17.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:18:17.483 > 
+16:18:20.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:18:20.477 > 
+16:18:23.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:18:23.487 > 
+16:18:26.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:18:26.487 > 
+16:18:29.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:18:29.487 > 
+16:18:32.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:18:32.486 > 
+16:18:35.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:18:35.483 > 
+16:18:38.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:18:38.475 > 
+16:18:41.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:18:41.480 > 
+16:18:44.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:18:44.475 > 
+16:18:47.474 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:18:47.489 > 
+16:18:50.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:18:50.477 > 
+16:18:53.474 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:18:53.474 > 
+16:18:56.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:18:56.482 > 
+16:18:59.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:18:59.487 > 
+16:19:02.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:19:02.483 > 
+16:19:05.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:19:05.478 > 
+16:19:05.525 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,21,27
+16:19:08.484 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:19:08.484 > 
+16:19:11.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:19:11.478 > 
+16:19:14.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:19:14.475 > 
+16:19:17.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:19:17.485 > 
+16:19:20.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:19:20.483 > 
+16:19:23.481 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:19:23.481 > 
+16:19:26.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:19:26.483 > 
+16:19:29.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:19:29.482 > 
+16:19:32.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:19:32.480 > 
+16:19:35.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:19:35.480 > 
+16:19:38.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:19:38.478 > 
+16:19:41.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:19:41.487 > 
+16:19:44.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:19:44.477 > 
+16:19:47.483 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:19:47.483 > 
+16:19:50.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:19:50.482 > 
+16:19:53.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:19:53.485 > 
+16:19:56.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:19:56.473 > 
+16:19:59.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:19:59.486 > 
+16:20:02.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:20:02.472 > 
+16:20:05.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:20:05.479 > 
+16:20:05.525 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,17,25
+16:20:08.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:20:08.481 > 
+16:20:11.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:20:11.473 > 
+16:20:14.482 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:20:14.486 > 
+16:20:17.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:20:17.477 > 
+16:20:20.481 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:20:20.481 > 
+16:20:23.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:20:23.471 > 
+16:20:26.481 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:20:26.481 > 
+16:20:29.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:20:29.484 > 
+16:20:32.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:20:32.476 > 
+16:20:35.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:20:35.484 > 
+16:20:38.481 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:20:38.481 > 
+16:20:41.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:20:41.477 > 
+16:20:44.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:20:44.479 > 
+16:20:47.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:20:47.484 > 
+16:20:50.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:20:50.477 > 
+16:20:53.481 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:20:53.481 > 
+16:20:56.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:20:56.484 > 
+16:20:59.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:20:59.479 > 
+16:21:02.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:21:02.479 > 
+16:21:05.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:21:05.472 > 
+16:21:05.520 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.5, 998.2,28,21,29
+16:21:08.468 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:21:08.483 > 
+16:21:11.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:21:11.478 > 
+16:21:14.480 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:21:14.484 > 
+16:21:17.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:21:17.480 > 
+16:21:20.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:21:20.482 > 
+16:21:23.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:21:23.475 > 
+16:21:26.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:21:26.482 > 
+16:21:29.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:21:29.469 > 
+16:21:32.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:21:32.470 > 
+16:21:35.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:21:35.480 > 
+16:21:38.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:21:38.477 > 
+16:21:41.468 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:21:41.484 > 
+16:21:44.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:21:44.476 > 
+16:21:47.478 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:21:47.478 > 
+16:21:50.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:21:50.473 > 
+16:21:53.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:21:53.472 > 
+16:21:56.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:21:56.471 > 
+16:21:59.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:21:59.475 > 
+16:22:02.479 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:22:02.479 > 
+16:22:05.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:22:05.471 > 
+16:22:05.518 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.6, 43.6, 998.1,28,20,25
+16:22:08.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:22:08.482 > 
+16:22:11.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:22:11.477 > 
+16:22:14.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:22:14.469 > 
+16:22:17.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:22:17.477 > 
+16:22:20.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:22:20.473 > 
+16:22:23.474 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:22:23.474 > 
+16:22:26.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:22:26.469 > 
+16:22:29.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:22:29.479 > 
+16:22:32.468 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:22:32.468 > 
+16:22:35.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:22:35.472 > 
+16:22:38.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:22:38.471 > 
+16:22:41.477 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:22:41.477 > 
+16:22:44.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:22:44.476 > 
+16:22:47.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:22:47.476 > 
+16:22:50.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:22:50.469 > 
+16:22:53.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:22:53.472 > 
+16:22:56.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:22:56.476 > 
+16:22:59.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:22:59.469 > 
+16:23:02.476 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:23:02.476 > 
+16:23:05.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:23:05.477 > 
+16:23:05.523 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,18,25
+16:23:08.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:23:08.476 > 
+16:23:11.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:23:11.477 > 
+16:23:14.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:23:14.470 > 
+16:23:17.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:23:17.469 > 
+16:23:20.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:23:20.465 > 
+16:23:23.468 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:23:23.468 > 
+16:23:26.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:23:26.477 > 
+16:23:29.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:23:29.467 > 
+16:23:32.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:23:32.478 > 
+16:23:35.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:23:35.477 > 
+16:23:38.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:23:38.464 > 
+16:23:41.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:23:41.476 > 
+16:23:44.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:23:44.467 > 
+16:23:47.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:23:47.479 > 
+16:23:50.475 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:23:50.478 > 
+16:23:53.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:23:53.476 > 
+16:23:56.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:23:56.466 > 
+16:23:59.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:23:59.478 > 
+16:24:02.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:24:02.470 > 
+16:24:05.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:24:05.472 > 
+16:24:05.519 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,20,27
+16:24:08.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:24:08.467 > 
+16:24:11.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:24:11.470 > 
+16:24:14.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:24:14.471 > 
+16:24:17.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:24:17.474 > 
+16:24:20.473 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:24:20.473 > 
+16:24:23.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:24:23.467 > 
+16:24:26.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:24:26.469 > 
+16:24:29.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:24:29.463 > 
+16:24:32.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:24:32.475 > 
+16:24:35.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:24:35.464 > 
+16:24:38.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:24:38.467 > 
+16:24:41.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:24:41.472 > 
+16:24:44.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:24:44.473 > 
+16:24:47.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:24:47.475 > 
+16:24:50.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:24:50.470 > 
+16:24:53.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:24:53.462 > 
+16:24:56.472 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:24:56.472 > 
+16:24:59.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:24:59.463 > 
+16:25:02.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:25:02.467 > 
+16:25:05.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:25:05.476 > 
+16:25:05.508 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,18,24
+16:25:08.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:25:08.469 > 
+16:25:11.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:25:11.472 > 
+16:25:14.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:25:14.469 > 
+16:25:17.471 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:25:17.471 > 
+16:25:20.470 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:25:20.470 > 
+16:25:23.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:25:23.463 > 
+16:25:26.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:25:26.463 > 
+16:25:29.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:25:29.462 > 
+16:25:32.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:25:32.466 > 
+16:25:35.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:25:35.475 > 
+16:25:38.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:25:38.466 > 
+16:25:41.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:25:41.475 > 
+16:25:44.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:25:44.462 > 
+16:25:47.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:25:47.470 > 
+16:25:50.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:25:50.471 > 
+16:25:53.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:25:53.461 > 
+16:25:56.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:25:56.467 > 
+16:25:59.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:25:59.469 > 
+16:26:02.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:26:02.463 > 
+16:26:05.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:26:05.469 > 
+16:26:05.517 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,21,28
+16:26:08.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:26:08.466 > 
+16:26:11.468 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:26:11.468 > 
+16:26:14.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:26:14.459 > 
+16:26:17.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:26:17.470 > 
+16:26:20.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:26:20.460 > 
+16:26:23.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:26:23.466 > 
+16:26:26.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:26:26.469 > 
+16:26:29.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:26:29.465 > 
+16:26:32.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:26:32.467 > 
+16:26:35.469 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:26:35.469 > 
+16:26:38.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:26:38.462 > 
+16:26:41.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:26:41.473 > 
+16:26:44.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:26:44.463 > 
+16:26:47.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:26:47.463 > 
+16:26:50.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:26:50.461 > 
+16:26:53.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:26:53.465 > 
+16:26:56.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:26:56.472 > 
+16:26:59.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:26:59.458 > 
+16:27:02.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:27:02.462 > 
+16:27:05.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:27:05.461 > 
+16:27:05.516 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,19,27
+16:27:08.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:27:08.471 > 
+16:27:11.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:27:11.466 > 
+16:27:14.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:27:14.470 > 
+16:27:17.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:27:17.466 > 
+16:27:20.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:27:20.461 > 
+16:27:23.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:27:23.459 > 
+16:27:26.467 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:27:26.470 > 
+16:27:29.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:27:29.462 > 
+16:27:32.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:27:32.471 > 
+16:27:35.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:27:35.462 > 
+16:27:38.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:27:38.469 > 
+16:27:41.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:27:41.466 > 
+16:27:44.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:27:44.466 > 
+16:27:47.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:27:47.468 > 
+16:27:50.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:27:50.468 > 
+16:27:53.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:27:53.458 > 
+16:27:56.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:27:56.469 > 
+16:27:59.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:27:59.465 > 
+16:28:02.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:28:02.469 > 
+16:28:05.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:28:05.467 > 
+16:28:05.514 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,20,27
+16:28:08.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:28:08.469 > 
+16:28:11.466 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:28:11.468 > 
+16:28:14.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:28:14.464 > 
+16:28:17.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:28:17.468 > 
+16:28:20.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:28:20.456 > 
+16:28:23.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:28:23.464 > 
+16:28:26.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:28:26.466 > 
+16:28:29.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:28:29.464 > 
+16:28:32.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:28:32.465 > 
+16:28:35.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:28:35.455 > 
+16:28:38.465 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:28:38.465 > 
+16:28:41.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:28:41.468 > 
+16:28:44.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:28:44.464 > 
+16:28:47.464 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:28:47.464 > 
+16:28:50.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:28:50.466 > 
+16:28:53.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:28:53.467 > 
+16:28:56.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:28:56.465 > 
+16:28:59.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:28:59.462 > 
+16:29:02.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:29:02.464 > 
+16:29:05.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:29:05.458 > 
+16:29:05.505 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,22,29
+16:29:08.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:29:08.456 > 
+16:29:11.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:29:11.456 > 
+16:29:14.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:29:14.462 > 
+16:29:17.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:29:17.462 > 
+16:29:20.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:29:20.455 > 
+16:29:23.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:29:23.465 > 
+16:29:26.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:29:26.466 > 
+16:29:29.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:29:29.452 > 
+16:29:32.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:29:32.455 > 
+16:29:35.463 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:29:35.463 > 
+16:29:38.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:29:38.458 > 
+16:29:41.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:29:41.465 > 
+16:29:44.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:29:44.459 > 
+16:29:47.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:29:47.457 > 
+16:29:50.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:29:50.462 > 
+16:29:53.462 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:29:53.462 > 
+16:29:56.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:29:56.457 > 
+16:29:59.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:29:59.460 > 
+16:30:02.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:30:02.460 > 
+16:30:05.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:30:05.466 > 
+16:30:05.498 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,16,23
+16:30:08.461 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:30:08.461 > 
+16:30:11.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:30:11.459 > 
+16:30:14.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:30:14.452 > 
+16:30:17.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:30:17.462 > 
+16:30:20.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:30:20.452 > 
+16:30:23.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:30:23.462 > 
+16:30:26.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:30:26.456 > 
+16:30:29.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:30:29.458 > 
+16:30:32.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:30:32.451 > 
+16:30:35.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:30:35.460 > 
+16:30:38.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:30:38.459 > 
+16:30:41.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:30:41.455 > 
+16:30:44.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:30:44.462 > 
+16:30:47.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:30:47.457 > 
+16:30:50.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:30:50.462 > 
+16:30:53.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:30:53.461 > 
+16:30:56.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:30:56.457 > 
+16:30:59.460 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:30:59.460 > 
+16:31:02.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:31:02.451 > 
+16:31:05.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:31:05.451 > 
+16:31:05.507 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,21,27
+16:31:08.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:31:08.458 > 
+16:31:11.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:31:11.461 > 
+16:31:14.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:31:14.462 > 
+16:31:17.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:31:17.448 > 
+16:31:20.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:31:20.448 > 
+16:31:23.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:31:23.463 > 
+16:31:26.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:31:26.452 > 
+16:31:29.459 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:31:29.459 > 
+16:31:32.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:31:32.458 > 
+16:31:35.458 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:31:35.458 > 
+16:31:38.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:31:38.461 > 
+16:31:41.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:31:41.457 > 
+16:31:44.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:31:44.461 > 
+16:31:47.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:31:47.451 > 
+16:31:50.457 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:31:50.457 > 
+16:31:53.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:31:53.460 > 
+16:31:56.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:31:56.448 > 
+16:31:59.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:31:59.447 > 
+16:32:02.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:32:02.447 > 
+16:32:05.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:32:05.461 > 
+16:32:05.493 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.8, 998.1,28,18,25
+16:32:08.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:32:08.456 > 
+16:32:11.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:32:11.447 > 
+16:32:14.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:32:14.447 > 
+16:32:17.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:32:17.459 > 
+16:32:20.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:32:20.452 > 
+16:32:23.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:32:23.455 > 
+16:32:26.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:32:26.460 > 
+16:32:29.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:32:29.450 > 
+16:32:32.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:32:32.453 > 
+16:32:35.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:32:35.451 > 
+16:32:38.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:32:38.458 > 
+16:32:41.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:32:41.459 > 
+16:32:44.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:32:44.457 > 
+16:32:47.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:32:47.455 > 
+16:32:50.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:32:50.446 > 
+16:32:53.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:32:53.453 > 
+16:32:56.455 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:32:56.455 > 
+16:32:59.456 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:32:59.456 > 
+16:33:02.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:33:02.457 > 
+16:33:05.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:33:05.448 > 
+16:33:05.495 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,21,28
+16:33:08.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:33:08.450 > 
+16:33:11.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:33:11.449 > 
+16:33:14.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:33:14.458 > 
+16:33:17.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:33:17.452 > 
+16:33:20.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:33:20.446 > 
+16:33:23.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:33:23.450 > 
+16:33:26.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:33:26.457 > 
+16:33:29.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:33:29.455 > 
+16:33:32.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:33:32.455 > 
+16:33:35.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:33:35.451 > 
+16:33:38.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:33:38.446 > 
+16:33:41.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:33:41.448 > 
+16:33:44.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:33:44.451 > 
+16:33:47.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:33:47.456 > 
+16:33:50.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:33:50.454 > 
+16:33:53.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:33:53.454 > 
+16:33:56.454 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:33:56.454 > 
+16:33:59.452 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:33:59.452 > 
+16:34:02.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:34:02.456 > 
+16:34:05.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:34:05.445 > 
+16:34:05.491 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,22,28
+16:34:08.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:34:08.453 > 
+16:34:11.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:34:11.453 > 
+16:34:14.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:34:14.448 > 
+16:34:17.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:34:17.444 > 
+16:34:20.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:34:20.456 > 
+16:34:23.453 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:34:23.453 > 
+16:34:26.450 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:34:26.450 > 
+16:34:29.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:34:29.444 > 
+16:34:32.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:34:32.444 > 
+16:34:35.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:34:35.446 > 
+16:34:38.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:34:38.452 > 
+16:34:41.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:34:41.452 > 
+16:34:44.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:34:44.449 > 
+16:34:47.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:34:47.442 > 
+16:34:50.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:34:50.449 > 
+16:34:53.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:34:53.451 > 
+16:34:56.451 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:34:56.451 > 
+16:34:59.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:34:59.444 > 
+16:35:02.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:35:02.454 > 
+16:35:05.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:35:05.446 > 
+16:35:05.493 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.1,28,21,27
+16:35:08.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:35:08.441 > 
+16:35:11.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:35:11.445 > 
+16:35:14.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:35:14.443 > 
+16:35:17.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:35:17.440 > 
+16:35:20.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:35:20.448 > 
+16:35:23.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:35:23.455 > 
+16:35:26.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:35:26.451 > 
+16:35:29.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:35:29.450 > 
+16:35:32.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:35:32.453 > 
+16:35:35.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:35:35.452 > 
+16:35:38.449 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:35:38.451 > 
+16:35:41.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:35:41.453 > 
+16:35:44.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:35:44.454 > 
+16:35:47.447 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:35:47.447 > 
+16:35:50.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:35:50.448 > 
+16:35:53.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:35:53.449 > 
+16:35:56.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:35:56.453 > 
+16:35:59.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:35:59.452 > 
+16:36:02.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:36:02.452 > 
+16:36:05.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:36:05.442 > 
+16:36:05.491 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.7, 43.7, 998.0,28,22,28
+16:36:08.448 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:36:08.448 > 
+16:36:11.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:36:11.441 > 
+16:36:14.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:36:14.448 > 
+16:36:17.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:36:17.449 > 
+16:36:20.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:36:20.440 > 
+16:36:23.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:36:23.448 > 
+16:36:26.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:36:26.441 > 
+16:36:29.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:36:29.452 > 
+16:36:32.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:36:32.443 > 
+16:36:35.446 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:36:35.446 > 
+16:36:38.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:36:38.440 > 
+16:36:41.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:36:41.445 > 
+16:36:44.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:36:44.445 > 
+16:36:47.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:36:47.445 > 
+16:36:50.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:36:50.448 > 
+16:36:53.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:36:53.452 > 
+16:36:56.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:36:56.442 > 
+16:36:59.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:36:59.445 > 
+16:37:02.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:37:02.448 > 
+16:37:05.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:37:05.447 > 
+16:37:05.489 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.0,28,19,27
+16:37:08.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:37:08.451 > 
+16:37:11.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:37:11.445 > 
+16:37:14.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:37:14.443 > 
+16:37:17.445 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:37:17.450 > 
+16:37:20.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:37:20.438 > 
+16:37:23.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:37:23.444 > 
+16:37:26.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:37:26.450 > 
+16:37:29.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:37:29.449 > 
+16:37:32.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:37:32.441 > 
+16:37:35.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:37:35.448 > 
+16:37:38.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:37:38.450 > 
+16:37:41.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:37:41.438 > 
+16:37:44.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:37:44.444 > 
+16:37:47.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:37:47.448 > 
+16:37:50.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:37:50.449 > 
+16:37:53.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:37:53.438 > 
+16:37:56.444 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:37:56.446 > 
+16:37:59.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:37:59.446 > 
+16:38:02.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:38:02.441 > 
+16:38:05.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:38:05.437 > 
+16:38:05.484 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.0,28,18,27
+16:38:08.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:38:08.439 > 
+16:38:11.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:38:11.441 > 
+16:38:14.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:38:14.444 > 
+16:38:17.443 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:38:17.449 > 
+16:38:20.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:38:20.437 > 
+16:38:23.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:38:23.437 > 
+16:38:26.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:38:26.447 > 
+16:38:29.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:38:29.442 > 
+16:38:32.434 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:38:32.447 > 
+16:38:35.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:38:35.439 > 
+16:38:38.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:38:38.435 > 
+16:38:41.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:38:41.440 > 
+16:38:44.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:38:44.438 > 
+16:38:47.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:38:47.441 > 
+16:38:50.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:38:50.443 > 
+16:38:53.442 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:38:53.442 > 
+16:38:56.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:38:56.444 > 
+16:38:59.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:38:59.438 > 
+16:39:02.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:39:02.441 > 
+16:39:05.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:39:05.437 > 
+16:39:05.486 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.0,28,19,25
+16:39:08.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:39:08.446 > 
+16:39:11.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:39:11.439 > 
+16:39:14.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:39:14.441 > 
+16:39:17.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:39:17.436 > 
+16:39:20.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:39:20.443 > 
+16:39:23.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:39:23.439 > 
+16:39:26.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:39:26.438 > 
+16:39:29.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:39:29.440 > 
+16:39:32.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:39:32.444 > 
+16:39:35.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:39:35.433 > 
+16:39:38.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:39:38.441 > 
+16:39:41.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:39:41.439 > 
+16:39:44.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:39:44.444 > 
+16:39:47.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:39:47.444 > 
+16:39:50.441 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:39:50.441 > 
+16:39:53.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:39:53.444 > 
+16:39:56.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:39:56.444 > 
+16:39:59.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:39:59.444 > 
+16:40:02.440 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:40:02.444 > 
+16:40:05.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:40:05.444 > 
+16:40:05.486 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.1,28,20,26
+16:40:08.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:40:08.444 > 
+16:40:11.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:40:11.442 > 
+16:40:14.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:40:14.442 > 
+16:40:17.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:40:17.442 > 
+16:40:20.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:40:20.443 > 
+16:40:23.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:40:23.444 > 
+16:40:26.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:40:26.444 > 
+16:40:29.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:40:29.443 > 
+16:40:32.439 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:40:32.443 > 
+16:40:35.434 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:40:35.443 > 
+16:40:38.438 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:40:38.440 > 
+16:40:41.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:40:41.444 > 
+16:40:44.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:40:44.444 > 
+16:40:47.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:40:47.443 > 
+16:40:50.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:40:50.443 > 
+16:40:53.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:40:53.442 > 
+16:40:56.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:40:56.442 > 
+16:40:59.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:40:59.443 > 
+16:41:02.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:41:02.441 > 
+16:41:05.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:41:05.442 > 
+16:41:05.483 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.1,28,19,25
+16:41:08.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:08.441 > 
+16:41:11.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:11.442 > 
+16:41:14.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:41:14.441 > 
+16:41:17.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:41:17.441 > 
+16:41:20.437 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:41:20.441 > 
+16:41:23.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:41:23.441 > 
+16:41:26.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:41:26.442 > 
+16:41:29.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:41:29.442 > 
+16:41:32.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:41:32.441 > 
+16:41:35.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:41:35.442 > 
+16:41:38.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:41:38.442 > 
+16:41:41.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:41:41.441 > 
+16:41:44.434 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:41:44.440 > 
+16:41:47.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:41:47.441 > 
+16:41:50.436 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:41:50.440 > 
+16:41:53.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:41:53.440 > 
+16:41:56.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:41:56.440 > 
+16:41:59.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:41:59.440 > 
+16:42:02.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:42:02.440 > 
+16:42:05.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:42:05.441 > 
+16:42:05.481 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.1,28,19,26
+16:42:08.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:08.440 > 
+16:42:11.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:11.439 > 
+16:42:14.435 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:42:14.439 > 
+16:42:17.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:42:17.440 > 
+16:42:20.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:42:20.440 > 
+16:42:23.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:42:23.439 > 
+16:42:26.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:42:26.439 > 
+16:42:29.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:42:29.440 > 
+16:42:32.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:42:32.440 > 
+16:42:35.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:42:35.439 > 
+16:42:38.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:42:38.439 > 
+16:42:41.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:42:41.439 > 
+16:42:44.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:42:44.438 > 
+16:42:47.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:42:47.438 > 
+16:42:50.433 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:42:50.438 > 
+16:42:53.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:42:53.438 > 
+16:42:56.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:42:56.439 > 
+16:42:59.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:42:59.439 > 
+16:43:02.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:43:02.437 > 
+16:43:05.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:43:05.439 > 
+16:43:05.481 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.8, 43.8, 998.1,28,21,28
+16:43:08.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:08.438 > 
+16:43:11.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:11.437 > 
+16:43:14.432 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:43:14.435 > 
+16:43:17.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:43:17.438 > 
+16:43:20.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:43:20.438 > 
+16:43:23.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:43:23.438 > 
+16:43:26.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:43:26.438 > 
+16:43:29.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:43:29.437 > 
+16:43:32.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:43:32.438 > 
+16:43:35.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:43:35.431 > 
+16:43:38.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:43:38.437 > 
+16:43:41.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:43:41.436 > 
+16:43:44.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:43:44.436 > 
+16:43:47.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:43:47.437 > 
+16:43:50.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:43:50.436 > 
+16:43:53.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:43:53.437 > 
+16:43:56.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:43:56.437 > 
+16:43:59.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:43:59.430 > 
+16:44:02.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:44:02.437 > 
+16:44:05.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:44:05.433 > 
+16:44:05.478 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.9, 998.1,28,22,29
+16:44:08.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:08.430 > 
+16:44:11.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:11.435 > 
+16:44:14.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:44:14.435 > 
+16:44:17.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:44:17.435 > 
+16:44:20.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:44:20.431 > 
+16:44:23.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:44:23.436 > 
+16:44:26.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:44:26.430 > 
+16:44:29.431 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:44:29.436 > 
+16:44:32.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:44:32.434 > 
+16:44:35.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:44:35.424 > 
+16:44:38.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:44:38.432 > 
+16:44:41.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:44:41.429 > 
+16:44:44.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:44:44.429 > 
+16:44:47.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:44:47.432 > 
+16:44:50.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:44:50.433 > 
+16:44:53.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:44:53.430 > 
+16:44:56.429 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:44:56.431 > 
+16:44:59.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:44:59.435 > 
+16:45:02.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:45:02.430 > 
+16:45:05.430 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:45:05.433 > 
+16:45:05.475 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.9, 998.1,28,19,28
+16:45:08.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:08.428 > 
+16:45:11.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:11.422 > 
+16:45:14.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:45:14.433 > 
+16:45:17.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:45:17.428 > 
+16:45:20.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:45:20.430 > 
+16:45:23.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:45:23.433 > 
+16:45:26.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:45:26.434 > 
+16:45:29.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:45:29.432 > 
+16:45:32.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:45:32.430 > 
+16:45:35.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:45:35.429 > 
+16:45:38.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:45:38.430 > 
+16:45:41.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:45:41.432 > 
+16:45:44.428 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:45:44.429 > 
+16:45:47.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:45:47.432 > 
+16:45:50.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:45:50.426 > 
+16:45:53.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:45:53.427 > 
+16:45:56.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:45:56.427 > 
+16:45:59.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:45:59.427 > 
+16:46:02.427 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:46:02.427 > 
+16:46:05.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:46:05.429 > 
+16:46:05.468 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.9, 998.2,28,21,24
+16:46:08.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:08.426 > 
+16:46:11.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:11.431 > 
+16:46:14.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:46:14.431 > 
+16:46:17.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:46:17.429 > 
+16:46:20.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:46:20.431 > 
+16:46:23.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:46:23.430 > 
+16:46:26.426 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:46:26.429 > 
+16:46:29.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:46:29.427 > 
+16:46:32.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:46:32.430 > 
+16:46:35.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:46:35.430 > 
+16:46:38.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:46:38.423 > 
+16:46:41.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:46:41.429 > 
+16:46:44.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:46:44.430 > 
+16:46:47.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:46:47.426 > 
+16:46:50.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:46:50.430 > 
+16:46:53.425 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:46:53.430 > 
+16:46:56.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:46:56.429 > 
+16:46:59.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:46:59.427 > 
+16:47:02.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:47:02.422 > 
+16:47:05.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:47:05.429 > 
+16:47:05.469 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.8, 998.2,28,20,29
+16:47:08.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:08.430 > 
+16:47:11.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:11.421 > 
+16:47:14.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:47:14.429 > 
+16:47:17.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:47:17.430 > 
+16:47:20.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:47:20.427 > 
+16:47:23.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:47:23.422 > 
+16:47:26.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:47:26.427 > 
+16:47:29.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:47:29.427 > 
+16:47:32.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:47:32.427 > 
+16:47:35.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:47:35.425 > 
+16:47:38.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:47:38.428 > 
+16:47:41.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:47:41.428 > 
+16:47:44.424 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:47:44.428 > 
+16:47:47.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:47:47.428 > 
+16:47:50.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:47:50.424 > 
+16:47:53.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:47:53.426 > 
+16:47:56.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:47:56.428 > 
+16:47:59.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:47:59.427 > 
+16:48:02.423 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:48:02.426 > 
+16:48:05.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:48:05.425 > 
+16:48:05.470 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.9, 998.2,28,19,25
+16:48:08.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:08.423 > 
+16:48:11.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:11.425 > 
+16:48:14.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:48:14.425 > 
+16:48:17.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:48:17.417 > 
+16:48:20.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:48:20.425 > 
+16:48:23.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:48:23.422 > 
+16:48:26.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:48:26.419 > 
+16:48:29.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:48:29.427 > 
+16:48:32.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:48:32.423 > 
+16:48:35.422 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:48:35.424 > 
+16:48:38.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:48:38.425 > 
+16:48:41.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:48:41.426 > 
+16:48:44.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:48:44.426 > 
+16:48:47.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:48:47.425 > 
+16:48:50.421 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:48:50.426 > 
+16:48:53.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:48:53.417 > 
+16:48:56.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:48:56.422 > 
+16:48:59.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:48:59.424 > 
+16:49:02.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:49:02.420 > 
+16:49:05.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:49:05.424 > 
+16:49:05.467 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.8, 998.2,28,19,27
+16:49:08.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:08.425 > 
+16:49:11.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:11.422 > 
+16:49:14.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:49:14.422 > 
+16:49:17.420 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:49:17.425 > 
+16:49:20.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:49:20.425 > 
+16:49:23.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:49:23.425 > 
+16:49:26.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:49:26.421 > 
+16:49:29.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:49:29.424 > 
+16:49:32.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:49:32.423 > 
+16:49:35.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:49:35.424 > 
+16:49:38.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:49:38.424 > 
+16:49:41.419 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:49:41.421 > 
+16:49:44.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:49:44.423 > 
+16:49:47.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:49:47.415 > 
+16:49:50.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:49:50.418 > 
+16:49:53.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:49:53.418 > 
+16:49:56.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:49:56.416 > 
+16:49:59.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:49:59.423 > 
+16:50:02.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:50:02.422 > 
+16:50:05.418 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:50:05.418 > 
+16:50:05.464 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.9, 998.2,28,21,27
+16:50:08.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:08.421 > 
+16:50:11.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:11.419 > 
+16:50:14.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:50:14.422 > 
+16:50:17.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:50:17.422 > 
+16:50:20.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:50:20.421 > 
+16:50:23.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:50:23.421 > 
+16:50:26.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:50:26.423 > 
+16:50:29.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:50:29.421 > 
+16:50:32.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:50:32.422 > 
+16:50:35.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:50:35.423 > 
+16:50:38.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:50:38.421 > 
+16:50:41.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:50:41.421 > 
+16:50:44.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:50:44.421 > 
+16:50:47.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:50:47.421 > 
+16:50:50.417 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:50:50.422 > 
+16:50:53.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:50:53.422 > 
+16:50:56.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:50:56.420 > 
+16:50:59.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:50:59.421 > 
+16:51:02.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:51:02.421 > 
+16:51:05.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:51:05.418 > 
+16:51:05.463 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.8, 998.2,28,19,25
+16:51:08.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:08.420 > 
+16:51:11.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:11.421 > 
+16:51:14.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:51:14.415 > 
+16:51:17.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:51:17.419 > 
+16:51:20.416 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:51:20.420 > 
+16:51:23.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:51:23.421 > 
+16:51:26.415 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:51:26.419 > 
+16:51:29.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:51:29.420 > 
+16:51:32.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:51:32.414 > 
+16:51:35.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:51:35.413 > 
+16:51:38.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:51:38.418 > 
+16:51:41.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:51:41.417 > 
+16:51:44.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:51:44.417 > 
+16:51:47.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:51:47.419 > 
+16:51:50.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:51:50.419 > 
+16:51:53.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:51:53.418 > 
+16:51:56.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:51:56.419 > 
+16:51:59.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:51:59.419 > 
+16:52:02.414 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:52:02.419 > 
+16:52:05.412 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:52:05.416 > 
+16:52:05.461 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.7, 998.2,28,19,25
+16:52:08.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:08.417 > 
+16:52:11.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:11.415 > 
+16:52:14.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:52:14.419 > 
+16:52:17.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:52:17.418 > 
+16:52:20.412 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:52:20.417 > 
+16:52:23.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:52:23.418 > 
+16:52:26.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:52:26.417 > 
+16:52:29.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:52:29.417 > 
+16:52:32.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:52:32.415 > 
+16:52:35.413 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:52:35.418 > 
+16:52:38.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:52:38.414 > 
+16:52:41.412 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:52:41.417 > 
+16:52:44.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:52:44.404 > 
+16:52:47.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:52:47.417 > 
+16:52:50.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:52:50.406 > 
+16:52:53.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:52:53.416 > 
+16:52:56.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:52:56.406 > 
+16:52:59.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:52:59.411 > 
+16:53:02.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:53:02.412 > 
+16:53:05.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:53:05.416 > 
+16:53:05.459 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.8, 998.2,28,20,31
+16:53:08.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:53:08.416 > 
+16:53:11.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:53:11.411 > 
+16:53:14.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:53:14.416 > 
+16:53:17.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:53:17.410 > 
+16:53:20.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:53:20.416 > 
+16:53:23.411 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:53:23.415 > 
+16:53:26.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:53:26.415 > 
+16:53:29.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:53:29.402 > 
+16:53:32.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:53:32.410 > 
+16:53:35.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:53:35.414 > 
+16:53:38.409 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:53:38.409 > 
+16:53:41.408 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:53:41.408 > 
+16:53:44.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:53:44.411 > 
+16:53:47.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:53:47.413 > 
+16:53:50.410 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:53:50.410 > 
+16:53:53.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:53:53.403 > 
+16:53:56.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:53:56.401 > 
+16:53:59.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:53:59.400 > 
+16:54:02.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:54:02.404 > 
+16:54:05.408 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:54:05.408 > 
+16:54:05.455 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.7, 998.2,28,22,29
+16:54:08.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:54:08.406 > 
+16:54:11.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:54:11.414 > 
+16:54:14.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:54:14.402 > 
+16:54:17.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:54:17.406 > 
+16:54:20.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:54:20.400 > 
+16:54:23.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:54:23.400 > 
+16:54:26.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:54:26.407 > 
+16:54:29.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:54:29.414 > 
+16:54:32.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:54:32.402 > 
+16:54:35.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+16:54:35.413 > 
+16:54:38.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+16:54:38.400 > 
+16:54:41.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+16:54:41.404 > 
+16:54:44.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+16:54:44.397 > 
+16:54:47.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+16:54:47.407 > 
+16:54:50.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+16:54:50.406 > 
+16:54:53.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+16:54:53.401 > 
+16:54:56.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+16:54:56.411 > 
+16:54:59.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+16:54:59.407 > 
+16:55:02.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+16:55:02.409 > 
+16:55:05.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+16:55:05.409 > 
+16:55:05.440 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.7, 998.2,28,20,27
+16:55:08.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:55:08.411 > 
+16:55:11.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:55:11.399 > 
+16:55:14.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+16:55:14.400 > 
+16:55:17.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+16:55:17.410 > 
+16:55:20.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+16:55:20.396 > 
+16:55:23.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+16:55:23.403 > 
+16:55:26.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+16:55:26.409 > 
+16:55:29.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+16:55:29.411 > 
+16:55:32.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+16:55:32.409 > 

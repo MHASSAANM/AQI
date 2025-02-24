@@ -1,0 +1,533 @@
+17:31:01.254 > ����������������������������������������������������������������ts Jul 29 2019 12:21:46
+17:31:01.254 > 
+17:31:01.254 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:31:01.254 > configsip: 0, SPIWP:0xee
+17:31:01.254 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:31:01.254 > mode:DIO, clock div:2
+17:31:01.254 > load:0x3fff0018,len:4
+17:31:01.254 > load:0x3fff001c,len:1044
+17:31:01.254 > load:0x40078000,len:10124
+17:31:01.254 > load:0x40080400,len:5828
+17:31:01.254 > entry 0x400806a8
+17:31:01.254 > D][main.cpp:97] setup(): 
+17:31:01.254 > Current Version: 1.1.8
+17:31:01.254 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+17:31:01.254 > Commit Date: 15th October 2024
+17:31:01.254 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+17:31:01.254 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+17:31:01.254 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+17:31:01.254 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+17:31:01.254 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+17:31:01.254 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+17:31:01.254 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+17:31:01.254 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+17:31:01.254 > [D][Storage.cpp:44] init_storage(): SDHC 
+17:31:01.254 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+17:31:01.254 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+17:31:01.254 > [D][Storage.cpp:81] init_storage(): File is: 
+17:31:01.254 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+17:31:01.254 > [D][Storage.cpp:83] init_storage(): Position is: 
+17:31:01.254 > [D][Storage.cpp:84] init_storage(): 225492 
+17:31:01.254 > [I][Storage.cpp:141] init_storage(): AP storage found!
+17:31:01.254 > [D][main.cpp:149] setup(): Storage initialization success!
+17:31:01.254 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+17:31:01.254 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+17:31:01.254 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:31:01.254 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:31:01.254 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+17:31:01.254 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+17:31:01.254 > [D][Storage.cpp:710] return_APList(): 12344321 
+17:31:01.254 > [D][Storage.cpp:721] return_APList(): New AP returned 
+17:31:01.254 > [D][Storage.cpp:736] return_APList(): End of data reached 
+17:31:01.254 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+17:31:01.254 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+17:31:01.254 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+17:31:01.254 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+17:31:01.254 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+17:31:01.254 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:01.254 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:01.254 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:01.254 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:01.254 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:01.260 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:01.263 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:01.270 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:01.276 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:01.281 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+17:31:01.287 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+17:31:01.293 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+17:31:01.298 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:06.202 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:06.208 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:06.211 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:06.211 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:06.219 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:31:06.231 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-94) *
+17:31:06.237 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:06.244 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:06.248 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:07.244 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:09.154 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:09.159 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:09.165 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:09.168 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:09.173 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:31:09.183 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-94) *
+17:31:09.186 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:09.193 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:09.201 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:10.196 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:11.902 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:11.909 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:11.913 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:11.919 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:11.923 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:31:11.933 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:31:11.939 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:11.946 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:11.950 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:12.945 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:14.854 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:14.860 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:14.866 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:14.871 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:14.876 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:31:14.885 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-95) *
+17:31:14.892 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:14.896 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:14.903 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:15.899 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:17.803 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:17.813 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:17.819 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:17.824 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:17.826 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:31:17.837 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:17.843 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:17.849 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:17.856 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:18.850 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:20.759 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:20.764 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:20.771 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:20.774 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:20.777 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:31:20.785 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-95) *
+17:31:20.795 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:20.799 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:20.806 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:21.801 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:23.710 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:23.712 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:23.721 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:23.725 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:23.729 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:31:23.738 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-89) *
+17:31:23.744 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:23.746 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:23.755 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:24.745 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:26.452 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:26.465 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:26.469 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:26.475 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:26.480 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:31:26.487 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:26.495 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:26.500 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:26.506 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:27.501 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:29.410 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:29.415 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:29.417 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:29.426 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:29.430 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-64) *
+17:31:29.439 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:29.442 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:29.450 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:29.450 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:30.452 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:32.160 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:32.167 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:31:32.173 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:32.179 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:31:32.183 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:31:32.191 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:32.194 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:32.203 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:33.197 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:34.900 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:34.910 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:34.917 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:34.917 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:34.926 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:34.933 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:34.942 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:34.949 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:34.950 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:35.948 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:37.852 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:37.863 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:37.869 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:37.872 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:37.877 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:31:37.884 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:31:37.892 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:37.897 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:37.904 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:38.899 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:40.809 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:40.812 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:40.818 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:40.825 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:40.829 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:40.833 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-82) *
+17:31:40.841 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:40.850 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:40.852 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:41.851 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:43.760 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:43.765 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:43.770 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:43.775 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:43.780 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-66) *
+17:31:43.788 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:31:43.796 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:43.801 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:43.807 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:44.803 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:46.510 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:46.511 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:31:46.519 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:46.525 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:31:46.527 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:46.537 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:46.543 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:46.550 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:47.545 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:49.252 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:49.259 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:49.263 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:49.268 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:49.271 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:49.283 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:31:49.289 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:49.293 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:49.300 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:50.295 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:52.002 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:52.009 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:52.009 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:52.018 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:52.020 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:52.032 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-94) *
+17:31:52.034 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:52.042 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:52.050 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:53.046 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:54.949 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:54.958 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:31:54.965 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:54.969 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:31:54.973 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:54.982 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-90) *
+17:31:54.989 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:54.994 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:54.997 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:55.996 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:31:57.703 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:31:57.708 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:31:57.715 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:31:57.719 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:31:57.721 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:31:57.732 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:31:57.734 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:31:57.743 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:31:58.732 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:00.648 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:00.653 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:00.660 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:00.663 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:00.668 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-64) *
+17:32:00.677 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:32:00.679 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:00.689 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:00.695 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:01.686 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:03.399 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:03.405 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:03.410 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:03.414 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:03.414 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:32:03.427 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-90) *
+17:32:03.435 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:03.439 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:03.446 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:04.439 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:06.352 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:06.352 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:06.363 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:06.366 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:06.371 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:32:06.381 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-90) *
+17:32:06.388 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:06.393 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:06.400 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:07.393 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:09.299 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:09.308 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:09.309 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:09.318 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:09.321 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-64) *
+17:32:09.328 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:32:09.338 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:09.350 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:09.350 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:10.344 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:12.049 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:12.060 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:12.064 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:12.070 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:12.074 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:32:12.080 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-90) *
+17:32:12.087 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:12.095 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:12.100 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:13.097 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:15.000 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:15.010 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:15.017 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:15.021 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:15.026 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:32:15.034 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:32:15.041 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:15.047 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:15.052 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:16.046 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:17.955 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:17.962 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:17.967 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:17.970 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:17.977 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:32:17.985 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:17.992 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:17.997 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:18.002 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:18.995 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:20.908 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:20.912 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:20.919 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:20.920 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:20.927 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:32:20.937 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:20.941 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:20.945 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:20.949 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:21.950 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:23.860 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:23.865 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:23.869 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:23.874 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:23.880 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:32:23.882 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-88) *
+17:32:23.896 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:23.899 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:23.906 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:24.897 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:26.611 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:26.613 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:32:26.622 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:26.627 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:32:26.631 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-65) *
+17:32:26.636 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:26.645 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:26.645 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:27.646 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:29.351 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:29.359 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:29.359 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:29.369 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:29.375 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-66) *
+17:32:29.383 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:32:29.391 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:29.395 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:29.400 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:30.396 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:32.102 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:32.111 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:32.116 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:32.118 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:32.125 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:32:32.132 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-90) *
+17:32:32.141 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:32.145 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:32.150 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:33.141 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:35.053 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:35.062 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:35.067 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:35.072 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:35.076 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-67) *
+17:32:35.085 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:32:35.092 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:35.095 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:35.099 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:36.092 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:38.007 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:38.012 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:38.017 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:38.022 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:38.028 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-66) *
+17:32:38.035 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:32:38.043 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:38.046 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:38.053 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:39.049 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:40.758 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:40.763 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:40.769 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:40.774 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:40.774 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-66) *
+17:32:40.786 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:40.793 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:40.799 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:40.804 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:41.798 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:43.509 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:43.511 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:32:43.517 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:43.525 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:32:43.530 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:32:43.533 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:43.542 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:43.549 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:44.543 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:46.252 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:46.258 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:46.263 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:46.269 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:46.273 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-66) *
+17:32:46.281 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:32:46.288 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:46.291 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:46.299 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:47.292 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:49.199 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:49.211 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:49.216 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:49.220 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:49.224 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+17:32:49.233 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-94) *
+17:32:49.240 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:49.243 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:49.251 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:50.242 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:52.156 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:52.160 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:52.166 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:52.171 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:52.175 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:32:52.182 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:52.190 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:52.195 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:52.202 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:53.196 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:55.107 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:55.113 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:55.120 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:55.123 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:55.127 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:32:55.131 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:55.141 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:55.149 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:55.154 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:56.146 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:32:58.059 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:32:58.066 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:32:58.070 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:32:58.075 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:32:58.080 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:32:58.088 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:32:58.094 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:32:58.099 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:32:58.107 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:32:59.100 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:00.813 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:00.818 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:00.823 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:00.828 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:00.832 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:33:00.841 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:33:00.845 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:00.850 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:00.858 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:01.851 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:03.558 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:03.568 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 1
+17:33:03.574 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:03.578 > [I][WiFiMulti.cpp:119] run(): [WIFI] 1 networks found
+17:33:03.584 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:33:03.592 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:03.596 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:03.603 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:04.598 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:06.306 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:06.312 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:06.318 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:06.322 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:06.326 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:33:06.328 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:33:06.342 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:06.347 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:06.350 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:07.348 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:09.257 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:09.261 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:09.269 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:09.273 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:09.276 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:33:09.286 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-91) *
+17:33:09.293 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:09.300 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:09.304 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:10.298 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:12.209 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:12.214 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:12.220 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:12.225 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:12.228 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-61) *
+17:33:12.237 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:33:12.245 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:12.250 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:12.257 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:13.250 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:15.160 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:15.165 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:15.169 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:15.174 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:15.180 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:33:15.187 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-92) *
+17:33:15.195 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:15.199 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:15.207 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:16.199 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:17.910 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:17.916 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:17.918 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:17.923 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:17.927 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:33:17.939 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:33:17.946 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:17.949 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:17.957 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:18.946 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:33:20.662 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:33:20.666 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 2
+17:33:20.674 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:33:20.679 > [I][WiFiMulti.cpp:119] run(): [WIFI] 2 networks found
+17:33:20.685 > [D][WiFiMulti.cpp:151] run():        0: [2][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-62) *
+17:33:20.693 > [D][WiFiMulti.cpp:151] run():        1: [1][52:75:68:C9:D4:C9] OPPO A15s (-93) *
+17:33:20.699 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+17:33:20.705 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+17:33:20.709 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+17:33:21.706 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 

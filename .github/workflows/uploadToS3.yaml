@@ -1,0 +1,62 @@
+name: Build and Upload ESP32 Binaries
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install PlatformIO
+      run: |
+        pip install -U platformio
+      env:
+        PLATFORMIO_HOME: ${{ github.workspace }}/.platformio
+
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-central-1  # Replace with your AWS region
+
+    - name: Extract FIRMWARE_VERSION
+      id: extract_version
+      run: |
+        # Extract the FIRMWARE_VERSION from include/config.h
+        FIRMWARE_VERSION=$(grep -oP '(?<=#define FIRMWARE_VERSION ")[^"]+' include/config.h)
+        echo "::set-output name=firmware_version::$FIRMWARE_VERSION"
+
+    - name: Generate Binary Filename
+      id: generate_filename
+      run: |
+        # Get the extracted FIRMWARE_VERSION
+        VERSION="${{ steps.extract_version.outputs.firmware_version }}"
+
+        # Generate the filename
+        BINARY_FILENAME="firmware_${VERSION}.bin"
+        echo "::set-output name=binary_filename::$BINARY_FILENAME"
+
+    - name: Build and Upload ESP32 Binaries
+      run: |
+        for ENV in single_slot three_slot six_slot eight_slot nine_slot twelve_slot fifteen_slot; do
+          # Get the generated filename from the previous step
+          BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
+          
+          # Build your firmware
+          platformio run -e $ENV
+          
+          # Upload the binary to S3 with the versioned filename
+          aws s3 cp .pio/build/$ENV/firmware.bin s3://energy-meter-firmware-updates/$ENV/$BINARY_FILENAME
+        done

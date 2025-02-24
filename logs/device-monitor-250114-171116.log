@@ -1,0 +1,287 @@
+17:11:16.735 > Starting setup...
+17:11:16.735 > Cycle number: 2
+17:11:16.735 > Setup complete. Running data acquisition only.
+17:11:16.735 > Cycle number: 3
+17:11:18.832 > Cycle number: 4
+17:11:21.830 > Cycle number: 5
+17:11:24.830 > Cycle number: 6
+17:11:27.827 > Cycle number: 7
+17:11:30.830 > Cycle number: 8
+17:11:33.832 > Cycle number: 9
+17:11:36.832 > Cycle number: 10
+17:11:39.832 > Cycle number: 11
+17:11:42.832 > Cycle number: 12
+17:11:45.830 > Cycle number: 13
+17:11:48.831 > Cycle number: 14
+17:11:51.831 > Cycle number: 15
+17:11:54.831 > Cycle number: 16
+17:11:57.830 > Cycle number: 17
+17:12:00.831 > Cycle number: 18
+17:12:03.831 > Cycle number: 19
+17:12:06.830 > Cycle number: 20
+17:12:06.830 > Warning: sensorID was empty. Using default value.
+17:12:06.830 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:12:06.843 > Core 1 register dump:
+17:12:06.843 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:12:06.854 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:12:06.860 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:12:06.865 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008900  
+17:12:06.877 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:12:06.883 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:12:06.893 > 
+17:12:06.893 > ELF file SHA256: 0000000000000000
+17:12:06.895 > 
+17:12:06.895 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:12:06.899 > 
+17:12:06.899 > Rebooting...
+17:12:06.899 > ets Jul 29 2019 12:21:46
+17:12:06.909 > 
+17:12:06.909 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:12:06.914 > configsip: 0, SPIWP:0xee
+17:12:06.914 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:12:06.925 > mode:DIO, clock div:2
+17:12:06.926 > load:0x3fff0018,len:4
+17:12:06.928 > load:0x3fff001c,len:1044
+17:12:06.930 > load:0x40078000,len:10124
+17:12:06.934 > load:0x40080400,len:5828
+17:12:06.934 > entry 0x400806a8
+17:12:07.347 > Starting setup...
+17:12:07.360 > Cycle number: 2
+17:12:07.360 > Setup complete. Running data acquisition only.
+17:12:10.359 > Cycle number: 3
+17:12:13.353 > Cycle number: 4
+17:12:16.358 > Cycle number: 5
+17:12:19.354 > Cycle number: 6
+17:12:22.350 > Cycle number: 7
+17:12:25.357 > Cycle number: 8
+17:12:28.350 > Cycle number: 9
+17:12:31.356 > Cycle number: 10
+17:12:34.354 > Cycle number: 11
+17:12:37.349 > Cycle number: 12
+17:12:40.350 > Cycle number: 13
+17:12:43.349 > Cycle number: 14
+17:12:46.352 > Cycle number: 15
+17:12:49.352 > Cycle number: 16
+17:12:52.351 > Cycle number: 17
+17:12:55.351 > Cycle number: 18
+17:12:58.352 > Cycle number: 19
+17:13:01.356 > Cycle number: 20
+17:13:01.358 > Warning: sensorID was empty. Using default value.
+17:13:01.361 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:13:01.371 > Core 1 register dump:
+17:13:01.372 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:13:01.379 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:13:01.387 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:13:01.396 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008a40  
+17:13:01.403 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:13:01.410 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:13:01.412 > 
+17:13:01.412 > ELF file SHA256: 0000000000000000
+17:13:01.422 > 
+17:13:01.422 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:13:01.428 > 
+17:13:01.428 > Rebooting...
+17:13:01.428 > ets Jul 29 2019 12:21:46
+17:13:01.436 > 
+17:13:01.436 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:13:01.436 > configsip: 0, SPIWP:0xee
+17:13:01.444 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:13:01.445 > mode:DIO, clock div:2
+17:13:01.452 > load:0x3fff0018,len:4
+17:13:01.452 > load:0x3fff001c,len:1044
+17:13:01.452 > load:0x40078000,len:10124
+17:13:01.459 > load:0x40080400,len:5828
+17:13:01.461 > entry 0x400806a8
+17:13:01.885 > Starting setup...
+17:13:01.885 > Cycle number: 2
+17:13:01.885 > Setup complete. Running data acquisition only.
+17:13:04.884 > Cycle number: 3
+17:13:07.885 > Cycle number: 4
+17:13:10.880 > Cycle number: 5
+17:13:13.883 > Cycle number: 6
+17:13:16.876 > Cycle number: 7
+17:13:19.883 > Cycle number: 8
+17:13:22.880 > Cycle number: 9
+17:13:25.883 > Cycle number: 10
+17:13:28.882 > Cycle number: 11
+17:13:31.875 > Cycle number: 12
+17:13:34.883 > Cycle number: 13
+17:13:37.879 > Cycle number: 14
+17:13:40.883 > Cycle number: 15
+17:13:43.879 > Cycle number: 16
+17:13:46.881 > Cycle number: 17
+17:13:49.880 > Cycle number: 18
+17:13:52.881 > Cycle number: 19
+17:13:55.880 > Cycle number: 20
+17:13:55.880 > Warning: sensorID was empty. Using default value.
+17:13:55.888 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:13:55.897 > Core 1 register dump:
+17:13:55.899 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:13:55.901 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:13:55.909 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:13:55.916 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008a40  
+17:13:55.928 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:13:55.932 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:13:55.942 > 
+17:13:55.942 > ELF file SHA256: 0000000000000000
+17:13:55.942 > 
+17:13:55.942 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:13:55.957 > 
+17:13:55.957 > Rebooting...
+17:13:55.957 > ets Jul 29 2019 12:21:46
+17:13:55.957 > 
+17:13:55.957 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:13:55.965 > configsip: 0, SPIWP:0xee
+17:13:55.965 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:13:55.975 > mode:DIO, clock div:2
+17:13:55.978 > load:0x3fff0018,len:4
+17:13:55.980 > load:0x3fff001c,len:1044
+17:13:55.982 > load:0x40078000,len:10124
+17:13:55.982 > load:0x40080400,len:5828
+17:13:55.982 > entry 0x400806a8
+17:13:56.410 > Starting setup...
+17:13:56.411 > Cycle number: 2
+17:13:56.413 > Setup complete. Running data acquisition only.
+17:13:59.410 > Cycle number: 3
+17:14:02.410 > Cycle number: 4
+17:14:05.408 > Cycle number: 5
+17:14:08.410 > Cycle number: 6
+17:14:11.410 > Cycle number: 7
+17:14:14.409 > Cycle number: 8
+17:14:17.408 > Cycle number: 9
+17:14:20.409 > Cycle number: 10
+17:14:23.409 > Cycle number: 11
+17:14:26.408 > Cycle number: 12
+17:14:29.408 > Cycle number: 13
+17:14:32.408 > Cycle number: 14
+17:14:35.409 > Cycle number: 15
+17:14:38.404 > Cycle number: 16
+17:14:41.403 > Cycle number: 17
+17:14:44.408 > Cycle number: 18
+17:14:47.408 > Cycle number: 19
+17:14:50.408 > Cycle number: 20
+17:14:50.411 > Warning: sensorID was empty. Using default value.
+17:14:50.413 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:14:50.423 > Core 1 register dump:
+17:14:50.424 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:14:50.432 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:14:50.440 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:14:50.443 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008a40  
+17:14:50.455 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:14:50.455 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:14:50.466 > 
+17:14:50.466 > ELF file SHA256: 0000000000000000
+17:14:50.474 > 
+17:14:50.474 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:14:50.483 > 
+17:14:50.485 > Rebooting...
+17:14:50.487 > ets Jul 29 2019 12:21:46
+17:14:50.490 > 
+17:14:50.490 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:14:50.492 > configsip: 0, SPIWP:0xee
+17:14:50.492 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:14:50.503 > mode:DIO, clock div:2
+17:14:50.504 > load:0x3fff0018,len:4
+17:14:50.506 > load:0x3fff001c,len:1044
+17:14:50.507 > load:0x40078000,len:10124
+17:14:50.511 > load:0x40080400,len:5828
+17:14:50.513 > entry 0x400806a8
+17:14:50.936 > Starting setup...
+17:14:50.937 > Cycle number: 2
+17:14:50.939 > Setup complete. Running data acquisition only.
+17:14:53.933 > Cycle number: 3
+17:14:56.934 > Cycle number: 4
+17:14:59.935 > Cycle number: 5
+17:15:02.933 > Cycle number: 6
+17:15:05.932 > Cycle number: 7
+17:15:08.925 > Cycle number: 8
+17:15:11.933 > Cycle number: 9
+17:15:14.930 > Cycle number: 10
+17:15:17.932 > Cycle number: 11
+17:15:20.920 > Cycle number: 12
+17:15:23.935 > Cycle number: 13
+17:15:26.933 > Cycle number: 14
+17:15:29.929 > Cycle number: 15
+17:15:32.934 > Cycle number: 16
+17:15:35.934 > Cycle number: 17
+17:15:38.931 > Cycle number: 18
+17:15:41.934 > Cycle number: 19
+17:15:44.933 > Cycle number: 20
+17:15:44.933 > Warning: sensorID was empty. Using default value.
+17:15:44.940 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:15:44.947 > Core 1 register dump:
+17:15:44.949 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:15:44.957 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:15:44.965 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:15:44.973 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008b80  
+17:15:44.981 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:15:44.989 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:15:44.996 > 
+17:15:44.998 > ELF file SHA256: 0000000000000000
+17:15:44.999 > 
+17:15:44.999 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:15:45.009 > 
+17:15:45.012 > Rebooting...
+17:15:45.012 > ets Jul 29 2019 12:21:46
+17:15:45.013 > 
+17:15:45.013 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:15:45.020 > configsip: 0, SPIWP:0xee
+17:15:45.022 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:15:45.028 > mode:DIO, clock div:2
+17:15:45.030 > load:0x3fff0018,len:4
+17:15:45.033 > load:0x3fff001c,len:1044
+17:15:45.035 > load:0x40078000,len:10124
+17:15:45.036 > load:0x40080400,len:5828
+17:15:45.039 > entry 0x400806a8
+17:15:45.461 > Starting setup...
+17:15:45.462 > Cycle number: 2
+17:15:45.466 > Setup complete. Running data acquisition only.
+17:15:48.462 > Cycle number: 3
+17:15:51.462 > Cycle number: 4
+17:15:54.462 > Cycle number: 5
+17:15:57.462 > Cycle number: 6
+17:16:00.462 > Cycle number: 7
+17:16:03.462 > Cycle number: 8
+17:16:06.461 > Cycle number: 9
+17:16:09.461 > Cycle number: 10
+17:16:12.461 > Cycle number: 11
+17:16:15.461 > Cycle number: 12
+17:16:18.461 > Cycle number: 13
+17:16:21.461 > Cycle number: 14
+17:16:24.461 > Cycle number: 15
+17:16:27.461 > Cycle number: 16
+17:16:30.461 > Cycle number: 17
+17:16:33.461 > Cycle number: 18
+17:16:36.460 > Cycle number: 19
+17:16:39.460 > Cycle number: 20
+17:16:39.463 > Warning: sensorID was empty. Using default value.
+17:16:39.465 > Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+17:16:39.473 > Core 1 register dump:
+17:16:39.475 > PC      : 0x4016629f  PS      : 0x00060a30  A0      : 0x800debae  A1      : 0x3ffb35e0  
+17:16:39.484 > A2      : 0x00000000  A3      : 0x3ffb3607  A4      : 0x00000003  A5      : 0x00000001  
+17:16:39.489 > A6      : 0x00000000  A7      : 0x00000000  A8      : 0x80081ca6  A9      : 0x3ffb35c0  
+17:16:39.498 > A10     : 0x0000d315  A11     : 0x00000000  A12     : 0x0000d315  A13     : 0x00008a40  
+17:16:39.507 > A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+17:16:39.510 > EXCVADDR: 0x0000000c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffff3  
+17:16:39.522 > 
+17:16:39.524 > ELF file SHA256: 0000000000000000
+17:16:39.525 > 
+17:16:39.525 > Backtrace: 0x4016629f:0x3ffb35e0 0x400debab:0x3ffb3600 0x400d115f:0x3ffb3630 0x400d1611:0x3ffb36a0 0x4008932e:0x3ffb3750
+17:16:39.536 > 
+17:16:39.536 > Rebooting...
+17:16:39.538 > ets Jul 29 2019 12:21:46
+17:16:39.539 > 
+17:16:39.539 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:16:39.539 > configsip: 0, SPIWP:0xee
+17:16:39.548 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:16:39.554 > mode:DIO, clock div:2
+17:16:39.556 > load:0x3fff0018,len:4
+17:16:39.558 > load:0x3fff001c,len:1044
+17:16:39.561 > load:0x40078000,len:10124
+17:16:39.563 > load:0x40080400,len:5828
+17:16:39.565 > entry 0x400806a8
+17:16:39.988 > Starting setup...
+17:16:39.988 > Cycle number: 2
+17:16:39.988 > Setup complete. Running data acquisition only.
+17:16:42.988 > Cycle number: 3
+17:16:45.983 > Cycle number: 4

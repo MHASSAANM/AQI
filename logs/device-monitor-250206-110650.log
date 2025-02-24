@@ -1,0 +1,71 @@
+11:06:50.692 > connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connection(): WiFi n�connecti29 2019 12:21:46
+11:06:50.692 > 
+11:06:50.692 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:06:50.692 > configsip: 0, SPIWP:0xee
+11:06:50.692 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:06:50.692 > mode:DIO, clock div:2
+11:06:50.692 > load:0x3fff0018,len:4
+11:06:50.692 > load:0x3fff001c,len:1044
+11:06:50.692 > load:0x40078000,len:10124
+11:06:50.692 > load:0x40080400,len:5828
+11:06:50.692 > entry 0x400806a8
+11:06:50.692 > �[D][main.cpp:97] setup(): 
+11:06:50.692 > Current Version: 1.1.8
+11:06:50.692 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:06:50.692 > Commit Date: 15th October 2024
+11:06:50.692 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:06:50.692 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:06:50.692 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:06:50.692 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:06:50.692 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:06:50.692 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:06:50.692 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:06:50.692 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:06:50.692 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:06:50.692 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:06:50.692 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:06:50.692 > [D][Storage.cpp:81] init_storage(): File is: 
+11:06:50.692 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:06:50.692 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:06:50.692 > [D][Storage.cpp:84] init_storage(): 225492 
+11:06:50.692 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:06:50.692 > [D][main.cpp:149] setup(): Storage initialization success!
+11:06:50.692 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:06:50.692 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:06:50.692 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:06:50.692 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:06:50.692 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:06:50.692 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:06:50.692 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:06:50.692 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:06:50.692 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:06:50.692 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:06:50.692 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:06:50.692 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:06:50.692 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:06:50.692 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:06:50.692 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:06:52.489 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:06:52.495 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 19
+11:06:52.500 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:06:52.505 > [I][WiFiMulti.cpp:119] run(): [WIFI] 19 networks found
+11:06:52.510 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-49) *
+11:06:52.517 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:06:52.525 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A0] Wireless (-56) *
+11:06:52.532 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS-Events (-56) *
+11:06:52.540 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A1] TV-LED (-56) *
+11:06:52.546 > [D][WiFiMulti.cpp:151] run():        5: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-58) *
+11:06:52.553 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-59) *
+11:06:52.561 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F0] wireless (-74) *
+11:06:52.561 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F3] LUMS-Events (-74) *
+11:06:52.576 > [D][WiFiMulti.cpp:151] run():        9: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-75) *
+11:06:52.583 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:40] Wireless (-76) *
+11:06:52.590 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:3C:A2:42] LUMS-Events (-76) *
+11:06:52.595 > [D][WiFiMulti.cpp:151] run():        12: [1][76:2A:12:9C:1F:7C] Infinix HOT 40i (-80) *
+11:06:52.595 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:1D:01:60] wireless (-83) *
+11:06:52.608 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:62] TV-LED (-84) *
+11:06:52.608 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:C6:50:59:B6:62] LUMS-Events (-84) *
+11:06:52.624 > [D][WiFiMulti.cpp:151] run():        16: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:06:52.624 > [D][WiFiMulti.cpp:151] run():        17: [1][76:1B:EE:DE:F7:48] Mustafa's Reno 6 (-87) *
+11:06:52.641 > [D][WiFiMulti.cpp:151] run():        18: [6][BC:67:1C:64:33:20] Wireless (-88) *
+11:06:52.648 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-49)

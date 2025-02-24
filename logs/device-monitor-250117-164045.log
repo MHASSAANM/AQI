@@ -1,0 +1,1035 @@
+16:40:45.225 > [D][main.cpp:98] setup(): 
+16:40:45.225 > Current Version: 1.1.8
+16:40:45.225 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+16:40:45.225 > Commit Date: 15th October 2024
+16:40:45.225 > [D][AQISensor.cpp:95] init(): AHT20 initialized
+16:40:45.225 > [D][AQISensor.cpp:107] init(): BMP280 initialized
+16:40:45.225 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+16:40:45.225 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+16:40:45.225 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+16:40:45.225 > [D][Storage.cpp:44] init_storage(): SDHC 
+16:40:45.225 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+16:40:45.225 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+16:40:45.225 > [D][Storage.cpp:81] init_storage(): File is: 
+16:40:45.225 > [D][Storage.cpp:82] init_storage(): /20250117.txt 
+16:40:45.225 > [D][Storage.cpp:83] init_storage(): Position is: 
+16:40:45.225 > [D][Storage.cpp:84] init_storage(): 3701 
+16:40:45.225 > [I][Storage.cpp:141] init_storage(): AP storage found!
+16:40:45.225 > [D][main.cpp:149] setup(): Storage initialization success!
+16:40:45.225 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+16:40:45.225 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:40:45.225 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+16:40:45.225 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:40:45.225 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+16:40:45.225 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+16:40:45.225 > [D][Storage.cpp:710] return_APList(): 12344321 
+16:40:45.225 > [D][Storage.cpp:721] return_APList(): New AP returned 
+16:40:45.225 > [D][Storage.cpp:736] return_APList(): End of data reached 
+16:40:45.225 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+16:40:45.225 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+16:40:45.225 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+16:40:45.225 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+16:40:45.225 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+16:40:45.225 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+16:40:45.225 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+16:40:45.225 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 22
+16:40:45.225 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+16:40:45.225 > [I][WiFiMulti.cpp:119] run(): [WIFI] 22 networks found
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        0: [1][50:0F:F5:80:A3:39] EnergyInformatics (-48) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        1: [1][46:BE:8C:4F:1C:53] ... (-51) *
+16:40:45.225 > [D][WiFiMulti.cpp:149] run():  --->   2: [10][6C:5A:B0:F4:DA:84] NeuBolt (-56) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        3: [11][D0:37:45:15:31:AE] Ali (-62) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A0] Wireless (-64) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        5: [6][00:A6:CA:47:AC:A2] LUMS-Events (-64) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        6: [6][00:A6:CA:47:AC:A1] TV-LED (-64) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        7: [6][90:9A:4A:B8:CD:83] Airbus380 (-66) *
+16:40:45.225 > [D][WiFiMulti.cpp:149] run():  --->   8: [10][0A:C6:82:6F:79:10] NeuBolt (-71) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        9: [10][70:B8:F6:5B:74:99] testkit (-71) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        10: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-73) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        11: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-74) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F0] wireless (-78) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F3] LUMS-Events (-78) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:3C:A2:40] Wireless (-87) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        15: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-87) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:C6:50:59:B6:60] wireless (-87) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        17: [1][4C:E1:75:3C:A2:41] TV-LED (-88) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E2] LUMS-Events (-88) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        19: [1][4C:E1:75:3C:A2:42] LUMS-Events (-89) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        20: [11][F8:A7:3A:87:EE:E0] wireless (-89) *
+16:40:45.225 > [D][WiFiMulti.cpp:151] run():        21: [1][FE:A2:7D:93:3B:DB] Galaxy J62EE0 (-92) *
+16:40:45.225 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 10 (-56)
+16:40:48.331 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+16:40:48.349 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+16:40:48.354 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.107, MASK: 255.255.255.0, GW: 192.168.0.1
+16:40:48.362 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+16:40:48.369 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+16:40:48.375 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.107
+16:40:48.380 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+16:40:48.385 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 10
+16:40:48.390 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+16:40:48.395 > [D][main.cpp:165] setup(): Initialized wifi successfully
+16:40:48.396 > [D][main.cpp:166] setup(): MAC: CC:DB:A7:49:55:04
+16:40:48.405 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+16:40:48.409 > [I][main.cpp:202] setup(): ID found!
+16:40:48.409 > Device name: TESTKITAQI
+16:40:48.409 > 
+16:40:48.409 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:40:48.409 > 
+16:40:48.456 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:40:47,TESTKITAQI,25.6, 40.5, 994.8,28,29,38
+16:40:48.464 > [D][Storage.cpp:223] write_data(): File written
+16:40:48.472 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:40:47,TESTKITAQI,25.6, 40.5, 994.8,28,29,38
+16:40:48.472 > [I][main.cpp:417] vStorage(): data written to storage
+16:40:51.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:40:51.403 > 
+16:40:54.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:40:54.412 > 
+16:40:54.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:40:53,TESTKITAQI,25.6, 40.6, 994.8,28,29,38
+16:40:54.461 > [D][Storage.cpp:223] write_data(): File written
+16:40:54.467 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:40:53,TESTKITAQI,25.6, 40.6, 994.8,28,29,38
+16:40:54.467 > [I][main.cpp:417] vStorage(): data written to storage
+16:40:57.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:40:57.412 > 
+16:41:00.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:00.409 > 
+16:41:00.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:40:59,TESTKITAQI,25.6, 40.6, 994.7,28,29,38
+16:41:00.457 > [D][Storage.cpp:223] write_data(): File written
+16:41:00.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:40:59,TESTKITAQI,25.6, 40.6, 994.7,28,29,38
+16:41:00.473 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:03.409 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:03.409 > 
+16:41:06.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:06.407 > 
+16:41:06.455 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:05,TESTKITAQI,25.6, 40.5, 994.8,28,30,39
+16:41:06.455 > [D][Storage.cpp:223] write_data(): File written
+16:41:06.455 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:05,TESTKITAQI,25.6, 40.5, 994.8,28,30,39
+16:41:06.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:09.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:09.409 > 
+16:41:12.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:12.407 > 
+16:41:12.455 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:11,TESTKITAQI,25.6, 40.5, 994.8,28,30,39
+16:41:12.459 > [D][Storage.cpp:223] write_data(): File written
+16:41:12.467 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:11,TESTKITAQI,25.6, 40.5, 994.8,28,30,39
+16:41:12.475 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:15.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:15.408 > 
+16:41:18.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:18.411 > 
+16:41:18.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:17,TESTKITAQI,25.7, 40.5, 994.7,28,30,39
+16:41:18.464 > [D][Storage.cpp:223] write_data(): File written
+16:41:18.464 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:17,TESTKITAQI,25.7, 40.5, 994.7,28,30,39
+16:41:18.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:21.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:21.401 > 
+16:41:24.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:24.425 > 
+16:41:24.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:23,TESTKITAQI,25.6, 40.5, 994.8,28,30,40
+16:41:24.457 > [D][Storage.cpp:223] write_data(): File written
+16:41:24.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:23,TESTKITAQI,25.6, 40.5, 994.8,28,30,40
+16:41:24.472 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:27.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:27.404 > 
+16:41:30.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:30.412 > 
+16:41:30.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:29,TESTKITAQI,25.7, 40.5, 994.7,28,30,40
+16:41:30.461 > [D][Storage.cpp:223] write_data(): File written
+16:41:30.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:29,TESTKITAQI,25.7, 40.5, 994.7,28,30,40
+16:41:30.477 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:33.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:33.409 > 
+16:41:36.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:36.411 > 
+16:41:36.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:35,TESTKITAQI,25.6, 40.5, 994.7,28,29,38
+16:41:36.463 > [D][Storage.cpp:223] write_data(): File written
+16:41:36.464 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:35,TESTKITAQI,25.6, 40.5, 994.7,28,29,38
+16:41:36.475 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:39.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:39.408 > 
+16:41:42.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:42.399 > 
+16:41:42.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:41,TESTKITAQI,25.6, 40.5, 994.7,28,29,39
+16:41:42.462 > [D][Storage.cpp:223] write_data(): File written
+16:41:42.467 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:41,TESTKITAQI,25.6, 40.5, 994.7,28,29,39
+16:41:42.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:45.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:45.410 > 
+16:41:48.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:48.404 > 
+16:41:48.455 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:47,TESTKITAQI,25.6, 40.5, 994.7,28,27,36
+16:41:48.463 > [D][Storage.cpp:223] write_data(): File written
+16:41:48.467 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:47,TESTKITAQI,25.6, 40.5, 994.7,28,27,36
+16:41:48.475 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:51.407 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:51.408 > 
+16:41:54.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:41:54.406 > 
+16:41:54.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:53,TESTKITAQI,25.6, 40.6, 994.8,28,27,34
+16:41:54.463 > [D][Storage.cpp:223] write_data(): File written
+16:41:54.465 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:53,TESTKITAQI,25.6, 40.6, 994.8,28,27,34
+16:41:54.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:41:57.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:41:57.409 > 
+16:42:00.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:00.411 > 
+16:42:00.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:41:59,TESTKITAQI,25.6, 40.6, 994.8,28,27,35
+16:42:00.459 > [D][Storage.cpp:223] write_data(): File written
+16:42:00.466 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:41:59,TESTKITAQI,25.6, 40.6, 994.8,28,27,35
+16:42:00.476 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:03.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:03.407 > 
+16:42:06.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:06.410 > 
+16:42:06.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:05,TESTKITAQI,25.6, 40.6, 994.7,28,28,34
+16:42:06.461 > [D][Storage.cpp:223] write_data(): File written
+16:42:06.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:05,TESTKITAQI,25.6, 40.6, 994.7,28,28,34
+16:42:06.476 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:09.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:09.411 > 
+16:42:12.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:12.411 > 
+16:42:12.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:11,TESTKITAQI,25.6, 40.5, 994.7,28,28,35
+16:42:12.456 > [D][Storage.cpp:223] write_data(): File written
+16:42:12.466 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:11,TESTKITAQI,25.6, 40.5, 994.7,28,28,35
+16:42:12.474 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:15.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:15.410 > 
+16:42:18.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:18.411 > 
+16:42:18.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:17,TESTKITAQI,25.6, 40.5, 994.8,28,27,35
+16:42:18.462 > [D][Storage.cpp:223] write_data(): File written
+16:42:18.465 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:17,TESTKITAQI,25.6, 40.5, 994.8,28,27,35
+16:42:18.474 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:21.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:21.411 > 
+16:42:24.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:24.411 > 
+16:42:24.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:23,TESTKITAQI,25.6, 40.6, 994.7,28,28,37
+16:42:24.461 > [D][Storage.cpp:223] write_data(): File written
+16:42:24.465 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:23,TESTKITAQI,25.6, 40.6, 994.7,28,28,37
+16:42:24.475 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:27.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:27.410 > 
+16:42:30.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:30.406 > 
+16:42:30.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:29,TESTKITAQI,25.6, 40.6, 994.7,28,28,36
+16:42:30.462 > [D][Storage.cpp:223] write_data(): File written
+16:42:30.462 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:29,TESTKITAQI,25.6, 40.6, 994.7,28,28,36
+16:42:30.474 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:33.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:33.410 > 
+16:42:36.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:36.410 > 
+16:42:36.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:35,TESTKITAQI,25.6, 40.6, 994.7,28,27,36
+16:42:36.459 > [D][Storage.cpp:223] write_data(): File written
+16:42:36.459 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:35,TESTKITAQI,25.6, 40.6, 994.7,28,27,36
+16:42:36.473 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:39.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:39.409 > 
+16:42:42.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:42.408 > 
+16:42:42.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:41,TESTKITAQI,25.6, 40.6, 994.7,28,25,33
+16:42:42.458 > [D][Storage.cpp:223] write_data(): File written
+16:42:42.458 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:41,TESTKITAQI,25.6, 40.6, 994.7,28,25,33
+16:42:42.471 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:45.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:45.401 > 
+16:42:48.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:48.399 > 
+16:42:48.454 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:47,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:42:48.462 > [D][Storage.cpp:223] write_data(): File written
+16:42:48.462 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:47,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:42:48.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:51.406 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:51.406 > 
+16:42:54.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:42:54.408 > 
+16:42:54.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:53,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:42:54.455 > [D][Storage.cpp:223] write_data(): File written
+16:42:54.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:53,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:42:54.471 > [I][main.cpp:417] vStorage(): data written to storage
+16:42:57.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:42:57.396 > 
+16:43:00.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:00.395 > 
+16:43:00.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:42:59,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:00.458 > [D][Storage.cpp:223] write_data(): File written
+16:43:00.458 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:42:59,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:00.474 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:03.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:03.397 > 
+16:43:06.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:06.409 > 
+16:43:06.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:05,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:06.457 > [D][Storage.cpp:223] write_data(): File written
+16:43:06.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:05,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:06.472 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:09.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:09.425 > 
+16:43:12.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:12.402 > 
+16:43:12.454 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:11,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:12.461 > [D][Storage.cpp:223] write_data(): File written
+16:43:12.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:11,TESTKITAQI,25.6, 40.6, 994.7,28,27,32
+16:43:12.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:15.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:15.407 > 
+16:43:18.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:18.404 > 
+16:43:18.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:17,TESTKITAQI,25.6, 40.6, 994.7,28,26,31
+16:43:18.461 > [D][Storage.cpp:223] write_data(): File written
+16:43:18.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:17,TESTKITAQI,25.6, 40.6, 994.7,28,26,31
+16:43:18.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:21.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:21.403 > 
+16:43:24.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:24.405 > 
+16:43:24.437 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:23,TESTKITAQI,25.6, 40.6, 994.7,28,27,33
+16:43:24.453 > [D][Storage.cpp:223] write_data(): File written
+16:43:24.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:23,TESTKITAQI,25.6, 40.6, 994.7,28,27,33
+16:43:24.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:27.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:27.406 > 
+16:43:30.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:30.405 > 
+16:43:30.449 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:29,TESTKITAQI,25.6, 40.6, 994.7,28,25,32
+16:43:30.454 > [D][Storage.cpp:223] write_data(): File written
+16:43:30.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:29,TESTKITAQI,25.6, 40.6, 994.7,28,25,32
+16:43:30.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:33.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:33.405 > 
+16:43:36.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:36.408 > 
+16:43:36.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:35,TESTKITAQI,25.6, 40.5, 994.7,28,28,34
+16:43:36.456 > [D][Storage.cpp:223] write_data(): File written
+16:43:36.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:35,TESTKITAQI,25.6, 40.5, 994.7,28,28,34
+16:43:36.472 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:39.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:39.394 > 
+16:43:42.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:42.402 > 
+16:43:42.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:41,TESTKITAQI,25.6, 40.5, 994.7,28,29,37
+16:43:42.450 > [D][Storage.cpp:223] write_data(): File written
+16:43:42.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:41,TESTKITAQI,25.6, 40.5, 994.7,28,29,37
+16:43:42.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:45.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:45.406 > 
+16:43:48.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:48.405 > 
+16:43:48.453 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:47,TESTKITAQI,25.7, 40.6, 994.7,28,30,39
+16:43:48.453 > [D][Storage.cpp:223] write_data(): File written
+16:43:48.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:47,TESTKITAQI,25.7, 40.6, 994.7,28,30,39
+16:43:48.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:51.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:51.404 > 
+16:43:54.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:43:54.407 > 
+16:43:54.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:53,TESTKITAQI,25.6, 40.6, 994.7,28,31,39
+16:43:54.454 > [D][Storage.cpp:223] write_data(): File written
+16:43:54.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:53,TESTKITAQI,25.6, 40.6, 994.7,28,31,39
+16:43:54.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:43:57.405 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:43:57.405 > 
+16:44:00.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:00.404 > 
+16:44:00.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:43:59,TESTKITAQI,25.6, 40.6, 994.7,28,32,40
+16:44:00.453 > [D][Storage.cpp:223] write_data(): File written
+16:44:00.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:43:59,TESTKITAQI,25.6, 40.6, 994.7,28,32,40
+16:44:00.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:03.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:03.404 > 
+16:44:06.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:06.404 > 
+16:44:06.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:05,TESTKITAQI,25.6, 40.6, 994.7,28,29,37
+16:44:06.452 > [D][Storage.cpp:223] write_data(): File written
+16:44:06.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:05,TESTKITAQI,25.6, 40.6, 994.7,28,29,37
+16:44:06.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:09.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:09.397 > 
+16:44:12.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:12.400 > 
+16:44:12.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:11,TESTKITAQI,25.6, 40.6, 994.7,28,28,39
+16:44:12.448 > [D][Storage.cpp:223] write_data(): File written
+16:44:12.463 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:11,TESTKITAQI,25.6, 40.6, 994.7,28,28,39
+16:44:12.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:15.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:15.397 > 
+16:44:18.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:18.404 > 
+16:44:18.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:17,TESTKITAQI,25.6, 40.6, 994.7,28,27,37
+16:44:18.457 > [D][Storage.cpp:223] write_data(): File written
+16:44:18.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:17,TESTKITAQI,25.6, 40.6, 994.7,28,27,37
+16:44:18.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:21.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:21.402 > 
+16:44:24.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:24.405 > 
+16:44:24.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:23,TESTKITAQI,25.6, 40.6, 994.7,28,28,38
+16:44:24.452 > [D][Storage.cpp:223] write_data(): File written
+16:44:24.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:23,TESTKITAQI,25.6, 40.6, 994.7,28,28,38
+16:44:24.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:27.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:27.408 > 
+16:44:30.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:30.404 > 
+16:44:30.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:29,TESTKITAQI,25.6, 40.7, 994.7,28,29,39
+16:44:30.452 > [D][Storage.cpp:223] write_data(): File written
+16:44:30.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:29,TESTKITAQI,25.6, 40.7, 994.7,28,29,39
+16:44:30.467 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:33.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:33.404 > 
+16:44:36.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:36.404 > 
+16:44:36.452 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:35,TESTKITAQI,25.6, 40.7, 994.7,28,31,41
+16:44:36.452 > [D][Storage.cpp:223] write_data(): File written
+16:44:36.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:35,TESTKITAQI,25.6, 40.7, 994.7,28,31,41
+16:44:36.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:39.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:39.404 > 
+16:44:42.404 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:42.404 > 
+16:44:42.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:41,TESTKITAQI,25.6, 40.7, 994.7,28,29,40
+16:44:42.451 > [D][Storage.cpp:223] write_data(): File written
+16:44:42.451 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:41,TESTKITAQI,25.6, 40.7, 994.7,28,29,40
+16:44:42.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:45.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:45.398 > 
+16:44:48.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:48.400 > 
+16:44:48.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:47,TESTKITAQI,25.6, 40.7, 994.7,28,27,39
+16:44:48.451 > [D][Storage.cpp:223] write_data(): File written
+16:44:48.463 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:47,TESTKITAQI,25.6, 40.7, 994.7,28,27,39
+16:44:48.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:51.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:51.393 > 
+16:44:54.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:44:54.407 > 
+16:44:54.438 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:53,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:44:54.454 > [D][Storage.cpp:223] write_data(): File written
+16:44:54.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:53,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:44:54.469 > [I][main.cpp:417] vStorage(): data written to storage
+16:44:57.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:44:57.401 > 
+16:45:00.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:00.407 > 
+16:45:00.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:44:59,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:00.451 > [D][Storage.cpp:223] write_data(): File written
+16:45:00.461 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:44:59,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:00.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:03.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:03.400 > 
+16:45:06.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:06.403 > 
+16:45:06.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:05,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:06.451 > [D][Storage.cpp:223] write_data(): File written
+16:45:06.451 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:05,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:06.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:09.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:09.406 > 
+16:45:12.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:12.403 > 
+16:45:12.451 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:11,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:12.451 > [D][Storage.cpp:223] write_data(): File written
+16:45:12.451 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:11,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:12.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:15.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:15.406 > 
+16:45:18.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:18.402 > 
+16:45:18.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:17,TESTKITAQI,25.6, 40.6, 994.7,28,29,41
+16:45:18.444 > [D][Storage.cpp:223] write_data(): File written
+16:45:18.459 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:17,TESTKITAQI,25.6, 40.6, 994.7,28,29,41
+16:45:18.459 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:21.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:21.404 > 
+16:45:24.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:24.403 > 
+16:45:24.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:23,TESTKITAQI,25.6, 40.6, 994.7,28,30,39
+16:45:24.450 > [D][Storage.cpp:223] write_data(): File written
+16:45:24.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:23,TESTKITAQI,25.6, 40.6, 994.7,28,30,39
+16:45:24.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:27.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:27.406 > 
+16:45:30.403 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:30.403 > 
+16:45:30.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:29,TESTKITAQI,25.6, 40.7, 994.7,28,29,37
+16:45:30.450 > [D][Storage.cpp:223] write_data(): File written
+16:45:30.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:29,TESTKITAQI,25.6, 40.7, 994.7,28,29,37
+16:45:30.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:33.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:33.396 > 
+16:45:36.402 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:36.402 > 
+16:45:36.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:35,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:36.450 > [D][Storage.cpp:223] write_data(): File written
+16:45:36.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:35,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:36.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:39.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:39.404 > 
+16:45:42.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:42.391 > 
+16:45:42.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:41,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:42.455 > [D][Storage.cpp:223] write_data(): File written
+16:45:42.455 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:41,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:45:42.470 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:45.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:45.406 > 
+16:45:48.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:48.402 > 
+16:45:48.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:47,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:48.450 > [D][Storage.cpp:223] write_data(): File written
+16:45:48.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:47,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:48.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:51.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:51.398 > 
+16:45:54.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:45:54.401 > 
+16:45:54.449 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:53,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:54.449 > [D][Storage.cpp:223] write_data(): File written
+16:45:54.449 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:53,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:45:54.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:45:57.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:45:57.405 > 
+16:46:00.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:00.401 > 
+16:46:00.449 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:45:59,TESTKITAQI,25.6, 40.7, 994.8,28,27,35
+16:46:00.449 > [D][Storage.cpp:223] write_data(): File written
+16:46:00.449 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:45:59,TESTKITAQI,25.6, 40.7, 994.8,28,27,35
+16:46:00.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:03.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:03.401 > 
+16:46:06.386 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:06.402 > 
+16:46:06.450 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:05,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:46:06.450 > [D][Storage.cpp:223] write_data(): File written
+16:46:06.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:05,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:46:06.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:09.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:09.402 > 
+16:46:12.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:12.401 > 
+16:46:12.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:11,TESTKITAQI,25.6, 40.7, 994.7,28,26,33
+16:46:12.457 > [D][Storage.cpp:223] write_data(): File written
+16:46:12.472 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:11,TESTKITAQI,25.6, 40.7, 994.7,28,26,33
+16:46:12.472 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:15.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:15.400 > 
+16:46:18.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:18.401 > 
+16:46:18.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:17,TESTKITAQI,25.5, 40.7, 994.7,28,30,39
+16:46:18.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:18.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:17,TESTKITAQI,25.5, 40.7, 994.7,28,30,39
+16:46:18.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:21.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:21.402 > 
+16:46:24.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:24.402 > 
+16:46:24.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:23,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:46:24.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:24.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:23,TESTKITAQI,25.6, 40.7, 994.7,28,28,37
+16:46:24.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:27.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:27.401 > 
+16:46:30.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:30.402 > 
+16:46:30.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:29,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:46:30.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:30.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:29,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:46:30.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:33.388 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:33.404 > 
+16:46:36.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:36.396 > 
+16:46:36.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:46:36.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:36.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:46:36.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:39.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:39.390 > 
+16:46:42.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:42.401 > 
+16:46:42.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:41,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:46:42.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:42.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:41,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:46:42.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:45.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:45.400 > 
+16:46:48.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:48.390 > 
+16:46:48.437 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:47,TESTKITAQI,25.5, 40.8, 994.7,28,26,32
+16:46:48.453 > [D][Storage.cpp:223] write_data(): File written
+16:46:48.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:47,TESTKITAQI,25.5, 40.8, 994.7,28,26,32
+16:46:48.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:51.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:51.400 > 
+16:46:54.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:46:54.401 > 
+16:46:54.433 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:53,TESTKITAQI,25.6, 40.8, 994.7,28,26,31
+16:46:54.448 > [D][Storage.cpp:223] write_data(): File written
+16:46:54.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:53,TESTKITAQI,25.6, 40.8, 994.7,28,26,31
+16:46:54.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:46:57.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:46:57.403 > 
+16:47:00.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:00.399 > 
+16:47:00.446 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:46:59,TESTKITAQI,25.6, 40.8, 994.7,28,26,31
+16:47:00.446 > [D][Storage.cpp:223] write_data(): File written
+16:47:00.446 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:46:59,TESTKITAQI,25.6, 40.8, 994.7,28,26,31
+16:47:00.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:03.401 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:03.401 > 
+16:47:06.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:06.398 > 
+16:47:06.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:05,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:47:06.441 > [D][Storage.cpp:223] write_data(): File written
+16:47:06.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:05,TESTKITAQI,25.6, 40.7, 994.7,28,28,36
+16:47:06.457 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:09.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:09.398 > 
+16:47:12.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:12.391 > 
+16:47:12.438 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:11,TESTKITAQI,25.6, 40.7, 994.7,28,27,35
+16:47:12.453 > [D][Storage.cpp:223] write_data(): File written
+16:47:12.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:11,TESTKITAQI,25.6, 40.7, 994.7,28,27,35
+16:47:12.453 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:15.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:15.395 > 
+16:47:18.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:18.401 > 
+16:47:18.448 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:17,TESTKITAQI,25.6, 40.7, 994.7,28,27,34
+16:47:18.448 > [D][Storage.cpp:223] write_data(): File written
+16:47:18.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:17,TESTKITAQI,25.6, 40.7, 994.7,28,27,34
+16:47:18.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:21.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:21.401 > 
+16:47:24.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:24.390 > 
+16:47:24.446 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:23,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:47:24.453 > [D][Storage.cpp:223] write_data(): File written
+16:47:24.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:23,TESTKITAQI,25.6, 40.7, 994.7,28,26,34
+16:47:24.469 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:27.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:27.400 > 
+16:47:30.389 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:30.389 > 
+16:47:30.436 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:29,TESTKITAQI,25.5, 40.7, 994.7,28,28,37
+16:47:30.452 > [D][Storage.cpp:223] write_data(): File written
+16:47:30.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:29,TESTKITAQI,25.5, 40.7, 994.7,28,28,37
+16:47:30.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:33.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:33.400 > 
+16:47:36.400 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:36.400 > 
+16:47:36.447 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:35,TESTKITAQI,25.6, 40.7, 994.7,28,26,35
+16:47:36.447 > [D][Storage.cpp:223] write_data(): File written
+16:47:36.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:35,TESTKITAQI,25.6, 40.7, 994.7,28,26,35
+16:47:36.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:39.386 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:39.402 > 
+16:47:42.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:42.401 > 
+16:47:42.447 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:41,TESTKITAQI,25.6, 40.7, 994.7,28,26,36
+16:47:42.447 > [D][Storage.cpp:223] write_data(): File written
+16:47:42.447 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:41,TESTKITAQI,25.6, 40.7, 994.7,28,26,36
+16:47:42.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:45.388 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:45.404 > 
+16:47:48.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:48.393 > 
+16:47:48.447 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:47,TESTKITAQI,25.6, 40.7, 994.7,28,26,36
+16:47:48.447 > [D][Storage.cpp:223] write_data(): File written
+16:47:48.447 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:47,TESTKITAQI,25.6, 40.7, 994.7,28,26,36
+16:47:48.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:51.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:51.399 > 
+16:47:54.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:47:54.394 > 
+16:47:54.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:53,TESTKITAQI,25.5, 40.7, 994.7,28,27,35
+16:47:54.442 > [D][Storage.cpp:223] write_data(): File written
+16:47:54.458 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:53,TESTKITAQI,25.5, 40.7, 994.7,28,27,35
+16:47:54.458 > [I][main.cpp:417] vStorage(): data written to storage
+16:47:57.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:47:57.398 > 
+16:48:00.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:00.398 > 
+16:48:00.447 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:47:59,TESTKITAQI,25.6, 40.7, 994.7,28,27,35
+16:48:00.450 > [D][Storage.cpp:223] write_data(): File written
+16:48:00.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:47:59,TESTKITAQI,25.6, 40.7, 994.7,28,27,35
+16:48:00.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:03.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:03.392 > 
+16:48:06.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:06.401 > 
+16:48:06.438 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:05,TESTKITAQI,25.6, 40.7, 994.7,28,27,37
+16:48:06.448 > [D][Storage.cpp:223] write_data(): File written
+16:48:06.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:05,TESTKITAQI,25.6, 40.7, 994.7,28,27,37
+16:48:06.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:09.389 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:09.389 > 
+16:48:12.386 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:12.401 > 
+16:48:12.434 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:11,TESTKITAQI,25.5, 40.7, 994.7,28,26,37
+16:48:12.449 > [D][Storage.cpp:223] write_data(): File written
+16:48:12.449 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:11,TESTKITAQI,25.5, 40.7, 994.7,28,26,37
+16:48:12.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:15.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:15.395 > 
+16:48:18.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:18.399 > 
+16:48:18.447 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:17,TESTKITAQI,25.5, 40.7, 994.7,28,28,39
+16:48:18.447 > [D][Storage.cpp:223] write_data(): File written
+16:48:18.447 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:17,TESTKITAQI,25.5, 40.7, 994.7,28,28,39
+16:48:18.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:21.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:21.399 > 
+16:48:24.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:24.399 > 
+16:48:24.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:23,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:48:24.441 > [D][Storage.cpp:223] write_data(): File written
+16:48:24.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:23,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:48:24.456 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:27.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:27.395 > 
+16:48:30.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:30.398 > 
+16:48:30.446 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:29,TESTKITAQI,25.5, 40.7, 994.7,28,25,33
+16:48:30.446 > [D][Storage.cpp:223] write_data(): File written
+16:48:30.446 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:29,TESTKITAQI,25.5, 40.7, 994.7,28,25,33
+16:48:30.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:33.385 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:33.401 > 
+16:48:36.399 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:36.400 > 
+16:48:36.446 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:35,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:48:36.453 > [D][Storage.cpp:223] write_data(): File written
+16:48:36.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:35,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:48:36.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:39.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:39.398 > 
+16:48:42.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:42.398 > 
+16:48:42.431 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:41,TESTKITAQI,25.6, 40.7, 994.7,28,26,31
+16:48:42.446 > [D][Storage.cpp:223] write_data(): File written
+16:48:42.446 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:41,TESTKITAQI,25.6, 40.7, 994.7,28,26,31
+16:48:42.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:45.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:45.396 > 
+16:48:48.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:48.398 > 
+16:48:48.445 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:47,TESTKITAQI,25.5, 40.7, 994.7,28,28,38
+16:48:48.445 > [D][Storage.cpp:223] write_data(): File written
+16:48:48.445 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:47,TESTKITAQI,25.5, 40.7, 994.7,28,28,38
+16:48:48.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:51.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:51.399 > 
+16:48:54.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:48:54.395 > 
+16:48:54.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:53,TESTKITAQI,25.5, 40.7, 994.7,28,27,37
+16:48:54.448 > [D][Storage.cpp:223] write_data(): File written
+16:48:54.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:53,TESTKITAQI,25.5, 40.7, 994.7,28,27,37
+16:48:54.459 > [I][main.cpp:417] vStorage(): data written to storage
+16:48:57.398 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:48:57.399 > 
+16:49:00.389 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:00.389 > 
+16:49:00.436 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:48:59,TESTKITAQI,25.5, 40.7, 994.7,28,27,36
+16:49:00.452 > [D][Storage.cpp:223] write_data(): File written
+16:49:00.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:48:59,TESTKITAQI,25.5, 40.7, 994.7,28,27,36
+16:49:00.456 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:03.397 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:03.397 > 
+16:49:06.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:06.398 > 
+16:49:06.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:05,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:49:06.452 > [D][Storage.cpp:223] write_data(): File written
+16:49:06.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:05,TESTKITAQI,25.5, 40.7, 994.7,28,26,34
+16:49:06.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:09.384 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:09.399 > 
+16:49:12.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:12.398 > 
+16:49:12.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:11,TESTKITAQI,25.5, 40.7, 994.7,28,28,36
+16:49:12.453 > [D][Storage.cpp:223] write_data(): File written
+16:49:12.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:11,TESTKITAQI,25.5, 40.7, 994.7,28,28,36
+16:49:12.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:15.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:15.399 > 
+16:49:18.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:18.402 > 
+16:49:18.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:17,TESTKITAQI,25.5, 40.8, 994.7,28,26,34
+16:49:18.452 > [D][Storage.cpp:223] write_data(): File written
+16:49:18.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:17,TESTKITAQI,25.5, 40.8, 994.7,28,26,34
+16:49:18.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:21.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:21.399 > 
+16:49:24.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:24.398 > 
+16:49:24.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:23,TESTKITAQI,25.5, 40.8, 994.7,28,27,33
+16:49:24.451 > [D][Storage.cpp:223] write_data(): File written
+16:49:24.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:23,TESTKITAQI,25.5, 40.8, 994.7,28,27,33
+16:49:24.468 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:27.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:27.399 > 
+16:49:30.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:30.400 > 
+16:49:30.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:29,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:49:30.453 > [D][Storage.cpp:223] write_data(): File written
+16:49:30.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:29,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:49:30.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:33.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:33.400 > 
+16:49:36.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:36.400 > 
+16:49:36.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:49:36.447 > [D][Storage.cpp:223] write_data(): File written
+16:49:36.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:49:36.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:39.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:39.399 > 
+16:49:42.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:42.395 > 
+16:49:42.444 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:41,TESTKITAQI,25.5, 40.8, 994.7,28,29,36
+16:49:42.452 > [D][Storage.cpp:223] write_data(): File written
+16:49:42.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:41,TESTKITAQI,25.5, 40.8, 994.7,28,29,36
+16:49:42.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:45.396 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:45.400 > 
+16:49:48.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:48.400 > 
+16:49:48.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:47,TESTKITAQI,25.5, 40.8, 994.7,28,29,38
+16:49:48.453 > [D][Storage.cpp:223] write_data(): File written
+16:49:48.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:47,TESTKITAQI,25.5, 40.8, 994.7,28,29,38
+16:49:48.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:51.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:51.400 > 
+16:49:54.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:49:54.399 > 
+16:49:54.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:53,TESTKITAQI,25.5, 40.7, 994.7,28,28,39
+16:49:54.453 > [D][Storage.cpp:223] write_data(): File written
+16:49:54.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:53,TESTKITAQI,25.5, 40.7, 994.7,28,28,39
+16:49:54.460 > [I][main.cpp:417] vStorage(): data written to storage
+16:49:57.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:49:57.399 > 
+16:50:00.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:00.400 > 
+16:50:00.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:49:59,TESTKITAQI,25.6, 40.7, 994.7,28,28,38
+16:50:00.449 > [D][Storage.cpp:223] write_data(): File written
+16:50:00.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:49:59,TESTKITAQI,25.6, 40.7, 994.7,28,28,38
+16:50:00.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:03.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:03.401 > 
+16:50:06.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:06.397 > 
+16:50:06.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:05,TESTKITAQI,25.5, 40.8, 994.7,28,29,38
+16:50:06.450 > [D][Storage.cpp:223] write_data(): File written
+16:50:06.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:05,TESTKITAQI,25.5, 40.8, 994.7,28,29,38
+16:50:06.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:09.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:09.397 > 
+16:50:12.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:12.400 > 
+16:50:12.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:11,TESTKITAQI,25.5, 40.7, 994.7,28,28,38
+16:50:12.451 > [D][Storage.cpp:223] write_data(): File written
+16:50:12.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:11,TESTKITAQI,25.5, 40.7, 994.7,28,28,38
+16:50:12.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:15.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:15.395 > 
+16:50:18.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:18.398 > 
+16:50:18.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:17,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:50:18.452 > [D][Storage.cpp:223] write_data(): File written
+16:50:18.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:17,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:50:18.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:21.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:21.396 > 
+16:50:24.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:24.398 > 
+16:50:24.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:23,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:50:24.451 > [D][Storage.cpp:223] write_data(): File written
+16:50:24.455 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:23,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:50:24.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:27.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:27.397 > 
+16:50:30.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:30.400 > 
+16:50:30.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:29,TESTKITAQI,25.5, 40.7, 994.7,28,28,37
+16:50:30.451 > [D][Storage.cpp:223] write_data(): File written
+16:50:30.451 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:29,TESTKITAQI,25.5, 40.7, 994.7,28,28,37
+16:50:30.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:33.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:33.397 > 
+16:50:36.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:36.399 > 
+16:50:36.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,36
+16:50:36.452 > [D][Storage.cpp:223] write_data(): File written
+16:50:36.457 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:35,TESTKITAQI,25.5, 40.8, 994.7,28,27,36
+16:50:36.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:39.395 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:39.400 > 
+16:50:42.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:42.399 > 
+16:50:42.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:41,TESTKITAQI,25.5, 40.8, 994.7,28,28,35
+16:50:42.450 > [D][Storage.cpp:223] write_data(): File written
+16:50:42.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:41,TESTKITAQI,25.5, 40.8, 994.7,28,28,35
+16:50:42.466 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:45.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:45.399 > 
+16:50:48.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:48.396 > 
+16:50:48.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:47,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:50:48.446 > [D][Storage.cpp:223] write_data(): File written
+16:50:48.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:47,TESTKITAQI,25.5, 40.7, 994.7,28,29,37
+16:50:48.465 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:51.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:51.399 > 
+16:50:54.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:50:54.396 > 
+16:50:54.443 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:53,TESTKITAQI,25.5, 40.8, 994.7,28,29,37
+16:50:54.450 > [D][Storage.cpp:223] write_data(): File written
+16:50:54.456 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:53,TESTKITAQI,25.5, 40.8, 994.7,28,29,37
+16:50:54.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:50:57.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:50:57.399 > 
+16:51:00.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:00.398 > 
+16:51:00.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:50:59,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:51:00.450 > [D][Storage.cpp:223] write_data(): File written
+16:51:00.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:50:59,TESTKITAQI,25.5, 40.8, 994.7,28,27,35
+16:51:00.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:03.383 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:03.398 > 
+16:51:06.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:06.394 > 
+16:51:06.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:05,TESTKITAQI,25.5, 40.8, 994.7,28,26,34
+16:51:06.448 > [D][Storage.cpp:223] write_data(): File written
+16:51:06.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:05,TESTKITAQI,25.5, 40.8, 994.7,28,26,34
+16:51:06.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:09.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:09.399 > 
+16:51:12.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:12.395 > 
+16:51:12.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:11,TESTKITAQI,25.5, 40.8, 994.7,28,25,33
+16:51:12.448 > [D][Storage.cpp:223] write_data(): File written
+16:51:12.448 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:11,TESTKITAQI,25.5, 40.8, 994.7,28,25,33
+16:51:12.464 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:15.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:15.398 > 
+16:51:18.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:18.398 > 
+16:51:18.442 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:17,TESTKITAQI,25.5, 40.8, 994.7,28,25,32
+16:51:18.446 > [D][Storage.cpp:223] write_data(): File written
+16:51:18.446 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:17,TESTKITAQI,25.5, 40.8, 994.7,28,25,32
+16:51:18.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:20.709 > dhcps: send_nak>>udp_sendto result 0
+16:51:20.740 > dhcps: send_nak>>udp_sendto result 0
+16:51:21.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:21.398 > 
+16:51:24.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:24.397 > 
+16:51:24.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:23,TESTKITAQI,25.5, 40.8, 994.7,28,25,32
+16:51:24.450 > [D][Storage.cpp:223] write_data(): File written
+16:51:24.455 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:23,TESTKITAQI,25.5, 40.8, 994.7,28,25,32
+16:51:24.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:27.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:27.398 > 
+16:51:30.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:30.399 > 
+16:51:30.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:29,TESTKITAQI,25.5, 40.8, 994.7,28,26,33
+16:51:30.445 > [D][Storage.cpp:223] write_data(): File written
+16:51:30.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:29,TESTKITAQI,25.5, 40.8, 994.7,28,26,33
+16:51:30.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:33.394 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:33.397 > 
+16:51:36.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:36.393 > 
+16:51:36.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:35,TESTKITAQI,25.5, 40.7, 994.6,28,27,34
+16:51:36.449 > [D][Storage.cpp:223] write_data(): File written
+16:51:36.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:35,TESTKITAQI,25.5, 40.7, 994.6,28,27,34
+16:51:36.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:39.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:39.391 > 
+16:51:42.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:42.391 > 
+16:51:42.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:41,TESTKITAQI,25.5, 40.8, 994.6,28,27,34
+16:51:42.449 > [D][Storage.cpp:223] write_data(): File written
+16:51:42.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:41,TESTKITAQI,25.5, 40.8, 994.6,28,27,34
+16:51:42.458 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:45.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:45.399 > 
+16:51:48.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:48.396 > 
+16:51:48.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:47,TESTKITAQI,25.5, 40.8, 994.7,28,28,36
+16:51:48.447 > [D][Storage.cpp:223] write_data(): File written
+16:51:48.447 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:47,TESTKITAQI,25.5, 40.8, 994.7,28,28,36
+16:51:48.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:51.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:51.397 > 
+16:51:54.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:51:54.397 > 
+16:51:54.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:53,TESTKITAQI,25.5, 40.8, 994.6,28,28,36
+16:51:54.450 > [D][Storage.cpp:223] write_data(): File written
+16:51:54.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:53,TESTKITAQI,25.5, 40.8, 994.6,28,28,36
+16:51:54.462 > [I][main.cpp:417] vStorage(): data written to storage
+16:51:57.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:51:57.396 > 
+16:52:00.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:00.397 > 
+16:52:00.441 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:51:59,TESTKITAQI,25.5, 40.9, 994.7,28,28,36
+16:52:00.449 > [D][Storage.cpp:223] write_data(): File written
+16:52:00.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:51:59,TESTKITAQI,25.5, 40.9, 994.7,28,28,36
+16:52:00.460 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:03.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:03.395 > 
+16:52:06.393 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:06.395 > 
+16:52:06.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:05,TESTKITAQI,25.5, 40.8, 994.6,28,28,38
+16:52:06.450 > [D][Storage.cpp:223] write_data(): File written
+16:52:06.450 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:05,TESTKITAQI,25.5, 40.8, 994.6,28,28,38
+16:52:06.463 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:09.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:09.396 > 
+16:52:12.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:12.392 > 
+16:52:12.440 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:11,TESTKITAQI,25.5, 40.8, 994.6,28,28,38
+16:52:12.442 > [D][Storage.cpp:223] write_data(): File written
+16:52:12.451 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:11,TESTKITAQI,25.5, 40.8, 994.6,28,28,38
+16:52:12.460 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:15.386 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:15.397 > 
+16:52:18.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:18.397 > 
+16:52:18.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:17,TESTKITAQI,25.5, 40.8, 994.6,28,26,36
+16:52:18.445 > [D][Storage.cpp:223] write_data(): File written
+16:52:18.454 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:17,TESTKITAQI,25.5, 40.8, 994.6,28,26,36
+16:52:18.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:21.389 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:21.389 > 
+16:52:24.377 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:24.395 > 
+16:52:24.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:23,TESTKITAQI,25.5, 40.8, 994.6,28,26,34
+16:52:24.447 > [D][Storage.cpp:223] write_data(): File written
+16:52:24.453 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:23,TESTKITAQI,25.5, 40.8, 994.6,28,26,34
+16:52:24.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:27.377 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:27.396 > 
+16:52:30.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:30.397 > 
+16:52:30.436 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:29,TESTKITAQI,25.5, 40.8, 994.6,28,27,34
+16:52:30.444 > [D][Storage.cpp:223] write_data(): File written
+16:52:30.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:29,TESTKITAQI,25.5, 40.8, 994.6,28,27,34
+16:52:30.461 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:33.392 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:33.398 > 
+16:52:36.389 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:36.394 > 
+16:52:36.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:35,TESTKITAQI,25.5, 40.8, 994.6,28,26,35
+16:52:36.449 > [D][Storage.cpp:223] write_data(): File written
+16:52:36.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:35,TESTKITAQI,25.5, 40.8, 994.6,28,26,35
+16:52:36.458 > [I][main.cpp:417] vStorage(): data written to storage
+16:52:39.390 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+16:52:39.396 > 
+16:52:42.391 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+16:52:42.396 > 
+16:52:42.439 > [I][main.cpp:370] vAcquireData(): 2025-01-17 16:52:41,TESTKITAQI,25.5, 40.8, 994.6,28,27,36
+16:52:42.447 > [D][Storage.cpp:223] write_data(): File written
+16:52:42.452 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-17 16:52:41,TESTKITAQI,25.5, 40.8, 994.6,28,27,36
+16:52:42.461 > [I][main.cpp:417] vStorage(): data written to storage

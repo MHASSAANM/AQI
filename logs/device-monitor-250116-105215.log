@@ -1,0 +1,10 @@
+10:52:15.249 > 
+10:52:15.249 > Current Version: 1.1.8
+10:52:15.249 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+10:52:15.249 > Commit Date: 15th October 2024
+10:52:15.249 > AQI sensor initialized successfully!
+10:53:05.420 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure
+10:54:05.416 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure
+10:55:05.413 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure
+10:56:05.407 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure
+10:57:05.409 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure

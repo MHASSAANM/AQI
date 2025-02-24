@@ -1,0 +1,1478 @@
+11:19:31.023 > ets Jul 29 2019 12:21:46
+11:19:31.023 > 
+11:19:31.023 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:19:31.023 > configsip: 0, SPIWP:0xee
+11:19:31.023 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:19:31.023 > mode:DIO, clock div:2
+11:19:31.023 > load:0x3fff0018,len:4
+11:19:31.023 > load:0x3fff001c,len:1044
+11:19:31.023 > load:0x40078000,len:10124
+11:19:31.023 > load:0x40080400,len:5828
+11:19:31.023 > entry 0x400806a8
+11:19:31.023 > �[D][main.cpp:97] setup(): 
+11:19:31.023 > Current Version: 1.1.8
+11:19:31.023 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:19:31.023 > Commit Date: 15th October 2024
+11:19:31.023 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:19:31.023 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:19:31.023 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:19:31.023 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:19:31.023 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:19:31.023 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:19:31.023 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:19:31.023 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:19:31.023 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:19:31.023 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:19:31.023 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:19:31.023 > [D][Storage.cpp:81] init_storage(): File is: 
+11:19:31.023 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:19:31.023 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:19:31.023 > [D][Storage.cpp:84] init_storage(): 225492 
+11:19:31.023 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:19:31.023 > [D][main.cpp:149] setup(): Storage initialization success!
+11:19:31.023 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:19:31.023 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:19:31.023 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:19:31.023 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:19:31.023 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:19:31.023 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:19:31.023 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:19:31.023 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:19:31.023 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:19:31.023 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:19:31.023 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:19:31.023 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:19:31.023 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:19:31.023 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:19:31.023 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:19:32.098 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:19:32.104 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 10
+11:19:32.108 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:19:32.112 > [I][WiFiMulti.cpp:119] run(): [WIFI] 10 networks found
+11:19:32.112 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-52) *
+11:19:32.125 > [D][WiFiMulti.cpp:151] run():        1: [11][96:E2:7C:01:5F:08] ... (-53) *
+11:19:32.130 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS-Events (-55) *
+11:19:32.130 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-56) *
+11:19:32.146 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-57) *
+11:19:32.146 > [D][WiFiMulti.cpp:151] run():        5: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-57) *
+11:19:32.161 > [D][WiFiMulti.cpp:151] run():        6: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+11:19:32.163 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F3] LUMS-Events (-78) *
+11:19:32.175 > [D][WiFiMulti.cpp:151] run():        8: [11][F8:C6:50:59:B6:60] wireless (-84) *
+11:19:32.180 > [D][WiFiMulti.cpp:151] run():        9: [11][F8:C6:50:59:B6:62] LUMS-Events (-84) *
+11:19:32.180 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-52)
+11:19:35.971 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:19:47.191 > [E][WiFiMulti.cpp:187] run(): [WIFI] Connecting Failed (0).
+11:19:47.197 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+11:19:47.203 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:19:47.207 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:19:47.213 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:19:47.213 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:19:52.530 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:19:52.535 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 12
+11:19:52.541 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:19:52.542 > [I][WiFiMulti.cpp:119] run(): [WIFI] 12 networks found
+11:19:52.542 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-54) *
+11:19:52.557 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-55) *
+11:19:52.564 > [D][WiFiMulti.cpp:151] run():        2: [11][96:E2:7C:01:5F:08] ... (-58) *
+11:19:52.571 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-58) *
+11:19:52.578 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-59) *
+11:19:52.580 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A0] Wireless (-60) *
+11:19:52.593 > [D][WiFiMulti.cpp:151] run():        6: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-61) *
+11:19:52.594 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F3] LUMS-Events (-80) *
+11:19:52.607 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F0] wireless (-80) *
+11:19:52.608 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F2]  (-81) *
+11:19:52.608 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-86) *
+11:19:52.625 > [D][WiFiMulti.cpp:151] run():        11: [13][E0:0E:DA:51:D4:22]  (-89) *
+11:19:52.625 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-55)
+11:19:52.641 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+11:19:52.641 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+11:19:58.004 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:19:58.189 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:19:58.195 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:19:58.204 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:19:58.209 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:19:58.213 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:19:58.218 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:19:58.223 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:19:58.224 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:19:58.508 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:19:58.514 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:19:58.519 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:19:58.526 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:19:58.532 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:19:58.538 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 230024
+11:19:58.543 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:19:59.530 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:19:59.537 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:19:59.544 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:19:59.551 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:19:59.559 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:20:01.478 > ����������������������������������������������������������������V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:20:01.484 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:20:01.491 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186328
+11:20:01.497 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:20:01.504 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:20:01.512 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:20:02.092 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:02.099 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:20:02.103 > [I][main.cpp:224] setup(): Restarting...
+11:20:03.102 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:20:03.107 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:03.107 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:03.143 > ets Jul 29 2019 12:21:46
+11:20:03.145 > 
+11:20:03.146 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:20:03.150 > configsip: 0, SPIWP:0xee
+11:20:03.152 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:20:03.159 > mode:DIO, clock div:2
+11:20:03.161 > load:0x3fff0018,len:4
+11:20:03.162 > load:0x3fff001c,len:1044
+11:20:03.162 > load:0x40078000,len:10124
+11:20:03.162 > load:0x40080400,len:5828
+11:20:03.162 > entry 0x400806a8
+11:20:03.708 > [D][main.cpp:97] setup(): 
+11:20:03.725 > Current Version: 1.1.8
+11:20:03.726 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:20:03.738 > Commit Date: 15th October 2024
+11:20:03.776 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:20:03.886 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:20:04.887 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:20:04.892 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:20:04.896 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:20:04.900 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:20:04.906 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:20:04.919 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:20:04.926 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:20:04.926 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:20:04.926 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:20:04.941 > [D][Storage.cpp:81] init_storage(): File is: 
+11:20:04.946 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:20:04.947 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:20:04.947 > [D][Storage.cpp:84] init_storage(): 225492 
+11:20:04.947 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:20:04.962 > [D][main.cpp:149] setup(): Storage initialization success!
+11:20:05.088 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:20:05.094 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:20:05.100 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:05.106 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:05.110 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:20:05.117 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:20:05.120 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:20:05.125 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:20:05.130 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:20:05.134 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:20:05.140 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:20:05.142 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:20:05.142 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:20:05.142 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:20:05.158 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:20:08.385 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:20:08.390 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 13
+11:20:08.396 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:20:08.400 > [I][WiFiMulti.cpp:119] run(): [WIFI] 13 networks found
+11:20:08.405 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-54) *
+11:20:08.412 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-54) *
+11:20:08.412 > [D][WiFiMulti.cpp:151] run():        2: [11][96:E2:7C:01:5F:08] ... (-55) *
+11:20:08.426 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A0] Wireless (-58) *
+11:20:08.426 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-58) *
+11:20:08.441 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A1] TV-LED (-58) *
+11:20:08.446 > [D][WiFiMulti.cpp:151] run():        6: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-60) *
+11:20:08.446 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F3] LUMS-Events (-76) *
+11:20:08.463 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+11:20:08.463 > [D][WiFiMulti.cpp:151] run():        9: [1][4C:E1:75:3C:A2:41] TV-LED (-78) *
+11:20:08.477 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:1D:01:62] TV-LED (-86) *
+11:20:08.483 > [D][WiFiMulti.cpp:151] run():        11: [13][E0:0E:DA:51:D4:20] Wireless (-87) *
+11:20:08.491 > [D][WiFiMulti.cpp:149] run():  --->   12: [4][B4:0F:3B:FC:09:D0] NeuBolt (-93) *
+11:20:08.495 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-54)
+11:20:11.691 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:20:11.743 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:20:11.743 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:20:11.759 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:20:11.759 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:20:11.759 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:20:11.776 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:20:11.779 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:20:11.785 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:20:11.790 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:20:11.794 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:20:11.794 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:20:11.794 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:20:11.810 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:20:12.048 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:12.054 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:12.059 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:12.066 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:12.072 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:12.077 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229708
+11:20:12.079 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:20:12.379 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:20:12.386 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:20:12.393 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:20:12.401 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:20:12.408 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:20:14.579 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:20:14.585 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:20:14.591 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186016
+11:20:14.598 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:20:14.606 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:20:14.612 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:20:14.660 > dhcps: send_nak>>udp_sendto result 0
+11:20:15.079 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:15.084 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:20:15.089 > [I][main.cpp:224] setup(): Restarting...
+11:20:16.088 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:20:16.093 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:16.098 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:16.207 > ets Jul 29 2019 12:21:46
+11:20:16.207 > 
+11:20:16.207 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:20:16.207 > configsip: 0, SPIWP:0xee
+11:20:16.207 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:20:16.225 > mode:DIO, clock div:2
+11:20:16.227 > load:0x3fff0018,len:4
+11:20:16.227 > load:0x3fff001c,len:1044
+11:20:16.227 > load:0x40078000,len:10124
+11:20:16.227 > load:0x40080400,len:5828
+11:20:16.227 > entry 0x400806a8
+11:20:16.788 > [D][main.cpp:97] setup(): 
+11:20:16.792 > Current Version: 1.1.8
+11:20:16.794 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:20:16.805 > Commit Date: 15th October 2024
+11:20:16.842 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:20:16.952 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:20:17.954 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:20:17.958 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:20:17.958 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:20:17.958 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:20:17.973 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:20:17.985 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:20:17.993 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:20:17.997 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:20:17.999 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:20:18.007 > [D][Storage.cpp:81] init_storage(): File is: 
+11:20:18.011 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:20:18.015 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:20:18.015 > [D][Storage.cpp:84] init_storage(): 225492 
+11:20:18.024 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:20:18.028 > [D][main.cpp:149] setup(): Storage initialization success!
+11:20:18.155 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:20:18.158 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:20:18.158 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:18.158 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:18.177 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:20:18.182 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:20:18.182 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:20:18.191 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:20:18.196 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:20:18.197 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:20:18.208 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:20:18.212 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:20:18.216 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:20:18.217 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:20:18.226 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:20:21.446 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:20:21.459 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 17
+11:20:21.464 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:20:21.464 > [I][WiFiMulti.cpp:119] run(): [WIFI] 17 networks found
+11:20:21.474 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+11:20:21.482 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-52) *
+11:20:21.482 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS-Events (-57) *
+11:20:21.496 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-57) *
+11:20:21.496 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-58) *
+11:20:21.510 > [D][WiFiMulti.cpp:151] run():        5: [6][90:9A:4A:B8:CD:83] Airbus380 (-60) *
+11:20:21.515 > [D][WiFiMulti.cpp:151] run():        6: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-62) *
+11:20:21.524 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F3] LUMS-Events (-77) *
+11:20:21.530 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+11:20:21.530 > [D][WiFiMulti.cpp:151] run():        9: [1][4C:E1:75:3C:A2:40] Wireless (-78) *
+11:20:21.546 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-79) *
+11:20:21.548 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:1D:01:62] TV-LED (-84) *
+11:20:21.560 > [D][WiFiMulti.cpp:151] run():        12: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:20:21.564 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:1D:01:60] wireless (-86) *
+11:20:21.574 > [D][WiFiMulti.cpp:151] run():        14: [11][F8:C6:50:59:B6:62] LUMS-Events (-86) *
+11:20:21.581 > [D][WiFiMulti.cpp:151] run():        15: [6][BC:67:1C:64:33:22] LUMS-Events (-87) *
+11:20:21.581 > [D][WiFiMulti.cpp:151] run():        16: [1][22:10:B3:47:61:47] DIRECT-KFBAJWAmsUZ (-88) *
+11:20:21.597 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-52)
+11:20:25.157 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:20:25.157 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:20:25.177 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:20:25.186 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:20:25.191 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:20:25.196 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:20:25.196 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:20:25.196 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:20:25.210 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:20:25.216 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:20:25.216 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:20:25.225 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:20:25.229 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:20:25.229 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:20:25.280 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:25.280 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:25.293 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:25.293 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:25.307 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:25.312 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229716
+11:20:25.312 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:20:25.376 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:20:25.395 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:20:25.402 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:20:25.410 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:20:25.412 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:20:27.683 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:20:27.690 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:20:27.696 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186028
+11:20:27.703 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:20:27.708 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:20:27.708 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:20:28.203 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:28.206 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:20:28.206 > [I][main.cpp:224] setup(): Restarting...
+11:20:29.211 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:20:29.211 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:29.223 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:29.243 > ets Jul 29 2019 12:21:46
+11:20:29.246 > 
+11:20:29.246 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:20:29.249 > configsip: 0, SPIWP:0xee
+11:20:29.249 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:20:29.260 > mode:DIO, clock div:2
+11:20:29.262 > load:0x3fff0018,len:4
+11:20:29.264 > load:0x3fff001c,len:1044
+11:20:29.266 > load:0x40078000,len:10124
+11:20:29.268 > load:0x40080400,len:5828
+11:20:29.268 > entry 0x400806a8
+11:20:29.823 > [D][main.cpp:97] setup(): 
+11:20:29.826 > Current Version: 1.1.8
+11:20:29.828 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:20:29.839 > Commit Date: 15th October 2024
+11:20:29.878 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:20:29.987 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:20:30.975 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:20:30.992 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:20:30.997 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:20:31.001 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:20:31.007 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:20:31.014 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:20:31.027 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:20:31.028 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:20:31.028 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:20:31.042 > [D][Storage.cpp:81] init_storage(): File is: 
+11:20:31.045 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:20:31.047 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:20:31.047 > [D][Storage.cpp:84] init_storage(): 225492 
+11:20:31.058 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:20:31.062 > [D][main.cpp:149] setup(): Storage initialization success!
+11:20:31.178 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:20:31.193 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:20:31.193 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:31.193 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:31.210 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:20:31.212 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:20:31.212 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:20:31.224 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:20:31.229 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:20:31.231 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:20:31.241 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:20:31.244 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:20:31.249 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:20:31.249 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:20:31.258 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:20:34.686 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:20:34.692 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 24
+11:20:34.695 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:20:34.695 > [I][WiFiMulti.cpp:119] run(): [WIFI] 24 networks found
+11:20:34.706 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:20:34.714 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-55) *
+11:20:34.714 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A1] TV-LED (-57) *
+11:20:34.728 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A0] Wireless (-59) *
+11:20:34.734 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-59) *
+11:20:34.743 > [D][WiFiMulti.cpp:151] run():        5: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-61) *
+11:20:34.750 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-62) *
+11:20:34.758 > [D][WiFiMulti.cpp:151] run():        7: [1][4C:E1:75:3C:A2:40] Wireless (-75) *
+11:20:34.764 > [D][WiFiMulti.cpp:151] run():        8: [6][6E:C7:EC:89:16:7D] goat (-75) *
+11:20:34.770 > [D][WiFiMulti.cpp:151] run():        9: [1][4C:E1:75:3C:A2:41] TV-LED (-76) *
+11:20:34.777 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:42] LUMS-Events (-77) *
+11:20:34.785 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F0] wireless (-78) *
+11:20:34.793 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F3] LUMS-Events (-78) *
+11:20:34.800 > [D][WiFiMulti.cpp:151] run():        13: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-80) *
+11:20:34.807 > [D][WiFiMulti.cpp:151] run():        14: [13][E0:0E:DA:51:D4:21] LUMS-Events (-85) *
+11:20:34.814 > [D][WiFiMulti.cpp:151] run():        15: [1][4C:E1:75:1D:01:62] TV-LED (-86) *
+11:20:34.820 > [D][WiFiMulti.cpp:151] run():        16: [1][4C:E1:75:1D:01:60] wireless (-86) *
+11:20:34.828 > [D][WiFiMulti.cpp:151] run():        17: [1][76:1B:EE:DE:F7:48] Mustafa's Reno 6 (-87) *
+11:20:34.837 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:C6:50:59:B6:60] wireless (-87) *
+11:20:34.844 > [D][WiFiMulti.cpp:151] run():        19: [11][F8:C6:50:59:B6:62] LUMS-Events (-87) *
+11:20:34.852 > [D][WiFiMulti.cpp:151] run():        20: [6][BC:67:1C:64:33:20] Wireless (-88) *
+11:20:34.858 > [D][WiFiMulti.cpp:149] run():  --->   21: [4][B4:0F:3B:FC:09:D0] NeuBolt (-89) *
+11:20:34.865 > [D][WiFiMulti.cpp:151] run():        22: [6][BC:67:1C:64:33:22] LUMS-Events (-90) *
+11:20:34.867 > [D][WiFiMulti.cpp:151] run():        23: [1][7C:45:D0:47:E0:C1] ZONG4G-E0C1 (-91) *
+11:20:34.880 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-55)
+11:20:38.448 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:20:38.458 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:20:38.458 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:20:38.474 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:20:38.479 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:20:38.479 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:20:38.479 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:20:38.494 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:20:38.496 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:20:38.496 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:20:38.508 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:20:38.513 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:20:38.514 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:20:38.523 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:20:38.573 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:38.578 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:38.578 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:38.591 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:38.597 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:38.598 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229728
+11:20:38.609 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:20:38.659 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:20:38.659 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:20:38.677 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:20:38.685 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:20:38.693 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:20:40.707 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:20:40.713 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:20:40.713 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 185700
+11:20:40.727 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:20:40.734 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:20:40.741 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:20:41.306 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:41.306 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:20:41.322 > [I][main.cpp:224] setup(): Restarting...
+11:20:42.306 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:20:42.325 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:42.331 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:42.375 > ets Jul 29 2019 12:21:46
+11:20:42.375 > 
+11:20:42.375 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:20:42.375 > configsip: 0, SPIWP:0xee
+11:20:42.391 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:20:42.397 > mode:DIO, clock div:2
+11:20:42.399 > load:0x3fff0018,len:4
+11:20:42.402 > load:0x3fff001c,len:1044
+11:20:42.404 > load:0x40078000,len:10124
+11:20:42.406 > load:0x40080400,len:5828
+11:20:42.408 > entry 0x400806a8
+11:20:42.956 > [D][main.cpp:97] setup(): 
+11:20:42.956 > Current Version: 1.1.8
+11:20:42.956 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:20:42.978 > Commit Date: 15th October 2024
+11:20:43.011 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:20:43.125 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:20:44.126 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:20:44.131 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:20:44.135 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:20:44.140 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:20:44.145 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:20:44.158 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:20:44.160 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:20:44.160 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:20:44.174 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:20:44.178 > [D][Storage.cpp:81] init_storage(): File is: 
+11:20:44.178 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:20:44.178 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:20:44.193 > [D][Storage.cpp:84] init_storage(): 225492 
+11:20:44.196 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:20:44.196 > [D][main.cpp:149] setup(): Storage initialization success!
+11:20:44.325 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:20:44.331 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:20:44.336 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:44.342 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:44.344 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:20:44.344 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:20:44.357 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:20:44.361 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:20:44.361 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:20:44.361 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:20:44.377 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:20:44.379 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:20:44.379 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:20:44.391 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:20:44.395 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:20:47.808 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:20:47.827 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 21
+11:20:47.832 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:20:47.836 > [I][WiFiMulti.cpp:119] run(): [WIFI] 21 networks found
+11:20:47.841 > [D][WiFiMulti.cpp:151] run():        0: [6][6E:C7:EC:89:16:7D] goat (-52) *
+11:20:47.845 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:20:47.856 > [D][WiFiMulti.cpp:149] run():  --->   2: [3][6C:5A:B0:F4:DA:84] NeuBolt (-53) *
+11:20:47.862 > [D][WiFiMulti.cpp:151] run():        3: [6][90:9A:4A:B8:CD:83] Airbus380 (-61) *
+11:20:47.862 > [D][WiFiMulti.cpp:151] run():        4: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-63) *
+11:20:47.878 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A0] Wireless (-66) *
+11:20:47.878 > [D][WiFiMulti.cpp:151] run():        6: [11][00:A6:CA:47:AC:A2] LUMS-Events (-66) *
+11:20:47.892 > [D][WiFiMulti.cpp:151] run():        7: [11][00:A6:CA:47:AC:A1] TV-LED (-66) *
+11:20:47.895 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+11:20:47.906 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F3] LUMS-Events (-78) *
+11:20:47.913 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-80) *
+11:20:47.913 > [D][WiFiMulti.cpp:151] run():        11: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-80) *
+11:20:47.928 > [D][WiFiMulti.cpp:151] run():        12: [1][4C:E1:75:3C:A2:40] Wireless (-81) *
+11:20:47.928 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:1D:01:60] wireless (-83) *
+11:20:47.941 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:62] TV-LED (-83) *
+11:20:47.945 > [D][WiFiMulti.cpp:151] run():        15: [1][76:2A:12:9C:1F:7C] Infinix HOT 40i (-86) *
+11:20:47.957 > [D][WiFiMulti.cpp:151] run():        16: [6][BC:67:1C:64:33:20] Wireless (-87) *
+11:20:47.963 > [D][WiFiMulti.cpp:149] run():  --->   17: [4][B4:0F:3B:FC:09:D0] NeuBolt (-88) *
+11:20:47.963 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:C6:50:59:B6:60] wireless (-88) *
+11:20:47.978 > [D][WiFiMulti.cpp:151] run():        19: [11][F8:C6:50:59:B6:62] LUMS-Events (-88) *
+11:20:47.979 > [D][WiFiMulti.cpp:151] run():        20: [1][7C:45:D0:47:E0:C1] ZONG4G-E0C1 (-89) *
+11:20:47.992 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-53)
+11:20:51.560 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:20:51.580 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:20:51.580 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:20:51.594 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:20:51.594 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:20:51.594 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:20:51.610 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:20:51.613 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:20:51.613 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:20:51.625 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:20:51.628 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:20:51.628 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:20:51.639 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:20:51.645 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:20:52.643 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+11:20:52.643 > 
+11:20:52.643 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+11:20:53.687 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:53.693 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:53.699 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:53.705 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:53.707 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:53.707 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229628
+11:20:53.724 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:20:53.778 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:20:53.778 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:20:53.792 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:20:53.792 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:20:53.807 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:20:55.738 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:20:55.746 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:20:55.753 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186344
+11:20:55.759 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:20:55.760 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:20:55.760 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:20:56.248 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:20:56.261 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:20:56.267 > [I][main.cpp:224] setup(): Restarting...
+11:20:57.256 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:20:57.256 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:57.275 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:20:57.293 > ets Jul 29 2019 12:21:46
+11:20:57.308 > 
+11:20:57.308 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:20:57.309 > configsip: 0, SPIWP:0xee
+11:20:57.309 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:20:57.309 > mode:DIO, clock div:2
+11:20:57.324 > load:0x3fff0018,len:4
+11:20:57.325 > load:0x3fff001c,len:1044
+11:20:57.328 > load:0x40078000,len:10124
+11:20:57.328 > load:0x40080400,len:5828
+11:20:57.328 > entry 0x400806a8
+11:20:57.886 > [D][main.cpp:97] setup(): 
+11:20:57.888 > Current Version: 1.1.8
+11:20:57.890 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:20:57.891 > Commit Date: 15th October 2024
+11:20:57.939 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:20:58.049 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:20:59.051 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:20:59.055 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:20:59.058 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:20:59.058 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:20:59.058 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:20:59.077 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:20:59.089 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:20:59.093 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:20:59.094 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:20:59.094 > [D][Storage.cpp:81] init_storage(): File is: 
+11:20:59.107 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:20:59.110 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:20:59.110 > [D][Storage.cpp:84] init_storage(): 225492 
+11:20:59.110 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:20:59.125 > [D][main.cpp:149] setup(): Storage initialization success!
+11:20:59.250 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:20:59.256 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:20:59.258 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:59.258 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:20:59.258 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:20:59.276 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:20:59.276 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:20:59.276 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:20:59.290 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:20:59.295 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:20:59.295 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:20:59.295 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:20:59.310 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:20:59.310 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:20:59.310 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:21:02.547 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:21:02.553 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 20
+11:21:02.556 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:21:02.556 > [I][WiFiMulti.cpp:119] run(): [WIFI] 20 networks found
+11:21:02.556 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-55) *
+11:21:02.576 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-57) *
+11:21:02.583 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A0] Wireless (-57) *
+11:21:02.589 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-57) *
+11:21:02.596 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-58) *
+11:21:02.599 > [D][WiFiMulti.cpp:151] run():        5: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-59) *
+11:21:02.611 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-61) *
+11:21:02.611 > [D][WiFiMulti.cpp:151] run():        7: [6][6E:C7:EC:89:16:7D] goat (-66) *
+11:21:02.625 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F3] LUMS-Events (-77) *
+11:21:02.631 > [D][WiFiMulti.cpp:151] run():        9: [1][4C:E1:75:3C:A2:40] Wireless (-78) *
+11:21:02.639 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-78) *
+11:21:02.644 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F0] wireless (-78) *
+11:21:02.644 > [D][WiFiMulti.cpp:151] run():        12: [1][76:2A:12:9C:1F:7C] Infinix HOT 40i (-84) *
+11:21:02.661 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:1D:01:62] TV-LED (-85) *
+11:21:02.662 > [D][WiFiMulti.cpp:151] run():        14: [1][76:1B:EE:DE:F7:48] Mustafa's Reno 6 (-86) *
+11:21:02.676 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:C6:50:59:B6:60] wireless (-86) *
+11:21:02.678 > [D][WiFiMulti.cpp:151] run():        16: [11][F8:C6:50:59:B6:62] LUMS-Events (-86) *
+11:21:02.690 > [D][WiFiMulti.cpp:151] run():        17: [11][F8:A7:3A:87:EE:E2] LUMS-Events (-88) *
+11:21:02.695 > [D][WiFiMulti.cpp:151] run():        18: [1][22:10:B3:47:61:47] DIRECT-KFBAJWAmsUZ (-89) *
+11:21:02.706 > [D][WiFiMulti.cpp:151] run():        19: [6][BC:67:1C:64:33:21] TV-LED (-91) *
+11:21:02.712 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-57)
+11:21:06.328 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:21:06.341 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:21:06.346 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:21:06.355 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:21:06.360 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:21:06.364 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:21:06.365 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:21:06.375 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:21:06.379 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:21:06.383 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:21:06.389 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:21:06.394 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:21:06.399 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:21:06.400 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:21:06.441 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:06.459 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:06.461 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:06.461 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:06.474 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:06.474 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229732
+11:21:06.490 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:21:06.548 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:21:06.556 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:21:06.559 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:21:06.559 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:21:06.578 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:21:08.650 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:21:08.656 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:21:08.656 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186172
+11:21:08.656 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:21:08.676 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:21:08.677 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:21:09.158 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:09.158 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:21:09.173 > [I][main.cpp:224] setup(): Restarting...
+11:21:10.168 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:21:10.168 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:10.183 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:10.213 > ets Jul 29 2019 12:21:46
+11:21:10.216 > 
+11:21:10.216 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:21:10.221 > configsip: 0, SPIWP:0xee
+11:21:10.223 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:21:10.229 > mode:DIO, clock div:2
+11:21:10.232 > load:0x3fff0018,len:4
+11:21:10.233 > load:0x3fff001c,len:1044
+11:21:10.236 > load:0x40078000,len:10124
+11:21:10.238 > load:0x40080400,len:5828
+11:21:10.240 > entry 0x400806a8
+11:21:10.793 > [D][main.cpp:97] setup(): 
+11:21:10.795 > Current Version: 1.1.8
+11:21:10.797 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:21:10.809 > Commit Date: 15th October 2024
+11:21:10.841 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:21:10.952 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:21:11.956 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:21:11.956 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:21:11.956 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:21:11.971 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:21:11.971 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:21:11.987 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:21:11.987 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:21:11.987 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:21:12.002 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:21:12.002 > [D][Storage.cpp:81] init_storage(): File is: 
+11:21:12.014 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:21:12.018 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:21:12.018 > [D][Storage.cpp:84] init_storage(): 225492 
+11:21:12.018 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:21:12.018 > [D][main.cpp:149] setup(): Storage initialization success!
+11:21:12.154 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:21:12.154 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:21:12.169 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:12.169 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:12.169 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:21:12.184 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:21:12.184 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:21:12.184 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:21:12.200 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:21:12.200 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:21:12.200 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:21:12.214 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:21:12.216 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:21:12.216 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:21:12.216 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:21:15.652 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:21:15.652 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 20
+11:21:15.668 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:21:15.668 > [I][WiFiMulti.cpp:119] run(): [WIFI] 20 networks found
+11:21:15.668 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-49) *
+11:21:15.684 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-53) *
+11:21:15.691 > [D][WiFiMulti.cpp:151] run():        2: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-54) *
+11:21:15.699 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS-Events (-55) *
+11:21:15.706 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A1] TV-LED (-55) *
+11:21:15.713 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A0] Wireless (-57) *
+11:21:15.720 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-60) *
+11:21:15.723 > [D][WiFiMulti.cpp:151] run():        7: [6][6E:C7:EC:89:16:7D] goat (-62) *
+11:21:15.723 > [D][WiFiMulti.cpp:151] run():        8: [1][4C:E1:75:3C:A2:42] LUMS-Events (-77) *
+11:21:15.738 > [D][WiFiMulti.cpp:151] run():        9: [1][4C:E1:75:3C:A2:40] Wireless (-78) *
+11:21:15.738 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-78) *
+11:21:15.754 > [D][WiFiMulti.cpp:151] run():        11: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-78) *
+11:21:15.754 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F0] wireless (-79) *
+11:21:15.770 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F3] LUMS-Events (-79) *
+11:21:15.770 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:60] wireless (-84) *
+11:21:15.770 > [D][WiFiMulti.cpp:151] run():        15: [1][7C:45:D0:47:E0:C1] ZONG4G-E0C1 (-85) *
+11:21:15.785 > [D][WiFiMulti.cpp:151] run():        16: [1][4C:E1:75:1D:01:62] TV-LED (-85) *
+11:21:15.785 > [D][WiFiMulti.cpp:151] run():        17: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:21:15.801 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:C6:50:59:B6:62] LUMS-Events (-86) *
+11:21:15.801 > [D][WiFiMulti.cpp:151] run():        19: [1][76:1B:EE:DE:F7:48] Mustafa's Reno 6 (-88) *
+11:21:15.821 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-49)
+11:21:18.992 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:21:19.006 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:21:19.011 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:21:19.019 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:21:19.024 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:21:19.029 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:21:19.034 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:21:19.039 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:21:19.044 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:21:19.050 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:21:19.055 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:21:19.059 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:21:19.064 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:21:19.069 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:21:19.259 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:19.265 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:19.271 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:19.278 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:19.283 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:19.289 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 228152
+11:21:19.296 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:21:19.342 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:21:19.350 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:21:19.357 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:21:19.364 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:21:19.372 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:21:21.545 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:21:21.549 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:21:21.558 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186180
+11:21:21.563 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:21:21.572 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:21:21.574 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:21:22.063 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:22.070 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:21:22.074 > [I][main.cpp:224] setup(): Restarting...
+11:21:23.072 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:21:23.078 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:23.084 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:23.104 > ets Jul 29 2019 12:21:46
+11:21:23.105 > 
+11:21:23.106 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:21:23.111 > configsip: 0, SPIWP:0xee
+11:21:23.113 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:21:23.120 > mode:DIO, clock div:2
+11:21:23.121 > load:0x3fff0018,len:4
+11:21:23.123 > load:0x3fff001c,len:1044
+11:21:23.126 > load:0x40078000,len:10124
+11:21:23.128 > load:0x40080400,len:5828
+11:21:23.131 > entry 0x400806a8
+11:21:23.684 > [D][main.cpp:97] setup(): 
+11:21:23.685 > Current Version: 1.1.8
+11:21:23.688 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:21:23.699 > Commit Date: 15th October 2024
+11:21:23.739 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:21:23.847 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:21:24.848 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:21:24.853 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:21:24.857 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:21:24.862 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:21:24.868 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:21:24.880 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:21:24.887 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:21:24.892 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:21:24.897 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:21:24.902 > [D][Storage.cpp:81] init_storage(): File is: 
+11:21:24.906 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:21:24.911 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:21:24.915 > [D][Storage.cpp:84] init_storage(): 225492 
+11:21:24.918 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:21:24.923 > [D][main.cpp:149] setup(): Storage initialization success!
+11:21:25.039 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:21:25.055 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:21:25.060 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:25.064 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:25.064 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:21:25.064 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:21:25.081 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:21:25.085 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:21:25.089 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:21:25.096 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:21:25.101 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:21:25.105 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:21:25.109 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:21:25.113 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:21:25.118 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:21:28.745 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:21:28.751 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 16
+11:21:28.757 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:21:28.761 > [I][WiFiMulti.cpp:119] run(): [WIFI] 16 networks found
+11:21:28.766 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+11:21:28.774 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-50) *
+11:21:28.781 > [D][WiFiMulti.cpp:151] run():        2: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-54) *
+11:21:28.788 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-55) *
+11:21:28.795 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-56) *
+11:21:28.802 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A2] LUMS-Events (-56) *
+11:21:28.809 > [D][WiFiMulti.cpp:151] run():        6: [6][6E:C7:EC:89:16:7D] goat (-61) *
+11:21:28.816 > [D][WiFiMulti.cpp:151] run():        7: [6][90:9A:4A:B8:CD:83] Airbus380 (-63) *
+11:21:28.823 > [D][WiFiMulti.cpp:151] run():        8: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-74) *
+11:21:28.832 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F0] wireless (-76) *
+11:21:28.839 > [D][WiFiMulti.cpp:151] run():        10: [1][70:70:8B:DD:0B:F3] LUMS-Events (-76) *
+11:21:28.846 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:3C:A2:41] TV-LED (-79) *
+11:21:28.853 > [D][WiFiMulti.cpp:151] run():        12: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-80) *
+11:21:28.860 > [D][WiFiMulti.cpp:151] run():        13: [11][F8:C6:50:59:B6:60] wireless (-83) *
+11:21:28.868 > [D][WiFiMulti.cpp:151] run():        14: [1][76:1B:EE:DE:F7:48] Mustafa's Reno 6 (-84) *
+11:21:28.875 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:C6:50:59:B6:62] LUMS-Events (-85) *
+11:21:28.883 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-50)
+11:21:33.374 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:21:37.111 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:21:37.117 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:21:37.126 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:21:37.130 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:21:37.135 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:21:37.140 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:21:37.145 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:21:37.149 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:21:37.154 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:21:37.160 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:21:37.164 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:21:37.170 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:21:37.175 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:21:38.173 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+11:21:38.178 > 
+11:21:38.178 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+11:21:39.379 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:39.385 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:39.391 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:39.397 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:39.403 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:39.409 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 230052
+11:21:39.416 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:21:39.722 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:21:39.730 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:21:39.737 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:21:39.744 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:21:39.751 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:21:44.177 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:21:44.179 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:21:44.190 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186280
+11:21:44.196 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:21:44.196 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:21:44.212 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:21:50.480 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:21:50.496 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:21:50.496 > [I][main.cpp:224] setup(): Restarting...
+11:21:51.502 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:21:51.502 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:51.502 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:21:51.533 > ets Jul 29 2019 12:21:46
+11:21:51.533 > 
+11:21:51.533 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:21:51.533 > configsip: 0, SPIWP:0xee
+11:21:51.533 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:21:51.549 > mode:DIO, clock div:2
+11:21:51.549 > load:0x3fff0018,len:4
+11:21:51.549 > load:0x3fff001c,len:1044
+11:21:51.549 > load:0x40078000,len:10124
+11:21:51.549 > load:0x40080400,len:5828
+11:21:51.549 > entry 0x400806a8
+11:21:52.112 > [D][main.cpp:97] setup(): 
+11:21:52.112 > Current Version: 1.1.8
+11:21:52.112 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:21:52.128 > Commit Date: 15th October 2024
+11:21:52.168 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:21:52.273 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:21:53.275 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:21:53.275 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:21:53.275 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:21:53.288 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:21:53.288 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:21:53.304 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:21:53.304 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:21:53.320 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:21:53.320 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:21:53.320 > [D][Storage.cpp:81] init_storage(): File is: 
+11:21:53.335 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:21:53.335 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:21:53.335 > [D][Storage.cpp:84] init_storage(): 225492 
+11:21:53.335 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:21:53.351 > [D][main.cpp:149] setup(): Storage initialization success!
+11:21:53.477 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:21:53.477 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:21:53.477 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:53.492 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:21:53.492 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:21:53.492 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:21:53.508 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:21:53.508 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:21:53.508 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:21:53.524 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:21:53.524 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:21:53.524 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:21:53.524 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:21:53.539 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:21:53.539 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:21:56.361 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:21:56.376 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 9
+11:21:56.376 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:21:56.385 > [I][WiFiMulti.cpp:119] run(): [WIFI] 9 networks found
+11:21:56.393 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-47) *
+11:21:56.400 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:21:56.409 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A0] Wireless (-54) *
+11:21:56.412 > [D][WiFiMulti.cpp:151] run():        3: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+11:21:56.423 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A1] TV-LED (-55) *
+11:21:56.431 > [D][WiFiMulti.cpp:151] run():        5: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+11:21:56.436 > [D][WiFiMulti.cpp:151] run():        6: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:21:56.443 > [D][WiFiMulti.cpp:151] run():        7: [11][F8:A7:3A:87:EE:E0] wireless (-87) *
+11:21:56.451 > [D][WiFiMulti.cpp:151] run():        8: [11][28:6F:7F:DF:D3:31] TV-LED (-91) *
+11:21:56.455 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-47)
+11:21:59.846 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:22:03.012 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:22:03.012 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:22:03.028 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:22:03.028 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:22:03.028 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:22:03.043 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:22:03.043 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:22:03.043 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:22:03.059 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:22:03.059 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:22:03.059 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:22:03.059 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:22:03.074 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:22:03.216 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:03.216 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:03.216 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:03.231 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:03.231 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:03.247 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229876
+11:22:03.247 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:22:03.463 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:22:03.463 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:22:03.478 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:22:03.478 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:22:03.494 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:22:08.231 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:22:08.231 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:22:08.246 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186576
+11:22:08.246 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:22:08.262 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:22:08.262 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:22:08.764 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:08.779 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:22:08.779 > [I][main.cpp:224] setup(): Restarting...
+11:22:09.784 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:22:09.790 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:09.795 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:09.815 > ets Jul 29 2019 12:21:46
+11:22:09.817 > 
+11:22:09.818 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:22:09.823 > configsip: 0, SPIWP:0xee
+11:22:09.824 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:22:09.830 > mode:DIO, clock div:2
+11:22:09.832 > load:0x3fff0018,len:4
+11:22:09.835 > load:0x3fff001c,len:1044
+11:22:09.837 > load:0x40078000,len:10124
+11:22:09.840 > load:0x40080400,len:5828
+11:22:09.842 > entry 0x400806a8
+11:22:10.395 > [D][main.cpp:97] setup(): 
+11:22:10.397 > Current Version: 1.1.8
+11:22:10.399 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:22:10.411 > Commit Date: 15th October 2024
+11:22:10.445 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:22:10.558 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:22:11.556 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:22:11.556 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:22:11.556 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:22:11.571 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:22:11.571 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:22:11.587 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:22:11.587 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:22:11.602 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:22:11.602 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:22:11.602 > [D][Storage.cpp:81] init_storage(): File is: 
+11:22:11.602 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:22:11.618 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:22:11.618 > [D][Storage.cpp:84] init_storage(): 225492 
+11:22:11.618 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:22:11.634 > [D][main.cpp:149] setup(): Storage initialization success!
+11:22:11.766 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:22:11.772 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:22:11.776 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:11.777 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:11.788 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:22:11.793 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:22:11.797 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:22:11.802 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:22:11.807 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:22:11.812 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:22:11.817 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:22:11.821 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:22:11.821 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:22:11.821 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:22:11.821 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:22:14.653 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:22:14.653 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 8
+11:22:14.668 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:22:14.668 > [I][WiFiMulti.cpp:119] run(): [WIFI] 8 networks found
+11:22:14.668 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-49) *
+11:22:14.684 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:22:14.684 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS-Events (-53) *
+11:22:14.700 > [D][WiFiMulti.cpp:151] run():        3: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-53) *
+11:22:14.700 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-54) *
+11:22:14.715 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A1] TV-LED (-54) *
+11:22:14.723 > [D][WiFiMulti.cpp:151] run():        6: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:22:14.731 > [D][WiFiMulti.cpp:151] run():        7: [11][F8:C6:50:59:B6:62] LUMS-Events (-85) *
+11:22:14.731 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-49)
+11:22:17.736 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:22:17.752 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:22:17.752 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:22:17.767 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:22:17.767 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:22:17.783 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:22:17.783 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:22:17.783 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:22:17.783 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:22:17.799 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:22:17.799 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:22:17.799 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:22:17.814 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:22:17.814 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:22:18.041 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:18.047 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:18.051 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:18.059 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:18.065 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:18.071 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229720
+11:22:18.079 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:22:18.160 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:22:18.172 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:22:18.178 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:22:18.178 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:22:18.194 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:22:20.525 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:22:20.541 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:22:20.541 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 186032
+11:22:20.557 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:22:20.557 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:22:20.557 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:22:21.042 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:21.042 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:22:21.058 > [I][main.cpp:224] setup(): Restarting...
+11:22:22.061 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:22:22.065 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:22.071 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:22.091 > ets Jul 29 2019 12:21:46
+11:22:22.094 > 
+11:22:22.094 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:22:22.098 > configsip: 0, SPIWP:0xee
+11:22:22.100 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:22:22.107 > mode:DIO, clock div:2
+11:22:22.109 > load:0x3fff0018,len:4
+11:22:22.111 > load:0x3fff001c,len:1044
+11:22:22.114 > load:0x40078000,len:10124
+11:22:22.116 > load:0x40080400,len:5828
+11:22:22.118 > entry 0x400806a8
+11:22:22.656 > [D][main.cpp:97] setup(): 
+11:22:22.672 > Current Version: 1.1.8
+11:22:22.674 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:22:22.676 > Commit Date: 15th October 2024
+11:22:22.724 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+11:22:22.834 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+11:22:23.833 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+11:22:23.833 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+11:22:23.843 > [D][AQISensor.cpp:246] init(): SGP41 initialized
+11:22:23.843 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+11:22:23.849 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:22:23.865 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+11:22:23.865 > [D][Storage.cpp:44] init_storage(): SDHC 
+11:22:23.865 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+11:22:23.881 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+11:22:23.881 > [D][Storage.cpp:81] init_storage(): File is: 
+11:22:23.881 > [D][Storage.cpp:82] init_storage(): /20250122.txt 
+11:22:23.896 > [D][Storage.cpp:83] init_storage(): Position is: 
+11:22:23.896 > [D][Storage.cpp:84] init_storage(): 225492 
+11:22:23.896 > [I][Storage.cpp:141] init_storage(): AP storage found!
+11:22:23.896 > [D][main.cpp:149] setup(): Storage initialization success!
+11:22:24.044 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:22:24.044 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:22:24.053 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:24.053 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:24.053 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+11:22:24.069 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+11:22:24.069 > [D][Storage.cpp:710] return_APList(): 12344321 
+11:22:24.069 > [D][Storage.cpp:721] return_APList(): New AP returned 
+11:22:24.084 > [D][Storage.cpp:736] return_APList(): End of data reached 
+11:22:24.084 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:22:24.084 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:22:24.084 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:22:24.100 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:22:24.100 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:22:24.100 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:22:26.939 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:22:26.939 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 8
+11:22:26.950 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:22:26.950 > [I][WiFiMulti.cpp:119] run(): [WIFI] 8 networks found
+11:22:26.955 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-53) *
+11:22:26.955 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A0] Wireless (-55) *
+11:22:26.970 > [D][WiFiMulti.cpp:151] run():        2: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+11:22:26.970 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS-Events (-56) *
+11:22:26.986 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A1] TV-LED (-56) *
+11:22:26.986 > [D][WiFiMulti.cpp:151] run():        5: [6][6E:C7:EC:89:16:7D] goat (-65) *
+11:22:27.002 > [D][WiFiMulti.cpp:151] run():        6: [1][4C:E1:75:3C:A2:40] Wireless (-75) *
+11:22:27.002 > [D][WiFiMulti.cpp:151] run():        7: [11][F8:C6:50:59:B6:60] wireless (-84) *
+11:22:27.002 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-53)
+11:22:30.405 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:22:35.061 > dhcps: send_nak>>udp_sendto result 0
+11:22:35.078 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:22:35.093 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:22:35.093 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:22:35.093 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:22:35.109 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:22:35.109 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:22:35.109 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:22:35.125 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:22:35.125 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:22:35.125 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:22:35.140 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+11:22:35.140 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:22:35.140 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:22:36.141 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+11:22:36.141 > 
+11:22:36.141 > [E][main.cpp:209] setup(): No wifi available, waiting for connection
+11:22:37.315 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:37.315 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:37.315 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:37.330 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:37.330 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:37.346 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 229492
+11:22:37.346 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:22:37.410 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:22:37.425 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:22:37.425 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:22:37.441 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:22:37.441 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:22:39.368 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:22:39.368 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:22:39.368 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 185812
+11:22:39.383 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:22:39.391 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:22:39.399 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:22:39.981 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:39.993 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:22:39.997 > [I][main.cpp:224] setup(): Restarting...
+11:22:40.997 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:22:40.997 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:40.997 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:41.026 > ets Jul 29 2019 12:21:46
+11:22:41.042 > 
+11:22:41.042 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:22:41.042 > configsip: 0, SPIWP:0xee
+11:22:41.042 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:22:41.042 > mode:DIO, clock div:2
+11:22:41.057 > load:0x3fff0018,len:4
+11:22:41.057 > load:0x3fff001c,len:1044
+11:22:41.057 > load:0x40078000,len:10124
+11:22:41.057 > load:0x40080400,len:5828
+11:22:41.057 > entry 0x400806a8
+11:22:41.615 > [D][main.cpp:97] setup(): 
+11:22:41.615 > Current Version: 1.1.8
+11:22:41.615 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:22:41.631 > Commit Date: 15th October 2024
+11:22:41.647 > [E][AQISensor.cpp:221] init(): Could not find AHT20 sensor! Check wiring.
+11:22:41.647 > [D][main.cpp:141] setup(): Failed to initialize AQI sensors!
+11:22:41.662 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:22:41.947 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:22:41.963 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:22:41.963 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:22:41.963 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:22:42.262 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:22:42.262 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:22:42.278 > [E][Storage.cpp:24] init_storage(): Card Initialization Failed 
+11:22:42.278 > [E][main.cpp:155] setup(): Storage initialization failed!
+11:22:42.405 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:22:42.419 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:42.419 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:22:42.419 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:42.435 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:22:42.435 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:22:42.435 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:22:42.435 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:22:42.451 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:22:42.451 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:22:45.676 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:22:45.676 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 12
+11:22:45.692 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:22:45.692 > [I][WiFiMulti.cpp:119] run(): [WIFI] 12 networks found
+11:22:45.692 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:22:45.711 > [D][WiFiMulti.cpp:149] run():  --->   1: [3][6C:5A:B0:F4:DA:84] NeuBolt (-55) *
+11:22:45.711 > [D][WiFiMulti.cpp:151] run():        2: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-57) *
+11:22:45.723 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS-Events (-57) *
+11:22:45.723 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A1] TV-LED (-57) *
+11:22:45.739 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A0] Wireless (-58) *
+11:22:45.739 > [D][WiFiMulti.cpp:151] run():        6: [6][6E:C7:EC:89:16:7D] goat (-61) *
+11:22:45.754 > [D][WiFiMulti.cpp:151] run():        7: [6][90:9A:4A:B8:CD:83] Airbus380 (-68) *
+11:22:45.754 > [D][WiFiMulti.cpp:151] run():        8: [1][4C:E1:75:3C:A2:41] TV-LED (-77) *
+11:22:45.754 > [D][WiFiMulti.cpp:151] run():        9: [11][F8:C6:50:59:B6:60] wireless (-83) *
+11:22:45.774 > [D][WiFiMulti.cpp:151] run():        10: [11][F8:C6:50:59:B6:62] LUMS-Events (-83) *
+11:22:45.779 > [D][WiFiMulti.cpp:151] run():        11: [6][BC:67:1C:64:33:20] Wireless (-89) *
+11:22:45.779 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-55)
+11:22:48.951 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:22:48.967 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:22:48.967 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:22:48.982 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:22:48.982 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:22:48.998 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:22:48.998 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:22:48.998 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:22:48.998 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:22:49.018 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:22:49.018 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:22:49.018 > [D][rtc.cpp:26] initRTC(): RTC initialization failed
+11:22:49.029 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:22:49.029 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:22:49.124 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:49.124 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:49.139 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:49.139 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:49.139 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:49.155 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 258508
+11:22:49.155 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:22:49.319 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:22:49.328 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:22:49.328 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:22:49.343 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:22:49.343 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:22:51.242 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:22:51.257 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:22:51.257 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 215084
+11:22:51.273 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:22:51.273 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:22:51.289 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:22:51.869 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:22:51.869 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:22:51.885 > [I][main.cpp:224] setup(): Restarting...
+11:22:52.873 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:22:52.888 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:52.888 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:22:52.904 > ets Jul 29 2019 12:21:46
+11:22:52.904 > 
+11:22:52.904 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:22:52.904 > configsip: 0, SPIWP:0xee
+11:22:52.904 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:22:52.920 > mode:DIO, clock div:2
+11:22:52.920 > load:0x3fff0018,len:4
+11:22:52.920 > load:0x3fff001c,len:1044
+11:22:52.926 > load:0x40078000,len:10124
+11:22:52.926 > load:0x40080400,len:5828
+11:22:52.926 > entry 0x400806a8
+11:22:53.472 > [D][main.cpp:97] setup(): 
+11:22:53.472 > Current Version: 1.1.8
+11:22:53.488 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:22:53.488 > Commit Date: 15th October 2024
+11:22:53.503 > [E][AQISensor.cpp:221] init(): Could not find AHT20 sensor! Check wiring.
+11:22:53.519 > [D][main.cpp:141] setup(): Failed to initialize AQI sensors!
+11:22:53.528 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:22:53.817 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:22:53.829 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:22:53.833 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:22:53.833 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:22:54.131 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:22:54.131 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:22:54.131 > [E][Storage.cpp:24] init_storage(): Card Initialization Failed 
+11:22:54.147 > [E][main.cpp:155] setup(): Storage initialization failed!
+11:22:54.272 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:22:54.272 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:54.288 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:22:54.288 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:22:54.288 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:22:54.303 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:22:54.303 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:22:54.303 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:22:54.303 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:22:54.319 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:22:57.149 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:22:57.149 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 7
+11:22:57.149 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:22:57.164 > [I][WiFiMulti.cpp:119] run(): [WIFI] 7 networks found
+11:22:57.164 > [D][WiFiMulti.cpp:151] run():        0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+11:22:57.164 > [D][WiFiMulti.cpp:151] run():        1: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+11:22:57.180 > [D][WiFiMulti.cpp:149] run():  --->   2: [3][6C:5A:B0:F4:DA:84] NeuBolt (-56) *
+11:22:57.180 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A0] Wireless (-58) *
+11:22:57.196 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-59) *
+11:22:57.196 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A1] TV-LED (-59) *
+11:22:57.211 > [D][WiFiMulti.cpp:151] run():        6: [1][4C:E1:75:3C:A2:40] Wireless (-76) *
+11:22:57.211 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-56)
+11:23:00.376 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:23:00.391 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:23:00.407 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:23:00.407 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:23:00.422 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:23:00.422 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:23:00.422 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:23:00.422 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:23:00.438 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:23:00.438 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:23:00.450 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:23:00.454 > [D][rtc.cpp:26] initRTC(): RTC initialization failed
+11:23:00.454 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:23:00.454 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:23:00.580 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:00.580 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:00.580 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:00.595 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:00.595 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:00.595 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 258488
+11:23:00.611 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:23:00.752 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:23:00.752 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:23:00.768 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:23:00.768 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:23:00.783 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:23:02.717 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:23:02.720 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:23:02.720 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 215216
+11:23:02.733 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:23:02.733 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:23:02.749 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:23:03.237 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:03.237 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:23:03.253 > [I][main.cpp:224] setup(): Restarting...
+11:23:04.244 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:23:04.244 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:23:04.260 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:23:04.291 > ets Jul 29 2019 12:21:46
+11:23:04.291 > 
+11:23:04.291 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:23:04.291 > configsip: 0, SPIWP:0xee
+11:23:04.291 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:23:04.307 > mode:DIO, clock div:2
+11:23:04.307 > load:0x3fff0018,len:4
+11:23:04.307 > load:0x3fff001c,len:1044
+11:23:04.307 > load:0x40078000,len:10124
+11:23:04.307 > load:0x40080400,len:5828
+11:23:04.307 > entry 0x400806a8
+11:23:04.861 > [D][main.cpp:97] setup(): 
+11:23:04.873 > Current Version: 1.1.8
+11:23:04.873 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:23:04.873 > Commit Date: 15th October 2024
+11:23:04.889 > [E][AQISensor.cpp:221] init(): Could not find AHT20 sensor! Check wiring.
+11:23:04.904 > [D][main.cpp:141] setup(): Failed to initialize AQI sensors!
+11:23:04.904 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:23:05.202 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:23:05.202 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:23:05.218 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:23:05.218 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:23:05.517 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:23:05.517 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:23:05.517 > [E][Storage.cpp:24] init_storage(): Card Initialization Failed 
+11:23:05.532 > [E][main.cpp:155] setup(): Storage initialization failed!
+11:23:05.704 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:23:05.704 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:23:05.704 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+11:23:05.719 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:23:05.719 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+11:23:05.719 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+11:23:05.735 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+11:23:05.735 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+11:23:05.735 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+11:23:05.750 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+11:23:08.774 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+11:23:08.774 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 12
+11:23:08.774 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+11:23:08.789 > [I][WiFiMulti.cpp:119] run(): [WIFI] 12 networks found
+11:23:08.789 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-42) *
+11:23:08.789 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+11:23:08.805 > [D][WiFiMulti.cpp:151] run():        2: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+11:23:08.805 > [D][WiFiMulti.cpp:151] run():        3: [6][6E:C7:EC:89:16:7D] goat (-56) *
+11:23:08.821 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-59) *
+11:23:08.821 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A2] LUMS-Events (-59) *
+11:23:08.836 > [D][WiFiMulti.cpp:151] run():        6: [11][00:A6:CA:47:AC:A1] TV-LED (-59) *
+11:23:08.836 > [D][WiFiMulti.cpp:151] run():        7: [1][76:2A:12:9C:1F:7C] Infinix HOT 40i (-74) *
+11:23:08.852 > [D][WiFiMulti.cpp:151] run():        8: [11][F8:A7:3A:87:EE:E0] wireless (-83) *
+11:23:08.852 > [D][WiFiMulti.cpp:151] run():        9: [11][F8:C6:50:59:B6:60] wireless (-85) *
+11:23:08.867 > [D][WiFiMulti.cpp:151] run():        10: [11][28:6F:7F:DF:D3:30] Wireless (-90) *
+11:23:08.871 > [D][WiFiMulti.cpp:151] run():        11: [11][28:6F:7F:DF:D3:31] TV-LED (-92) *
+11:23:08.871 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-42)
+11:23:12.066 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+11:23:12.066 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+11:23:12.082 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.119, MASK: 255.255.255.0, GW: 192.168.0.1
+11:23:12.082 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+11:23:12.082 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+11:23:12.097 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.119
+11:23:12.097 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+11:23:12.097 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+11:23:12.113 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+11:23:12.113 > [D][main.cpp:164] setup(): Initialized wifi successfully
+11:23:12.113 > [D][main.cpp:165] setup(): MAC: 34:5F:45:A9:22:60
+11:23:12.129 > [D][rtc.cpp:26] initRTC(): RTC initialization failed
+11:23:12.129 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+11:23:12.129 > [I][main.cpp:204] setup(): Settings not found! Loading from Firebase...
+11:23:12.180 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:12.192 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:12.192 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:12.192 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:12.208 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:12.208 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 258604
+11:23:12.208 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+11:23:12.381 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+11:23:12.381 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+11:23:12.396 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+11:23:12.396 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+11:23:12.412 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+11:23:14.689 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+11:23:14.699 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+11:23:14.699 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 215188
+11:23:14.715 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+11:23:14.715 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+11:23:14.715 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+11:23:15.204 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+11:23:15.204 > [I][main.cpp:223] setup(): Got device ID from Firebase: 
+11:23:15.220 > [I][main.cpp:224] setup(): Restarting...
+11:23:16.219 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+11:23:16.219 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:23:16.219 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+11:23:16.250 > ets Jul 29 2019 12:21:46
+11:23:16.250 > 
+11:23:16.250 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:23:16.250 > configsip: 0, SPIWP:0xee
+11:23:16.250 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:23:16.266 > mode:DIO, clock div:2
+11:23:16.266 > load:0x3fff0018,len:4
+11:23:16.266 > load:0x3fff001c,len:1044
+11:23:16.266 > load:0x40078000,len:10124
+11:23:16.266 > load:0x40080400,len:5828
+11:23:16.266 > entry 0x400806a8
+11:23:16.819 > [D][main.cpp:97] setup(): 
+11:23:16.835 > Current Version: 1.1.8
+11:23:16.835 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+11:23:16.835 > Commit Date: 15th October 2024
+11:23:16.866 > [E][AQISensor.cpp:221] init(): Could not find AHT20 sensor! Check wiring.
+11:23:16.866 > [D][main.cpp:141] setup(): Failed to initialize AQI sensors!
+11:23:16.866 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+11:23:17.170 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:23:17.170 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:23:17.182 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:23:17.186 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
