@@ -58,5 +58,5 @@ jobs:
           platformio run -e $ENV
           
           # Upload the binary to S3 with the versioned filename
-          aws s3 cp .pio/build/$ENV/firmware.bin s3://energy-meter-firmware-updates/$ENV/$BINARY_FILENAME
+          aws s3 cp .pio/build/$ENV/firmware.bin ://firmware-updates/$ENV/$BINARY_FILENAME
         done
