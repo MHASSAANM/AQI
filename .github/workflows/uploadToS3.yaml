@@ -3,7 +3,7 @@ name: Build and Upload ESP32 Binaries
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build_and_upload:
@@ -29,7 +29,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: eu-central-1  # Replace with your AWS region
+        aws-region: Europe (Stockholm) eu-north-1  # Replace with your AWS region
 
     - name: Extract FIRMWARE_VERSION
       id: extract_version
@@ -58,5 +58,5 @@ jobs:
           platformio run -e $ENV
           
           # Upload the binary to S3 with the versioned filename
-          aws s3 cp .pio/build/$ENV/firmware.bin sssss://firmware-updates/$ENV/$BINARY_FILENAME
+          aws s3 cp .pio/build/$ENV/firmware.bin s3://aqi-firemware-updates/$ENV/$BINARY_FILENAME
         done
