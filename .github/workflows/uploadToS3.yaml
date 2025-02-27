@@ -49,14 +49,12 @@ jobs:
         echo "::set-output name=binary_filename::$BINARY_FILENAME"
 
     - name: Build and Upload ESP32 Binaries
-      run: |
-        for ENV in single_slot three_slot six_slot eight_slot nine_slot twelve_slot fifteen_slot; do
-          # Get the generated filename from the previous step
-          BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
-          
-          # Build your firmware
-          platformio run -e $ENV
-          
-          # Upload the binary to S3 with the versioned filename
-          aws s3 cp .pio/build/$ENV/firmware.bin s3://aqi-firemware-updates/$ENV/$BINARY_FILENAME
-        done
+  run: |
+      BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
+      
+      # Build firmware
+      platformio run
+      
+      # Upload to S3
+      aws s3 cp .pio/build/*/firmware.bin s3://aqi-firmware-updates/aqi/$BINARY_FILENAME
+
