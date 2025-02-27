@@ -19,7 +19,8 @@ jobs:
         python-version: '3.x'
 
     - name: Install PlatformIO
-      run: pip install -U platformio
+      run: |
+        pip install -U platformio
       env:
         PLATFORMIO_HOME: ${{ github.workspace }}/.platformio
 
@@ -28,37 +29,31 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: eu-north-1  # Ensure this is correct
-
-    - name: Check if S3 Bucket Exists
-      run: |
-        if ! aws s3api head-bucket --bucket aqi-firmware-updates 2>/dev/null; then
-          echo "S3 bucket does not exist. Exiting."
-          exit 1
-        fi
+        aws-region: eu-north-1  # Correct AWS region format
 
     - name: Extract FIRMWARE_VERSION
       id: extract_version
       run: |
+        # Extract the FIRMWARE_VERSION from include/config.h
         FIRMWARE_VERSION=$(grep -oP '(?<=#define FIRMWARE_VERSION ")[^"]+' include/config.h)
         echo "::set-output name=firmware_version::$FIRMWARE_VERSION"
 
     - name: Generate Binary Filename
       id: generate_filename
       run: |
+        # Get the extracted FIRMWARE_VERSION
         VERSION="${{ steps.extract_version.outputs.firmware_version }}"
+
+        # Generate the filename
         BINARY_FILENAME="firmware_${VERSION}.bin"
         echo "::set-output name=binary_filename::$BINARY_FILENAME"
 
-    - name: Build Firmware
-      run: |
-        platformio run -e esp32doit-devkit-v1
-
-    - name: Check Firmware File
-      run: ls -R .pio/build || echo "No firmware file found!"
-
-    - name: Upload Firmware to S3
+    - name: Build and Upload ESP32 Binaries
       run: |
         BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
-        aws s3 cp .pio/build/esp32doit-devkit-v1/firmware.bin s3://aqi-firmware-updates/aqi/$BINARY_FILENAME
-
+        
+        # Build firmware
+        platformio run
+        
+        # Upload to S3
+        aws s3 cp .pio/build/*/firmware.bin s3://aqi-firemware-updates/aqi/$BINARY_FILENAME
