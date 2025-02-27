@@ -29,7 +29,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: Europe (Stockholm) eu-north-1  # Replace with your AWS region
+        aws-region: eu-north-1  # Correct AWS region format
 
     - name: Extract FIRMWARE_VERSION
       id: extract_version
@@ -49,12 +49,11 @@ jobs:
         echo "::set-output name=binary_filename::$BINARY_FILENAME"
 
     - name: Build and Upload ESP32 Binaries
-  run: |
-      BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
-      
-      # Build firmware
-      platformio run
-      
-      # Upload to S3
-      aws s3 cp .pio/build/*/firmware.bin s3://aqi-firmware-updates/aqi/$BINARY_FILENAME
-
+      run: |
+        BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
+        
+        # Build firmware
+        platformio run
+        
+        # Upload to S3
+        aws s3 cp .pio/build/*/firmware.bin s3://aqi-firmware-updates/aqi/$BINARY_FILENAME
