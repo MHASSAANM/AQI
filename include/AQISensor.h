@@ -82,8 +82,6 @@ private:
 #include <Wire.h>
 #include <cmath>
 #include <SensirionI2CSgp41.h>
-#include <NOxGasIndexAlgorithm.h>
-#include <VOCGasIndexAlgorithm.h>
 #include <HardwareSerial.h>
 #include <SoftwareSerial.h>
 
@@ -99,8 +97,6 @@ struct AQIData {
     float co_ppm;
     float no2_ppm;
     float nh3_ppm;
-    int32_t voc_index;
-    int32_t nox_index;
     uint16_t so2_ppm;
 
 };
@@ -115,9 +111,6 @@ public:
 private:
     Adafruit_AHTX0 aht;
     Adafruit_BMP280 bmp;
-    SensirionI2CSgp41 sgp41;
-    VOCGasIndexAlgorithm voc_algorithm;
-    NOxGasIndexAlgorithm nox_algorithm;
 
     HardwareSerial mySerial = HardwareSerial(1);
     SoftwareSerial so2Serial;
@@ -131,7 +124,6 @@ private:
     bool readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0);
     float readOzone();
     void readMICS6814(float &co, float &no2, float &nh3);
-    void readSGP41(int32_t &voc_index, int32_t &nox_index);
     uint16_t readSO2();
 
     AQIData aqiData;

@@ -212,7 +212,7 @@ AQIData AQISensor::getData() {
 #include "AQISensor.h"
 
 // Constructor
-AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0} {} 
+AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0} {} 
 
 // Initialize sensors
 bool AQISensor::init() {
@@ -243,9 +243,6 @@ bool AQISensor::init() {
     pinMode(35, INPUT);
     log_d("MICS6814 sensor initialized");
 
-    Wire.begin();
-    sgp41.begin(Wire);
-    log_d("SGP41 sensor initialized");
 
     // Initialize SO2 sensor
     so2Serial.begin(9600);
@@ -371,32 +368,6 @@ void AQISensor::readMICS6814(float &co, float &no2, float &nh3) {
 
 }
 
-// Read SGP41 sensor data
-void AQISensor::readSGP41(int32_t &voc_index, int32_t &nox_index) {
-    uint16_t srawVoc = 0;
-    uint16_t srawNox = 0;
-    float temperature;
-    float humidity;
-
-    sensors_event_t humidity_event, temp_event;
-    aht.getEvent(&humidity_event, &temp_event);
-
-    temperature = temp_event.temperature;
-    humidity = humidity_event.relative_humidity;
-
-    uint16_t compensationT = static_cast<uint16_t>((temperature + 45) * 65535 / 175);
-    uint16_t compensationRh = static_cast<uint16_t>(humidity * 65535 / 100);
-
-    uint16_t error = sgp41.measureRawSignals(compensationRh, compensationT, srawVoc, srawNox);
-
-    if (error) {
-        log_e("SGP41 - Error trying to execute measureRawSignals()");
-    } else {
-        voc_index = voc_algorithm.process(srawVoc);
-        nox_index = nox_algorithm.process(srawNox);
-    }
-}
-
 // Read SO2 sensor data
 uint16_t AQISensor::readSO2() {
     uint8_t read_SO2[] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
@@ -425,7 +396,6 @@ AQIData AQISensor::getData() {
     readPMS5007(aqiData.pm1_0, aqiData.pm2_5, aqiData.pm10_0);
     aqiData.ozone_ppb = readOzone();
     readMICS6814(aqiData.co_ppm, aqiData.no2_ppm, aqiData.nh3_ppm);
-    readSGP41(aqiData.voc_index, aqiData.nox_index);
     aqiData.so2_ppm = readSO2();
     
     return aqiData;
