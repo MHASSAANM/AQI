@@ -212,7 +212,7 @@ AQIData AQISensor::getData() {
 #include "AQISensor.h"
 
 // Constructor
-AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0} {} 
+AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0} {} 
 
 // Initialize sensors
 bool AQISensor::init() {
@@ -227,6 +227,29 @@ bool AQISensor::init() {
         return false;
     }
     log_d("BMP280 initialized");
+
+    if (!sgp.begin()) {
+        log_e("Could not find SGP30 sensor! Check wiring.");
+        return false;
+    }
+    log_d("SGP30 initialized");
+
+    // Load stored baseline
+    preferences.begin("sgp30", false);
+    uint16_t eCO2_base = preferences.getUShort("eCO2_base", 0);
+    uint16_t TVOC_base = preferences.getUShort("TVOC_base", 0);
+    unsigned long lastCalibrationTime = preferences.getULong("lastCalibTime", 0);
+    preferences.end();
+
+    unsigned long timeSinceLastCalibration = millis() - lastCalibrationTime;
+
+    if (eCO2_base != 0 && TVOC_base != 0 && timeSinceLastCalibration < SEVEN_DAYS) {
+        sgp.setIAQBaseline(eCO2_base, TVOC_base);
+        log_d("Restored SGP30 baseline: eCO2: %d, TVOC: %d", eCO2_base, TVOC_base);
+    } else {
+        log_d("Baseline too old or not found. Running 12-hour calibration...");
+        startTime = millis();
+    }
 
     Serial2.begin(9600, SERIAL_8N1, PMS_RX_PIN, PMS_TX_PIN);
     Serial2.write(setPassiveCommand, sizeof(setPassiveCommand));
@@ -385,6 +408,44 @@ uint16_t AQISensor::readSO2() {
     return 0; // Return 0 if no valid data
 }
 
+// Read SGP30 sensor data
+void AQISensor::readSGP30(uint16_t &eCO2, uint16_t &TVOC) {
+    sensors_event_t humidity, temp;
+    aht.getEvent(&humidity, &temp);
+    uint32_t absoluteHumidity = getAbsoluteHumidity(temp.temperature, humidity.relative_humidity);
+    sgp.setHumidity(absoluteHumidity);
+    if (!sgp.IAQmeasure()) {
+        log_e("SGP30 measurement failed!");
+        eCO2 = 0;
+        TVOC = 0;
+        return;
+    }
+    eCO2 = sgp.eCO2;
+    TVOC = sgp.TVOC;
+    updateSGP30Baseline();
+}
+// Get absolute humidity
+uint32_t AQISensor::getAbsoluteHumidity(float temperature, float humidity) {
+    return static_cast<uint32_t>(1000.0f * 216.7f * ((humidity / 100.0f) * 6.112f * exp((17.62f * temperature) / (243.12f + temperature)) / (273.15f + temperature)));
+}
+// Update SGP30 baseline
+void AQISensor::updateSGP30Baseline() {
+    if (!baselineUpdated && millis() - startTime >= CALIBRATION_DURATION) {
+        uint16_t eCO2_base, TVOC_base;
+        if (sgp.getIAQBaseline(&eCO2_base, &TVOC_base)) {
+            preferences.begin("sgp30", false);
+            preferences.putUShort("eCO2_base", eCO2_base);
+            preferences.putUShort("TVOC_base", TVOC_base);
+            preferences.putULong("lastCalibTime", millis());
+            preferences.end();
+            baselineUpdated = true;
+            log_d("Stored new SGP30 baseline: eCO2: %d, TVOC: %d", eCO2_base, TVOC_base);
+        } else {
+            log_e("Failed to get SGP30 baseline.");
+        }
+    }
+}
+
 // Get AQI data
 AQIData AQISensor::getData() {
     sensors_event_t tempEvent, humidityEvent;
@@ -397,6 +458,7 @@ AQIData AQISensor::getData() {
     aqiData.ozone_ppb = readOzone();
     readMICS6814(aqiData.co_ppm, aqiData.no2_ppm, aqiData.nh3_ppm);
     aqiData.so2_ppm = readSO2();
+    readSGP30(aqiData.eCO2, aqiData.TVOC);
     
     return aqiData;
 }
