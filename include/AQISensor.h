@@ -103,7 +103,7 @@ struct AQIData {
     uint16_t TVOC; 
 };
 
-// Functions for AQI sensor
+// Functions for AQI sen
 class AQISensor {
 public:
     AQISensor();

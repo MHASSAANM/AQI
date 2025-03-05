@@ -211,7 +211,7 @@ AQIData AQISensor::getData() {
 
 #include "AQISensor.h"
 
-// Constructor
+// Const
 AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0} {} 
 
 // Initialize sensors

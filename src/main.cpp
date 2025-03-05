@@ -406,7 +406,7 @@ void vAcquireData(void *pvParameters) {
                        String(aqiData.so2_ppm)+ ", " +
                        String(aqiData.eCO2) + ", " +  
                        String(aqiData.TVOC);
-
+//
 #ifdef OLED_DISPLAY
             oled_data = true;
             time_oled = getTime();
