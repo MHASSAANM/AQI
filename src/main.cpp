@@ -403,10 +403,8 @@ void vAcquireData(void *pvParameters) {
                        String(aqiData.co_ppm, 2) + ", " +
                        String(aqiData.no2_ppm, 2) + ", " +
                        String(aqiData.nh3_ppm, 2) + ", " +
-                       String(aqiData.so2_ppm)+ ", " +
-                       String(aqiData.eCO2) + ", " +  
-                       String(aqiData.TVOC);
-//
+                       String(aqiData.so2_ppm);
+
 #ifdef OLED_DISPLAY
             oled_data = true;
             time_oled = getTime();
@@ -425,6 +423,7 @@ void vAcquireData(void *pvParameters) {
         vTaskDelayUntil(&xLastWakeTime, (DATA_ACQUISITION_TIME * MS_IN_SECOND));
     }
 }
+
 
 
 
