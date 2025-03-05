@@ -24,6 +24,9 @@ jobs:
       env:
         PLATFORMIO_HOME: ${{ github.workspace }}/.platformio
 
+    - name: Modify CORE_DEBUG_LEVEL in platform.ini
+      run: sed -i 's/-DCORE_DEBUG_LEVEL=5/-DCORE_DEBUG_LEVEL=1/g' platform.ini
+
     - name: Set up AWS CLI
       uses: aws-actions/configure-aws-credentials@v1
       with:

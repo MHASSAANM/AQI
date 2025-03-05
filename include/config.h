@@ -7,7 +7,7 @@
 #define FIRMWARE_DESCRIPTION "AQI Meter Firmware Created"
 #define COMMIT_DATE "15th Feburary 2025"
 
-//#define OTA_UPDATE
+#define OTA_UPDATE
 // #define DUMMY_DATA
 // #define OLED_DISPLAY
 //#define RESET_ESP_STORAGE
