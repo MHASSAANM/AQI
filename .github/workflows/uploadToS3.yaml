@@ -1,0 +1,59 @@
+name: Build and Upload ESP32 Binaries
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install PlatformIO
+      run: |
+        pip install -U platformio
+      env:
+        PLATFORMIO_HOME: ${{ github.workspace }}/.platformio
+
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-north-1  # Correct AWS region format
+
+    - name: Extract FIRMWARE_VERSION
+      id: extract_version
+      run: |
+        # Extract the FIRMWARE_VERSION from include/config.h
+        FIRMWARE_VERSION=$(grep -oP '(?<=#define FIRMWARE_VERSION ")[^"]+' include/config.h)
+        echo "::set-output name=firmware_version::$FIRMWARE_VERSION"
+
+    - name: Generate Binary Filename
+      id: generate_filename
+      run: |
+        # Get the extracted FIRMWARE_VERSION
+        VERSION="${{ steps.extract_version.outputs.firmware_version }}"
+
+        # Generate the filename
+        BINARY_FILENAME="firmware_${VERSION}.bin"
+        echo "::set-output name=binary_filename::$BINARY_FILENAME"
+
+    - name: Build and Upload ESP32 Binaries
+      run: |
+        BINARY_FILENAME="${{ steps.generate_filename.outputs.binary_filename }}"
+        
+        # Build firmware
+        platformio run
+        
+        # Upload to S3
+        aws s3 cp .pio/build/*/firmware.bin s3://aqi-firemware-updates/aqi/$BINARY_FILENAME
