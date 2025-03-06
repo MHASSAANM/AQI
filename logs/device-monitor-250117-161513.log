@@ -1,0 +1,57 @@
+16:15:13.035 > [D][main.cpp:98] setup(): 
+16:15:13.035 > Current Version: 1.1.8
+16:15:13.035 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+16:15:13.035 > Commit Date: 15th October 2024
+16:15:13.035 > [D][AQISensor.cpp:95] init(): AHT20 initialized
+16:15:13.035 > [D][AQISensor.cpp:107] init(): BMP280 initialized
+16:15:13.035 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+16:15:13.035 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+16:15:13.035 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+16:15:13.035 > [D][Storage.cpp:44] init_storage(): SDHC 
+16:15:13.035 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+16:15:13.035 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+16:15:13.035 > [D][Storage.cpp:81] init_storage(): File is: 
+16:15:13.035 > [D][Storage.cpp:82] init_storage(): /20250114.txt 
+16:15:13.035 > [D][Storage.cpp:83] init_storage(): Position is: 
+16:15:13.035 > [D][Storage.cpp:84] init_storage(): 6639 
+16:15:13.035 > [I][Storage.cpp:141] init_storage(): AP storage found!
+16:15:13.035 > [D][main.cpp:149] setup(): Storage initialization success!
+16:15:13.035 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+16:15:13.035 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:15:13.035 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+16:15:13.035 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:15:13.035 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+16:15:13.035 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+16:15:13.035 > [D][Storage.cpp:710] return_APList(): 12344321 
+16:15:13.035 > [D][Storage.cpp:721] return_APList(): New AP returned 
+16:15:13.035 > [D][Storage.cpp:736] return_APList(): End of data reached 
+16:15:13.035 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+16:15:13.035 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+16:15:13.035 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+16:15:13.035 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+16:15:13.035 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+16:15:13.035 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+16:15:13.035 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+16:15:13.035 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 19
+16:15:13.035 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+16:15:13.035 > [I][WiFiMulti.cpp:119] run(): [WIFI] 19 networks found
+16:15:13.035 > [D][WiFiMulti.cpp:149] run():  --->   0: [1][8E:C6:81:80:08:6D] NeuBolt (-36) *
+16:15:13.035 > [D][WiFiMulti.cpp:149] run():  --->   1: [10][6C:5A:B0:F4:DA:84] NeuBolt (-46) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        2: [1][70:B8:F6:5B:74:99] testkit (-48) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        3: [11][D0:37:45:15:31:AE] Ali (-50) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        4: [1][50:0F:F5:80:A3:39] EnergyInformatics (-60) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        5: [6][00:A6:CA:47:AC:A0] Wireless (-60) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        6: [6][00:A6:CA:47:AC:A2] LUMS-Events (-61) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        7: [6][00:A6:CA:47:AC:A1] TV-LED (-61) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        8: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-63) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        9: [6][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:40] Wireless (-75) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:3C:A2:41] TV-LED (-76) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F0] wireless (-77) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:3C:A2:42] LUMS-Events (-77) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F3] LUMS-Events (-79) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        15: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-86) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        16: [11][F8:A7:3A:87:EE:E2] LUMS-Events (-87) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        17: [1][44:C3:46:07:09:3E] iphone 16 pro max (-88) *
+16:15:13.035 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E0] wireless (-89) *
+16:15:13.035 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 8E:C6:81:80:08:6D SSID: NeuBolt Channel: 1 (-36)

@@ -1,0 +1,1825 @@
+12:19:45.476 > [D][main.cpp:97] setup(): 
+12:19:45.476 > Current Version: 1.1.8
+12:19:45.476 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+12:19:45.476 > Commit Date: 15th October 2024
+12:19:45.476 > [D][AQISensor.cpp:224] init(): AHT20 initialized
+12:19:45.476 > [D][AQISensor.cpp:231] init(): BMP280 initialized
+12:19:45.476 > [D][AQISensor.cpp:237] init(): PM5007 initialized
+12:19:45.476 > [D][AQISensor.cpp:241] init(): Ozone sensor initialized
+12:19:45.476 > [D][AQISensor.cpp:249] init(): MICS6814 sensor initialized
+12:19:45.476 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+12:19:45.476 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+12:19:45.476 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+12:19:45.476 > [D][Storage.cpp:44] init_storage(): SDHC 
+12:19:45.476 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+12:19:45.476 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+12:19:45.476 > [D][Storage.cpp:81] init_storage(): File is: 
+12:19:45.476 > [D][Storage.cpp:82] init_storage(): /20250206.txt 
+12:19:45.476 > [D][Storage.cpp:83] init_storage(): Position is: 
+12:19:45.476 > [D][Storage.cpp:84] init_storage(): 84675 
+12:19:45.476 > [I][Storage.cpp:141] init_storage(): AP storage found!
+12:19:45.476 > [D][main.cpp:149] setup(): Storage initialization success!
+12:19:45.476 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+12:19:45.476 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:19:45.476 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+12:19:45.476 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:19:45.476 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+12:19:45.476 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+12:19:45.476 > [D][Storage.cpp:710] return_APList(): 12344321 
+12:19:45.476 > [D][Storage.cpp:721] return_APList(): New AP returned 
+12:19:45.476 > [D][Storage.cpp:736] return_APList(): End of data reached 
+12:19:45.476 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+12:19:45.476 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+12:19:45.476 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+12:19:45.476 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+12:19:45.476 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+12:19:45.476 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+12:19:47.358 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+12:19:47.372 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 20
+12:19:47.377 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+12:19:47.381 > [I][WiFiMulti.cpp:119] run(): [WIFI] 20 networks found
+12:19:47.385 > [D][WiFiMulti.cpp:149] run():  --->   0: [3][6C:5A:B0:F4:DA:84] NeuBolt (-49) *
+12:19:47.392 > [D][WiFiMulti.cpp:151] run():        1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+12:19:47.400 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A0] Wireless (-55) *
+12:19:47.407 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-55) *
+12:19:47.412 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A2] LUMS-Events (-55) *
+12:19:47.422 > [D][WiFiMulti.cpp:149] run():  --->   5: [1][8E:C6:81:80:08:6D] NeuBolt (-60) *
+12:19:47.429 > [D][WiFiMulti.cpp:151] run():        6: [11][50:D4:F7:10:A0:06] TP-Link_A006 (-62) *
+12:19:47.436 > [D][WiFiMulti.cpp:151] run():        7: [6][90:9A:4A:B8:CD:83] Airbus380 (-72) *
+12:19:47.442 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F3] LUMS-Events (-78) *
+12:19:47.451 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F0] wireless (-79) *
+12:19:47.456 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:42] LUMS-Events (-79) *
+12:19:47.465 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:3C:A2:41] TV-LED (-80) *
+12:19:47.472 > [D][WiFiMulti.cpp:151] run():        12: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-82) *
+12:19:47.472 > [D][WiFiMulti.cpp:151] run():        13: [1][7C:45:D0:47:E0:C1] ZONG4G-E0C1 (-83) *
+12:19:47.488 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:60] wireless (-85) *
+12:19:47.489 > [D][WiFiMulti.cpp:151] run():        15: [1][4C:E1:75:1D:01:62] TV-LED (-85) *
+12:19:47.502 > [D][WiFiMulti.cpp:151] run():        16: [4][BA:56:E3:FE:01:B0] Viki (-85) *
+12:19:47.505 > [D][WiFiMulti.cpp:151] run():        17: [1][4C:E1:75:3C:A2:40] Wireless (-86) *
+12:19:47.516 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E2] LUMS-Events (-86) *
+12:19:47.521 > [D][WiFiMulti.cpp:151] run():        19: [6][BC:67:1C:64:33:21] TV-LED (-93) *
+12:19:47.521 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 3 (-49)
+12:19:51.151 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:19:51.153 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:19:51.172 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+12:19:51.180 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+12:19:51.183 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+12:19:51.188 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+12:19:51.193 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+12:19:51.199 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 3
+12:19:51.201 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+12:19:51.201 > [D][main.cpp:164] setup(): Initialized wifi successfully
+12:19:51.201 > [D][main.cpp:165] setup(): MAC: CC:DB:A7:49:55:04
+12:19:51.219 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+12:19:51.219 > [I][main.cpp:200] setup(): ID found!
+12:19:51.219 > Device name: TESTKITAQI
+12:19:51.219 > 
+12:19:51.219 > [D][ESPWiFi.cpp:227] start_soft_ap(): Soft AP IP: 192.168.4.1
+12:19:51.266 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:51.266 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:51.266 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:51.283 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:51.283 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:51.283 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 228704
+12:19:51.299 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+12:19:51.601 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+12:19:51.623 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+12:19:51.630 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+12:19:51.638 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+12:19:51.641 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+12:19:53.887 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+12:19:53.900 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+12:19:53.906 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 185164
+12:19:53.913 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+12:19:53.920 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:53.927 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+12:19:54.408 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+12:19:54.416 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:54.423 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+12:19:54.920 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+12:19:54.924 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:54.934 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+12:19:55.435 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:55.440 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:55.440 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:55.454 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 228104
+12:19:55.460 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+12:19:55.493 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+12:19:55.505 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+12:19:55.510 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+12:19:55.521 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+12:19:55.521 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+12:19:57.372 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+12:19:57.379 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+12:19:57.386 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 184608
+12:19:57.393 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:19:57.400 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:57.402 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+12:19:57.402 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:19:57.420 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+12:19:57.420 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:19:58.019 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:19:58.027 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:58.033 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+12:19:58.040 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:19:58.616 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+12:19:58.625 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:58.632 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+12:19:58.638 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:19:59.134 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+12:19:59.142 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 39 bytes...
+12:19:59.149 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 287 bytes...
+12:19:59.153 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:19:59.153 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+12:19:59.169 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:19:59.734 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:59.739 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:59.739 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:19:59.753 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:19:59.766 > [D][main.cpp:262] setup(): Cloud IoT Setup Complete
+12:19:59.784 > [D][main.cpp:275] setup(): Subscribed to topic pull/TESTKITAQI
+12:19:59.790 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 3
+12:19:59.790 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1738823558
+12:19:59.803 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1738826399
+12:19:59.805 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:19:59.805 > 
+12:19:59.805 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+12:19:59.919 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:00.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:00.800 > 
+12:20:01.466 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:00,TESTKITAQI,26.0, 40.1, 996.0, 12, 16, 19, 0.000, 19.84, 0.10, 1.83
+12:20:01.478 > [D][Storage.cpp:223] write_data(): File written
+12:20:01.482 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:00,TESTKITAQI,26.0, 40.1, 996.0, 12, 16, 19, 0.000, 19.84, 0.10, 1.83
+12:20:01.493 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:01.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:01.800 > 
+12:20:02.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:02.801 > 
+12:20:03.803 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:03.808 > 
+12:20:04.924 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:03,TESTKITAQI,26.0, 40.2, 995.8, 12, 15, 19, 0.000, 20.67, 0.10, 1.89
+12:20:04.935 > [D][Storage.cpp:223] write_data(): File written
+12:20:04.947 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:03,TESTKITAQI,26.0, 40.2, 995.8, 12, 15, 19, 0.000, 20.67, 0.10, 1.89
+12:20:04.958 > [I][main.cpp:461] vStorageData(): Cycle number: 1
+12:20:04.960 > 
+12:20:04.960 >  
+12:20:04.960 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:04.968 > 
+12:20:04.968 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:04.976 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:05.082 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:19:07,TESTKITAQI,26.0, 40.2, 996.0, 12, 14, 14, 0.000, 19.95, 0.11, 1.33, 100, 1
+12:20:05.097 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:05.102 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:05.108 > [I][Storage.cpp:767] mark_data(): Size: 85052,   Pos: 84676,   Chunk: 96,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:05.133 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:05.142 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:05.155 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:05.250 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:19:10,TESTKITAQI,26.0, 40.1, 995.9, 12, 14, 14, 0.000, 20.64, 0.11, 1.30, 100, 1
+12:20:05.278 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:05.285 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:05.290 > [I][Storage.cpp:767] mark_data(): Size: 85052,   Pos: 84774,   Chunk: 96,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:05.312 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:05.322 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:05.339 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:05.445 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:00,TESTKITAQI,26.0, 40.1, 996.0, 12, 16, 19, 0.000, 19.84, 0.10, 1.83
+12:20:05.450 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:05.465 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:05.470 > [I][Storage.cpp:767] mark_data(): Size: 85052,   Pos: 84872,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:05.495 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:05.507 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:05.519 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:05.628 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:03,TESTKITAQI,26.0, 40.2, 995.8, 12, 15, 19, 0.000, 20.67, 0.10, 1.89
+12:20:05.641 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:05.647 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:05.649 > [I][Storage.cpp:767] mark_data(): Size: 85052,   Pos: 84962,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:05.684 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:05.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:05.799 > 
+12:20:06.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:06.798 > 
+12:20:07.536 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:06,TESTKITAQI,26.0, 40.2, 996.0, 11, 14, 17, 0.000, 24.33, 0.10, 2.14
+12:20:07.547 > [D][Storage.cpp:223] write_data(): File written
+12:20:07.548 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:06,TESTKITAQI,26.0, 40.2, 996.0, 11, 14, 17, 0.000, 24.33, 0.10, 2.14
+12:20:07.564 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:07.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:07.799 > 
+12:20:08.684 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:20:08.688 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:20:08.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:08.798 > 
+12:20:09.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:09.798 > 
+12:20:09.798 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:11.066 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:09,TESTKITAQI,26.0, 40.2, 996.0, 12, 15, 17, 0.000, 19.32, 0.10, 1.55
+12:20:11.077 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:11.082 > 
+12:20:11.082 > [D][Storage.cpp:223] write_data(): File written
+12:20:11.086 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:09,TESTKITAQI,26.0, 40.2, 996.0, 12, 15, 17, 0.000, 19.32, 0.10, 1.55
+12:20:11.097 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:11.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:11.799 > 
+12:20:12.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:12.800 > 
+12:20:13.679 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:12,TESTKITAQI,26.0, 40.3, 995.8, 13, 16, 18, 0.000, 22.37, 0.10, 1.59
+12:20:13.690 > [D][Storage.cpp:223] write_data(): File written
+12:20:13.694 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:12,TESTKITAQI,26.0, 40.3, 995.8, 13, 16, 18, 0.000, 22.37, 0.10, 1.59
+12:20:13.702 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:13.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:13.799 > 
+12:20:13.936 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:13.941 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:14.047 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:06,TESTKITAQI,26.0, 40.2, 996.0, 11, 14, 17, 0.000, 24.33, 0.10, 2.14
+12:20:14.048 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:14.067 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:14.072 > [I][Storage.cpp:767] mark_data(): Size: 85322,   Pos: 85052,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:14.092 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:14.106 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:14.117 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:14.222 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:09,TESTKITAQI,26.0, 40.2, 996.0, 12, 15, 17, 0.000, 19.32, 0.10, 1.55
+12:20:14.235 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:14.241 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:14.246 > [I][Storage.cpp:767] mark_data(): Size: 85322,   Pos: 85142,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:14.275 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:14.285 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:14.292 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:14.399 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:12,TESTKITAQI,26.0, 40.3, 995.8, 13, 16, 18, 0.000, 22.37, 0.10, 1.59
+12:20:14.415 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:14.421 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:14.427 > [I][Storage.cpp:767] mark_data(): Size: 85322,   Pos: 85232,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:14.452 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:14.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:14.798 > 
+12:20:15.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:15.798 > 
+12:20:17.136 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:15,TESTKITAQI,26.0, 40.2, 996.0, 13, 16, 18, 0.000, 19.49, 0.11, 1.40
+12:20:17.147 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:17.148 > 
+12:20:17.148 > [D][Storage.cpp:223] write_data(): File written
+12:20:17.148 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:15,TESTKITAQI,26.0, 40.2, 996.0, 13, 16, 18, 0.000, 19.49, 0.11, 1.40
+12:20:17.166 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:17.448 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:20:17.448 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:20:17.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:17.798 > 
+12:20:18.567 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:18.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:18.798 > 
+12:20:19.747 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:18,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 17, 0.000, 20.32, 0.10, 1.62
+12:20:19.750 > [D][Storage.cpp:223] write_data(): File written
+12:20:19.750 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:18,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 17, 0.000, 20.32, 0.10, 1.62
+12:20:19.774 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:19.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:19.807 > 
+12:20:20.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:20.800 > 
+12:20:21.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:21.802 > 
+12:20:23.206 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:21,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 18, 0.000, 24.09, 0.10, 2.25
+12:20:23.218 > [D][Storage.cpp:223] write_data(): File written
+12:20:23.226 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:21,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 18, 0.000, 24.09, 0.10, 2.25
+12:20:23.237 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:23.240 > 
+12:20:23.240 >  
+12:20:23.240 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:23.240 > 
+12:20:23.240 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:23.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:23.808 > 
+12:20:24.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:24.798 > 
+12:20:25.816 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:24,TESTKITAQI,26.0, 40.4, 996.0, 12, 15, 17, 0.000, 20.52, 0.10, 1.56
+12:20:25.828 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:25.832 > 
+12:20:25.832 > [D][Storage.cpp:223] write_data(): File written
+12:20:25.837 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:24,TESTKITAQI,26.0, 40.4, 996.0, 12, 15, 17, 0.000, 20.52, 0.10, 1.56
+12:20:25.848 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:26.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:26.798 > 
+12:20:27.348 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:27.373 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:27.477 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:15,TESTKITAQI,26.0, 40.2, 996.0, 13, 16, 18, 0.000, 19.49, 0.11, 1.40
+12:20:27.490 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:27.497 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:27.498 > [I][Storage.cpp:767] mark_data(): Size: 85682,   Pos: 85322,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:27.525 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:27.534 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:27.550 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:27.650 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:18,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 17, 0.000, 20.32, 0.10, 1.62
+12:20:27.668 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:27.675 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:27.681 > [I][Storage.cpp:767] mark_data(): Size: 85682,   Pos: 85412,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:27.706 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:27.717 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:27.719 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:27.838 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:21,TESTKITAQI,26.0, 40.3, 996.0, 13, 16, 18, 0.000, 24.09, 0.10, 2.25
+12:20:27.848 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:27.848 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:27.863 > [I][Storage.cpp:767] mark_data(): Size: 85682,   Pos: 85502,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:27.890 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:27.898 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:27.900 > 
+12:20:29.347 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:27,TESTKITAQI,26.0, 40.4, 995.9, 11, 15, 15, 0.000, 19.52, 0.10, 1.51
+12:20:29.348 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:29.365 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:29.472 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:24,TESTKITAQI,26.0, 40.4, 996.0, 12, 15, 17, 0.000, 20.52, 0.10, 1.56
+12:20:29.485 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:29.492 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:29.498 > [I][Storage.cpp:767] mark_data(): Size: 85682,   Pos: 85592,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:29.523 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:29.530 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:29.535 > 
+12:20:29.535 > [E][main.cpp:469] vStorage(): Storage stopped working!
+12:20:29.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:29.798 > 
+12:20:30.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:30.801 > 
+12:20:31.949 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:30,TESTKITAQI,26.0, 41.6, 996.0, 11, 16, 16, 0.000, 18.57, 0.11, 1.21
+12:20:31.969 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:31.973 > 
+12:20:31.974 > [D][Storage.cpp:223] write_data(): File written
+12:20:31.978 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:30,TESTKITAQI,26.0, 41.6, 996.0, 11, 16, 16, 0.000, 18.57, 0.11, 1.21
+12:20:31.985 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:32.524 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:20:32.529 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:20:32.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:32.806 > 
+12:20:33.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:33.799 > 
+12:20:34.533 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:20:34.533 > 
+12:20:34.533 > [D][DataTransfer.cpp:38] handleWifiConnection(): Ping not received
+12:20:34.549 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+12:20:34.549 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+12:20:34.565 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:33,TESTKITAQI,26.0, 41.3, 995.8, 12, 17, 17, 0.000, 25.66, 0.10, 1.75
+12:20:34.565 > [D][Storage.cpp:223] write_data(): File written
+12:20:34.582 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:33,TESTKITAQI,26.0, 41.3, 995.8, 12, 17, 17, 0.000, 25.66, 0.10, 1.75
+12:20:34.582 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:34.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:34.800 > 
+12:20:35.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:35.802 > 
+12:20:36.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:36.800 > 
+12:20:38.028 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:36,TESTKITAQI,26.1, 41.0, 995.9, 11, 15, 15, 0.000, 20.78, 0.11, 1.31
+12:20:38.039 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:38.044 > 
+12:20:38.044 > [D][Storage.cpp:223] write_data(): File written
+12:20:38.048 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:36,TESTKITAQI,26.1, 41.0, 995.9, 11, 15, 15, 0.000, 20.78, 0.11, 1.31
+12:20:38.054 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:38.118 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:20:38.119 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:20:38.134 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+12:20:38.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:38.801 > 
+12:20:39.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:39.802 > 
+12:20:40.639 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:39,TESTKITAQI,26.1, 40.7, 996.0, 10, 14, 14, 0.000, 19.42, 0.11, 1.28
+12:20:40.650 > [D][Storage.cpp:223] write_data(): File written
+12:20:40.651 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:39,TESTKITAQI,26.1, 40.7, 996.0, 10, 14, 14, 0.000, 19.42, 0.11, 1.28
+12:20:40.668 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:40.682 > dhcps: send_nak>>udp_sendto result 0
+12:20:40.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:40.799 > 
+12:20:41.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:41.799 > 
+12:20:42.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:42.800 > 
+12:20:44.098 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:42,TESTKITAQI,26.1, 40.4, 995.8, 11, 14, 14, 0.000, 22.29, 0.10, 1.67
+12:20:44.101 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:44.101 > 
+12:20:44.101 > [D][Storage.cpp:223] write_data(): File written
+12:20:44.118 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:42,TESTKITAQI,26.1, 40.4, 995.8, 11, 14, 14, 0.000, 22.29, 0.10, 1.67
+12:20:44.130 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:44.599 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:20:44.649 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:20:44.688 > [D][main.cpp:527] vDataPull(): Subscribed to topic pull/TESTKITAQI
+12:20:44.718 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:44.718 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:44.831 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:30,TESTKITAQI,26.0, 41.6, 996.0, 11, 16, 16, 0.000, 18.57, 0.11, 1.21
+12:20:44.844 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:44.849 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:44.849 > [I][Storage.cpp:767] mark_data(): Size: 86132,   Pos: 85682,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:44.881 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:44.888 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:44.892 > 
+12:20:44.892 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:44.907 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:45.000 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:33,TESTKITAQI,26.0, 41.3, 995.8, 12, 17, 17, 0.000, 25.66, 0.10, 1.75
+12:20:45.024 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:45.031 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:45.036 > [I][Storage.cpp:767] mark_data(): Size: 86132,   Pos: 85772,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:45.056 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:45.068 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:45.086 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:45.188 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:36,TESTKITAQI,26.1, 41.0, 995.9, 11, 15, 15, 0.000, 20.78, 0.11, 1.31
+12:20:45.200 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:45.200 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:45.200 > [I][Storage.cpp:767] mark_data(): Size: 86132,   Pos: 85862,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:45.237 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:45.247 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:45.249 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:45.366 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:39,TESTKITAQI,26.1, 40.7, 996.0, 10, 14, 14, 0.000, 19.42, 0.11, 1.28
+12:20:45.380 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:45.387 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:45.393 > [I][Storage.cpp:767] mark_data(): Size: 86132,   Pos: 85952,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:45.418 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:45.418 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:45.440 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:45.546 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:42,TESTKITAQI,26.1, 40.4, 995.8, 11, 14, 14, 0.000, 22.29, 0.10, 1.67
+12:20:45.550 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:45.566 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:45.571 > [I][Storage.cpp:767] mark_data(): Size: 86132,   Pos: 86042,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:45.599 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:45.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:45.802 > 
+12:20:46.698 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:45,TESTKITAQI,26.1, 40.4, 996.0, 10, 15, 15, 0.000, 20.98, 0.11, 1.54
+12:20:46.720 > [D][Storage.cpp:223] write_data(): File written
+12:20:46.724 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:45,TESTKITAQI,26.1, 40.4, 996.0, 10, 15, 15, 0.000, 20.98, 0.11, 1.54
+12:20:46.737 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:46.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:46.800 > 
+12:20:47.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:47.798 > 
+12:20:48.599 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:20:48.600 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 5 data chunks to cloud.
+12:20:48.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:48.798 > 
+12:20:50.239 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:48,TESTKITAQI,26.1, 40.2, 995.9, 11, 15, 15, 0.000, 21.86, 0.10, 1.49
+12:20:50.247 > [D][Storage.cpp:223] write_data(): File written
+12:20:50.247 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:48,TESTKITAQI,26.1, 40.2, 995.9, 11, 15, 15, 0.000, 21.86, 0.10, 1.49
+12:20:50.269 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:50.274 > 
+12:20:50.274 >  
+12:20:50.274 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:50.278 > 
+12:20:50.278 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:50.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:50.800 > 
+12:20:51.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:51.799 > 
+12:20:52.851 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:51,TESTKITAQI,26.1, 40.1, 995.9, 10, 15, 15, 0.000, 19.58, 0.11, 1.30
+12:20:52.851 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:52.865 > 
+12:20:52.865 > [D][Storage.cpp:223] write_data(): File written
+12:20:52.865 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:51,TESTKITAQI,26.1, 40.1, 995.9, 10, 15, 15, 0.000, 19.58, 0.11, 1.30
+12:20:52.881 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:53.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:53.798 > 
+12:20:54.384 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:54.384 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:54.500 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:45,TESTKITAQI,26.1, 40.4, 996.0, 10, 15, 15, 0.000, 20.98, 0.11, 1.54
+12:20:54.515 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:54.515 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:54.515 > [I][Storage.cpp:767] mark_data(): Size: 86402,   Pos: 86132,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:54.554 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:54.564 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:54.571 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:54.682 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:48,TESTKITAQI,26.1, 40.2, 995.9, 11, 15, 15, 0.000, 21.86, 0.10, 1.49
+12:20:54.682 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:54.700 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:54.700 > [I][Storage.cpp:767] mark_data(): Size: 86402,   Pos: 86222,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:54.731 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:54.741 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:20:54.752 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:20:54.850 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:51,TESTKITAQI,26.1, 40.1, 995.9, 10, 15, 15, 0.000, 19.58, 0.11, 1.30
+12:20:54.871 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:20:54.877 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:20:54.882 > [I][Storage.cpp:767] mark_data(): Size: 86402,   Pos: 86312,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:20:54.899 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:20:54.899 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:54.917 > 
+12:20:56.298 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:54,TESTKITAQI,26.1, 40.6, 996.0, 10, 14, 14, 0.000, 20.02, 0.11, 1.35
+12:20:56.320 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:56.324 > 
+12:20:56.325 > [D][Storage.cpp:223] write_data(): File written
+12:20:56.328 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:54,TESTKITAQI,26.1, 40.6, 996.0, 10, 14, 14, 0.000, 20.02, 0.11, 1.35
+12:20:56.340 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:56.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:56.800 > 
+12:20:57.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:20:57.798 > 
+12:20:57.899 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:20:57.899 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:20:58.914 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:20:57,TESTKITAQI,26.1, 40.7, 995.8, 10, 14, 14, 0.000, 22.25, 0.10, 1.40
+12:20:58.929 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:20:58.929 > 
+12:20:58.929 > [D][Storage.cpp:223] write_data(): File written
+12:20:58.929 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:20:57,TESTKITAQI,26.1, 40.7, 995.8, 10, 14, 14, 0.000, 22.25, 0.10, 1.40
+12:20:58.948 > [I][main.cpp:461] vStorage(): data written to storage
+12:20:59.014 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:20:59.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:20:59.807 > 
+12:21:00.790 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:00.805 > 
+12:21:01.529 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:00,TESTKITAQI,26.1, 40.7, 996.0, 11, 16, 16, 0.000, 19.56, 0.11, 1.38
+12:21:01.529 > [D][Storage.cpp:223] write_data(): File written
+12:21:01.545 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:00,TESTKITAQI,26.1, 40.7, 996.0, 11, 16, 16, 0.000, 19.56, 0.11, 1.38
+12:21:01.545 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:01.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:01.796 > 
+12:21:02.080 > dhcps: send_nak>>udp_sendto result 0
+12:21:02.788 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:02.804 > 
+12:21:03.152 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:03.152 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:03.262 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:54,TESTKITAQI,26.1, 40.6, 996.0, 10, 14, 14, 0.000, 20.02, 0.11, 1.35
+12:21:03.279 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:03.279 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:03.294 > [I][Storage.cpp:767] mark_data(): Size: 86672,   Pos: 86402,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:03.310 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:03.325 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:03.341 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:03.438 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:20:57,TESTKITAQI,26.1, 40.7, 995.8, 10, 14, 14, 0.000, 22.25, 0.10, 1.40
+12:21:03.454 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:03.469 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:03.469 > [I][Storage.cpp:767] mark_data(): Size: 86672,   Pos: 86492,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:03.500 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:03.500 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:03.516 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:03.626 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:00,TESTKITAQI,26.1, 40.7, 996.0, 11, 16, 16, 0.000, 19.56, 0.11, 1.38
+12:21:03.642 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:03.642 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:03.658 > [I][Storage.cpp:767] mark_data(): Size: 86672,   Pos: 86582,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:03.674 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:03.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:03.800 > 
+12:21:04.987 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:03,TESTKITAQI,26.1, 40.6, 995.8, 11, 15, 15, 0.000, 22.35, 0.10, 1.56
+12:21:05.003 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:05.003 > 
+12:21:05.003 > [D][Storage.cpp:223] write_data(): File written
+12:21:05.003 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:03,TESTKITAQI,26.1, 40.6, 995.8, 11, 15, 15, 0.000, 22.35, 0.10, 1.56
+12:21:05.019 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:05.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:05.806 > 
+12:21:06.681 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:06.685 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:21:06.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:06.799 > 
+12:21:07.603 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:06,TESTKITAQI,26.1, 40.5, 996.0, 11, 16, 16, 0.000, 20.85, 0.10, 1.52
+12:21:07.614 > [D][Storage.cpp:223] write_data(): File written
+12:21:07.621 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:06,TESTKITAQI,26.1, 40.5, 996.0, 11, 16, 16, 0.000, 20.85, 0.10, 1.52
+12:21:07.633 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:07.791 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:21:07.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:07.807 > 
+12:21:08.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:08.806 > 
+12:21:09.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:09.803 > 
+12:21:11.132 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:09,TESTKITAQI,26.1, 40.4, 996.0, 12, 16, 16, 0.000, 21.44, 0.11, 1.44
+12:21:11.144 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:11.148 > 
+12:21:11.148 > [D][Storage.cpp:223] write_data(): File written
+12:21:11.151 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:09,TESTKITAQI,26.1, 40.4, 996.0, 12, 16, 16, 0.000, 21.44, 0.11, 1.44
+12:21:11.163 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:11.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:11.800 > 
+12:21:11.900 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:11.917 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:12.018 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:03,TESTKITAQI,26.1, 40.6, 995.8, 11, 15, 15, 0.000, 22.35, 0.10, 1.56
+12:21:12.035 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:12.048 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:12.050 > [I][Storage.cpp:767] mark_data(): Size: 86942,   Pos: 86672,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:12.067 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:12.086 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:12.100 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:12.200 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:06,TESTKITAQI,26.1, 40.5, 996.0, 11, 16, 16, 0.000, 20.85, 0.10, 1.52
+12:21:12.216 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:12.216 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:12.232 > [I][Storage.cpp:767] mark_data(): Size: 86942,   Pos: 86762,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:12.249 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:12.265 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:12.266 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:12.384 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:09,TESTKITAQI,26.1, 40.4, 996.0, 12, 16, 16, 0.000, 21.44, 0.11, 1.44
+12:21:12.397 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:12.404 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:12.410 > [I][Storage.cpp:767] mark_data(): Size: 86942,   Pos: 86852,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:12.430 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:12.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:12.803 > 
+12:21:13.744 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:12,TESTKITAQI,26.1, 40.3, 995.8, 12, 16, 18, 0.000, 19.55, 0.11, 1.24
+12:21:13.756 > [D][Storage.cpp:223] write_data(): File written
+12:21:13.761 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:12,TESTKITAQI,26.1, 40.3, 995.8, 12, 16, 18, 0.000, 19.55, 0.11, 1.24
+12:21:13.773 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:13.802 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:13.806 > 
+12:21:14.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:14.806 > 
+12:21:15.435 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:15.439 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:21:15.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:15.797 > 
+12:21:17.202 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:15,TESTKITAQI,26.1, 40.2, 995.9, 12, 16, 18, 0.000, 19.72, 0.11, 1.27
+12:21:17.215 > [D][Storage.cpp:223] write_data(): File written
+12:21:17.223 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:15,TESTKITAQI,26.1, 40.2, 995.9, 12, 16, 18, 0.000, 19.72, 0.11, 1.27
+12:21:17.235 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:17.239 > 
+12:21:17.239 >  
+12:21:17.241 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:17.244 > 
+12:21:17.244 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:21:17.788 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:17.804 > 
+12:21:18.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:18.806 > 
+12:21:19.811 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:18,TESTKITAQI,26.1, 40.1, 996.0, 13, 17, 18, 0.000, 19.69, 0.11, 1.36
+12:21:19.826 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:19.826 > 
+12:21:19.826 > [D][Storage.cpp:223] write_data(): File written
+12:21:19.826 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:18,TESTKITAQI,26.1, 40.1, 996.0, 13, 17, 18, 0.000, 19.69, 0.11, 1.36
+12:21:19.841 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:20.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:20.794 > 
+12:21:21.358 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:21.358 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:21.469 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:12,TESTKITAQI,26.1, 40.3, 995.8, 12, 16, 18, 0.000, 19.55, 0.11, 1.24
+12:21:21.484 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:21.484 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:21.497 > [I][Storage.cpp:767] mark_data(): Size: 87212,   Pos: 86942,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:21.516 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:21.531 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:21.547 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:21.642 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:15,TESTKITAQI,26.1, 40.2, 995.9, 12, 16, 18, 0.000, 19.72, 0.11, 1.27
+12:21:21.658 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:21.673 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:21.673 > [I][Storage.cpp:767] mark_data(): Size: 87212,   Pos: 87032,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:21.705 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:21.705 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:21.721 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:21.831 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:18,TESTKITAQI,26.1, 40.1, 996.0, 13, 17, 18, 0.000, 19.69, 0.11, 1.36
+12:21:21.831 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:21.847 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:21.847 > [I][Storage.cpp:767] mark_data(): Size: 87212,   Pos: 87122,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:21.878 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:21.878 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:21.894 > 
+12:21:23.264 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:21,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 20.98, 0.11, 1.41
+12:21:23.284 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:23.285 > 
+12:21:23.285 > [D][Storage.cpp:223] write_data(): File written
+12:21:23.285 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:21,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 20.98, 0.11, 1.41
+12:21:23.300 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:23.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:23.801 > 
+12:21:24.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:24.802 > 
+12:21:24.880 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:24.880 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:21:25.875 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:24,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 22.16, 0.10, 1.51
+12:21:25.890 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:25.890 > 
+12:21:25.890 > [D][Storage.cpp:223] write_data(): File written
+12:21:25.890 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:24,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 22.16, 0.10, 1.51
+12:21:25.905 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:26.000 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:21:26.786 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:26.801 > 
+12:21:27.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:27.799 > 
+12:21:28.497 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:27,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 21.22, 0.10, 1.54
+12:21:28.499 > [D][Storage.cpp:223] write_data(): File written
+12:21:28.499 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:27,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 21.22, 0.10, 1.54
+12:21:28.524 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:28.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:28.797 > 
+12:21:29.732 > dhcps: send_nak>>udp_sendto result 0
+12:21:29.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:29.798 > 
+12:21:30.175 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:30.182 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:30.288 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:21,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 20.98, 0.11, 1.41
+12:21:30.299 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:30.299 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:30.299 > [I][Storage.cpp:767] mark_data(): Size: 87482,   Pos: 87212,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:30.335 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:30.348 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:30.348 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:30.448 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:24,TESTKITAQI,26.1, 40.3, 996.0, 13, 17, 18, 0.000, 22.16, 0.10, 1.51
+12:21:30.477 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:30.483 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:30.489 > [I][Storage.cpp:767] mark_data(): Size: 87482,   Pos: 87302,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:30.507 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:30.519 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:30.531 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:30.638 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:27,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 21.22, 0.10, 1.54
+12:21:30.647 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:30.647 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:30.662 > [I][Storage.cpp:767] mark_data(): Size: 87482,   Pos: 87392,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:30.687 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:30.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:30.797 > 
+12:21:32.027 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:30,TESTKITAQI,26.1, 40.1, 996.0, 12, 15, 17, 0.000, 20.17, 0.11, 1.29
+12:21:32.038 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:32.043 > 
+12:21:32.043 > [D][Storage.cpp:223] write_data(): File written
+12:21:32.048 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:30,TESTKITAQI,26.1, 40.1, 996.0, 12, 15, 17, 0.000, 20.17, 0.11, 1.29
+12:21:32.048 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:32.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:32.802 > 
+12:21:33.682 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:33.682 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:21:33.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:33.798 > 
+12:21:34.633 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:33,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 19.73, 0.11, 1.34
+12:21:34.648 > [D][Storage.cpp:223] write_data(): File written
+12:21:34.648 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:33,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 19.73, 0.11, 1.34
+12:21:34.664 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:34.799 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:21:34.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:34.799 > 
+12:21:35.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:35.798 > 
+12:21:36.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:36.798 > 
+12:21:38.097 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:36,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 18, 0.000, 19.82, 0.11, 1.33
+12:21:38.098 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:38.098 > 
+12:21:38.113 > [D][Storage.cpp:223] write_data(): File written
+12:21:38.118 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:36,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 18, 0.000, 19.82, 0.11, 1.33
+12:21:38.128 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:38.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:38.799 > 
+12:21:38.923 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:38.934 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:39.037 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:30,TESTKITAQI,26.1, 40.1, 996.0, 12, 15, 17, 0.000, 20.17, 0.11, 1.29
+12:21:39.047 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:39.047 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:39.062 > [I][Storage.cpp:767] mark_data(): Size: 87752,   Pos: 87482,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:39.082 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:39.098 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:39.098 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:39.217 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:33,TESTKITAQI,26.1, 40.2, 995.8, 13, 16, 18, 0.000, 19.73, 0.11, 1.34
+12:21:39.231 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:39.237 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:39.242 > [I][Storage.cpp:767] mark_data(): Size: 87752,   Pos: 87572,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:39.269 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:39.280 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:39.282 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:39.397 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:36,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 18, 0.000, 19.82, 0.11, 1.33
+12:21:39.413 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:39.420 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:39.425 > [I][Storage.cpp:767] mark_data(): Size: 87752,   Pos: 87662,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:39.451 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:39.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:39.797 > 
+12:21:40.698 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:39,TESTKITAQI,26.1, 40.1, 996.0, 13, 16, 16, 0.000, 19.59, 0.11, 1.34
+12:21:40.721 > [D][Storage.cpp:223] write_data(): File written
+12:21:40.726 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:39,TESTKITAQI,26.1, 40.1, 996.0, 13, 16, 16, 0.000, 19.59, 0.11, 1.34
+12:21:40.739 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:40.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:40.805 > 
+12:21:41.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:41.798 > 
+12:21:42.452 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:42.455 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:21:42.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:42.797 > 
+12:21:44.168 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:42,TESTKITAQI,26.2, 40.1, 995.8, 13, 16, 16, 0.000, 20.90, 0.11, 1.43
+12:21:44.180 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:44.184 > 
+12:21:44.184 > [D][Storage.cpp:223] write_data(): File written
+12:21:44.188 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:42,TESTKITAQI,26.2, 40.1, 995.8, 13, 16, 16, 0.000, 20.90, 0.11, 1.43
+12:21:44.199 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:44.472 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:21:44.476 > 
+12:21:44.476 > [D][DataTransfer.cpp:38] handleWifiConnection(): Ping not received
+12:21:44.483 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+12:21:44.489 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+12:21:44.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:44.797 > 
+12:21:45.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:45.798 > 
+12:21:46.765 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:45,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 65.303, 21.46, 0.11, 1.45
+12:21:46.782 > [D][Storage.cpp:223] write_data(): File written
+12:21:46.782 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:45,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 65.303, 21.46, 0.11, 1.45
+12:21:46.798 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:46.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:46.815 > 
+12:21:47.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:47.798 > 
+12:21:48.040 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:21:48.052 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:21:48.058 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+12:21:48.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:48.798 > 
+12:21:50.297 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:48,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 0.000, 19.07, 0.11, 1.21
+12:21:50.321 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:50.326 > 
+12:21:50.326 > [D][Storage.cpp:223] write_data(): File written
+12:21:50.330 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:48,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 0.000, 19.07, 0.11, 1.21
+12:21:50.342 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:50.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:50.796 > 
+12:21:51.786 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:51.801 > 
+12:21:52.913 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:51,TESTKITAQI,26.1, 40.0, 995.8, 13, 15, 15, 0.000, 20.21, 0.11, 1.40
+12:21:52.929 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:52.929 > 
+12:21:52.929 > [D][Storage.cpp:223] write_data(): File written
+12:21:52.929 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:51,TESTKITAQI,26.1, 40.0, 995.8, 13, 15, 15, 0.000, 20.21, 0.11, 1.40
+12:21:52.953 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:53.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:53.798 > 
+12:21:54.529 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:21:54.578 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:21:54.601 > [D][main.cpp:527] vDataPull(): Subscribed to topic pull/TESTKITAQI
+12:21:54.639 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:54.649 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:54.747 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:39,TESTKITAQI,26.1, 40.1, 996.0, 13, 16, 16, 0.000, 19.59, 0.11, 1.34
+12:21:54.767 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:54.773 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:54.779 > [I][Storage.cpp:767] mark_data(): Size: 88203,   Pos: 87752,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:54.799 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:54.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:54.815 > 
+12:21:55.530 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:54,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 16, 0.000, 19.78, 0.11, 1.23
+12:21:55.545 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:55.547 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:55.646 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:42,TESTKITAQI,26.2, 40.1, 995.8, 13, 16, 16, 0.000, 20.90, 0.11, 1.43
+12:21:55.671 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:55.677 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:55.682 > [I][Storage.cpp:767] mark_data(): Size: 88203,   Pos: 87842,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:55.700 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:55.715 > [D][Storage.cpp:223] write_data(): File written
+12:21:55.715 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:55.715 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:54,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 16, 0.000, 19.78, 0.11, 1.23
+12:21:55.734 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:55.734 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:55.841 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:45,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 65.303, 21.46, 0.11, 1.45
+12:21:55.846 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:55.846 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:55.867 > [I][Storage.cpp:767] mark_data(): Size: 88293,   Pos: 87932,   Chunk: 89,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:55.881 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:55.896 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:55.899 > 
+12:21:55.899 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:55.913 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:56.018 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:48,TESTKITAQI,26.1, 40.0, 996.0, 13, 16, 16, 0.000, 19.07, 0.11, 1.21
+12:21:56.032 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:56.038 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:56.046 > [I][Storage.cpp:767] mark_data(): Size: 88293,   Pos: 88023,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:56.065 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:56.081 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:21:56.081 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:21:56.197 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:51,TESTKITAQI,26.1, 40.0, 995.8, 13, 15, 15, 0.000, 20.21, 0.11, 1.40
+12:21:56.214 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:21:56.220 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:21:56.226 > [I][Storage.cpp:767] mark_data(): Size: 88293,   Pos: 88113,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:21:56.249 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:21:56.785 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:56.800 > 
+12:21:57.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:21:57.793 > 
+12:21:58.986 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:21:57,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.96, 0.11, 1.26
+12:21:59.002 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:21:59.002 > 
+12:21:59.002 > [D][Storage.cpp:223] write_data(): File written
+12:21:59.002 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:21:57,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.96, 0.11, 1.26
+12:21:59.017 > [I][main.cpp:461] vStorage(): data written to storage
+12:21:59.253 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:21:59.253 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 5 data chunks to cloud.
+12:21:59.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:21:59.796 > 
+12:22:00.369 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:22:00.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:00.795 > 
+12:22:01.588 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:00,TESTKITAQI,26.2, 40.0, 995.9, 13, 16, 16, 0.000, 23.07, 0.11, 1.58
+12:22:01.604 > [D][Storage.cpp:223] write_data(): File written
+12:22:01.620 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:00,TESTKITAQI,26.2, 40.0, 995.9, 13, 16, 16, 0.000, 23.07, 0.11, 1.58
+12:22:01.620 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:01.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:01.793 > 
+12:22:02.785 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:02.800 > 
+12:22:03.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:03.795 > 
+12:22:05.063 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:03,TESTKITAQI,26.2, 40.0, 995.8, 13, 15, 15, 0.000, 21.38, 0.11, 1.42
+12:22:05.065 > [D][Storage.cpp:223] write_data(): File written
+12:22:05.081 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:03,TESTKITAQI,26.2, 40.0, 995.8, 13, 15, 15, 0.000, 21.38, 0.11, 1.42
+12:22:05.095 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:05.099 > 
+12:22:05.099 >  
+12:22:05.099 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:05.099 > 
+12:22:05.099 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:05.099 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:05.205 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:54,TESTKITAQI,26.1, 40.1, 996.0, 14, 16, 16, 0.000, 19.78, 0.11, 1.23
+12:22:05.214 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:05.230 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:05.236 > [I][Storage.cpp:767] mark_data(): Size: 88563,   Pos: 88203,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:05.249 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:05.269 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:05.281 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:05.390 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:21:57,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.96, 0.11, 1.26
+12:22:05.397 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:05.397 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:05.415 > [I][Storage.cpp:767] mark_data(): Size: 88563,   Pos: 88293,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:05.438 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:05.447 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:05.453 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:05.548 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:00,TESTKITAQI,26.2, 40.0, 995.9, 13, 16, 16, 0.000, 23.07, 0.11, 1.58
+12:22:05.575 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:05.582 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:05.587 > [I][Storage.cpp:767] mark_data(): Size: 88563,   Pos: 88383,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:05.603 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:05.617 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:05.630 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:05.737 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:03,TESTKITAQI,26.2, 40.0, 995.8, 13, 15, 15, 0.000, 21.38, 0.11, 1.42
+12:22:05.747 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:05.747 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:05.747 > [I][Storage.cpp:767] mark_data(): Size: 88563,   Pos: 88473,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:05.788 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:05.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:05.803 > 
+12:22:06.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:06.798 > 
+12:22:07.665 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:06,TESTKITAQI,26.2, 40.0, 996.0, 13, 15, 15, 0.000, 22.27, 0.11, 1.55
+12:22:07.681 > [D][Storage.cpp:223] write_data(): File written
+12:22:07.681 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:06,TESTKITAQI,26.2, 40.0, 996.0, 13, 15, 15, 0.000, 22.27, 0.11, 1.55
+12:22:07.699 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:07.800 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:07.800 > 
+12:22:08.779 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:22:08.779 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:22:08.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:08.801 > 
+12:22:09.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:09.805 > 
+12:22:11.198 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:09,TESTKITAQI,26.2, 39.9, 996.0, 12, 14, 14, 0.000, 19.56, 0.11, 1.27
+12:22:11.215 > [D][Storage.cpp:223] write_data(): File written
+12:22:11.222 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:09,TESTKITAQI,26.2, 39.9, 996.0, 12, 14, 14, 0.000, 19.56, 0.11, 1.27
+12:22:11.233 > [I][main.cpp:461] vStorage()ta(): Cycle number: 1
+12:22:11.237 > 
+12:22:11.238 >  
+12:22:11.238 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:11.242 > 
+12:22:11.242 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:22:11.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:11.804 > 
+12:22:12.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:12.798 > 
+12:22:13.815 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:12,TESTKITAQI,26.2, 40.2, 995.8, 12, 15, 15, 0.000, 20.04, 0.11, 1.23
+12:22:13.817 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:13.831 > 
+12:22:13.831 > [D][Storage.cpp:223] write_data(): File written
+12:22:13.831 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:12,TESTKITAQI,26.2, 40.2, 995.8, 12, 15, 15, 0.000, 20.04, 0.11, 1.23
+12:22:13.847 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:14.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:14.798 > 
+12:22:15.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:15.794 > 
+12:22:16.424 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:15,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.69, 0.11, 1.23
+12:22:16.431 > [D][Storage.cpp:223] write_data(): File written
+12:22:16.446 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:15,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.69, 0.11, 1.23
+12:22:16.448 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:16.463 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:16.470 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:16.577 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:06,TESTKITAQI,26.2, 40.0, 996.0, 13, 15, 15, 0.000, 22.27, 0.11, 1.55
+12:22:16.590 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:16.596 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:16.596 > [I][Storage.cpp:767] mark_data(): Size: 88923,   Pos: 88563,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:16.631 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:16.639 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:16.649 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:16.747 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:09,TESTKITAQI,26.2, 39.9, 996.0, 12, 14, 14, 0.000, 19.56, 0.11, 1.27
+12:22:16.773 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:16.779 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:16.785 > [I][Storage.cpp:767] mark_data(): Size: 88923,   Pos: 88653,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:16.803 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:16.814 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:16.816 > 
+12:22:16.816 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:16.833 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:16.936 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:12,TESTKITAQI,26.2, 40.2, 995.8, 12, 15, 15, 0.000, 20.04, 0.11, 1.23
+12:22:16.946 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:16.946 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:16.946 > [I][Storage.cpp:767] mark_data(): Size: 88923,   Pos: 88743,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:16.983 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:16.984 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:17.008 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:17.097 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:15,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 19.69, 0.11, 1.23
+12:22:17.123 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:17.128 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:17.135 > [I][Storage.cpp:767] mark_data(): Size: 88923,   Pos: 88833,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:17.149 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:17.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:17.798 > 
+12:22:18.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:18.798 > 
+12:22:19.881 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:18,TESTKITAQI,26.2, 40.0, 996.0, 11, 14, 14, 0.000, 20.78, 0.11, 1.28
+12:22:19.897 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:19.898 > 
+12:22:19.898 > [D][Storage.cpp:223] write_data(): File written
+12:22:19.898 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:18,TESTKITAQI,26.2, 40.0, 996.0, 11, 14, 14, 0.000, 20.78, 0.11, 1.28
+12:22:19.917 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:20.162 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:22:20.167 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:22:20.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:20.798 > 
+12:22:21.273 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:22:21.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:21.796 > 
+12:22:22.497 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:21,TESTKITAQI,26.2, 39.9, 995.8, 10, 12, 12, 0.000, 22.90, 0.11, 1.67
+12:22:22.498 > [D][Storage.cpp:223] write_data(): File written
+12:22:22.512 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:21,TESTKITAQI,26.2, 39.9, 995.8, 10, 12, 12, 0.000, 22.90, 0.11, 1.67
+12:22:22.514 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:22.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:22.796 > 
+12:22:23.382 > dhcps: send_nak>>udp_sendto result 0
+12:22:23.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:23.796 > 
+12:22:24.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:24.798 > 
+12:22:25.948 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:24,TESTKITAQI,26.2, 39.8, 995.9, 11, 14, 14, 0.000, 21.35, 0.11, 1.48
+12:22:25.964 > [D][Storage.cpp:223] write_data(): File written
+12:22:25.964 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:24,TESTKITAQI,26.2, 39.8, 995.9, 11, 14, 14, 0.000, 21.35, 0.11, 1.48
+12:22:25.987 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:25.992 > 
+12:22:25.992 >  
+12:22:25.992 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:25.996 > 
+12:22:25.998 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:25.998 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:26.097 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:18,TESTKITAQI,26.2, 40.0, 996.0, 11, 14, 14, 0.000, 20.78, 0.11, 1.28
+12:22:26.120 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:26.125 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:26.131 > [I][Storage.cpp:767] mark_data(): Size: 89193,   Pos: 88923,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:26.149 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:26.167 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:26.183 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:26.290 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:21,TESTKITAQI,26.2, 39.9, 995.8, 10, 12, 12, 0.000, 22.90, 0.11, 1.67
+12:22:26.296 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:26.296 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:26.316 > [I][Storage.cpp:767] mark_data(): Size: 89193,   Pos: 89013,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:26.339 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:26.350 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:26.363 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:26.467 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:24,TESTKITAQI,26.2, 39.8, 995.9, 11, 14, 14, 0.000, 21.35, 0.11, 1.48
+12:22:26.481 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:26.487 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:26.493 > [I][Storage.cpp:767] mark_data(): Size: 89193,   Pos: 89103,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:26.517 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:26.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:26.795 > 
+12:22:27.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:27.798 > 
+12:22:28.564 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:27,TESTKITAQI,26.2, 39.8, 996.0, 10, 14, 14, 0.000, 21.54, 0.11, 1.50
+12:22:28.579 > [D][Storage.cpp:223] write_data(): File written
+12:22:28.582 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:27,TESTKITAQI,26.2, 39.8, 996.0, 10, 14, 14, 0.000, 21.54, 0.11, 1.50
+12:22:28.596 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:28.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:28.798 > 
+12:22:29.518 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:22:29.523 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:22:29.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:29.798 > 
+12:22:30.629 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:22:30.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:30.800 > 
+12:22:32.097 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:30,TESTKITAQI,26.1, 39.8, 995.8, 9, 12, 12, 0.000, 26.64, 0.10, 2.07
+12:22:32.101 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:32.112 > 
+12:22:32.112 > [D][Storage.cpp:223] write_data(): File written
+12:22:32.117 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:30,TESTKITAQI,26.1, 39.8, 995.8, 9, 12, 12, 0.000, 26.64, 0.10, 2.07
+12:22:32.117 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:32.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:32.804 > 
+12:22:33.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:33.797 > 
+12:22:34.699 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:33,TESTKITAQI,26.1, 39.8, 996.0, 11, 14, 14, 0.000, 19.67, 0.11, 1.28
+12:22:34.715 > [D][Storage.cpp:223] write_data(): File written
+12:22:34.715 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:33,TESTKITAQI,26.1, 39.8, 996.0, 11, 14, 14, 0.000, 19.67, 0.11, 1.28
+12:22:34.733 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:34.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:34.803 > 
+12:22:35.646 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:22:35.646 > 
+12:22:35.646 > [D][DataTransfer.cpp:38] handleWifiConnection(): Ping not received
+12:22:35.658 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+12:22:35.662 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+12:22:35.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:35.796 > 
+12:22:36.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:36.798 > 
+12:22:38.167 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:36,TESTKITAQI,26.1, 39.8, 996.0, 10, 13, 13, 0.000, 19.82, 0.11, 1.21
+12:22:38.179 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:38.182 > 
+12:22:38.182 > [D][Storage.cpp:223] write_data(): File written
+12:22:38.186 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:36,TESTKITAQI,26.1, 39.8, 996.0, 10, 13, 13, 0.000, 19.82, 0.11, 1.21
+12:22:38.198 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:38.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:38.797 > 
+12:22:39.218 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:22:39.232 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:22:39.239 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+12:22:39.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:39.803 > 
+12:22:40.778 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:39,TESTKITAQI,26.1, 39.9, 995.9, 10, 12, 12, 0.000, 20.17, 0.11, 1.29
+12:22:40.778 > [D][Storage.cpp:223] write_data(): File written
+12:22:40.794 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:39,TESTKITAQI,26.1, 39.9, 995.9, 10, 12, 12, 0.000, 20.17, 0.11, 1.29
+12:22:40.794 > [I][main.cpp:461] vStorage(): data writ number: 1
+12:22:40.810 > 
+12:22:40.810 >  
+12:22:40.810 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:40.810 > 
+12:22:41.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:41.803 > 
+12:22:42.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:42.798 > 
+12:22:44.238 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:42,TESTKITAQI,26.1, 39.8, 995.9, 10, 12, 12, 0.000, 25.13, 0.10, 1.95
+12:22:44.245 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:44.245 > 
+12:22:44.245 > [D][Storage.cpp:223] write_data(): File written
+12:22:44.245 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:42,TESTKITAQI,26.1, 39.8, 995.9, 10, 12, 12, 0.000, 25.13, 0.10, 1.95
+12:22:44.270 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:44.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:44.803 > 
+12:22:45.697 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:22:45.747 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:22:45.798 > [D][main.cpp:527] vDataPull(): Subscribed to topic pull/TESTKITAQI
+12:22:45.801 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:45.801 > 
+12:22:46.848 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:45,TESTKITAQI,26.1, 39.8, 995.8, 10, 12, 12, 0.000, 20.61, 0.11, 1.51
+12:22:46.862 > [D][Storage.cpp:223] write_data(): File written
+12:22:46.863 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:45,TESTKITAQI,26.1, 39.8, 995.8, 10, 12, 12, 0.000, 20.61, 0.11, 1.51
+12:22:46.881 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:46.885 > 
+12:22:46.885 >  
+12:22:46.886 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:46.889 > 
+12:22:46.889 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:46.895 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:46.995 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:27,TESTKITAQI,26.2, 39.8, 996.0, 10, 14, 14, 0.000, 21.54, 0.11, 1.50
+12:22:47.014 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.020 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.024 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89193,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.053 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.062 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.066 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:47.181 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:30,TESTKITAQI,26.1, 39.8, 995.8, 9, 12, 12, 0.000, 26.64, 0.10, 2.07
+12:22:47.194 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.196 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.196 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89283,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.228 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.238 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.253 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:47.347 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:33,TESTKITAQI,26.1, 39.8, 996.0, 11, 14, 14, 0.000, 19.67, 0.11, 1.28
+12:22:47.369 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.376 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.380 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89372,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.399 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.413 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.423 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:47.528 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:36,TESTKITAQI,26.1, 39.8, 996.0, 10, 13, 13, 0.000, 19.82, 0.11, 1.21
+12:22:47.541 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.545 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.545 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89462,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.579 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.584 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.603 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:47.697 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:39,TESTKITAQI,26.1, 39.9, 995.9, 10, 12, 12, 0.000, 20.17, 0.11, 1.29
+12:22:47.719 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.726 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.731 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89552,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.755 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.766 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.786 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:47.889 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:42,TESTKITAQI,26.1, 39.8, 995.9, 10, 12, 12, 0.000, 25.13, 0.10, 1.95
+12:22:47.896 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:47.896 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:47.914 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89642,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:47.932 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:47.932 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:47.947 > 
+12:22:47.947 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:47.963 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:48.066 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:45,TESTKITAQI,26.1, 39.8, 995.8, 10, 12, 12, 0.000, 20.61, 0.11, 1.51
+12:22:48.079 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:48.086 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:48.091 > [I][Storage.cpp:767] mark_data(): Size: 89822,   Pos: 89732,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:48.114 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:48.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:48.800 > 
+12:22:49.455 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:48,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 21.62, 0.11, 1.47
+12:22:49.463 > [D][Storage.cpp:223] write_data(): File written
+12:22:49.463 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:48,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 21.62, 0.11, 1.47
+12:22:49.482 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:49.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:49.798 > 
+12:22:50.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:50.797 > 
+12:22:51.115 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:22:51.118 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 7 data chunks to cloud.
+12:22:51.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:51.799 > 
+12:22:52.980 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:51,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 19.66, 0.11, 1.29
+12:22:52.996 > [D][Storage.cpp:223] write_data(): File written
+12:22:52.996 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:51,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 19.66, 0.11, 1.29
+12:22:53.021 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:53.024 > 
+12:22:53.024 >  
+12:22:53.024 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:53.031 > 
+12:22:53.031 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:22:53.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:53.799 > 
+12:22:54.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:54.799 > 
+12:22:55.597 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:54,TESTKITAQI,26.1, 39.8, 996.0, 9, 11, 11, 0.000, 20.10, 0.11, 1.39
+12:22:55.613 > [D][Storage.cpp:223] write_data(): File written
+12:22:55.613 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:54,TESTKITAQI,26.1, 39.8, 996.0, 9, 11, 11, 0.000, 20.10, 0.11, 1.39
+12:22:55.629 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:55.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:55.798 > 
+12:22:56.799 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:56.800 > 
+12:22:57.147 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:57.169 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:57.273 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:48,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 21.62, 0.11, 1.47
+12:22:57.286 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:57.292 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:57.297 > [I][Storage.cpp:767] mark_data(): Size: 90089,   Pos: 89822,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:57.318 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:57.331 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:57.345 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:57.447 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:51,TESTKITAQI,26.1, 39.8, 995.8, 9, 11, 11, 0.000, 19.66, 0.11, 1.29
+12:22:57.466 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:57.472 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:57.477 > [I][Storage.cpp:767] mark_data(): Size: 90089,   Pos: 89911,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:57.501 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:57.514 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:22:57.528 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:22:57.634 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:54,TESTKITAQI,26.1, 39.8, 996.0, 9, 11, 11, 0.000, 20.10, 0.11, 1.39
+12:22:57.647 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:22:57.647 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:22:57.647 > [I][Storage.cpp:767] mark_data(): Size: 90089,   Pos: 90000,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:22:57.681 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:22:57.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:22:57.802 > 
+12:22:59.047 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:22:57,TESTKITAQI,26.1, 39.8, 996.0, 8, 10, 10, 0.000, 20.77, 0.11, 1.52
+12:22:59.064 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:22:59.064 > 
+12:22:59.064 > [D][Storage.cpp:223] write_data(): File written
+12:22:59.079 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:22:57,TESTKITAQI,26.1, 39.8, 996.0, 8, 10, 10, 0.000, 20.77, 0.11, 1.52
+12:22:59.079 > [I][main.cpp:461] vStorage(): data written to storage
+12:22:59.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:22:59.797 > 
+12:23:00.680 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:00.680 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:23:00.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:00.797 > 
+12:23:01.662 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:00,TESTKITAQI,26.1, 39.9, 995.8, 9, 11, 11, 0.000, 19.24, 0.11, 1.31
+12:23:01.677 > [D][Storage.cpp:223] write_data(): File written
+12:23:01.677 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:00,TESTKITAQI,26.1, 39.9, 995.8, 9, 11, 11, 0.000, 19.24, 0.11, 1.31
+12:23:01.703 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:01.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:01.797 > 
+12:23:02.696 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:23:02.696 > 
+12:23:02.696 > [D][DataTransfer.cpp:38] handleWifiConnection(): Ping not received
+12:23:02.696 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+12:23:02.714 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+12:23:02.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:02.799 > 
+12:23:03.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:03.800 > 
+12:23:05.132 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:03,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 22.24, 0.11, 1.42
+12:23:05.145 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:05.148 > 
+12:23:05.148 > [D][Storage.cpp:223] write_data(): File written
+12:23:05.148 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:03,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 22.24, 0.11, 1.42
+12:23:05.165 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:05.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:05.798 > 
+12:23:06.513 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:23:06.530 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:23:06.530 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+12:23:06.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:06.798 > 
+12:23:07.731 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:06,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 21.17, 0.11, 1.51
+12:23:07.746 > [D][Storage.cpp:223] write_data(): File written
+12:23:07.746 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:06,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 21.17, 0.11, 1.51
+12:23:07.763 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:07.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:07.803 > 
+12:23:08.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:08.800 > 
+12:23:09.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:09.799 > 
+12:23:11.264 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:09,TESTKITAQI,26.1, 40.0, 995.8, 10, 13, 13, 0.000, 19.55, 0.11, 1.35
+12:23:11.280 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:11.280 > 
+12:23:11.280 > [D][Storage.cpp:223] write_data(): File written
+12:23:11.280 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:09,TESTKITAQI,26.1, 40.0, 995.8, 10, 13, 13, 0.000, 19.55, 0.11, 1.35
+12:23:11.297 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:11.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:11.803 > 
+12:23:12.759 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:23:12.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:12.803 > 
+12:23:12.854 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:23:12.918 > [D][main.cpp:527] vDataPull(): Subscribed to topic pull/TESTKITAQI
+12:23:13.880 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:12,TESTKITAQI,26.1, 39.9, 995.2, 10, 14, 14, 0.000, 19.58, 0.11, 1.29
+12:23:13.896 > [D][Storage.cpp:223] write_data(): File written
+12:23:13.896 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:12,TESTKITAQI,26.1, 39.9, 995.2, 10, 14, 14, 0.000, 19.58, 0.11, 1.29
+12:23:13.916 > [I][main.cpp:461] vStorage(): data written to s 1
+12:23:13.921 > 
+12:23:13.921 >  
+12:23:13.921 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:13.923 > 
+12:23:13.923 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:13.932 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.039 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:22:57,TESTKITAQI,26.1, 39.8, 996.0, 8, 10, 10, 0.000, 20.77, 0.11, 1.52
+12:23:14.052 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.058 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.064 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90089,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.082 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:14.099 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:14.115 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.220 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:00,TESTKITAQI,26.1, 39.9, 995.8, 9, 11, 11, 0.000, 19.24, 0.11, 1.31
+12:23:14.233 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.239 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.245 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90178,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.267 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:14.280 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:14.292 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.396 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:03,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 22.24, 0.11, 1.42
+12:23:14.415 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.420 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.426 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90267,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.448 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:14.450 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:14.470 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.575 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:06,TESTKITAQI,26.1, 39.9, 996.0, 9, 11, 11, 0.000, 21.17, 0.11, 1.51
+12:23:14.588 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.595 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.597 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90356,   Chunk: 87,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.614 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:14.632 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:14.648 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.746 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:09,TESTKITAQI,26.1, 40.0, 995.8, 10, 13, 13, 0.000, 19.55, 0.11, 1.35
+12:23:14.768 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.773 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.779 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90445,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.799 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:14.812 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:14.815 > 
+12:23:14.815 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:14.832 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:14.938 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:12,TESTKITAQI,26.1, 39.9, 995.2, 10, 14, 14, 0.000, 19.58, 0.11, 1.29
+12:23:14.946 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:14.946 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:14.963 > [I][Storage.cpp:767] mark_data(): Size: 90625,   Pos: 90535,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:14.982 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:15.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:15.796 > 
+12:23:16.496 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:15,TESTKITAQI,26.1, 39.9, 995.8, 11, 14, 14, 0.000, 19.90, 0.11, 1.30
+12:23:16.496 > [D][Storage.cpp:223] write_data(): File written
+12:23:16.512 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:15,TESTKITAQI,26.1, 39.9, 995.8, 11, 14, 14, 0.000, 19.90, 0.11, 1.30
+12:23:16.512 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:16.629 > dhcps: send_nak>>udp_sendto result 0
+12:23:16.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:16.797 > 
+12:23:17.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:17.799 > 
+12:23:17.984 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:17.994 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 6 data chunks to cloud.
+12:23:18.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:18.797 > 
+12:23:19.949 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:18,TESTKITAQI,26.1, 40.0, 995.3, 11, 14, 14, 0.000, 19.80, 0.11, 1.43
+12:23:19.970 > [D][Storage.cpp:223] write_data(): File written
+12:23:19.975 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:18,TESTKITAQI,26.1, 40.0, 995.3, 11, 14, 14, 0.000, 19.80, 0.11, 1.43
+12:23:19.988 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:19.992 > 
+12:23:19.992 >  
+12:23:19.993 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:19.996 > 
+12:23:19.996 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:23:20.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:20.797 > 
+12:23:21.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:21.797 > 
+12:23:22.566 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:21,TESTKITAQI,26.2, 40.0, 995.9, 11, 14, 14, 0.000, 19.63, 0.11, 1.39
+12:23:22.580 > [D][Storage.cpp:223] write_data(): File written
+12:23:22.585 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:21,TESTKITAQI,26.2, 40.0, 995.9, 11, 14, 14, 0.000, 19.63, 0.11, 1.39
+12:23:22.595 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:22.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:22.797 > 
+12:23:23.798 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:23.798 > 
+12:23:24.126 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:24.142 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:24.243 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:15,TESTKITAQI,26.1, 39.9, 995.8, 11, 14, 14, 0.000, 19.90, 0.11, 1.30
+12:23:24.252 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:24.262 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:24.268 > [I][Storage.cpp:767] mark_data(): Size: 90895,   Pos: 90625,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:24.290 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:24.300 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:24.317 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:24.424 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:18,TESTKITAQI,26.1, 40.0, 995.3, 11, 14, 14, 0.000, 19.80, 0.11, 1.43
+12:23:24.437 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:24.443 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:24.444 > [I][Storage.cpp:767] mark_data(): Size: 90895,   Pos: 90715,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:24.471 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:24.481 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:24.495 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:24.596 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:21,TESTKITAQI,26.2, 40.0, 995.9, 11, 14, 14, 0.000, 19.63, 0.11, 1.39
+12:23:24.614 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:24.620 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:24.628 > [I][Storage.cpp:767] mark_data(): Size: 90895,   Pos: 90805,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:24.656 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:24.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:24.797 > 
+12:23:26.027 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:24,TESTKITAQI,26.2, 40.0, 995.7, 11, 14, 14, 0.000, 21.69, 0.11, 1.53
+12:23:26.037 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:26.042 > 
+12:23:26.042 > [D][Storage.cpp:223] write_data(): File written
+12:23:26.046 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:24,TESTKITAQI,26.2, 40.0, 995.7, 11, 14, 14, 0.000, 21.69, 0.11, 1.53
+12:23:26.056 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:26.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:26.800 > 
+12:23:27.645 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:27.660 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:23:27.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:27.796 > 
+12:23:28.518 > dhcps: send_nak>>udp_sendto result 0
+12:23:28.639 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:27,TESTKITAQI,26.1, 39.9, 995.9, 11, 15, 15, 0.000, 24.62, 0.10, 1.82
+12:23:28.644 > [D][Storage.cpp:223] write_data(): File written
+12:23:28.644 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:27,TESTKITAQI,26.1, 39.9, 995.9, 11, 15, 15, 0.000, 24.62, 0.10, 1.82
+12:23:28.666 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:28.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:28.796 > 
+12:23:28.796 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:23:29.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:29.796 > 
+12:23:30.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:30.798 > 
+12:23:32.169 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:30,TESTKITAQI,26.1, 39.9, 995.8, 12, 15, 15, 0.000, 19.57, 0.11, 1.33
+12:23:32.180 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:32.185 > 
+12:23:32.185 > [D][Storage.cpp:223] write_data(): File written
+12:23:32.189 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:30,TESTKITAQI,26.1, 39.9, 995.8, 12, 15, 15, 0.000, 19.57, 0.11, 1.33
+12:23:32.198 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:32.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:32.797 > 
+12:23:32.919 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:32.930 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:33.032 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:24,TESTKITAQI,26.2, 40.0, 995.7, 11, 14, 14, 0.000, 21.69, 0.11, 1.53
+12:23:33.046 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:33.054 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:33.058 > [I][Storage.cpp:767] mark_data(): Size: 91165,   Pos: 90895,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:33.081 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:33.081 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:33.096 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:33.195 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:27,TESTKITAQI,26.1, 39.9, 995.9, 11, 15, 15, 0.000, 24.62, 0.10, 1.82
+12:23:33.212 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:33.229 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:33.229 > [I][Storage.cpp:767] mark_data(): Size: 91165,   Pos: 90985,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:33.245 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:33.267 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:33.279 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:33.381 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:30,TESTKITAQI,26.1, 39.9, 995.8, 12, 15, 15, 0.000, 19.57, 0.11, 1.33
+12:23:33.395 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:33.410 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:33.411 > [I][Storage.cpp:767] mark_data(): Size: 91165,   Pos: 91075,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:33.444 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:33.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:33.797 > 
+12:23:34.779 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:33,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 22.55, 0.11, 1.54
+12:23:34.779 > [D][Storage.cpp:223] write_data(): File written
+12:23:34.794 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:33,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 22.55, 0.11, 1.54
+12:23:34.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:34.810 > 
+12:23:34.810 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:35.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:35.802 > 
+12:23:36.445 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:36.449 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:23:36.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:36.795 > 
+12:23:38.240 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:36,TESTKITAQI,26.2, 39.9, 996.0, 11, 15, 15, 0.000, 19.23, 0.11, 1.26
+12:23:38.245 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:38.245 > 
+12:23:38.245 > [D][Storage.cpp:223] write_data(): File written
+12:23:38.245 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:36,TESTKITAQI,26.2, 39.9, 996.0, 11, 15, 15, 0.000, 19.23, 0.11, 1.26
+12:23:38.271 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:38.494 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:23:38.513 > 
+12:23:38.513 > [E][main.cpp:567] vWifiTransfer(): Ping not received
+12:23:38.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:38.794 > 
+12:23:39.614 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:23:39.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:39.794 > 
+12:23:40.847 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:39,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 15, 0.000, 20.41, 0.11, 1.54
+12:23:40.861 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:40.862 > 
+12:23:40.862 > [D][Storage.cpp:223] write_data(): File written
+12:23:40.862 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:39,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 15, 0.000, 20.41, 0.11, 1.54
+12:23:40.882 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:41.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:41.796 > 
+12:23:42.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:42.795 > 
+12:23:43.461 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:42,TESTKITAQI,26.2, 40.0, 995.9, 11, 15, 17, 0.000, 18.92, 0.11, 1.29
+12:23:43.461 > [D][Storage.cpp:223] write_data(): File written
+12:23:43.478 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:42,TESTKITAQI,26.2, 40.0, 995.9, 11, 15, 17, 0.000, 18.92, 0.11, 1.29
+12:23:43.478 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:43.713 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:43.728 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:43.828 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:33,TESTKITAQI,26.2, 40.0, 996.0, 12, 15, 15, 0.000, 22.55, 0.11, 1.54
+12:23:43.849 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:43.854 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:43.862 > [I][Storage.cpp:767] mark_data(): Size: 91525,   Pos: 91165,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:43.881 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:43.895 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:43.898 > 
+12:23:43.898 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:43.898 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:44.013 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:36,TESTKITAQI,26.2, 39.9, 996.0, 11, 15, 15, 0.000, 19.23, 0.11, 1.26
+12:23:44.027 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:44.029 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:44.029 > [I][Storage.cpp:767] mark_data(): Size: 91525,   Pos: 91255,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:44.062 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:44.063 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:44.083 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:44.178 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:39,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 15, 0.000, 20.41, 0.11, 1.54
+12:23:44.195 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:44.195 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:44.212 > [I][Storage.cpp:767] mark_data(): Size: 91525,   Pos: 91345,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:44.232 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:44.247 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:44.248 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:44.362 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:42,TESTKITAQI,26.2, 40.0, 995.9, 11, 15, 17, 0.000, 18.92, 0.11, 1.29
+12:23:44.363 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:44.379 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:44.379 > [I][Storage.cpp:767] mark_data(): Size: 91525,   Pos: 91435,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:44.414 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:44.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:44.795 > 
+12:23:45.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:45.796 > 
+12:23:46.913 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:45,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 17, 0.000, 21.67, 0.11, 1.49
+12:23:46.930 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:46.930 > 
+12:23:46.930 > [D][Storage.cpp:223] write_data(): File written
+12:23:46.930 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:45,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 17, 0.000, 21.67, 0.11, 1.49
+12:23:46.953 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:47.415 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:47.419 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:23:47.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:47.799 > 
+12:23:48.530 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:23:48.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:48.801 > 
+12:23:49.528 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:48,TESTKITAQI,26.1, 39.9, 995.1, 11, 14, 16, 0.000, 24.52, 0.10, 1.93
+12:23:49.544 > [D][Storage.cpp:223] write_data(): File written
+12:23:49.545 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:48,TESTKITAQI,26.1, 39.9, 995.1, 11, 14, 16, 0.000, 24.52, 0.10, 1.93
+12:23:49.560 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:49.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:49.795 > 
+12:23:50.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:50.797 > 
+12:23:51.792 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:51.803 > 
+12:23:53.062 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:51,TESTKITAQI,26.2, 40.1, 995.9, 10, 15, 17, 0.000, 19.62, 0.11, 1.28
+12:23:53.064 > [D][Storage.cpp:223] write_data(): File written
+12:23:53.079 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:51,TESTKITAQI,26.2, 40.1, 995.9, 10, 15, 17, 0.000, 19.62, 0.11, 1.28
+12:23:53.079 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:53.095 > 
+12:23:53.095 >  
+12:23:53.095 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:53.095 > 
+12:23:53.095 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:53.116 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:53.215 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:45,TESTKITAQI,26.1, 39.9, 995.8, 11, 15, 17, 0.000, 21.67, 0.11, 1.49
+12:23:53.228 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:53.228 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:53.245 > [I][Storage.cpp:767] mark_data(): Size: 91795,   Pos: 91525,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:53.265 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:53.279 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:53.297 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:53.396 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:48,TESTKITAQI,26.1, 39.9, 995.1, 11, 14, 16, 0.000, 24.52, 0.10, 1.93
+12:23:53.421 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:53.426 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:53.433 > [I][Storage.cpp:767] mark_data(): Size: 91795,   Pos: 91615,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:53.456 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:53.467 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:23:53.479 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:23:53.586 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:51,TESTKITAQI,26.2, 40.1, 995.9, 10, 15, 17, 0.000, 19.62, 0.11, 1.28
+12:23:53.594 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:23:53.594 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:23:53.611 > [I][Storage.cpp:767] mark_data(): Size: 91795,   Pos: 91705,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:23:53.636 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:23:53.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:53.794 > 
+12:23:54.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:54.795 > 
+12:23:55.661 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:54,TESTKITAQI,26.2, 40.2, 995.8, 10, 14, 16, 0.000, 22.40, 0.11, 1.49
+12:23:55.678 > [D][Storage.cpp:223] write_data(): File written
+12:23:55.678 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:54,TESTKITAQI,26.2, 40.2, 995.8, 10, 14, 16, 0.000, 22.40, 0.11, 1.49
+12:23:55.695 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:55.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:55.794 > 
+12:23:56.625 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:23:56.640 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:23:56.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:56.793 > 
+12:23:57.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:23:57.794 > 
+12:23:58.712 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+12:23:58.716 > 
+12:23:58.716 > [E][main.cpp:567] vWifiTransfer(): Ping not received
+12:23:59.127 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:23:57,TESTKITAQI,26.2, 40.2, 995.9, 11, 15, 17, 0.000, 18.58, 0.11, 1.26
+12:23:59.144 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:23:59.144 > 
+12:23:59.144 > [D][Storage.cpp:223] write_data(): File written
+12:23:59.144 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:23:57,TESTKITAQI,26.2, 40.2, 995.9, 11, 15, 17, 0.000, 18.58, 0.11, 1.26
+12:23:59.162 > [I][main.cpp:461] vStorage(): data written to storage
+12:23:59.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:23:59.794 > 
+12:23:59.819 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:24:00.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:00.794 > 
+12:24:01.744 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:00,TESTKITAQI,26.2, 40.2, 995.9, 11, 14, 16, 0.000, 20.46, 0.11, 1.36
+12:24:01.744 > [D][Storage.cpp:223] write_data(): File written
+12:24:01.760 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:00,TESTKITAQI,26.2, 40.2, 995.9, 11, 14, 16, 0.000, 20.46, 0.11, 1.36
+12:24:01.761 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:01.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:01.794 > 
+12:24:02.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:02.795 > 
+12:24:03.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:03.795 > 
+12:24:05.195 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:03,TESTKITAQI,26.2, 40.0, 995.8, 12, 15, 17, 0.000, 23.74, 0.11, 1.53
+12:24:05.212 > [D][Storage.cpp:223] write_data(): File written
+12:24:05.212 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:03,TESTKITAQI,26.2, 40.0, 995.8, 12, 15, 17, 0.000, 23.74, 0.11, 1.53
+12:24:05.229 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:05.229 > 
+12:24:05.229 >  
+12:24:05.229 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:05.243 > 
+12:24:05.243 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:05.245 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:05.348 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:54,TESTKITAQI,26.2, 40.2, 995.8, 10, 14, 16, 0.000, 22.40, 0.11, 1.49
+12:24:05.362 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:05.378 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:05.379 > [I][Storage.cpp:767] mark_data(): Size: 92155,   Pos: 91795,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:05.397 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:05.414 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:05.430 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:05.529 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:23:57,TESTKITAQI,26.2, 40.2, 995.9, 11, 15, 17, 0.000, 18.58, 0.11, 1.26
+12:24:05.545 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:05.545 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:05.563 > [I][Storage.cpp:767] mark_data(): Size: 92155,   Pos: 91885,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:05.582 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:05.597 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:05.612 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:05.715 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:00,TESTKITAQI,26.2, 40.2, 995.9, 11, 14, 16, 0.000, 20.46, 0.11, 1.36
+12:24:05.729 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:05.729 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:05.747 > [I][Storage.cpp:767] mark_data(): Size: 92155,   Pos: 91975,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:05.764 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:05.779 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:05.798 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:05.895 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:03,TESTKITAQI,26.2, 40.0, 995.8, 12, 15, 17, 0.000, 23.74, 0.11, 1.53
+12:24:05.912 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:05.912 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:05.923 > [I][Storage.cpp:767] mark_data(): Size: 92155,   Pos: 92065,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:05.946 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:05.946 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:05.946 > 
+12:24:06.797 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:06.800 > 
+12:24:07.815 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:06,TESTKITAQI,26.2, 39.8, 995.9, 11, 15, 17, 0.000, 21.55, 0.11, 1.49
+12:24:07.825 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:07.829 > 
+12:24:07.829 > [D][Storage.cpp:223] write_data(): File written
+12:24:07.829 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:06,TESTKITAQI,26.2, 39.8, 995.9, 11, 15, 17, 0.000, 21.55, 0.11, 1.49
+12:24:07.846 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:08.787 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:08.787 > 
+12:24:08.939 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:24:08.939 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 4 data chunks to cloud.
+12:24:09.784 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:09.800 > 
+12:24:10.413 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:09,TESTKITAQI,26.2, 39.7, 995.8, 11, 14, 14, 0.000, 22.73, 0.11, 1.67
+12:24:10.429 > [D][Storage.cpp:223] write_data(): File written
+12:24:10.444 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:09,TESTKITAQI,26.2, 39.7, 995.8, 11, 14, 14, 0.000, 22.73, 0.11, 1.67
+12:24:10.444 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:10.462 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:24:10.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:10.793 > 
+12:24:11.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:11.793 > 
+12:24:12.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:12.794 > 
+12:24:13.945 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:12,TESTKITAQI,26.2, 39.8, 996.0, 12, 15, 17, 0.000, 20.37, 0.11, 1.33
+12:24:13.961 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:13.961 > 
+12:24:13.961 > [D][Storage.cpp:223] write_data(): File written
+12:24:13.961 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:12,TESTKITAQI,26.2, 39.8, 996.0, 12, 15, 17, 0.000, 20.37, 0.11, 1.33
+12:24:13.980 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:14.568 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:14.568 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:14.683 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:06,TESTKITAQI,26.2, 39.8, 995.9, 11, 15, 17, 0.000, 21.55, 0.11, 1.49
+12:24:14.699 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:14.699 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:14.711 > [I][Storage.cpp:767] mark_data(): Size: 92425,   Pos: 92155,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:14.735 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:14.745 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:14.745 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:14.860 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:09,TESTKITAQI,26.2, 39.7, 995.8, 11, 14, 14, 0.000, 22.73, 0.11, 1.67
+12:24:14.875 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:14.875 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:14.875 > [I][Storage.cpp:767] mark_data(): Size: 92425,   Pos: 92245,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:14.911 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:14.911 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:14.911 > 
+12:24:14.911 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:14.935 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:15.035 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:12,TESTKITAQI,26.2, 39.8, 996.0, 12, 15, 17, 0.000, 20.37, 0.11, 1.33
+12:24:15.042 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:15.058 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:15.058 > [I][Storage.cpp:767] mark_data(): Size: 92425,   Pos: 92335,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:15.078 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:15.786 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:15.786 > 
+12:24:16.567 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:15,TESTKITAQI,26.1, 39.8, 995.7, 12, 14, 16, 0.000, 25.42, 0.10, 1.92
+12:24:16.567 > [D][Storage.cpp:223] write_data(): File written
+12:24:16.582 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:15,TESTKITAQI,26.1, 39.8, 995.7, 12, 14, 16, 0.000, 25.42, 0.10, 1.92
+12:24:16.582 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:16.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:16.801 > 
+12:24:17.781 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:17.797 > 
+12:24:18.080 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:24:18.080 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:24:18.788 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:18.788 > 
+12:24:20.023 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:18,TESTKITAQI,26.1, 39.8, 995.9, 12, 15, 16, 0.000, 19.76, 0.11, 1.32
+12:24:20.038 > [D][Storage.cpp:223] write_data(): File written
+12:24:20.045 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:18,TESTKITAQI,26.1, 39.8, 995.9, 12, 15, 16, 0.000, 19.76, 0.11, 1.32
+12:24:20.054 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:20.062 > 
+12:24:20.062 >  
+12:24:20.062 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:20.062 > 
+12:24:20.062 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:24:20.786 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:20.786 > 
+12:24:21.754 > dhcps: send_nak>>udp_sendto result 0
+12:24:21.785 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:21.801 > 
+12:24:22.625 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:21,TESTKITAQI,26.1, 39.9, 995.9, 12, 15, 17, 0.000, 20.23, 0.11, 1.30
+12:24:22.649 > [D][Storage.cpp:223] write_data(): File written
+12:24:22.649 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:21,TESTKITAQI,26.1, 39.9, 995.9, 12, 15, 17, 0.000, 20.23, 0.11, 1.30
+12:24:22.661 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:22.788 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:22.788 > 
+12:24:23.785 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:23.801 > 
+12:24:24.198 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:24.198 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:24.311 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:15,TESTKITAQI,26.1, 39.8, 995.7, 12, 14, 16, 0.000, 25.42, 0.10, 1.92
+12:24:24.328 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:24.328 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:24.328 > [I][Storage.cpp:767] mark_data(): Size: 92695,   Pos: 92425,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:24.366 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:24.368 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:24.378 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:24.491 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:18,TESTKITAQI,26.1, 39.8, 995.9, 12, 15, 16, 0.000, 19.76, 0.11, 1.32
+12:24:24.491 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:24.507 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:24.507 > [I][Storage.cpp:767] mark_data(): Size: 92695,   Pos: 92515,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:24.545 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:24.551 > [D][Storage.cpp:440] read_data(): Reading file: /20250206.txt
+12:24:24.561 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:24:24.677 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-02-06 12:24:21,TESTKITAQI,26.1, 39.9, 995.9, 12, 15, 17, 0.000, 20.23, 0.11, 1.30
+12:24:24.678 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:24:24.693 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:24:24.693 > [I][Storage.cpp:767] mark_data(): Size: 92695,   Pos: 92605,   Chunk: 88,   Write: /20250206.txt,   Read: /20250206.txt
+12:24:24.731 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:24:24.796 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:24.801 > 
+12:24:26.097 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:24,TESTKITAQI,26.2, 40.6, 995.7, 11, 14, 16, 0.000, 24.05, 0.10, 2.03
+12:24:26.099 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:26.112 > 
+12:24:26.113 > [D][Storage.cpp:223] write_data(): File written
+12:24:26.117 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:24,TESTKITAQI,26.2, 40.6, 995.7, 11, 14, 16, 0.000, 24.05, 0.10, 2.03
+12:24:26.128 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:26.793 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:26.793 > 
+12:24:27.733 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:24:27.738 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:24:27.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 3
+12:24:27.798 > 
+12:24:28.709 > [I][main.cpp:413] vAcquireData(): 2025-02-06 12:24:27,TESTKITAQI,26.2, 40.3, 995.9, 11, 15, 17, 0.000, 22.07, 0.10, 1.77
+12:24:28.713 > [D][Storage.cpp:223] write_data(): File written
+12:24:28.713 > [D][main.cpp:460] vStorage(): Data Written: 2025-02-06 12:24:27,TESTKITAQI,26.2, 40.3, 995.9, 11, 15, 17, 0.000, 22.07, 0.10, 1.77
+12:24:28.727 > [I][main.cpp:461] vStorage(): data written to storage
+12:24:28.795 > [I][main.cpp:390] vAcquireData(): Cycle number: 1
+12:24:28.795 > 
+12:24:28.846 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:24:29.794 > [I][main.cpp:390] vAcquireData(): Cycle number: 2
+12:24:29.794 > 

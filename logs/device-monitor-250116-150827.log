@@ -1,0 +1,289 @@
+15:08:27.624 > [D][main.cpp:98] setup(): 
+15:08:27.624 > Current Version: 1.1.8
+15:08:27.624 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+15:08:27.624 > Commit Date: 15th October 2024
+15:08:27.624 > [D][AQISensor.cpp:95] init(): AHT20 initialized
+15:08:27.624 > [D][AQISensor.cpp:107] init(): BMP280 initialized
+15:08:27.624 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+15:08:27.624 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+15:08:27.624 > [I][main.cpp:202] setup(): ID found!
+15:08:27.624 > Device name: TESTKITAQI
+15:08:27.624 > 
+15:08:27.624 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:08:27.624 > 
+15:08:27.624 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:08:27.624 > 
+15:08:29.512 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:08:29.520 > 
+15:08:32.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:08:32.520 > 
+15:08:35.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:08:35.518 > 
+15:08:38.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:08:38.520 > 
+15:08:41.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:08:41.521 > 
+15:08:44.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:08:44.517 > 
+15:08:47.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:08:47.521 > 
+15:08:50.516 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:08:50.517 > 
+15:08:53.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:08:53.521 > 
+15:08:56.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:08:56.520 > 
+15:08:59.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:08:59.519 > 
+15:09:02.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:09:02.519 > 
+15:09:05.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:09:05.520 > 
+15:09:08.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:09:08.520 > 
+15:09:11.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:09:11.519 > 
+15:09:14.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:09:14.519 > 
+15:09:17.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:09:17.519 > 
+15:09:17.563 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x14 0x00 0x1C 0x00 0x1C 0x00 0x14 0x00 0x1C 0x00 0x1C 0x0D 0xA1 0x03 0xC3 0x00 0x9F 0x00 0x0C 0x00 0x00 0x00 0x00 0x97 0x00 0x03 0xF9 
+15:09:17.578 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x03F9, Received 0x001C
+15:09:17.586 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:09:17.592 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.2, 998.1,0,0,0
+15:09:20.515 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:09:20.520 > 
+15:09:23.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:09:23.519 > 
+15:09:26.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:09:26.518 > 
+15:09:29.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:09:29.516 > 
+15:09:32.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:09:32.517 > 
+15:09:35.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:09:35.519 > 
+15:09:38.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:09:38.518 > 
+15:09:41.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:09:41.517 > 
+15:09:44.514 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:09:44.516 > 
+15:09:47.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:09:47.518 > 
+15:09:50.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:09:50.518 > 
+15:09:53.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:09:53.513 > 
+15:09:56.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:09:56.508 > 
+15:09:59.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:09:59.509 > 
+15:10:02.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:10:02.508 > 
+15:10:05.513 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:10:05.514 > 
+15:10:08.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:10:08.515 > 
+15:10:11.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:10:11.509 > 
+15:10:14.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:10:14.508 > 
+15:10:17.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:10:17.511 > 
+15:10:17.559 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x0D 0x77 0x03 0xC3 0x00 0x99 0x00 0x0A 0x00 0x00 0x00 0x00 0x97 0x00 0x03 0xC5 
+15:10:17.575 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x03C5, Received 0x001C
+15:10:17.577 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:10:17.588 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.2, 998.2,0,0,0
+15:10:20.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:10:20.517 > 
+15:10:23.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:10:23.506 > 
+15:10:26.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:10:26.507 > 
+15:10:29.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:10:29.516 > 
+15:10:32.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:10:32.516 > 
+15:10:35.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:10:35.516 > 
+15:10:38.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:10:38.516 > 
+15:10:41.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:10:41.516 > 
+15:10:44.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:10:44.509 > 
+15:10:47.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:10:47.512 > 
+15:10:50.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:10:50.515 > 
+15:10:53.511 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:10:53.513 > 
+15:10:56.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:10:56.515 > 
+15:10:59.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:10:59.514 > 
+15:11:02.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:11:02.503 > 
+15:11:05.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:11:05.507 > 
+15:11:08.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:11:08.502 > 
+15:11:11.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:11:11.514 > 
+15:11:14.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:11:14.513 > 
+15:11:17.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:11:17.511 > 
+15:11:17.557 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x0D 0x77 0x03 0xC3 0x00 0x99 0x00 0x0A 0x00 0x00 0x00 0x00 0x97 0x00 0x03 0xC5 
+15:11:17.572 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x03C5, Received 0x001C
+15:11:17.580 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:11:17.586 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.3, 998.2,0,0,0
+15:11:20.510 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:11:20.514 > 
+15:11:23.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:11:23.507 > 
+15:11:26.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:11:26.515 > 
+15:11:29.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:11:29.513 > 
+15:11:32.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:11:32.512 > 
+15:11:35.509 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:11:35.509 > 
+15:11:38.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:11:38.513 > 
+15:11:41.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:11:41.507 > 
+15:11:44.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:11:44.512 > 
+15:11:47.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:11:47.501 > 
+15:11:50.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:11:50.514 > 
+15:11:53.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:11:53.505 > 
+15:11:56.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:11:56.511 > 
+15:11:59.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:11:59.512 > 
+15:12:02.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:12:02.511 > 
+15:12:05.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:12:05.513 > 
+15:12:08.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:12:08.513 > 
+15:12:11.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:12:11.512 > 
+15:12:14.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:12:14.502 > 
+15:12:17.508 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:12:17.513 > 
+15:12:17.555 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x00 0x14 0x00 0x1B 0x00 0x1C 0x0D 0x77 0x03 0xC3 0x00 0x99 0x00 0x0A 0x00 0x00 0x00 0x00 0x97 0x00 0x03 0xC5 
+15:12:17.563 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x03C5, Received 0x001C
+15:12:17.579 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:12:17.579 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.2, 998.2,0,0,0
+15:12:20.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:12:20.512 > 
+15:12:23.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:12:23.506 > 
+15:12:26.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:12:26.512 > 
+15:12:29.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:12:29.501 > 
+15:12:32.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:12:32.509 > 
+15:12:35.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:12:35.508 > 
+15:12:38.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:12:38.501 > 
+15:12:41.507 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:12:41.509 > 
+15:12:44.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:12:44.506 > 
+15:12:47.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:12:47.511 > 
+15:12:50.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:12:50.512 > 
+15:12:53.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:12:53.511 > 
+15:12:56.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:12:56.508 > 
+15:12:59.506 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:12:59.511 > 
+15:13:02.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:13:02.509 > 
+15:13:05.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:13:05.510 > 
+15:13:08.494 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:13:08.510 > 
+15:13:11.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:13:11.507 > 
+15:13:14.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:13:14.507 > 
+15:13:17.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:13:17.498 > 
+15:13:17.547 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x15 0x00 0x1B 0x00 0x1B 0x00 0x14 0x00 0x1B 0x00 0x1B 0x0D 0xD1 0x03 0xD6 0x00 0x86 0x00 0x08 0x00 0x00 0x00 0x00 0x97 0x00 0x04 0x1C 
+15:13:17.562 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x041C, Received 0x001B
+15:13:17.577 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:13:17.578 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.3, 998.2,0,0,0
+15:13:20.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:13:20.510 > 
+15:13:23.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:13:23.510 > 
+15:13:26.505 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:13:26.509 > 
+15:13:29.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:13:29.496 > 
+15:13:32.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:13:32.503 > 
+15:13:35.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:13:35.496 > 
+15:13:38.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:13:38.499 > 
+15:13:41.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:13:41.508 > 
+15:13:44.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+15:13:44.504 > 
+15:13:47.496 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+15:13:47.496 > 
+15:13:50.504 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+15:13:50.509 > 
+15:13:53.491 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+15:13:53.507 > 
+15:13:56.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+15:13:56.509 > 
+15:13:59.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+15:13:59.508 > 
+15:14:02.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+15:14:02.506 > 
+15:14:05.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+15:14:05.498 > 
+15:14:08.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+15:14:08.498 > 
+15:14:11.495 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+15:14:11.495 > 
+15:14:14.503 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+15:14:14.509 > 
+15:14:17.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+15:14:17.498 > 
+15:14:17.546 > Raw Data: 0x42 0x4D 0x00 0x1C 0x00 0x15 0x00 0x1B 0x00 0x1B 0x00 0x14 0x00 0x1B 0x00 0x1B 0x0D 0xD1 0x03 0xD6 0x00 0x86 0x00 0x08 0x00 0x00 0x00 0x00 0x97 0x00 0x04 0x1C 
+15:14:17.562 > [E][AQISensor.cpp:176] readPMSData(): Checksum mismatch: Calculated 0x041C, Received 0x001B
+15:14:17.575 > [W][AQISensor.cpp:129] getData(): Failed to read PMS5003 data!
+15:14:17.579 > [I][main.cpp:370] vAcquireData(): 2000-01-01 00:00:00,TESTKITAQI,24.9, 43.3, 998.2,0,0,0
+15:14:20.490 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+15:14:20.505 > 
+15:14:23.498 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+15:14:23.504 > 
+15:14:26.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+15:14:26.505 > 
+15:14:29.501 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+15:14:29.501 > 
+15:14:32.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+15:14:32.508 > 
+15:14:35.497 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+15:14:35.503 > 
+15:14:38.502 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+15:14:38.507 > 
+15:14:41.499 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+15:14:41.508 > 

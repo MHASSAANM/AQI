@@ -1,0 +1,35 @@
+12:58:02.841 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+12:58:13.203 > dhcps: send_nak>>udp_sendto result 0
+12:58:36.952 > [E][WiFiClient.cpp:258] connect(): socket error on fd 59, errno: 113, "Software caused connection abort"
+12:59:11.508 > [E][AQISensor.cpp:76] readPMSData(): Checksum failure
+12:59:11.515 > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+12:59:11.522 > Core 0 register dump:
+12:59:11.525 > PC      : 0x400014dc  PS      : 0x00060630  A0      : 0x800f7f49  A1      : 0x3ffdeea0  
+12:59:11.533 > A2      : 0x003e002d  A3      : 0x003e0029  A4      : 0x000000ff  A5      : 0x0000ff00  
+12:59:11.539 > A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x800f7d49  A9      : 0x3ffdee70  
+12:59:11.546 > A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000002  A13     : 0x3ffbcbf0  
+12:59:11.550 > A14     : 0x00000000  A15     : 0x3ffdd4c0  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+12:59:11.563 > EXCVADDR: 0x003e002d  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+12:59:11.570 > 
+12:59:11.570 > ELF file SHA256: 0000000000000000
+12:59:11.575 > 
+12:59:11.575 > Backtrace: 0x400014dc:0x3ffdeea0 0x400f7f46:0x3ffdeeb0 0x400d65c2:0x3ffdeed0 0x400d6c30:0x3ffdef30 0x4008a69e:0x3ffdef70
+12:59:11.585 > 
+12:59:11.585 > Rebooting...
+12:59:11.587 > ets Jul 29 2019 12:21:46
+12:59:11.589 > 
+12:59:11.589 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:59:11.594 > configsip: 0, SPIWP:0xee
+12:59:11.595 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:59:11.600 > mode:DIO, clock div:2
+12:59:11.604 > load:0x3fff0018,len:4
+12:59:11.604 > load:0x3fff001c,len:1044
+12:59:11.604 > load:0x40078000,len:10124
+12:59:11.604 > load:0x40080400,len:5828
+12:59:11.614 > entry 0x400806a8
+12:59:12.465 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+12:59:24.131 > [E][vfs_api.cpp:27] open():  does not start with /
+12:59:24.141 > [E][espMQTT.cpp:168] sendFile(): File  could not be opened. Data will not be sent!
+12:59:24.473 > dhcps: send_nak>>udp_sendto result 0
+12:59:28.669 > dhcps: send_nak>>udp_sendto result 0
+13:00:46.330 > [E][WiFiClient.cpp:258] connect(): socket error on fd 60, errno: 113, "Software caused connection abort"

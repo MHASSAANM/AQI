@@ -1,0 +1,138 @@
+17:12:47.276 > [D][main.cpp:98] setup(): 
+17:12:47.276 > Current Version: 1.1.8
+17:12:47.276 > Description: last Restart Time is added, Bug of RTC module selected resolved, and name of update_ip() changed to update_essentials()
+17:12:47.276 > Commit Date: 15th October 2024
+17:12:47.276 > [D][AQISensor.cpp:95] init(): AHT20 initialized
+17:12:47.276 > [D][AQISensor.cpp:107] init(): BMP280 initialized
+17:12:47.276 > [D][main.cpp:143] setup(): AQI sensor initialized successfully!
+17:12:47.276 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+17:12:47.276 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+17:12:47.276 > [D][Storage.cpp:44] init_storage(): SDHC 
+17:12:47.276 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30416MB
+17:12:47.276 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+17:12:47.276 > [D][Storage.cpp:81] init_storage(): File is: 
+17:12:47.276 > [D][Storage.cpp:82] init_storage(): /20250114.txt 
+17:12:47.276 > [D][Storage.cpp:83] init_storage(): Position is: 
+17:12:47.276 > [D][Storage.cpp:84] init_storage(): 6639 
+17:12:47.276 > [I][Storage.cpp:141] init_storage(): AP storage found!
+17:12:47.276 > [D][main.cpp:149] setup(): Storage initialization success!
+17:12:47.276 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+17:12:47.276 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+17:12:47.276 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:12:47.276 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:12:47.276 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+17:12:47.276 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+17:12:47.276 > [D][Storage.cpp:710] return_APList(): 12344321 
+17:12:47.276 > [D][Storage.cpp:721] return_APList(): New AP returned 
+17:12:47.276 > [D][Storage.cpp:736] return_APList(): End of data reached 
+17:12:47.276 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+17:12:47.276 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+17:12:47.276 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+17:12:47.276 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+17:12:47.276 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+17:12:47.276 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+17:12:47.368 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:12:47.379 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 18
+17:12:47.384 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:12:47.389 > [I][WiFiMulti.cpp:119] run(): [WIFI] 18 networks found
+17:12:47.395 > [D][WiFiMulti.cpp:149] run():  --->   0: [10][6C:5A:B0:F4:DA:84] NeuBolt (-50) *
+17:12:47.399 > [D][WiFiMulti.cpp:151] run():        1: [1][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+17:12:47.408 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A0] Wireless (-60) *
+17:12:47.414 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A2] LUMS-Events (-60) *
+17:12:47.423 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A1] TV-LED (-60) *
+17:12:47.429 > [D][WiFiMulti.cpp:151] run():        5: [6][90:9A:4A:B8:CD:83] Airbus380 (-71) *
+17:12:47.435 > [D][WiFiMulti.cpp:151] run():        6: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-71) *
+17:12:47.445 > [D][WiFiMulti.cpp:151] run():        7: [1][08:CC:68:DB:D9:81] TV-LED (-73) *
+17:12:47.451 > [D][WiFiMulti.cpp:151] run():        8: [1][08:CC:68:DB:D9:80] Wireless (-74) *
+17:12:47.456 > [D][WiFiMulti.cpp:151] run():        9: [1][08:CC:68:DB:D9:82] LUMS-Events (-74) *
+17:12:47.467 > [D][WiFiMulti.cpp:151] run():        10: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-81) *
+17:12:47.471 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:3C:A2:42] LUMS-Events (-83) *
+17:12:47.481 > [D][WiFiMulti.cpp:151] run():        12: [4][60:32:B1:09:5B:C0] TP-Link_5BC0 (-83) *
+17:12:47.483 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:3C:A2:40] Wireless (-84) *
+17:12:47.497 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:3C:A2:41] TV-LED (-85) *
+17:12:47.503 > [D][WiFiMulti.cpp:151] run():        15: [1][4C:E1:75:1D:01:60] Wireless (-89) *
+17:12:47.511 > [D][WiFiMulti.cpp:151] run():        16: [1][4C:E1:75:1D:01:61] TV-LED (-90) *
+17:12:47.517 > [D][WiFiMulti.cpp:151] run():        17: [8][A8:42:A1:C4:9B:59] TP-Link_9B59 (-92) *
+17:12:47.526 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 6C:5A:B0:F4:DA:84 SSID: NeuBolt Channel: 10 (-50)
+17:12:50.885 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+17:12:50.897 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+17:12:50.904 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.107, MASK: 255.255.255.0, GW: 192.168.0.1
+17:12:50.913 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+17:12:50.918 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+17:12:50.923 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.107
+17:12:50.928 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 6C:5A:B0:F4:DA:84
+17:12:50.932 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 10
+17:12:50.935 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+17:12:50.942 > [D][main.cpp:165] setup(): Initialized wifi successfully
+17:12:50.948 > [D][main.cpp:166] setup(): MAC: CC:DB:A7:49:55:04
+17:12:50.953 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+17:12:50.956 > [I][main.cpp:202] setup(): ID found!
+17:12:50.961 > Device name: TESTKITAQI
+17:12:50.963 > 
+17:12:50.963 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+17:12:50.967 > 
+17:12:53.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+17:12:53.957 > 
+17:12:56.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+17:12:56.955 > 
+17:12:59.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+17:12:59.953 > 
+17:13:02.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+17:13:02.953 > 
+17:13:05.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+17:13:05.956 > 
+17:13:08.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+17:13:08.952 > 
+17:13:11.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+17:13:11.952 > 
+17:13:14.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+17:13:14.952 > 
+17:13:17.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+17:13:17.956 > 
+17:13:20.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+17:13:20.956 > 
+17:13:23.952 > [I][main.cpp:354] vAcquireData(): Cycle number: 13
+17:13:23.956 > 
+17:13:26.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 14
+17:13:26.952 > 
+17:13:29.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 15
+17:13:29.952 > 
+17:13:32.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 16
+17:13:32.954 > 
+17:13:35.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 17
+17:13:35.952 > 
+17:13:38.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 18
+17:13:38.951 > 
+17:13:41.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 19
+17:13:41.951 > 
+17:13:44.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 20
+17:13:44.956 > 
+17:13:44.999 > [I][main.cpp:370] vAcquireData(): 2025-01-16 17:13:44,TESTKITAQI,25.0, 43.9, 998.3,28,20,27
+17:13:45.002 > [D][Storage.cpp:223] write_data(): File written
+17:13:45.016 > [D][main.cpp:416] vStorage(): Data Written: 2025-01-16 17:13:44,TESTKITAQI,25.0, 43.9, 998.3,28,20,27
+17:13:45.029 > [I][main.cpp:417] vStorage(): data written to storage
+17:13:47.949 > [I][main.cpp:354] vAcquireData(): Cycle number: 1
+17:13:47.956 > 
+17:13:50.948 > [I][main.cpp:354] vAcquireData(): Cycle number: 2
+17:13:50.955 > 
+17:13:53.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 3
+17:13:53.952 > 
+17:13:56.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 4
+17:13:56.951 > 
+17:13:59.006 > dhcps: send_nak>>udp_sendto result 0
+17:13:59.950 > [I][main.cpp:354] vAcquireData(): Cycle number: 5
+17:13:59.954 > 
+17:14:02.951 > [I][main.cpp:354] vAcquireData(): Cycle number: 6
+17:14:02.954 > 
+17:14:05.950 > [I][main.cpp:354] vAcquireData(): Cycle number: 7
+17:14:05.952 > 
+17:14:08.949 > [I][main.cpp:354] vAcquireData(): Cycle number: 8
+17:14:08.952 > 
+17:14:11.950 > [I][main.cpp:354] vAcquireData(): Cycle number: 9
+17:14:11.953 > 
+17:14:14.950 > [I][main.cpp:354] vAcquireData(): Cycle number: 10
+17:14:14.950 > 
+17:14:17.948 > [I][main.cpp:354] vAcquireData(): Cycle number: 11
+17:14:17.948 > 
+17:14:20.950 > [I][main.cpp:354] vAcquireData(): Cycle number: 12
+17:14:20.950 > 
