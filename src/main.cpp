@@ -77,7 +77,6 @@ void vOLEDDisplay(void *pvParameters);
 TaskHandle_t oledTask;
 bool oled_data = false;
 String time_oled = "";
-String voltage_oled[NUM_OF_SLOTS], current_oled[NUM_OF_SLOTS], power_oled[NUM_OF_SLOTS], pf_oled[NUM_OF_SLOTS] = {};
 #endif
 
 String towrite = "" , towrite_s = "", toTransfer = "";
@@ -322,51 +321,6 @@ void loop()
 {
   vTaskDelay(10);
 }
-
-
-
-/*void vAcquireData(void *pvParameters) {
-    TickType_t xLastWakeTime = xTaskGetTickCount();
-    int cycle_count = 1;
-
-    for (;;) {
-        cycle_count++;
-        if (cycle_count > DATA_STORAGE_TIME * MS_IN_SECOND / (DATA_ACQUISITION_TIME * MS_IN_SECOND)) {
-            cycle_count = 1;
-        }
-
-        
-        xSemaphoreTake(semaAqData1, portMAX_DELAY); // Check semaphore
-
-        towrite = "";
-        log_i("Cycle number: %d\n", cycle_count);
-
-        if (cycle_count == (DATA_STORAGE_TIME * MS_IN_SECOND / (DATA_ACQUISITION_TIME * MS_IN_SECOND))) {
-          towrite = getTime() + "," + sensorID + ",";
-          AQIData aqiData = aqiSensor.getData();
-          towrite += String(aqiData.temperature, 1) + ", " +
-                     String(aqiData.humidity, 1) + ", " +
-                     String(aqiData.pressure, 1) + "," +
-                     String(aqiData.pm1_0) + "," +
-                     String(aqiData.pm2_5) + "," +
-                     String(aqiData.pm10_0);
-
-#ifdef OLED_DISPLAY
-               oled_data = true;
-               time_oled = getTime();
-            #endif
-      log_i("%s", towrite.c_str());
-      if (flags[wf_f] && flags[cloud_f])
-        toTransfer = towrite;
-        }
-
-        xSemaphoreGive(semaAqData1); // Release semaphore
-        xSemaphoreGive(semaStorage1);
-        vTaskDelay(1);
-        vTaskDelayUntil(&xLastWakeTime, (DATA_ACQUISITION_TIME * MS_IN_SECOND));
-
-    }
-}*/
 
 
 void vAcquireData(void *pvParameters) {

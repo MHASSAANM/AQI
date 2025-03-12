@@ -2,9 +2,22 @@
 
 // Constructor
 AQISensor::AQISensor() : so2Serial(25, 26), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0}, baselineUpdated(false) {}
+TwoWire SGP30_Wire = TwoWire(1);  // Use I2C1 (second I2C bus)
+
 
 // Initialize sensors
 bool AQISensor::init() {
+
+    // Start second I2C bus for SGP30 on GPIO27 (SDA) and GPIO14 (SCL)
+    SGP30_Wire.begin(27, 14);
+    delay(100);
+
+    if (!sgp.begin(&SGP30_Wire)) {
+        log_e("Could not find SGP30 sensor on custom I2C bus!");
+        return false;
+    }
+    log_d("SGP30 initialized on separate I2C bus (GPIO27, GPIO14)");
+
     if (!aht.begin()) {
         log_e("Could not find AHT20 sensor! Check wiring.");
         return false;
@@ -39,12 +52,6 @@ bool AQISensor::init() {
     so2Serial.write(set_QA_mode, sizeof(set_QA_mode));
     delay(1000);
     log_d("SO2 sensor initialized");
-
-    if (!sgp.begin()) {
-        log_e("Could not find SGP30 sensor! Check wiring.");
-        return false;
-    }
-    log_d("SGP30 initialized");
 
     // Load stored baseline
     preferences.begin("sgp30", false);

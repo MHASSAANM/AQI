@@ -12,6 +12,8 @@
 #include <SoftwareSerial.h>
 #include <Preferences.h>
 
+extern TwoWire SGP30_Wire;
+
 // Struct to hold AQI data
 struct AQIData {
     float temperature;
