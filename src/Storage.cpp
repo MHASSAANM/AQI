@@ -391,7 +391,7 @@ bool Storage::rewrite_storage_APs(String SSID[10], String Password[10])
  */
 void Storage::create_header(File file)
 {
-    file.println("Temp, Humidity, Pressure, PM1.0, PM2.5, PM10.0, O3, CO, NO2, NH3, VoC, NOx, SO2");
+    file.println("Temp, Humidity, Pressure, PM1.0, PM2.5, PM10.0");
 }
 
 /**
