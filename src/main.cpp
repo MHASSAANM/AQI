@@ -343,19 +343,12 @@ void vAcquireData(void *pvParameters) {
 
             AQIData aqiData = aqiSensor.getData();
 
-            towrite += String(aqiData.temperature, 1) + ", " +
-                       String(aqiData.humidity, 1) + ", " +
-                       String(aqiData.pressure, 1) + ", " +
-                       String(aqiData.pm1_0) + ", " +
-                       String(aqiData.pm2_5) + ", " +
-                       String(aqiData.pm10_0) + ", " +
-                       String(aqiData.ozone_ppb) + ", " +
-                       String(aqiData.co_ppm, 2) + ", " +
-                       String(aqiData.no2_ppm, 2) + ", " +
-                       String(aqiData.nh3_ppm, 2) + ", " +
-                       String(aqiData.so2_ppm) + ", " +
-                       String(aqiData.eCO2) + ", " +
-                       String(aqiData.TVOC);
+            towrite += (aqiSensor.aht20Initialized ? String(aqiData.temperature, 1) : "0") + ", " +
+                       (aqiSensor.aht20Initialized ? String(aqiData.humidity, 1) : "0") + ", " +
+                       (aqiSensor.bmp280Initialized ? String(aqiData.pressure, 1) : "0") + ", " +
+                       (aqiSensor.pm5007Initialized ? String(aqiData.pm1_0) : "0") + ", " +
+                       (aqiSensor.pm5007Initialized ? String(aqiData.pm2_5): "0") + ", " +
+                       (aqiSensor.pm5007Initialized ? String(aqiData.pm10_0): "0");
 
 #ifdef OLED_DISPLAY
             oled_data = true;
