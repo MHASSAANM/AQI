@@ -1,0 +1,160 @@
+20:02:08.951 > [D][main.cpp:90] setup(): 
+20:02:08.951 > Current Version: 1.1.1
+20:02:08.951 > Description: AQI Meter OTA Updates have been added
+20:02:08.951 > Commit Date: 3 March 2025
+20:02:08.951 > [E][AQISensor.cpp:123] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+20:02:08.951 > [D][AQISensor.cpp:15] init(): O3 sensor failed to initialize!
+20:02:08.951 > [D][AQISensor.cpp:24] init(): SGP30 initialized on separate I2C bus (GPIO27, GPIO14)
+20:02:08.951 > [D][AQISensor.cpp:31] init(): AHT20 initialized
+20:02:08.951 > [D][AQISensor.cpp:38] init(): BMP280 initialized
+20:02:08.951 > [E][AQISensor.cpp:198] readPMS5007(): Timeout waiting for data!
+20:02:08.951 > [E][AQISensor.cpp:50] init(): PM5007 not detected!
+20:02:08.951 > [D][AQISensor.cpp:63] init(): MICS6814 sensor initialized
+20:02:08.951 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: eCO2_base NOT_FOUND
+20:02:08.951 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: TVOC_base NOT_FOUND
+20:02:08.951 > [V][Preferences.cpp:389] getUInt(): nvs_get_u32 fail: lastCalibTime NOT_FOUND
+20:02:08.951 > [D][AQISensor.cpp:82] init(): Baseline too old or not found. Running 12-hour calibration...
+20:02:08.951 > [D][main.cpp:136] setup(): AQI sensor initialized successfully!
+20:02:08.951 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+20:02:08.951 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+20:02:08.951 > [D][Storage.cpp:44] init_storage(): SDHC 
+20:02:08.951 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30841MB
+20:02:08.951 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+20:02:08.951 > [D][Storage.cpp:81] init_storage(): File is: 
+20:02:08.951 > [D][Storage.cpp:82] init_storage(): /20250322.txt 
+20:02:08.951 > [D][Storage.cpp:83] init_storage(): Position is: 
+20:02:08.951 > [D][Storage.cpp:84] init_storage(): 91161 
+20:02:08.951 > [I][Storage.cpp:141] init_storage(): AP storage found!
+20:02:08.951 > [D][main.cpp:142] setup(): Storage initialization success!
+20:02:08.951 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+20:02:08.951 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+20:02:08.951 > [I][ESPWiFi.cpp:35] init(): updating AP list from SD card 
+20:02:08.951 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+20:02:08.951 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+20:02:08.951 > [D][Storage.cpp:693] return_APList(): NeuBolt 
+20:02:08.951 > [D][Storage.cpp:710] return_APList(): 12344321 
+20:02:08.951 > [D][Storage.cpp:721] return_APList(): New AP returned 
+20:02:08.951 > [D][Storage.cpp:736] return_APList(): End of data reached 
+20:02:08.951 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: NeuBolt
+20:02:08.951 > [V][ESPWiFi.cpp:62] update_APs(): Added AP 
+20:02:08.951 > [V][ESPWiFi.cpp:63] update_APs(): SSID: NeuBolt 
+20:02:08.951 > [V][ESPWiFi.cpp:64] update_APs(): Password: 12344321 
+20:02:08.951 > [V][ESPWiFi.cpp:68] update_APs(): credential length: 1 
+20:02:08.951 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+20:02:10.917 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+20:02:10.926 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 6
+20:02:10.929 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+20:02:10.934 > [I][WiFiMulti.cpp:119] run(): [WIFI] 6 networks found
+20:02:10.934 > [D][WiFiMulti.cpp:149] run():  --->   0: [8][0A:C5:E1:B7:31:9E] NeuBolt (-36) *
+20:02:10.942 > [D][WiFiMulti.cpp:151] run():        1: [8][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-63) *
+20:02:10.951 > [D][WiFiMulti.cpp:151] run():        2: [1][CC:2D:21:8F:FA:C8] *¥!Ru$ (-78) *
+20:02:10.959 > [D][WiFiMulti.cpp:151] run():        3: [4][50:D4:F7:16:73:F0] nouman787 (-83) *
+20:02:10.981 > [D][WiFiMulti.cpp:151] run():        4: [5][CC:2D:21:8F:CE:C8] = 5G (-83) *
+20:02:10.981 > [D][WiFiMulti.cpp:151] run():        5: [9][C8:3A:35:93:30:C8] FINE NET 2 RR@ 03219461938 (-85) *
+20:02:10.984 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 0A:C5:E1:B7:31:9E SSID: NeuBolt Channel: 8 (-36)
+20:02:14.418 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+20:02:14.428 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 3 - AUTH_LEAVE
+20:02:25.990 > [E][WiFiMulti.cpp:187] run(): [WIFI] Connecting Failed (6).
+20:02:26.001 > [E][ESPWiFi.cpp:247] connect_to_nearest(): Connection timed out 
+20:02:26.006 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+20:02:26.011 > [I][main.cpp:193] setup(): ID found!
+20:02:26.015 > Device name: TESTKITAQI
+20:02:26.017 > 
+20:02:26.017 > [E][ESPWiFi.cpp:268] check_connection(): WiFi not connected. Establishing connection 
+20:02:31.319 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+20:02:31.327 > [D][ESPWiFi.cpp:11] onWifiScan(): Number of WiFi Scan results: 6
+20:02:31.330 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+20:02:31.337 > [I][WiFiMulti.cpp:119] run(): [WIFI] 6 networks found
+20:02:31.340 > [D][WiFiMulti.cpp:149] run():  --->   0: [8][0A:C5:E1:B7:31:9E] NeuBolt (-38) *
+20:02:31.348 > [D][WiFiMulti.cpp:151] run():        1: [8][B0:DF:C1:4F:88:70] FINE NET 2 MM 03219461938 (-64) *
+20:02:31.355 > [D][WiFiMulti.cpp:151] run():        2: [1][CC:2D:21:8F:FA:C8] *¥!Ru$ (-79) *
+20:02:31.362 > [D][WiFiMulti.cpp:151] run():        3: [4][50:D4:F7:16:73:F0] nouman787 (-84) *
+20:02:31.370 > [D][WiFiMulti.cpp:151] run():        4: [5][CC:2D:21:8F:CE:C8] = 5G (-85) *
+20:02:31.379 > [D][WiFiMulti.cpp:151] run():        5: [9][C8:3A:35:93:30:C8] FINE NET 2 RR@ 03219461938 (-86) *
+20:02:31.384 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 0A:C5:E1:B7:31:9E SSID: NeuBolt Channel: 8 (-38)
+20:02:37.216 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+20:02:37.254 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+20:02:37.254 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.43.164, MASK: 255.255.255.0, GW: 192.168.43.1
+20:02:37.270 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+20:02:37.275 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: NeuBolt
+20:02:37.279 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.43.164
+20:02:37.284 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 0A:C5:E1:B7:31:9E
+20:02:37.286 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 8
+20:02:37.294 > [I][ESPWiFi.cpp:242] connect_to_nearest(): Connection established 
+20:02:37.345 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:37.354 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:37.360 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:37.366 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:37.372 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:37.375 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 230648
+20:02:37.385 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+20:02:37.444 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+20:02:37.450 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+20:02:37.458 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+20:02:37.465 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+20:02:37.473 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+20:02:40.031 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+20:02:40.039 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+20:02:40.044 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 187104
+20:02:40.052 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+20:02:40.054 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:40.067 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+20:02:40.655 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+20:02:40.657 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:40.668 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+20:02:41.478 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+20:02:41.483 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:41.490 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 269 bytes...
+20:02:42.090 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+20:02:42.098 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:42.105 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+20:02:42.109 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+20:02:42.117 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+20:02:42.124 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+20:02:42.587 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+20:02:42.595 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:42.603 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+20:02:42.609 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+20:02:43.318 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+20:02:43.324 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:43.332 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 286 bytes...
+20:02:43.340 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+20:02:43.933 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+20:02:43.941 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+20:02:43.947 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 287 bytes...
+20:02:43.954 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+20:02:43.958 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+20:02:43.967 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+20:02:44.546 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:44.556 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:44.558 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+20:02:44.566 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+20:02:44.566 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+20:03:02.652 > [E][WiFiClient.cpp:258] connect(): socket error on fd 56, errno: 113, "Software caused connection abort"
+20:03:16.893 > [E][WiFiClient.cpp:258] connect(): socket error on fd 57, errno: 104, "Connection reset by peer"
+20:03:16.897 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 8
+20:03:16.909 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1609470551
+20:03:16.915 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1609473288
+20:03:16.921 > [I][main.cpp:339] vAcquireData(): Cycle number: 1
+20:03:16.921 > 
+20:03:17.962 > [E][AQISensor.cpp:198] readPMS5007(): Timeout waiting for data!
+20:03:18.080 > [I][main.cpp:367] vAcquireData(): 2021-01-01 08:54:48,TESTKITAQI,26.4, 59.1, 990.4, 0, 0, 0, 2.57, 0.05, 0.98, 400, 0, 0
+20:03:18.091 > [D][Storage.cpp:223] write_data(): File written
+20:03:18.095 > [D][main.cpp:415] vStorage(): Data Written: 2021-01-01 08:54:48,TESTKITAQI,26.4, 59.1, 990.4, 0, 0, 0, 2.57, 0.05, 0.98, 400, 0, 0
+20:03:18.107 > [I][main.cpp:416] vStorage(): data written to storage
+20:03:19.909 > [I][main.cpp:339] vAcquireData(): Cycle number: 1
+20:03:19.918 > 
+20:03:20.959 > [E][AQISensor.cpp:198] readPMS5007(): Timeout waiting for data!
+20:03:21.072 > [I][main.cpp:367] vAcquireData(): 2021-01-01 08:54:51,TESTKITAQI,26.5, 59.2, 990.4, 0, 0, 0, 2.62, 0.05, 0.96, 400, 2, 0
+20:03:21.087 > [D][Storage.cpp:223] write_data(): File written
+20:03:21.095 > [D][main.cpp:415] vStorage(): Data Written: 2021-01-01 08:54:51,TESTKITAQI,26.5, 59.2, 990.4, 0, 0, 0, 2.62, 0.05, 0.96, 400, 2, 0
+20:03:21.104 > [I][main.cpp:416] vStorage(): data written to storage
+20:03:22.913 > [I][main.cpp:339] vAcquireData(): Cycle number: 1
+20:03:22.913 > 
+20:03:23.958 > [E][AQISensor.cpp:198] readPMS5007(): Timeout waiting for data!
+20:03:24.078 > [I][main.cpp:367] vAcquireData(): 2021-01-01 08:54:54,TESTKITAQI,26.5, 59.1, 990.4, 0, 0, 0, 2.64, 0.05, 0.95, 414, 5, 0
+20:03:24.084 > [D][Storage.cpp:223] write_data(): File written
+20:03:24.084 > [D][main.cpp:415] vStorage(): Data Written: 2021-01-01 08:54:54,TESTKITAQI,26.5, 59.1, 990.4, 0, 0, 0, 2.64, 0.05, 0.95, 414, 5, 0
+20:03:24.103 > [I][main.cpp:416] vStorage(): data written to storage
+20:03:25.905 > [I][main.cpp:339] vAcquireData(): Cycle number: 1
+20:03:25.918 > 
