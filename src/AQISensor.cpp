@@ -1,18 +1,18 @@
 #include "AQISensor.h"
 
-AQISensor::AQISensor() :  ozoneSerial(&Serial1) , /*so2Serial(nullptr),*/ aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0.0}, baselineUpdated(false) {}
+AQISensor::AQISensor() :  /*ozoneSerial(&Serial1) , so2Serial(nullptr),*/ aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0}, baselineUpdated(false) {}
 
 TwoWire SGP30_Wire = TwoWire(1);
 
 bool AQISensor::init() {
 
-    ozoneSerial->begin(9600, SERIAL_8N1, OZONE_RX_PIN, OZONE_TX_PIN);
+    /*ozoneSerial->begin(9600, SERIAL_8N1, OZONE_RX_PIN, OZONE_TX_PIN);
     delay(100);
     ozoneSensorInitialized = initOzoneSensor();
 
     float testOzonePPM;
     ozoneSensorInitialized = ozoneSensorInitialized && readOzoneData(testOzonePPM);
-    log_d("%s", ozoneSensorInitialized ? "O3 sensor initialized" : "O3 sensor failed to initialize!");
+    log_d("%s", ozoneSensorInitialized ? "O3 sensor initialized" : "O3 sensor failed to initialize!");*/
 
     SGP30_Wire.begin(27, 14);
     delay(100);
@@ -95,7 +95,7 @@ bool AQISensor::init() {
     return true;
 }
 
-bool AQISensor::initOzoneSensor() {
+/*bool AQISensor::initOzoneSensor() {
     uint8_t disableCmd[9] = {0xFF, 0x01, 0x78, 0x41, 0x00, 0x00, 0x00, 0x00, 0x46};
     ozoneSerial->write(disableCmd, 9);
     delay(100);  // Allow time for mode switch
@@ -140,7 +140,7 @@ bool AQISensor::readOzoneData(float &ozonePPM) {
     ozonePPM = ozonePPB / 1000.0;
 
     return true; // Sensor responded correctly
-}
+}*/
 
 /*bool AQISensor::initSO2Sensor() {
     if (!so2Serial) return false;
@@ -332,10 +332,10 @@ AQIData AQISensor::getData() {
     readMICS6814(aqiData.co_ppm, aqiData.no2_ppm, aqiData.nh3_ppm);
     readSGP30(aqiData.eCO2, aqiData.TVOC);
 
-    if (ozoneSensorInitialized) {
+    /*if (ozoneSensorInitialized) {
         float ozonePPM;
         aqiData.ozone_ppb = readOzoneData(ozonePPM) ? ozonePPM * 1000 : 0;
-    }
+    }*/
 
    /* if (so2SensorInitialized) {
         float so2PPM;

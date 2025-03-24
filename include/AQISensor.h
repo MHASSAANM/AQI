@@ -42,7 +42,7 @@ public:
     bool aht20Initialized = false;
     bool bmp280Initialized = false;
     bool pm5007Initialized = false;
-    bool ozoneSensorInitialized = false;
+    //bool ozoneSensorInitialized = false;
     bool mics6814Initialized = false;
     bool sgp30Initialized = false;
     //bool so2SensorInitialized = false;
@@ -53,7 +53,7 @@ private:
     Adafruit_SGP30 sgp;
     Preferences preferences;
 
-    HardwareSerial *ozoneSerial;
+    //HardwareSerial *ozoneSerial;
     //SoftwareSerial *so2Serial;
 
     const uint8_t OZONE_RX_PIN = 13;
@@ -68,8 +68,8 @@ private:
 
 
     bool readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0);
-    bool initOzoneSensor();
-    bool readOzoneData(float &ozonePPM);
+    //bool initOzoneSensor();
+    //bool readOzoneData(float &ozonePPM);
     void readMICS6814(float &co, float &no2, float &nh3);
     void readSGP30(uint16_t &eCO2, uint16_t &TVOC);
     //bool initSO2Sensor();
