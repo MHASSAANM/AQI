@@ -5,7 +5,14 @@
 #include <Arduino.h>
 #include <Adafruit_AHTX0.h>
 #include <Adafruit_BMP280.h>
+#include <Adafruit_SGP30.h>
 #include <Wire.h>
+#include <cmath>
+#include <HardwareSerial.h>
+#include <SoftwareSerial.h>
+#include <Preferences.h>
+
+extern TwoWire SGP30_Wire;
 
 // Struct to hold AQI data
 struct AQIData {
@@ -69,8 +76,15 @@ private:
     //bool readSO2Sensor(float &so2PPM);
     
     uint32_t getAbsoluteHumidity(float temperature, float humidity);
+    void updateSGP30Baseline();
 
     AQIData aqiData;
+
+    bool baselineUpdated;
+    unsigned long startTime;
+    const unsigned long CALIBRATION_DURATION = 12 * 60 * 60 * 1000;
+    const unsigned long SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
+
 };
 
 #endif
