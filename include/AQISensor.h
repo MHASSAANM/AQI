@@ -27,8 +27,8 @@ struct AQIData {
     float nh3_ppm;
     uint16_t eCO2;
     uint16_t TVOC;
-    float ozone_ppb;
-    //float so2_ppm;
+    // float ozone_ppb;
+    // float so2_ppm;
 
 };
 
@@ -42,10 +42,10 @@ public:
     bool aht20Initialized = false;
     bool bmp280Initialized = false;
     bool pm5007Initialized = false;
-    //bool ozoneSensorInitialized = false;
+    // bool ozoneSensorInitialized = false;
     bool mics6814Initialized = false;
     bool sgp30Initialized = false;
-    //bool so2SensorInitialized = false;
+    // bool so2SensorInitialized = false;
 
 private:
     Adafruit_AHTX0 aht;
@@ -53,11 +53,11 @@ private:
     Adafruit_SGP30 sgp;
     Preferences preferences;
 
-    //HardwareSerial *ozoneSerial;
-    //SoftwareSerial *so2Serial;
+    // HardwareSerial *ozoneSerial;
+    // SoftwareSerial *so2Serial;
 
-    const uint8_t OZONE_RX_PIN = 13;
-    const uint8_t OZONE_TX_PIN = 12;
+    // const uint8_t OZONE_RX_PIN = 14;
+    // const uint8_t OZONE_TX_PIN = 12;
 
     const uint8_t PMS_RX_PIN = 16;
     const uint8_t PMS_TX_PIN = 17;
@@ -68,12 +68,12 @@ private:
 
 
     bool readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0);
-    //bool initOzoneSensor();
-    //bool readOzoneData(float &ozonePPM);
+    // bool initOzoneSensor();
+    // bool readOzoneData(float &ozonePPM);
     void readMICS6814(float &co, float &no2, float &nh3);
     void readSGP30(uint16_t &eCO2, uint16_t &TVOC);
-    //bool initSO2Sensor();
-    //bool readSO2Sensor(float &so2PPM);
+    // bool initSO2Sensor();
+    // bool readSO2Sensor(float &so2PPM);
     
     uint32_t getAbsoluteHumidity(float temperature, float humidity);
     void updateSGP30Baseline();

@@ -188,6 +188,7 @@ else
 
   {
     myNVS::read::sensorName(sensorID);
+    sensorID = "testu";
     if (sensorID != "")
     {
       log_i("ID found!\r\nDevice name: %s\r\n", sensorID.c_str());
@@ -355,7 +356,7 @@ void vAcquireData(void *pvParameters) {
                        (aqiSensor.mics6814Initialized ? String(aqiData.no2_ppm, 2) : "0") + ", " +
                        (aqiSensor.mics6814Initialized ? String(aqiData.nh3_ppm, 2) : "0") + ", " +
                        (aqiSensor.sgp30Initialized ? String(aqiData.eCO2): "0") + ", " +
-                       (aqiSensor.sgp30Initialized ? String(aqiData.TVOC): "0") /*+ ", " +
+                       (aqiSensor.sgp30Initialized ? String(aqiData.TVOC): "0")/* + ", " +
                        (aqiSensor.ozoneSensorInitialized ? String(aqiData.ozone_ppb, 2) : "0") + ", " +
                        (aqiSensor.so2SensorInitialized ? String(aqiData.so2_ppm, 2) : "0")*/;
 
