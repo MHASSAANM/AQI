@@ -1,22 +1,12 @@
 #include "AQISensor.h"
 
-AQISensor::AQISensor() : /*ozoneSerial(&Serial1) , so2Serial(nullptr),*/ aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0/*, 0.0, 0.0*/}, baselineUpdated(false) {}
+AQISensor::AQISensor() : ozoneSerial(&Serial1) , so2Serial(nullptr), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0}, baselineUpdated(false) {}
 
 TwoWire SGP30_Wire = TwoWire(1);
 
 bool AQISensor::init() {
 
-    // ozoneSerial->begin(9600, SERIAL_8N1, OZONE_RX_PIN, OZONE_TX_PIN);
-
-    // delay(100);
-    // ozoneSensorInitialized = initOzoneSensor();
-
-
-    // float testOzonePPM;
-    // ozoneSensorInitialized = ozoneSensorInitialized && readOzoneData(testOzonePPM);
-    // log_d("%s", ozoneSensorInitialized ? "O3 sensor initialized" : "O3 sensor failed to initialize!");
-
-    SGP30_Wire.begin(15, 27);
+    SGP30_Wire.begin(15, 27);  // SDA , SCL
     delay(100);
 
     sgp30Initialized = sgp.begin(&SGP30_Wire);
@@ -52,24 +42,23 @@ bool AQISensor::init() {
         log_e("PM5007 not detected!");
     }
 
+
+
     analogReadResolution(12);
     analogSetAttenuation(ADC_11db);
-    pinMode(32, INPUT);
-    pinMode(34, INPUT);
-    pinMode(35, INPUT);
+    pinMode(CO_SENSOR_PIN, INPUT);
+    pinMode(NH3_SENSOR_PIN, INPUT);
+    pinMode(NO2_SENSOR_PIN, INPUT);
 
-    int coRaw = analogRead(32);
-    int no2Raw = analogRead(34);
-    int nh3Raw = analogRead(35);
+    int co_raw = analogRead(CO_SENSOR_PIN);
+    int nh3_raw = analogRead(NH3_SENSOR_PIN);
+    int no2_raw = analogRead(NO2_SENSOR_PIN);
 
     float VREF = 3.3;
-    float coVoltage = (coRaw / 4095.0) * VREF;
-    float no2Voltage = (no2Raw / 4095.0) * VREF;
-    float nh3Voltage = (nh3Raw / 4095.0) * VREF;
+    float coVoltage = (co_raw / 4095.0) * VREF;
+    float no2Voltage = (nh3_raw / 4095.0) * VREF;
+    float nh3Voltage = (no2_raw / 4095.0) * VREF;
 
-    log_d("MICS6814 Raw Voltages -> CO: %.2f V, NO2: %.2f V, NH3: %.2f V", coVoltage, no2Voltage, nh3Voltage);
-
-    // Sanity range for analog sensor output
     bool validCO = (coVoltage > 0.1 && coVoltage < 2.5);
     bool validNO2 = (no2Voltage > 0.1 && no2Voltage < 2.5);
     bool validNH3 = (nh3Voltage > 0.1 && nh3Voltage < 2.5);
@@ -80,6 +69,7 @@ bool AQISensor::init() {
     } else {
         log_e("MICS6814 sensor not detected!");
     }
+
     
     if (sgp30Initialized) {
         preferences.begin("sgp30", false);
@@ -99,62 +89,73 @@ bool AQISensor::init() {
     }
 
 
-    // so2Serial = new SoftwareSerial(25, 26);
-    // so2Serial->begin(9600);
-    // delay(500);
+    ozoneSerial->begin(9600, SERIAL_8N1, OZONE_TX_PIN, OZONE_RX_PIN);
 
-    // so2SensorInitialized = initSO2Sensor();
-    // log_d("%s", so2SensorInitialized ? "SO₂ sensor initialized" : "SO₂ sensor failed to initialize!");
+    delay(100);
+    ozoneSensorInitialized = initOzoneSensor();
+
+
+    float testOzonePPM;
+    ozoneSensorInitialized = ozoneSensorInitialized && readOzoneData(testOzonePPM);
+    log_d("%s", ozoneSensorInitialized ? "O3 sensor initialized" : "O3 sensor failed to initialize!");
+
+
+    so2Serial = new SoftwareSerial(4, 13);
+    so2Serial->begin(9600);
+    delay(500);
+
+    so2SensorInitialized = initSO2Sensor();
+    log_d("%s", so2SensorInitialized ? "SO₂ sensor initialized" : "SO₂ sensor failed to initialize!");
 
     return true;
 }
 
-// bool AQISensor::initOzoneSensor() {
-//     uint8_t disableCmd[9] = {0xFF, 0x01, 0x78, 0x41, 0x00, 0x00, 0x00, 0x00, 0x46};
+bool AQISensor::initOzoneSensor() {
+    uint8_t disableCmd[9] = {0xFF, 0x01, 0x78, 0x41, 0x00, 0x00, 0x00, 0x00, 0x46};
 
-//     ozoneSerial->write(disableCmd, 9);
-//     delay(100);  // Allow time for mode switch
+    ozoneSerial->write(disableCmd, 9);
+    delay(100);  // Allow time for mode switch
 
-//     return true; // Assume command was sent correctly
-// }
+    return true; // Assume command was sent correctly
+}
 
-// bool AQISensor::readOzoneData(float &ozonePPM) {
-//     uint8_t requestCmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
-//     ozoneSerial->write(requestCmd, 9);
-//     delay(100);  // Wait for sensor response
+bool AQISensor::readOzoneData(float &ozonePPM) {
+    uint8_t requestCmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
+    ozoneSerial->write(requestCmd, 9);
+    delay(500);  // Wait for sensor response
 
-//     uint8_t buffer[9];
-//     int bytesRead = 0;
-//     unsigned long startTime = millis();
+    uint8_t buffer[9];
+    int bytesRead = 0;
+    unsigned long startTime = millis();
 
-//     while (bytesRead < 9 && millis() - startTime < 1000) {
-//         if (ozoneSerial->available()) {
-//             buffer[bytesRead++] = ozoneSerial->read();
-//         }
-//     }
+    while (bytesRead < 9 && millis() - startTime < 1000) {
+        if (ozoneSerial->available()) {
+            buffer[bytesRead++] = ozoneSerial->read();
+        }
+    }
 
-//     if (bytesRead != 9) {
-//         log_e("O3 Sensor: No valid response! Check wiring.");
-//         return false; // No valid data received
-//     }
+    if (bytesRead != 9) {
+        log_e("O3 Sensor: No valid response! Check wiring.");
+        return false; // No valid data received
+    }
 
-//     if (buffer[0] != 0xFF || buffer[1] != 0x17) {
-//         log_e("O3 Sensor: Invalid response format!");
-//         return false;
-//     }
+    if (buffer[0] != 0xFF || buffer[1] != 0x17) {
+        log_e("O3 Sensor: Invalid response format!");
+        return false;
+    }
 
-//     uint8_t checksum = ~(buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7]) + 1;
-//     if (checksum != buffer[8]) {
-//         log_e("O3 Sensor: Checksum mismatch!");
-//         return false;
-//     }
+    uint8_t checksum = ~(buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7]) + 1;
+    if (checksum != buffer[8]) {
+        log_e("O3 Sensor: Checksum mismatch!");
+        return false;
+    }
 
-//     // Extract ozone concentration
-//     int ozonePPB = (buffer[4] << 8) | buffer[5];
-//     ozonePPM = ozonePPB / 1000.0;
+    // Extract ozone concentration
+    int ozonePPB = (buffer[4] << 8) | buffer[5];
+    ozonePPM = ozonePPB / 1000.0;
 
-//     return true; // Sensor responded correctly
-// }
+    return true; // Sensor responded correctly
+}
 
 // bool AQISensor::initSO2Sensor() {
 //     if (!so2Serial) return false;
@@ -165,6 +166,38 @@ bool AQISensor::init() {
 
 //     return true; // Assuming command was sent correctly
 // }
+
+bool AQISensor::initSO2Sensor() {
+    if (!so2Serial) {
+        log_e("SO2 Serial not initialized!");
+        return false;
+    }
+
+    // Optional: Warm-up delay
+    delay(30000); // Adjust per datasheet
+
+    uint8_t set_QA_mode[] = {0xFF, 0x01, 0x78, 0x04, 0x00, 0x00, 0x00, 0x00, 0x83};
+    so2Serial->write(set_QA_mode, sizeof(set_QA_mode));
+    delay(500);
+
+    uint8_t buffer[9];
+    int bytesRead = 0;
+    unsigned long startTime = millis();
+
+    while (bytesRead < 9 && millis() - startTime < 1000) {
+        if (so2Serial->available()) {
+            buffer[bytesRead++] = so2Serial->read();
+        }
+    }
+
+    if (bytesRead == 9 && buffer[0] == 0xFF && buffer[1] == 0x78) { // Adjust per datasheet
+        log_d("SO2 sensor confirmed QA mode");
+        return true;
+    } else {
+        log_e("SO2 sensor failed to confirm QA mode! Received %d bytes", bytesRead);
+        return false;
+    }
+}
 
 
 // bool AQISensor::readSO2Sensor(float &so2PPM) {
@@ -191,6 +224,63 @@ bool AQISensor::init() {
 //         return false;
 //     }
 // }
+
+bool AQISensor::readSO2Sensor(float &so2PPM) {
+    if (!so2Serial) {
+        log_e("SO2 Serial not initialized!");
+        return false;
+    }
+
+    uint8_t requestCmd[] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
+    so2Serial->write(requestCmd, sizeof(requestCmd));
+    delay(500); // Adjust based on sensor specs
+
+    uint8_t buffer[9];
+    int bytesRead = 0;
+    unsigned long startTime = millis();
+
+    // Read response
+    while (bytesRead < 9 && millis() - startTime < 1000) {
+        if (so2Serial->available()) {
+            buffer[bytesRead++] = so2Serial->read();
+        }
+    }
+
+    // Debug received bytes
+    if (bytesRead > 0) {
+        log_d("SO2 received %d bytes: ", bytesRead);
+        for (int i = 0; i < bytesRead; i++) {
+            log_d("0x%02X ", buffer[i]);
+        }
+    }
+
+    if (bytesRead < 9) {
+        log_e("SO₂ sensor: Received %d bytes, expected 9!", bytesRead);
+        return false;
+    }
+
+    // Validate response
+    if (buffer[0] != 0xFF || buffer[1] != 0x86) {
+        log_e("SO₂ sensor: Invalid response format!");
+        return false;
+    }
+
+    // Verify checksum
+    uint8_t checksum = 0;
+    for (int i = 1; i < 8; i++) {
+        checksum += buffer[i];
+    }
+    checksum = (~checksum) + 1;
+    if (checksum != buffer[8]) {
+        log_e("SO₂ sensor: Checksum mismatch! Expected 0x%02X, got 0x%02X", checksum, buffer[8]);
+        return false;
+    }
+
+    // Extract value
+    int so2_value = (buffer[2] << 8) | buffer[3];
+    so2PPM = so2_value / 1000.0; // Convert to ppm
+    return true;
+}
 
 
 
@@ -239,47 +329,17 @@ bool AQISensor::readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0) 
     return true;
 }
 
-// Read MICS6814 sensor data
-void AQISensor::readMICS6814(float &co, float &no2, float &nh3) {
-
-    int coRaw = analogRead(32);
-    int no2Raw = analogRead(34);
-    int nh3Raw = analogRead(35);
-
-    float VREF = 3.3;
-    float coVoltage = (coRaw / 4095.0) * VREF;
-    float no2Voltage = (no2Raw / 4095.0) * VREF;
-    float nh3Voltage = (nh3Raw / 4095.0) * VREF;
-
-    float RL_CO = 47000;
-    float RL_NO2 = 47000;
-    float RL_NH3 = 47000;
-
-    float Rs_CO = RL_CO * ((VREF - coVoltage) / coVoltage);
-    float Rs_NO2 = RL_NO2 * ((VREF - no2Voltage) / no2Voltage);
-    float Rs_NH3 = RL_NH3 * ((VREF - nh3Voltage) / nh3Voltage);
-
-    float CO_R0 = 2200.0;
-    float NO2_R0 = 261500.0;
-    float NH3_R0 = 3600.0;
-
-    // Prevent division by near-zero Rs values
-    if (Rs_CO < 1.0) Rs_CO = 1.0;
-    if (Rs_NO2 < 1.0) Rs_NO2 = 1.0;
-    if (Rs_NH3 < 1.0) Rs_NH3 = 1.0;
-
-    co = 5.92 * pow((Rs_CO / CO_R0), -1.108);
-    no2 = 0.128 * pow((Rs_NO2 / NO2_R0), 1.029);
-    nh3 = 0.603 * pow((Rs_NH3 / NH3_R0), -2.207);
-
-    // Cap ppm values
-    co = fmin(co, 1000.0);
-    no2 = fmin(no2, 10.0);
-    nh3 = fmin(nh3, 500.0);
 
 
+void AQISensor::readMiCS6814(float &co_ppm, float &nh3_ppm, float &no2_ppm) {
+    int co_raw = analogRead(CO_SENSOR_PIN);
+    int nh3_raw = analogRead(NH3_SENSOR_PIN);
+    int no2_raw = analogRead(NO2_SENSOR_PIN);
+
+    co_ppm = (co_raw / 4095.0f) * 1000.0f * CO_SCALE;
+    nh3_ppm = (nh3_raw / 4095.0f) * 500.0f * NH3_SCALE;
+    no2_ppm = (no2_raw / 4095.0f) * 200.0f * NO2_SCALE;
 }
-
 
 // Read SGP30 sensor data
 void AQISensor::readSGP30(uint16_t &eCO2, uint16_t &TVOC) {
@@ -330,18 +390,26 @@ AQIData AQISensor::getData() {
     aqiData.pressure = bmp.readPressure() / 100.0;
 
     readPMS5007(aqiData.pm1_0, aqiData.pm2_5, aqiData.pm10_0);
-    readMICS6814(aqiData.co_ppm, aqiData.no2_ppm, aqiData.nh3_ppm);
     readSGP30(aqiData.eCO2, aqiData.TVOC);
 
-    // if (ozoneSensorInitialized) {
-    //     float ozonePPM;
-    //     aqiData.ozone_ppb = readOzoneData(ozonePPM) ? ozonePPM * 1000 : 0;
-    // }
+    if (ozoneSensorInitialized) {
+        float ozonePPM;
+        aqiData.ozone_ppb = readOzoneData(ozonePPM) ? ozonePPM * 1000 : 0;
+    }
 
-    // if (so2SensorInitialized) {
-    //     float so2PPM;
-    //     aqiData.so2_ppm = readSO2Sensor(so2PPM) ? so2PPM : 0.0;
-    // }
+    if (so2SensorInitialized) {
+        float so2PPM;
+        aqiData.so2_ppm = readSO2Sensor(so2PPM) ? so2PPM : 0.0;
+    }
+
+    if (mics6814Initialized) {
+    float co, nh3, no2;
+    readMiCS6814(co, nh3, no2);
+    aqiData.co_ppm = co;
+    aqiData.nh3_ppm = nh3;
+    aqiData.no2_ppm = no2;
+    }
+
     
     return aqiData;
 }

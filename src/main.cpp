@@ -346,19 +346,19 @@ void vAcquireData(void *pvParameters) {
 
             aqiData = aqiSensor.getData();
 
-            towrite += (aqiSensor.aht20Initialized ? String(aqiData.temperature, 1) : "0") + ", " +
+             towrite += (aqiSensor.aht20Initialized ? String(aqiData.temperature, 1) : "0") + ", " +
                        (aqiSensor.aht20Initialized ? String(aqiData.humidity, 1) : "0") + ", " +
                        (aqiSensor.bmp280Initialized ? String(aqiData.pressure, 1) : "0") + ", " +
                        (aqiSensor.pm5007Initialized ? String(aqiData.pm1_0) : "0") + ", " +
                        (aqiSensor.pm5007Initialized ? String(aqiData.pm2_5): "0") + ", " +
                        (aqiSensor.pm5007Initialized ? String(aqiData.pm10_0): "0") + ", " +
                        (aqiSensor.mics6814Initialized ? String(aqiData.co_ppm, 2) : "0") + ", " +
-                       (aqiSensor.mics6814Initialized ? String(aqiData.no2_ppm, 2) : "0") + ", " +
                        (aqiSensor.mics6814Initialized ? String(aqiData.nh3_ppm, 2) : "0") + ", " +
+                       (aqiSensor.mics6814Initialized ? String(aqiData.no2_ppm, 2) : "0") + ", " +
                        (aqiSensor.sgp30Initialized ? String(aqiData.eCO2): "0") + ", " +
-                       (aqiSensor.sgp30Initialized ? String(aqiData.TVOC): "0")/* + ", " +
+                       (aqiSensor.sgp30Initialized ? String(aqiData.TVOC): "0") + ", " +
                        (aqiSensor.ozoneSensorInitialized ? String(aqiData.ozone_ppb, 2) : "0") + ", " +
-                       (aqiSensor.so2SensorInitialized ? String(aqiData.so2_ppm, 2) : "0")*/;
+                       (aqiSensor.so2SensorInitialized ? String(aqiData.so2_ppm, 2) : "0");
 
 #ifdef OLED_DISPLAY
             oled_data = true;
