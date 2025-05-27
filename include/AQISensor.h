@@ -9,8 +9,14 @@
 #include <Wire.h>
 #include <cmath>
 #include <HardwareSerial.h>
-#include <SoftwareSerial.h>
 #include <Preferences.h>
+
+
+//#define ENABLE_SO2_SENSOR     // Uncomment to enable SO2 sensor
+
+#ifdef ENABLE_SO2_SENSOR
+#include <SoftwareSerial.h>
+#endif
 
 extern TwoWire SGP30_Wire;
 
@@ -28,7 +34,9 @@ struct AQIData {
     uint16_t eCO2;
     uint16_t TVOC;
     float ozone_ppb;
+    #ifdef ENABLE_SO2_SENSOR
     float so2_ppm;
+    #endif
 
 };
 
@@ -45,7 +53,9 @@ public:
     bool mics6814Initialized = false;
     bool sgp30Initialized = false;
     bool ozoneSensorInitialized = false;
+    #ifdef ENABLE_SO2_SENSOR
     bool so2SensorInitialized = false;
+    #endif
 
 private:
     Adafruit_AHTX0 aht;
@@ -54,7 +64,9 @@ private:
     Preferences preferences;
 
     HardwareSerial *ozoneSerial;
+    #ifdef ENABLE_SO2_SENSOR
     SoftwareSerial *so2Serial;
+    #endif
 
     const uint8_t OZONE_TX_PIN = 25;
     const uint8_t OZONE_RX_PIN = 26;
@@ -81,8 +93,10 @@ private:
     void readSGP30(uint16_t &eCO2, uint16_t &TVOC);
     bool initOzoneSensor();
     bool readOzoneData(float &ozonePPM);
+    #ifdef ENABLE_SO2_SENSOR
     bool initSO2Sensor();
     bool readSO2Sensor(float &so2PPM);
+    #endif
     
     uint32_t getAbsoluteHumidity(float temperature, float humidity);
     void updateSGP30Baseline();

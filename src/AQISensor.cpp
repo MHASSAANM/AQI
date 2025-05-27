@@ -1,6 +1,10 @@
 #include "AQISensor.h"
 
-AQISensor::AQISensor() : ozoneSerial(&Serial1) , so2Serial(nullptr), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0}, baselineUpdated(false) {}
+#ifdef ENABLE_SO2_SENSOR
+AQISensor::AQISensor() : ozoneSerial(&Serial1), so2Serial(nullptr), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0}, baselineUpdated(false) {}
+#else
+AQISensor::AQISensor() : ozoneSerial(&Serial1), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 0.0, 0.0, 0.0, 0, 0, 0.0}, baselineUpdated(false) {}
+#endif
 
 TwoWire SGP30_Wire = TwoWire(1);
 
@@ -99,13 +103,14 @@ bool AQISensor::init() {
     ozoneSensorInitialized = ozoneSensorInitialized && readOzoneData(testOzonePPM);
     log_d("%s", ozoneSensorInitialized ? "O3 sensor initialized" : "O3 sensor failed to initialize!");
 
-
+    #ifdef ENABLE_SO2_SENSOR
     so2Serial = new SoftwareSerial(4, 13);
     so2Serial->begin(9600);
     delay(500);
 
     so2SensorInitialized = initSO2Sensor();
     log_d("%s", so2SensorInitialized ? "SO₂ sensor initialized" : "SO₂ sensor failed to initialize!");
+    #endif
 
     return true;
 }
@@ -167,6 +172,7 @@ bool AQISensor::readOzoneData(float &ozonePPM) {
 //     return true; // Assuming command was sent correctly
 // }
 
+#ifdef ENABLE_SO2_SENSOR
 bool AQISensor::initSO2Sensor() {
     if (!so2Serial) {
         log_e("SO2 Serial not initialized!");
@@ -281,9 +287,7 @@ bool AQISensor::readSO2Sensor(float &so2PPM) {
     so2PPM = so2_value / 1000.0; // Convert to ppm
     return true;
 }
-
-
-
+#endif
 
 
 // Read PM5007 data
@@ -397,10 +401,14 @@ AQIData AQISensor::getData() {
         aqiData.ozone_ppb = readOzoneData(ozonePPM) ? ozonePPM * 1000 : 0;
     }
 
+    #ifdef ENABLE_SO2_SENSOR
     if (so2SensorInitialized) {
         float so2PPM;
         aqiData.so2_ppm = readSO2Sensor(so2PPM) ? so2PPM : 0.0;
     }
+    #endif
+
+    
 
     if (mics6814Initialized) {
     float co, nh3, no2;
