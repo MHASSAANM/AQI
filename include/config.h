@@ -24,8 +24,8 @@
 #define DEFAULT_MQTT_SERVER "203.135.63.47"
 #define DEFAULT_MQTT_PORT 1883
 
-#define FIREBASE_HOST "aqiid-f80ba-default-rtdb.asia-southeast1.firebasedatabase.app"
-#define FIREBASE_AUTH "CFbINwH5QuFq41EcSAY3WcPcDJNhLbXNFcvWIuZM"
+#define FIREBASE_HOST "aqimeter-default-rtdb.asia-southeast1.firebasedatabase.app"
+#define FIREBASE_AUTH "TlI7Pp5AMhnXSa3x0UzWG2FMVBYoeGDbqLe2Vbvl"
 
 #define WIFI_SCAN_FAILURE_LIMIT 3
 #define STORAGE_WRITE_FAILURE_LIMIT 3

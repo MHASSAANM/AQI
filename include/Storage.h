@@ -5,9 +5,11 @@
 #include "Preferences.h"
 #include "config.h"
 
-#define FILE_START_POS 16 // depends on size of header placed at start of file.
+#define FILE_START_POS 80 // depends on size of header placed at start of file.
 #define MIN_CHUNK_SIZE_B 47
-#define MAX_CHUNK_SIZE_B 200
+#define MAX_CHUNK_SIZE_B 110  //2025-05-27 12:59:59,AQIMeter100,85.0,100.0,1100.0,1000,1000,1000,1000.0,500.0,10.0,60000,60000,9.999,20.0
+#define FILE_HEADER "Time,ID,Temp,Humidity,Pressure,PM1.0,PM2.5,PM10.0,CO,NH3,NO2,eCO2,TVOC,O3,SO2\n"
+
 
 #define CARD_SIZE_LIMIT_MB 30000
 #define LOW_SPACE_LIMIT_MB 1024

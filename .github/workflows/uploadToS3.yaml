@@ -56,4 +56,4 @@ jobs:
         platformio run
         
         # Upload to S3
-        aws s3 cp .pio/build/*/firmware.bin s3://aqi-firemware-updates/aqi/$BINARY_FILENAME
+        aws s3 cp .pio/build/*/firmware.bin s3://aqi-meter-updates/aqi/$BINARY_FILENAME
