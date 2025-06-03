@@ -3,8 +3,8 @@
 #include "FirebaseESP32.h"
 #include "rtc.h"
 
-#define FIREBASE_HOST "aqiid-f80ba-default-rtdb.asia-southeast1.firebasedatabase.app"
-#define FIREBASE_AUTH "CFbINwH5QuFq41EcSAY3WcPcDJNhLbXNFcvWIuZM"
+#define FIREBASE_HOST "aqimeter-default-rtdb.asia-southeast1.firebasedatabase.app"
+#define FIREBASE_AUTH "TlI7Pp5AMhnXSa3x0UzWG2FMVBYoeGDbqLe2Vbvl"
 
 String mqtt_server = DEFAULT_MQTT_SERVER;
 uint16_t mqtt_port = DEFAULT_MQTT_PORT;
