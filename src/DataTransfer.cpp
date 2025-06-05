@@ -30,7 +30,7 @@ void handleWifiConnection()
     {
         
 
-        if (!Ping.ping(remote_ip, 1))
+        if (!wf.check_Internet())
         {
             digitalWrite(LED_BUILTIN, LOW);
             flags[wf_f] = 0;
@@ -156,7 +156,7 @@ void handleLiveTransfer()
             if (mqttClient.connected())
             {
                 xSemaphoreTake(semaStorage1, portMAX_DELAY);
-                xSemaphoreTake(semaAqData1, portMAX_DELAY);
+                //xSemaphoreTake(semaAqData1, portMAX_DELAY);
                 if (mqttClient.publish(MQTT_TOPIC, toTransfer.c_str()))
                 {
                     flags[cloud_blink_f] = 1;
@@ -164,14 +164,14 @@ void handleLiveTransfer()
                     log_d("Data Sent: %s", toTransfer.c_str());
                     toTransfer = "";
                 }
-                xSemaphoreGive(semaAqData1);
+                //xSemaphoreGive(semaAqData1);
                 xSemaphoreGive(semaStorage1);
             }
             else
             {
                 log_e("MQTT Broker disconnected");
             }
-            vTaskDelay(DATA_STORAGE_TIME * MS_IN_SECOND);
+            //vTaskDelay(DATA_STORAGE_TIME * MS_IN_SECOND);
         }
     }
 }

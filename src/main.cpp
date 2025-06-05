@@ -13,7 +13,6 @@
 #include "ESPWiFi.h"
 #include "rtc.h"
 #include "espMQTT.h"
-//#include "webServer.h"
 #include "myNVS.h"
 #include "Restart.h"
 #include "DataTransfer.h"
@@ -43,7 +42,6 @@ PubSubClient dataClient(espClient2);
 String sensorID = "";
 
 const uint8_t LEDS[] = {AQ_LED, STORAGE_LED, WIFI_LED, CLOUD_LED};
-const IPAddress remote_ip(8, 8, 8, 8);
 
 byte flags[10];
 
@@ -197,7 +195,7 @@ else
     { // saved settings not found
       log_i("Settings not found! Loading from Firebase...");
 
-      while (!wf.check_connection() || !Ping.ping(remote_ip, 1))
+      while (!wf.check_connection() || !wf.check_Internet())
       {
         flags[wf_f] = 0;
         log_e("No wifi available, waiting for connection");
@@ -232,7 +230,7 @@ else
 
   if (wf.check_connection())
   {
-    if (Ping.ping(remote_ip, 1))
+    if (wf.check_Internet())
     {
       flags[wf_f] = 1;
       digitalWrite(LED_BUILTIN, HIGH);
@@ -385,6 +383,7 @@ void vAcquireData(void *pvParameters) {
 
             if (flags[wf_f] && flags[cloud_f])
                 toTransfer = towrite;
+                live_broadcast(toTransfer);
         }
 
         xSemaphoreGive(semaAqData1); // Release semaphore
@@ -524,7 +523,7 @@ void vWifiTransfer(void *pvParameters)
 
     if (flags[wf_f])
     {
-      if (Ping.ping(remote_ip, 1))
+      if (wf.check_Internet())
     {
       if (flags[sd_f])
       {

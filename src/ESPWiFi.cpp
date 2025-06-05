@@ -1,4 +1,9 @@
 #include <ESPWiFi.h>
+#include <config.h>
+#include "ESP32Ping.h" // for checking internet connection
+
+IPAddress remote_ip1(8, 8, 8, 8);
+IPAddress remote_ip2(1, 1, 1, 1);
 
 void onWifiScan(WiFiEvent_t event, WiFiEventInfo_t info)
 {
@@ -275,6 +280,46 @@ bool ESP_WiFi::check_connection()
             return false;
         }
     }
+}
+
+bool ESP_WiFi::check_Internet()
+{
+    WiFiClient client;
+    IPAddress remoteIP;
+    IPAddress zeroIP(0, 0, 0, 0);    
+
+    // Step 3: Connect to the resolved IP with a timeout
+    if (Ping.ping(remote_ip1, 1))
+    {
+        log_i("Ping1 successful");
+        return true;
+    }
+    else if (Ping.ping(remoteIP, 1))
+    {
+        log_i("Ping2 successful");
+        return true;
+    }
+    else
+    {
+        // Step 1: Resolve DNS
+
+        WiFi.hostByName("www.google.com", remoteIP);
+        // Step 2: Check if the resolved IP is valid
+        if (remoteIP == zeroIP)
+        {
+            log_e("DNS resolution failed: Invalid IP (0.0.0.0)");
+            return false;
+        }
+        if (client.connect(remoteIP, 80, 1000))
+        {                  // 1-second timeout for TCP connection
+            client.stop(); // Close the connection
+            log_i("TCP connection established");
+            return true;
+        }
+    }
+
+    log_e("TCP connection failed or timed out");
+    return false; // Connection failed or timed out
 }
 
 ESP_WiFi wf;

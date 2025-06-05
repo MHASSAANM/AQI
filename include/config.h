@@ -16,10 +16,10 @@
 #define data_pull
 // #define led_status
 
-#define DEFAULT_SSID "NeuBolt"
+#define DEFAULT_SSID "EnergyInformatics"
 
 #define DEFAULT_PASSWORD "12344321"
-#define SOFT_AP_PASSWORD "123456789"
+// #define SOFT_AP_PASSWORD "123456789"
 
 #define DEFAULT_MQTT_SERVER "203.135.63.47"
 #define DEFAULT_MQTT_PORT 1883

@@ -32,6 +32,7 @@ public:
     bool connect_to_nearest();
     bool check_connection();
     bool start_soft_ap();
+    bool check_Internet();
 };
 
 extern ESP_WiFi wf;

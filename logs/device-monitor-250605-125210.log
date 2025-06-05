@@ -1,0 +1,1242 @@
+12:52:10.646 > [D][main.cpp:88] setup(): 
+12:52:10.646 > Current Version: 1.1.1
+12:52:10.646 > Description: AQI Meter OTA Updates have been added
+12:52:10.646 > Commit Date: 3 March 2025
+12:52:10.646 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+12:52:10.646 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+12:52:10.646 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+12:52:10.646 > [D][AQISensor.cpp:44] init(): PM5007 initialized
+12:52:10.646 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+12:52:10.646 > [E][AQISensor.cpp:148] readOzoneData(): O3 Sensor: Invalid response format!
+12:52:10.646 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+12:52:10.646 > [D][main.cpp:134] setup(): AQI sensor initialized successfully!
+12:52:10.646 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+12:52:10.646 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+12:52:10.646 > [D][Storage.cpp:44] init_storage(): SDHC 
+12:52:10.646 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30424MB
+12:52:10.646 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+12:52:10.646 > [D][Storage.cpp:81] init_storage(): File is: 
+12:52:10.646 > [D][Storage.cpp:82] init_storage(): /20250605.txt 
+12:52:10.646 > [D][Storage.cpp:83] init_storage(): Position is: 
+12:52:10.646 > [D][Storage.cpp:84] init_storage(): 187037 
+12:52:10.646 > [I][Storage.cpp:141] init_storage(): AP storage found!
+12:52:10.646 > [D][main.cpp:140] setup(): Storage initialization success!
+12:52:10.646 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+12:52:10.646 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:52:10.646 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+12:52:10.646 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:52:10.646 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+12:52:10.646 > [D][Storage.cpp:693] return_APList(): EnergyInformatics 
+12:52:10.646 > [D][Storage.cpp:710] return_APList(): 12344321 
+12:52:10.646 > [D][Storage.cpp:721] return_APList(): New AP returned 
+12:52:10.646 > [D][Storage.cpp:736] return_APList(): End of data reached 
+12:52:10.646 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+12:52:10.646 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+12:52:10.646 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+12:52:10.646 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+12:52:10.646 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+12:52:10.646 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+12:52:13.320 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+12:52:13.324 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 13
+12:52:13.330 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+12:52:13.333 > [I][WiFiMulti.cpp:119] run(): [WIFI] 13 networks found
+12:52:13.340 > [D][WiFiMulti.cpp:149] run():  --->   0: [9][50:0F:F5:80:A3:39] EnergyInformatics (-59) *
+12:52:13.349 > [D][WiFiMulti.cpp:151] run():        1: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-60) *
+12:52:13.354 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A1] TV-LED (-64) *
+12:52:13.362 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A0] Wireless (-65) *
+12:52:13.363 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A2] LUMS-Events (-65) *
+12:52:13.363 > [D][WiFiMulti.cpp:151] run():        5: [6][00:A6:CA:47:AC:A3] LUMS (-65) *
+12:52:13.377 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-79) *
+12:52:13.377 > [D][WiFiMulti.cpp:151] run():        7: [11][08:5A:11:23:67:E0] Wireless-LEC (-83) *
+12:52:13.393 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F6] LUMS (-85) *
+12:52:13.393 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F5] LUMS-Events (-86) *
+12:52:13.412 > [D][WiFiMulti.cpp:151] run():        10: [1][4C:E1:75:3C:A2:41] TV-LED (-88) *
+12:52:13.418 > [D][WiFiMulti.cpp:151] run():        11: [12][80:7A:BF:CB:0B:AF] HTC Portable Hotspot 86D7 (-94) *
+12:52:13.427 > [D][WiFiMulti.cpp:151] run():        12: [13][0C:54:15:74:2D:31] arkWiFi5 (-95) *
+12:52:13.435 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 9 (-59)
+12:52:16.915 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:52:16.971 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:52:16.972 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.141, MASK: 255.255.255.0, GW: 192.168.0.1
+12:52:16.986 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+12:52:16.991 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+12:52:16.996 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.141
+12:52:17.001 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+12:52:17.006 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 9
+12:52:17.008 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+12:52:17.016 > [D][main.cpp:155] setup(): Initialized wifi successfully
+12:52:17.022 > [D][main.cpp:156] setup(): MAC: CC:DB:A7:49:55:04
+12:52:17.025 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+12:52:17.032 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+12:52:17.035 > [I][main.cpp:192] setup(): ID found!
+12:52:17.040 > Device name: testu
+12:52:17.042 > 
+12:52:17.073 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:17.080 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:17.089 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:17.095 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:17.101 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:17.104 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:17.113 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 234796
+12:52:17.120 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+12:52:17.156 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+12:52:17.163 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+12:52:17.174 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+12:52:17.181 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+12:52:17.188 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+12:52:19.318 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+12:52:19.318 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+12:52:19.339 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 191112
+12:52:19.345 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+12:52:19.352 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:19.358 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:52:19.834 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+12:52:19.847 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:19.858 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:52:20.342 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+12:52:20.374 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:20.374 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:52:20.871 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:52:20.879 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:20.886 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:52:20.894 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:52:20.900 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+12:52:20.906 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:52:21.381 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:52:21.381 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:21.397 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:52:21.403 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:52:21.884 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+12:52:21.898 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:21.907 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:52:21.913 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:52:22.400 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+12:52:22.408 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:52:22.419 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+12:52:22.421 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:52:22.433 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+12:52:22.440 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:52:22.917 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:22.917 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:22.931 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:52:22.937 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+12:52:22.942 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:52:22.942 > [D][main.cpp:254] setup(): Cloud IoT Setup Complete
+12:52:22.975 > [D][main.cpp:267] setup(): Subscribed to topic pull/testu
+12:52:22.978 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 2
+12:52:22.988 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1749107786
+12:52:22.991 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1749109942
+12:52:23.001 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:23.007 > 
+12:52:23.007 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+12:52:23.056 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:23.113 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:23.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:23.128 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:22,testu,24.9, 53.2, 984.1, 0, 1, 1, 97.78, 47.50, 0.32, 0, 0, 0
+12:52:23.173 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:23.180 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:23.187 > [D][Storage.cpp:223] write_data(): File written
+12:52:23.192 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:52:22,testu,24.9, 53.2, 984.1, 0, 1, 1, 97.78, 47.50, 0.32, 0, 0, 0
+12:52:23.204 > [I][main.cpp:432] vStorage(): data written to storage
+12:52:23.214 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:52:23.228 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:52:23.336 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:52:04,testu,24.9, 53.2, 984.1, 1, 2, 3, 97.97, 47.64, 0.33, 0, 0, 0
+12:52:23.350 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:52:23.356 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:52:23.361 > [I][Storage.cpp:767] mark_data(): Size: 187208,   Pos: 187038,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:52:23.385 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:52:23.395 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:52:23.407 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:52:23.512 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:52:22,testu,24.9, 53.2, 984.1, 0, 1, 1, 97.78, 47.50, 0.32, 0, 0, 0
+12:52:23.535 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:52:23.541 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:52:23.547 > [I][Storage.cpp:767] mark_data(): Size: 187208,   Pos: 187123,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:52:23.569 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:52:25.996 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:26.001 > 
+12:52:26.129 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:26.134 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:25,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.34, 47.35, 0.32, 0, 0, 0
+12:52:26.181 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:26.187 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:26.197 > [D][Storage.cpp:223] write_data(): File written
+12:52:26.201 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:52:25,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.34, 47.35, 0.32, 0, 0, 0
+12:52:26.214 > [I][main.cpp:432] vStorage(): data written to storage
+12:52:26.571 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:52:26.575 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:52:28.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:28.995 > 
+12:52:29.122 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:29.131 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:28,testu,24.9, 53.2, 984.2, 1, 3, 3, 96.90, 47.07, 0.31, 0, 0, 0
+12:52:29.171 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:29.181 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:29.190 > [D][Storage.cpp:223] write_data(): File written
+12:52:29.196 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:52:28,testu,24.9, 53.2, 984.2, 1, 3, 3, 96.90, 47.07, 0.31, 0, 0, 0
+12:52:29.206 > [I][main.cpp:432] vStorage(): data written to storage
+12:52:29.618 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:29.684 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:29.697 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:52:29.712 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:52:29.812 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:52:25,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.34, 47.35, 0.32, 0, 0, 0
+12:52:29.831 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:52:29.831 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:52:29.842 > [I][Storage.cpp:767] mark_data(): Size: 187378,   Pos: 187208,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:52:29.869 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:52:29.878 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:52:29.890 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:52:29.997 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:52:28,testu,24.9, 53.2, 984.2, 1, 3, 3, 96.90, 47.07, 0.31, 0, 0, 0
+12:52:30.013 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:52:30.013 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:52:30.025 > [I][Storage.cpp:767] mark_data(): Size: 187378,   Pos: 187293,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:52:30.051 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:52:31.986 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:32.001 > 
+12:52:32.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:32.128 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:31,testu,24.9, 53.2, 984.0, 1, 2, 2, 96.92, 47.06, 0.31, 0, 0, 0
+12:52:32.171 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:32.183 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:32.191 > [D][Storage.cpp:223] write_data(): File written
+12:52:32.201 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:52:31,testu,24.9, 53.2, 984.0, 1, 2, 2, 96.92, 47.06, 0.31, 0, 0, 0
+12:52:32.213 > [I][main.cpp:432] vStorage(): data written to storage
+12:52:33.050 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:52:33.050 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:52:34.989 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:35.000 > 
+12:52:35.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:35.128 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:34,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.53, 47.47, 0.32, 0, 0, 0
+12:52:35.175 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:35.181 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:35.183 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:35.282 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:35.383 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:35.483 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x11
+12:52:35.483 > [D][Storage.cpp:223] write_data(): File written
+12:52:35.494 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:52:34,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.53, 47.47, 0.32, 0, 0, 0
+12:52:35.506 > [I][main.cpp:432] vStorage(): data written to storage
+12:52:36.084 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:36.150 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:36.155 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.250 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.349 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.452 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:36.452 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:36.464 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.544 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.656 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:36.746 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:36.762 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:36.767 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:52:37.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:38.000 > 
+12:52:38.130 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:38.134 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:37,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.29, 47.45, 0.32, 0, 0, 0
+12:52:38.180 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:38.184 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:38.191 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.283 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.388 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.481 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:38.481 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:38.500 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.593 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.695 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.795 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:38.800 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:38.806 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:38.900 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.001 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.101 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:39.101 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:39.113 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.199 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.297 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.400 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:39.412 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:39.419 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.512 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.614 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.714 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:39.717 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:39.726 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.817 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:39.921 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:40.022 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:40.022 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:40.033 > [E][vfs_api.cpp:270] VFSFileImpl(): fopen(/sd/20250605.txt) failed
+12:52:40.034 > [E][Storage.cpp:203] write_data(): Failed to open file for writing 
+12:52:40.045 > [E][main.cpp:440] vStorage(): Storage stopped working!
+12:52:40.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:40.999 > 
+12:52:41.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:41.134 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:40,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.36, 47.24, 0.32, 0, 0, 0
+12:52:41.170 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:41.181 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:41.186 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.283 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.383 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.477 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:41.477 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:41.495 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.580 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.679 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.779 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:41.795 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:41.803 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.896 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:41.996 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.096 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:42.096 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:42.108 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.201 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.295 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.401 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:42.401 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:42.414 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.498 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.610 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.697 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:42.716 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:42.721 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.799 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:42.812 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:42.863 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:42.914 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.012 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:43.012 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:43.028 > [E][vfs_api.cpp:270] VFSFileImpl(): fopen(/sd/20250605.txt) failed
+12:52:43.030 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.040 > [E][Storage.cpp:203] write_data(): Failed to open file for writing 
+12:52:43.045 > [E][main.cpp:440] vStorage(): Storage stopped working!
+12:52:43.127 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.228 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.328 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:43.331 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:43.340 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.429 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.529 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:43.630 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:43.636 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:43.644 > [I][DataTransfer.cpp:137] handleStorageTransfer(): No Data to be sent!
+12:52:43.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:43.998 > 
+12:52:44.130 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:44.130 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:43,testu,24.9, 53.1, 984.1, 1, 2, 2, 98.07, 47.68, 0.33, 0, 0, 0
+12:52:44.166 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:44.182 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:44.189 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.283 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.379 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.479 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:44.479 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:44.497 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.579 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.680 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.779 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:44.796 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:44.802 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.896 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:44.996 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.096 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:45.096 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:45.109 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.195 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.299 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.395 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:45.395 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:45.416 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.497 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.596 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.696 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:45.712 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:45.721 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.813 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:45.914 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:52:46.011 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:52:46.011 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:52:46.027 > [E][vfs_api.cpp:270] VFSFileImpl(): fopen(/sd/20250605.txt) failed
+12:52:46.032 > [E][Storage.cpp:203] write_data(): Failed to open file for writing 
+12:52:46.039 > [E][main.cpp:440] vStorage(): Storage stopped working!
+12:52:46.986 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:46.999 > 
+12:52:47.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:47.134 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:46,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.56, 47.52, 0.33, 0, 0, 0
+12:52:47.179 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:47.184 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:49.678 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:49.734 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:49.746 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:52:49.783 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:52:46,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.56, 47.52, 0.33, 0, 0, 0
+12:52:49.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:49.998 > 
+12:52:50.129 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:50.135 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:49,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.14, 47.19, 0.32, 0, 0, 0
+12:52:50.183 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:50.183 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:52.808 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:52.849 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:52.869 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:52:52.874 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:52:49,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.14, 47.19, 0.32, 0, 0, 0
+12:52:52.994 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:52.994 > 
+12:52:53.115 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:53.131 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:52,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.73, 47.72, 0.33, 0, 0, 0
+12:52:53.178 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:53.184 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:55.913 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:55.985 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:55.995 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:52:56.002 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:52:52,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.73, 47.72, 0.33, 0, 0, 0
+12:52:56.014 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:56.016 > 
+12:52:56.133 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:56.146 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:55,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.12, 47.19, 0.32, 0, 0, 0
+12:52:56.185 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:56.185 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:52:58.991 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:52:58.991 > 
+12:52:59.048 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:59.116 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:59.121 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:52:59.128 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:52:55,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.12, 47.19, 0.32, 0, 0, 0
+12:52:59.142 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:52:59.149 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:52:58,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.29, 47.30, 0.32, 0, 0, 0
+12:52:59.185 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:52:59.191 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:01.995 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:01.998 > 
+12:53:02.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:02.131 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:01,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.36, 47.20, 0.32, 0, 0, 0
+12:53:02.174 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:02.179 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:02.184 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:02.216 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:02.231 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:02.242 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:01,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.36, 47.20, 0.32, 0, 0, 0
+12:53:04.991 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:04.996 > 
+12:53:05.127 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:05.131 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:04,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.83, 47.83, 0.33, 0, 0, 0
+12:53:05.176 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:05.182 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:05.288 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:05.333 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:05.349 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:05.361 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:04,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.83, 47.83, 0.33, 0, 0, 0
+12:53:07.993 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:07.996 > 
+12:53:08.127 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:08.127 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:07,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.75, 47.67, 0.33, 0, 0, 0
+12:53:08.164 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:08.181 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:08.414 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:08.470 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:08.470 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:08.488 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:07,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.75, 47.67, 0.33, 0, 0, 0
+12:53:10.993 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:10.997 > 
+12:53:11.128 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:11.133 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:10,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.19, 47.36, 0.32, 0, 0, 0
+12:53:11.167 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:11.182 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:11.530 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:11.578 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:11.578 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:11.596 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:10,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.19, 47.36, 0.32, 0, 0, 0
+12:53:13.994 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:13.998 > 
+12:53:14.129 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:14.132 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:13,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.70, 47.51, 0.32, 0, 0, 0
+12:53:14.177 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:14.182 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:14.645 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:14.699 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:14.699 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:14.713 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:13,testu,24.9, 53.1, 984.2, 1, 2, 2, 97.70, 47.51, 0.32, 0, 0, 0
+12:53:16.028 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+12:53:16.044 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+12:53:16.051 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+12:53:16.056 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:53:16.062 > [E][WiFiClient.cpp:232] connect(): connect on fd 62, errno: 118, "Host is unreachable"
+12:53:16.069 > ets Jul 29 2019 12:21:46
+12:53:16.069 > 
+12:53:16.069 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:53:16.078 > configsip: 0, SPIWP:0xee
+12:53:16.079 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:53:16.086 > mode:DIO, clock div:2
+12:53:16.086 > load:0x3fff0018,len:4
+12:53:16.090 > load:0x3fff001c,len:1044
+12:53:16.093 > load:0x40078000,len:10124
+12:53:16.095 > load:0x40080400,len:5828
+12:53:16.096 > entry 0x400806a8
+12:53:16.579 > [D][main.cpp:88] setup(): 
+12:53:16.580 > Current Version: 1.1.1
+12:53:16.580 > Description: AQI Meter OTA Updates have been added
+12:53:16.588 > Commit Date: 3 March 2025
+12:53:16.679 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+12:53:16.719 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+12:53:16.829 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+12:53:17.877 > [D][AQISensor.cpp:44] init(): PM5007 initialized
+12:53:17.879 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+12:53:18.578 > [E][AQISensor.cpp:148] readOzoneData(): O3 Sensor: Invalid response format!
+12:53:18.578 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+12:53:18.592 > [D][main.cpp:134] setup(): AQI sensor initialized successfully!
+12:53:18.598 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+12:53:18.603 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:18.685 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:18.795 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:18.894 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:53:18.894 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+12:53:18.907 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+12:53:18.915 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:18.996 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:19.095 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+12:53:19.205 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+12:53:19.212 > [E][Storage.cpp:24] init_storage(): Card Initialization Failed 
+12:53:19.223 > [E][main.cpp:146] setup(): Storage initialization failed!
+12:53:19.412 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+12:53:19.420 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+12:53:19.427 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:53:19.431 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:53:19.439 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+12:53:19.447 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+12:53:19.449 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+12:53:19.455 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+12:53:19.460 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+12:53:19.465 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+12:53:22.879 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+12:53:22.895 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 24
+12:53:22.903 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+12:53:22.904 > [I][WiFiMulti.cpp:119] run(): [WIFI] 24 networks found
+12:53:22.913 > [D][WiFiMulti.cpp:149] run():  --->   0: [9][50:0F:F5:80:A3:39] EnergyInformatics (-53) *
+12:53:22.920 > [D][WiFiMulti.cpp:151] run():        1: [6][00:A6:CA:47:AC:A1] TV-LED (-56) *
+12:53:22.925 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A0] Wireless (-57) *
+12:53:22.934 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A2] LUMS-Events (-57) *
+12:53:22.942 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A3] LUMS (-57) *
+12:53:22.947 > [D][WiFiMulti.cpp:151] run():        5: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-62) *
+12:53:22.955 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-64) *
+12:53:22.962 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F6] LUMS (-83) *
+12:53:22.970 > [D][WiFiMulti.cpp:151] run():        8: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-83) *
+12:53:22.978 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F5] LUMS-Events (-84) *
+12:53:22.985 > [D][WiFiMulti.cpp:151] run():        10: [1][70:70:8B:DD:0B:F1] wireless (-85) *
+12:53:22.992 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:1D:01:64] wireless (-85) *
+12:53:22.999 > [D][WiFiMulti.cpp:151] run():        12: [1][4C:E1:75:1D:01:60] wireless-apple (-85) *
+12:53:23.007 > [D][WiFiMulti.cpp:151] run():        13: [11][08:5A:11:23:67:E0] Wireless-LEC (-85) *
+12:53:23.014 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+12:53:23.022 > [D][WiFiMulti.cpp:151] run():        15: [1][4C:E1:75:1D:01:62] LUMS (-86) *
+12:53:23.028 > [D][WiFiMulti.cpp:151] run():        16: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-87) *
+12:53:23.036 > [D][WiFiMulti.cpp:151] run():        17: [11][F8:A7:3A:87:EE:E5] LUMS-Events (-88) *
+12:53:23.044 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E0] wireless-apple (-89) *
+12:53:23.051 > [D][WiFiMulti.cpp:151] run():        19: [11][F8:A7:3A:87:EE:E4] wireless (-89) *
+12:53:23.059 > [D][WiFiMulti.cpp:151] run():        20: [11][F8:A7:3A:87:EE:E2] LUMS (-89) *
+12:53:23.065 > [D][WiFiMulti.cpp:151] run():        21: [1][28:6F:7F:DF:D3:33] LUMS (-90) *
+12:53:23.071 > [D][WiFiMulti.cpp:151] run():        22: [1][28:6F:7F:DF:D3:32] LUMS-Events (-90) *
+12:53:23.080 > [D][WiFiMulti.cpp:151] run():        23: [1][5E:AC:44:20:BB:AB] Nokia 5.3 (-91) *
+12:53:23.087 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 9 (-53)
+12:53:26.362 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:53:26.399 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:53:26.404 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.141, MASK: 255.255.255.0, GW: 192.168.0.1
+12:53:26.414 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+12:53:26.419 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+12:53:26.423 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.141
+12:53:26.431 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+12:53:26.435 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 9
+12:53:26.438 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+12:53:26.444 > [D][main.cpp:155] setup(): Initialized wifi successfully
+12:53:26.449 > [D][main.cpp:156] setup(): MAC: CC:DB:A7:49:55:04
+12:53:26.456 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+12:53:26.459 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+12:53:26.465 > [I][main.cpp:192] setup(): ID found!
+12:53:26.467 > Device name: testu
+12:53:26.470 > 
+12:53:26.497 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:26.497 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:26.514 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:26.516 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:26.526 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:26.532 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:26.538 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 262440
+12:53:26.545 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+12:53:26.580 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+12:53:26.596 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+12:53:26.603 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+12:53:26.611 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+12:53:26.618 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+12:53:28.447 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+12:53:28.455 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+12:53:28.461 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 218752
+12:53:28.468 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+12:53:28.468 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:28.482 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:53:28.965 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+12:53:28.965 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:28.979 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:53:29.462 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+12:53:29.480 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:29.491 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:53:29.986 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:53:29.986 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:30.004 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:53:30.010 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:53:30.018 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+12:53:30.025 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:53:30.501 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:53:30.501 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:30.515 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:53:30.522 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+12:53:31.005 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+12:53:31.017 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:31.027 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:53:31.034 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:53:31.526 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+12:53:31.527 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:53:31.539 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+12:53:31.547 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:53:31.553 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+12:53:31.561 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:53:32.035 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:32.035 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:32.053 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:53:32.055 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+12:53:32.065 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:53:32.079 > [D][main.cpp:254] setup(): Cloud IoT Setup Complete
+12:53:32.111 > [D][main.cpp:267] setup(): Subscribed to topic pull/testu
+12:53:32.134 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 3
+12:53:32.134 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1749107786
+12:53:32.134 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1749110011
+12:53:32.136 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:32.164 > 
+12:53:32.164 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+12:53:32.191 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:32.248 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:32.265 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:32.265 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:31,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.17, 47.72, 0.33, 0, 0, 0
+12:53:32.313 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:32.319 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:35.115 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:35.131 > 
+12:53:35.262 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:35.262 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:34,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.02, 47.24, 0.32, 0, 0, 0
+12:53:35.298 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:35.303 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:35.308 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:35.355 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:35.362 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:35.368 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:34,testu,24.9, 53.1, 984.0, 1, 2, 2, 97.02, 47.24, 0.32, 0, 0, 0
+12:53:38.121 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:38.129 > 
+12:53:38.261 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:38.263 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:37,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.75, 47.94, 0.34, 0, 0, 0
+12:53:38.311 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:38.316 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:38.412 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:38.466 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:38.482 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:38.490 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:37,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.75, 47.94, 0.34, 0, 0, 0
+12:53:41.127 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:41.133 > 
+12:53:41.260 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:41.265 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:40,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.78, 47.84, 0.34, 0, 0, 0
+12:53:41.304 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:41.313 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:41.544 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:41.597 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:41.600 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:41.609 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:40,testu,24.9, 53.1, 984.1, 1, 2, 2, 97.78, 47.84, 0.34, 0, 0, 0
+12:53:44.128 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:44.131 > 
+12:53:44.260 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:44.263 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:43,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.58, 47.70, 0.34, 0, 0, 0
+12:53:44.311 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:44.311 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:44.645 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:44.705 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:44.712 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:44.719 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:43,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.58, 47.70, 0.34, 0, 0, 0
+12:53:47.121 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:47.121 > 
+12:53:47.259 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:47.259 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:46,testu,24.9, 53.0, 984.0, 1, 1, 1, 97.24, 47.41, 0.33, 0, 0, 0
+12:53:47.311 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:47.317 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:47.771 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:47.829 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:47.829 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:47.841 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:46,testu,24.9, 53.0, 984.0, 1, 1, 1, 97.24, 47.41, 0.33, 0, 0, 0
+12:53:50.127 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:50.130 > 
+12:53:50.260 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:50.265 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:49,testu,24.9, 53.1, 984.1, 1, 1, 1, 97.90, 47.73, 0.34, 0, 0, 0
+12:53:50.311 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:50.317 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:50.884 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:50.940 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:50.945 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:50.952 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:49,testu,24.9, 53.1, 984.1, 1, 1, 1, 97.90, 47.73, 0.34, 0, 0, 0
+12:53:53.127 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:53.132 > 
+12:53:53.260 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:53.267 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:52,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.29, 47.36, 0.33, 0, 0, 0
+12:53:53.299 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:53.312 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:54.002 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:54.063 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:54.069 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:54.076 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:52,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.29, 47.36, 0.33, 0, 0, 0
+12:53:56.127 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:56.130 > 
+12:53:56.261 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:56.265 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:55,testu,24.9, 53.1, 984.0, 2, 2, 2, 97.29, 47.51, 0.33, 0, 0, 0
+12:53:56.304 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:56.314 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:53:57.130 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:57.173 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:57.189 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:53:57.200 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:55,testu,24.9, 53.1, 984.0, 2, 2, 2, 97.29, 47.51, 0.33, 0, 0, 0
+12:53:59.124 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:53:59.130 > 
+12:53:59.260 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:53:59.267 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:53:58,testu,24.9, 53.1, 984.1, 1, 1, 1, 97.75, 47.55, 0.34, 0, 0, 0
+12:53:59.304 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:53:59.315 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:00.246 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:00.299 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:00.302 > [D][DataTransfer.cpp:163] handleLiveTransfer(): Sending live data to cloud...
+12:54:00.313 > [D][DataTransfer.cpp:164] handleLiveTransfer(): Data Sent: 2025-06-05 12:53:58,testu,24.9, 53.1, 984.1, 1, 1, 1, 97.75, 47.55, 0.34, 0, 0, 0
+12:54:02.126 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:02.131 > 
+12:54:02.138 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+12:54:02.144 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+12:54:02.150 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+12:54:02.155 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 113
+12:54:02.160 > [E][WiFiClient.cpp:485] flush(): fail on fd 57, errno: 113, "Software caused connection abort"
+12:54:02.170 > [E][WiFiClient.cpp:232] connect(): connect on fd 54, errno: 118, "Host iets Jul 29 2019 12:21:46
+12:54:02.178 > 
+12:54:02.178 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:54:02.184 > configsip: 0, SPIWP:0xee
+12:54:02.186 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:54:02.192 > mode:DIO, clock div:2
+12:54:02.194 > load:0x3fff0018,len:4
+12:54:02.196 > load:0x3fff001c,len:1044
+12:54:02.199 > load:0x40078000,len:10124
+12:54:02.201 > load:0x40080400,len:5828
+12:54:02.203 > entry 0x400806a8
+12:54:02.686 > [D][main.cpp:88] setup(): 
+12:54:02.689 > Current Version: 1.1.1
+12:54:02.691 > Description: AQI Meter OTA Updates have been added
+12:54:02.696 > Commit Date: 3 March 2025
+12:54:02.783 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+12:54:02.831 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+12:54:02.927 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+12:54:03.975 > [D][AQISensor.cpp:44] init(): PM5007 initialized
+12:54:03.975 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+12:54:04.686 > [E][AQISensor.cpp:148] readOzoneData(): O3 Sensor: Invalid response format!
+12:54:04.694 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+12:54:04.699 > [D][main.cpp:134] setup(): AQI sensor initialized successfully!
+12:54:04.706 > [I][Storage.cpp:20] init_storage(): Initializing SD card... 
+12:54:04.938 > [D][Storage.cpp:33] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+12:54:04.949 > [D][Storage.cpp:44] init_storage(): SDHC 
+12:54:04.953 > [I][Storage.cpp:53] init_storage(): SD Card Size: 30424MB
+12:54:04.955 > [D][Storage.cpp:62] init_storage(): Previous data found! 
+12:54:04.963 > [D][Storage.cpp:81] init_storage(): File is: 
+12:54:04.964 > [D][Storage.cpp:82] init_storage(): /20250605.txt 
+12:54:04.964 > [D][Storage.cpp:83] init_storage(): Position is: 
+12:54:04.976 > [D][Storage.cpp:84] init_storage(): 187377 
+12:54:04.980 > [I][Storage.cpp:141] init_storage(): AP storage found!
+12:54:04.985 > [D][main.cpp:140] setup(): Storage initialization success!
+12:54:05.092 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+12:54:05.107 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:54:05.115 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+12:54:05.116 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+12:54:05.127 > [D][Storage.cpp:661] return_APList(): Start of frame found 
+12:54:05.132 > [D][Storage.cpp:693] return_APList(): EnergyInformatics 
+12:54:05.135 > [D][Storage.cpp:710] return_APList(): 12344321 
+12:54:05.141 > [D][Storage.cpp:721] return_APList(): New AP returned 
+12:54:05.145 > [D][Storage.cpp:736] return_APList(): End of data reached 
+12:54:05.151 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+12:54:05.158 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+12:54:05.162 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+12:54:05.166 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+12:54:05.172 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+12:54:05.176 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+12:54:08.594 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+12:54:08.609 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 16
+12:54:08.617 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+12:54:08.617 > [I][WiFiMulti.cpp:119] run(): [WIFI] 16 networks found
+12:54:08.617 > [D][WiFiMulti.cpp:149] run():  --->   0: [9][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+12:54:08.633 > [D][WiFiMulti.cpp:151] run():        1: [6][00:A6:CA:47:AC:A0] Wireless (-59) *
+12:54:08.638 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A2] LUMS-Events (-59) *
+12:54:08.648 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A3] LUMS (-59) *
+12:54:08.654 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A1] TV-LED (-59) *
+12:54:08.661 > [D][WiFiMulti.cpp:151] run():        5: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-67) *
+12:54:08.669 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-73) *
+12:54:08.676 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F1] wireless (-83) *
+12:54:08.683 > [D][WiFiMulti.cpp:151] run():        8: [1][70:70:8B:DD:0B:F5] LUMS-Events (-83) *
+12:54:08.690 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F6] LUMS (-84) *
+12:54:08.696 > [D][WiFiMulti.cpp:151] run():        10: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-86) *
+12:54:08.704 > [D][WiFiMulti.cpp:151] run():        11: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-86) *
+12:54:08.712 > [D][WiFiMulti.cpp:151] run():        12: [11][08:5A:11:23:67:E0] Wireless-LEC (-86) *
+12:54:08.720 > [D][WiFiMulti.cpp:151] run():        13: [1][4C:E1:75:1D:01:65] LUMS-Events (-88) *
+12:54:08.728 > [D][WiFiMulti.cpp:151] run():        14: [11][F8:A7:3A:87:EE:E4] wireless (-91) *
+12:54:08.735 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:A7:3A:87:EE:E0] wireless-apple (-92) *
+12:54:08.765 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 9 (-52)
+12:54:11.819 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+12:54:11.866 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+12:54:11.871 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.141, MASK: 255.255.255.0, GW: 192.168.0.1
+12:54:11.881 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+12:54:11.887 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+12:54:11.892 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.141
+12:54:11.896 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+12:54:11.902 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 9
+12:54:11.907 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+12:54:11.913 > [D][main.cpp:155] setup(): Initialized wifi successfully
+12:54:11.917 > [D][main.cpp:156] setup(): MAC: CC:DB:A7:49:55:04
+12:54:11.919 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+12:54:11.927 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+12:54:11.932 > [I][main.cpp:192] setup(): ID found!
+12:54:11.936 > Device name: testu
+12:54:11.937 > 
+12:54:11.967 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:11.973 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:11.978 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:11.983 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:11.989 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:11.995 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:12.001 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 234516
+12:54:12.009 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+12:54:12.047 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+12:54:12.061 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+12:54:12.068 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+12:54:12.076 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+12:54:12.082 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+12:54:14.631 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+12:54:14.631 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+12:54:14.647 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 190952
+12:54:14.653 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+12:54:14.661 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:14.668 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:54:15.140 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+12:54:15.158 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:15.165 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:54:15.659 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+12:54:15.659 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:15.673 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+12:54:16.164 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:54:16.180 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:16.189 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:54:16.196 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:54:16.201 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+12:54:16.210 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:54:16.682 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+12:54:16.682 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:16.697 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:54:16.705 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:54:17.199 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+12:54:17.206 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:17.213 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+12:54:17.219 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+12:54:17.693 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+12:54:17.709 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+12:54:17.722 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+12:54:17.729 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:54:17.737 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+12:54:17.744 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+12:54:18.325 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:18.332 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:18.338 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+12:54:18.343 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+12:54:18.350 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:18.363 > [D][main.cpp:254] setup(): Cloud IoT Setup Complete
+12:54:18.400 > [D][main.cpp:267] setup(): Subscribed to topic pull/testu
+12:54:18.406 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 4
+12:54:18.411 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1749107786
+12:54:18.418 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1749110057
+12:54:18.420 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:18.443 > 
+12:54:18.443 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+12:54:18.480 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:18.532 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:18.544 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:18.550 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:17,testu,24.9, 53.0, 983.9, 1, 2, 2, 97.29, 47.48, 0.35, 0, 0, 0
+12:54:18.598 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:18.598 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:18.612 > [D][Storage.cpp:223] write_data(): File written
+12:54:18.618 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:17,testu,24.9, 53.0, 983.9, 1, 2, 2, 97.29, 47.48, 0.35, 0, 0, 0
+12:54:18.629 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:18.642 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:18.654 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:18.753 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:52:31,testu,24.9, 53.2, 984.0, 1, 2, 2, 96.92, 47.06, 0.31, 0, 0, 0
+12:54:18.772 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:18.778 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:18.784 > [I][Storage.cpp:767] mark_data(): Size: 187548,   Pos: 187378,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:18.808 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:18.819 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:18.826 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:18.928 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:17,testu,24.9, 53.0, 983.9, 1, 2, 2, 97.29, 47.48, 0.35, 0, 0, 0
+12:54:18.956 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:18.961 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:18.968 > [I][Storage.cpp:767] mark_data(): Size: 187548,   Pos: 187463,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:18.991 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:21.420 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:21.425 > 
+12:54:21.553 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:21.560 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:20,testu,24.9, 53.0, 984.0, 1, 3, 3, 97.19, 47.24, 0.33, 0, 0, 0
+12:54:21.603 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:21.613 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:21.623 > [D][Storage.cpp:223] write_data(): File written
+12:54:21.628 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:20,testu,24.9, 53.0, 984.0, 1, 3, 3, 97.19, 47.24, 0.33, 0, 0, 0
+12:54:21.640 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:21.990 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:21.994 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:24.410 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:24.422 > 
+12:54:24.553 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:24.563 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:23,testu,24.9, 53.1, 984.1, 0, 2, 2, 97.56, 47.08, 0.33, 0, 0, 0
+12:54:24.600 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:24.605 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:24.613 > [D][Storage.cpp:223] write_data(): File written
+12:54:24.619 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:23,testu,24.9, 53.1, 984.1, 0, 2, 2, 97.56, 47.08, 0.33, 0, 0, 0
+12:54:24.631 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:25.050 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:25.095 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:25.118 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:25.128 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:25.226 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:20,testu,24.9, 53.0, 984.0, 1, 3, 3, 97.19, 47.24, 0.33, 0, 0, 0
+12:54:25.254 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:25.260 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:25.266 > [I][Storage.cpp:767] mark_data(): Size: 187718,   Pos: 187548,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:25.295 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:25.304 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:25.312 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:25.413 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:23,testu,24.9, 53.1, 984.1, 0, 2, 2, 97.56, 47.08, 0.33, 0, 0, 0
+12:54:25.432 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:25.439 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:25.445 > [I][Storage.cpp:767] mark_data(): Size: 187718,   Pos: 187633,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:25.468 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:27.416 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:27.422 > 
+12:54:27.545 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:27.560 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:26,testu,24.9, 53.1, 984.1, 0, 1, 1, 97.29, 47.28, 0.34, 0, 0, 0
+12:54:27.600 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:27.610 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:27.617 > [D][Storage.cpp:223] write_data(): File written
+12:54:27.621 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:26,testu,24.9, 53.1, 984.1, 0, 1, 1, 97.29, 47.28, 0.34, 0, 0, 0
+12:54:27.632 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:28.464 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:28.469 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:30.406 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:30.425 > 
+12:54:30.542 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:30.558 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:29,testu,24.9, 53.0, 984.0, 0, 1, 1, 97.66, 47.59, 0.34, 0, 0, 0
+12:54:30.603 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:30.605 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:30.616 > [D][Storage.cpp:223] write_data(): File written
+12:54:30.622 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:29,testu,24.9, 53.0, 984.0, 0, 1, 1, 97.66, 47.59, 0.34, 0, 0, 0
+12:54:30.634 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:31.515 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:31.567 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:31.586 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:31.592 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:31.693 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:26,testu,24.9, 53.1, 984.1, 0, 1, 1, 97.29, 47.28, 0.34, 0, 0, 0
+12:54:31.712 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:31.719 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:31.724 > [I][Storage.cpp:767] mark_data(): Size: 187888,   Pos: 187718,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:31.747 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:31.765 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:31.775 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:31.882 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:29,testu,24.9, 53.0, 984.0, 0, 1, 1, 97.66, 47.59, 0.34, 0, 0, 0
+12:54:31.896 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:31.906 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:31.913 > [I][Storage.cpp:767] mark_data(): Size: 187888,   Pos: 187803,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:31.936 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:33.409 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:33.425 > 
+12:54:33.548 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:33.558 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:32,testu,24.9, 53.0, 984.1, 0, 1, 1, 96.80, 47.17, 0.34, 0, 0, 0
+12:54:33.596 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:33.600 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:33.611 > [D][Storage.cpp:223] write_data(): File written
+12:54:33.619 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:32,testu,24.9, 53.0, 984.1, 0, 1, 1, 96.80, 47.17, 0.34, 0, 0, 0
+12:54:33.629 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:34.922 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:34.939 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:36.411 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:36.422 > 
+12:54:36.543 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:36.543 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:35,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.58, 47.47, 0.34, 0, 0, 0
+12:54:36.601 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:36.606 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:36.615 > [D][Storage.cpp:223] write_data(): File written
+12:54:36.620 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:35,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.58, 47.47, 0.34, 0, 0, 0
+12:54:36.629 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:37.996 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:38.059 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:38.078 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:38.090 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:38.194 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:32,testu,24.9, 53.0, 984.1, 0, 1, 1, 96.80, 47.17, 0.34, 0, 0, 0
+12:54:38.207 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:38.214 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:38.219 > [I][Storage.cpp:767] mark_data(): Size: 188058,   Pos: 187888,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:38.247 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:38.257 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:38.272 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:38.375 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:35,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.58, 47.47, 0.34, 0, 0, 0
+12:54:38.397 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:38.403 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:38.409 > [I][Storage.cpp:767] mark_data(): Size: 188058,   Pos: 187973,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:38.431 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:39.411 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:39.411 > 
+12:54:39.545 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:39.559 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:38,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.58, 48.03, 0.35, 0, 0, 0
+12:54:39.601 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:39.601 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:39.617 > [D][Storage.cpp:223] write_data(): File written
+12:54:39.618 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:38,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.58, 48.03, 0.35, 0, 0, 0
+12:54:39.630 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:41.430 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:41.430 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:42.411 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:42.411 > 
+12:54:42.548 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:42.559 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:41,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.05, 47.24, 0.34, 0, 0, 0
+12:54:42.609 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:42.611 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:42.621 > [D][Storage.cpp:223] write_data(): File written
+12:54:42.628 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:41,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.05, 47.24, 0.34, 0, 0, 0
+12:54:42.639 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:44.486 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:44.542 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:44.561 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:44.572 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:44.676 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:38,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.58, 48.03, 0.35, 0, 0, 0
+12:54:44.688 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:44.695 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:44.701 > [I][Storage.cpp:767] mark_data(): Size: 188228,   Pos: 188058,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:44.721 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:44.734 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:44.744 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:44.841 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:41,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.05, 47.24, 0.34, 0, 0, 0
+12:54:44.867 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:44.869 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:44.879 > [I][Storage.cpp:767] mark_data(): Size: 188228,   Pos: 188143,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:44.902 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:45.420 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:45.424 > 
+12:54:45.542 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:45.558 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:44,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.00, 47.79, 0.34, 0, 0, 0
+12:54:45.603 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:45.608 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:45.615 > [D][Storage.cpp:223] write_data(): File written
+12:54:45.625 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:44,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.00, 47.79, 0.34, 0, 0, 0
+12:54:45.636 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:47.895 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:47.895 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:48.411 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:48.411 > 
+12:54:48.552 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:48.559 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:47,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.24, 47.31, 0.34, 0, 0, 0
+12:54:48.596 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:48.600 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:48.610 > [D][Storage.cpp:223] write_data(): File written
+12:54:48.616 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:47,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.24, 47.31, 0.34, 0, 0, 0
+12:54:48.626 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:50.957 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:51.009 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:51.027 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:51.038 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:51.142 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:44,testu,24.9, 53.0, 984.1, 1, 1, 1, 98.00, 47.79, 0.34, 0, 0, 0
+12:54:51.156 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:51.161 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:51.168 > [I][Storage.cpp:767] mark_data(): Size: 188398,   Pos: 188228,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:51.199 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:51.210 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:51.227 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:51.334 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:47,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.24, 47.31, 0.34, 0, 0, 0
+12:54:51.346 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:51.352 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:51.359 > [I][Storage.cpp:767] mark_data(): Size: 188398,   Pos: 188313,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:51.379 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:51.419 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:51.424 > 
+12:54:51.540 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:51.556 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:50,testu,24.9, 53.0, 984.0, 1, 1, 1, 97.51, 47.59, 0.35, 0, 0, 0
+12:54:51.599 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:51.601 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:51.611 > [D][Storage.cpp:223] write_data(): File written
+12:54:51.621 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:50,testu,24.9, 53.0, 984.0, 1, 1, 1, 97.51, 47.59, 0.35, 0, 0, 0
+12:54:51.633 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:54.383 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:54:54.387 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:54:54.419 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:54.424 > 
+12:54:54.552 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:54.558 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:53,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.14, 47.25, 0.34, 0, 0, 0
+12:54:54.604 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:54.609 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:54.618 > [D][Storage.cpp:223] write_data(): File written
+12:54:54.623 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:53,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.14, 47.25, 0.34, 0, 0, 0
+12:54:54.635 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:57.407 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:54:57.423 > 
+12:54:57.430 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:57.479 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:57.547 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:54:57.559 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:56,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.34, 47.41, 0.34, 0, 0, 0
+12:54:57.615 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:54:57.615 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:54:57.630 > [D][Storage.cpp:223] write_data(): File written
+12:54:57.638 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:56,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.34, 47.41, 0.34, 0, 0, 0
+12:54:57.650 > [I][main.cpp:432] vStorage(): data written to storage
+12:54:57.655 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:57.665 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:57.771 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:50,testu,24.9, 53.0, 984.0, 1, 1, 1, 97.51, 47.59, 0.35, 0, 0, 0
+12:54:57.784 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:57.787 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:57.797 > [I][Storage.cpp:767] mark_data(): Size: 188653,   Pos: 188398,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:57.825 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:57.833 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:57.845 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:57.941 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:53,testu,24.9, 53.0, 984.1, 1, 1, 1, 97.14, 47.25, 0.34, 0, 0, 0
+12:54:57.958 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:57.976 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:57.979 > [I][Storage.cpp:767] mark_data(): Size: 188653,   Pos: 188483,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:58.001 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:54:58.014 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:54:58.023 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:54:58.126 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:56,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.34, 47.41, 0.34, 0, 0, 0
+12:54:58.141 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:54:58.148 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:54:58.154 > [I][Storage.cpp:767] mark_data(): Size: 188653,   Pos: 188568,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:54:58.177 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:55:00.412 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:55:00.421 > 
+12:55:00.551 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:55:00.558 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:54:59,testu,24.9, 53.0, 984.0, 1, 2, 2, 97.58, 47.35, 0.34, 0, 0, 0
+12:55:00.613 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:55:00.628 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:55:00.637 > [D][Storage.cpp:223] write_data(): File written
+12:55:00.645 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:54:59,testu,24.9, 53.0, 984.0, 1, 2, 2, 97.58, 47.35, 0.34, 0, 0, 0
+12:55:00.656 > [I][main.cpp:432] vStorage(): data written to storage
+12:55:01.176 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:55:01.176 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+12:55:03.405 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:55:03.421 > 
+12:55:03.557 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:55:03.563 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:55:02,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.63, 47.37, 0.34, 0, 0, 0
+12:55:03.606 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:55:03.611 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:55:03.620 > [D][Storage.cpp:223] write_data(): File written
+12:55:03.625 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:55:02,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.63, 47.37, 0.34, 0, 0, 0
+12:55:03.637 > [I][main.cpp:432] vStorage(): data written to storage
+12:55:04.229 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:55:04.292 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:55:04.310 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:55:04.312 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:55:04.409 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:54:59,testu,24.9, 53.0, 984.0, 1, 2, 2, 97.58, 47.35, 0.34, 0, 0, 0
+12:55:04.435 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:55:04.435 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:55:04.447 > [I][Storage.cpp:767] mark_data(): Size: 188823,   Pos: 188653,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:55:04.473 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:55:04.482 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:55:04.496 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:55:04.591 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:55:02,testu,24.9, 53.0, 984.1, 1, 2, 2, 97.63, 47.37, 0.34, 0, 0, 0
+12:55:04.616 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:55:04.621 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:55:04.649 > [I][Storage.cpp:767] mark_data(): Size: 188823,   Pos: 188738,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:55:04.651 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:55:06.407 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:55:06.423 > 
+12:55:06.552 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:55:06.559 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:55:05,testu,24.9, 53.0, 984.1, 2, 2, 2, 98.02, 47.64, 0.34, 0, 0, 0
+12:55:06.600 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:55:06.601 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:55:06.615 > [D][Storage.cpp:223] write_data(): File written
+12:55:06.620 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:55:05,testu,24.9, 53.0, 984.1, 2, 2, 2, 98.02, 47.64, 0.34, 0, 0, 0
+12:55:06.632 > [I][main.cpp:432] vStorage(): data written to storage
+12:55:07.640 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:55:07.656 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:58:06.968 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:58:02,testu,25.0, 53.0, 984.0, 2, 2, 2, 96.78, 47.39, 0.34, 0, 0, 0
+12:58:06.994 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:58:06.994 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:58:06.994 > [I][Storage.cpp:767] mark_data(): Size: 193923,   Pos: 193838,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:58:07.017 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:58:07.048 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:58:07.048 > 
+12:58:07.151 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:58:07.158 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:58:05,testu,25.0, 53.0, 984.0, 2, 2, 2, 96.83, 46.90, 0.33, 0, 0, 0
+12:58:07.196 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:07.202 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:58:07.238 > [D][Storage.cpp:223] write_data(): File written
+12:58:07.238 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:58:05,testu,25.0, 53.0, 984.0, 2, 2, 2, 96.83, 46.90, 0.33, 0, 0, 0
+12:58:07.238 > [I][main.cpp:432] vStorage(): data written to storage
+12:58:09.929 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:58:09.934 > 
+12:58:10.017 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:58:10.022 > [I][esp32-hal-i2c.c:1138] i2cProcQueue(): Bus busy, reinit
+12:58:10.027 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+12:58:10.070 > [D][esp32-hal-i2c.c:1344] i2cProcQueue():  Busy Timeout start=0x3c448, end=0x3c47a, =50, max=50 error=1
+12:58:10.082 > [E][esp32-hal-i2c.c:318] i2cDumpI2c(): i2c=0x3ffbddf0
+12:58:10.085 > [I][esp32-hal-i2c.c:319] i2cDumpI2c(): dev=0x60013000 date=0x16042000
+12:58:10.091 > [I][esp32-hal-i2c.c:321] i2cDumpI2c(): lock=0x3ffb85a4
+12:58:10.105 > [I][esp32-hal-i2c.c:323] i2cDumpI2c(): num=0
+12:58:10.105 > [I][esp32-hal-i2c.c:324] i2cDumpI2c(): mode=1
+12:58:10.105 > [I][esp32-hal-i2c.c:325] i2cDumpI2c(): stage=3
+12:58:10.131 > [I][esp32-hal-i2c.c:326] i2cDumpI2c(): error=1
+12:58:10.131 > [I][esp32-hal-i2c.c:327] i2cDumpI2c(): event=0x3ffb862c bits=200
+12:58:10.131 > [I][esp32-hal-i2c.c:328] i2cDumpI2c(): intr_handle=0x3ffb8678
+12:58:10.131 > [I][esp32-hal-i2c.c:329] i2cDumpI2c(): dq=0x0
+12:58:10.131 > [I][esp32-hal-i2c.c:330] i2cDumpI2c(): queueCount=0
+12:58:10.140 > [I][esp32-hal-i2c.c:331] i2cDumpI2c(): queuePos=0
+12:58:10.140 > [I][esp32-hal-i2c.c:332] i2cDumpI2c(): errorByteCnt=0
+12:58:10.155 > [I][esp32-hal-i2c.c:333] i2cDumpI2c(): errorQueue=0
+12:58:10.155 > [I][esp32-hal-i2c.c:334] i2cDumpI2c(): debugFlags=0x00000000
+12:58:10.155 > [I][esp32-hal-i2c.c:354] i2cDumpInts(): Debug Buffer not Enabled
+12:58:10.167 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:58:10.167 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:58:08,testu,25.0, 53.0, 984.1, 2, 2, 2, 97.70, 47.62, 0.34, 0, 0, 0
+12:58:10.215 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:10.215 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:58:10.215 > [D][Storage.cpp:223] write_data(): File written
+12:58:10.222 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:58:08,testu,25.0, 53.0, 984.1, 2, 2, 2, 97.70, 47.62, 0.34, 0, 0, 0
+12:58:10.235 > [I][main.cpp:432] vStorage(): data written to storage
+12:58:12.929 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:58:12.935 > 
+12:58:12.935 > [I][esp32-hal-i2c.c:1138] i2cProcQueue(): Bus busy, reinit
+12:58:13.064 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:13.069 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:58:13.075 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:58:11,testu,25.0, 53.0, 984.0, 1, 1, 1, 96.90, 47.24, 0.33, 0, 0, 0
+12:58:13.116 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:13.122 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:58:13.129 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:13.134 > [D][Storage.cpp:223] write_data(): File written
+12:58:13.139 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:58:11,testu,25.0, 53.0, 984.0, 1, 1, 1, 96.90, 47.24, 0.33, 0, 0, 0
+12:58:13.150 > [I][main.cpp:432] vStorage(): data written to storage
+12:58:13.155 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:58:13.165 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:58:13.271 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:58:05,testu,25.0, 53.0, 984.0, 2, 2, 2, 96.83, 46.90, 0.33, 0, 0, 0
+12:58:13.285 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:58:13.291 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:58:13.297 > [I][Storage.cpp:767] mark_data(): Size: 194178,   Pos: 193923,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:58:13.326 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:58:13.340 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:58:13.350 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:58:13.454 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:58:08,testu,25.0, 53.0, 984.1, 2, 2, 2, 97.70, 47.62, 0.34, 0, 0, 0
+12:58:13.467 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:58:13.473 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:58:13.481 > [I][Storage.cpp:767] mark_data(): Size: 194178,   Pos: 194008,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:58:13.504 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:58:13.521 > [D][Storage.cpp:440] read_data(): Reading file: /20250605.txt
+12:58:13.533 > [D][Storage.cpp:592] read_data(): Parsed successfully
+12:58:13.637 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-05 12:58:11,testu,25.0, 53.0, 984.0, 1, 1, 1, 96.90, 47.24, 0.33, 0, 0, 0
+12:58:13.651 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+12:58:13.656 > [D][Storage.cpp:756] mark_data(): Marking current chunk of data 
+12:58:13.663 > [I][Storage.cpp:767] mark_data(): Size: 194178,   Pos: 194093,   Chunk: 83,   Write: /20250605.txt,   Read: /20250605.txt
+12:58:13.688 > [D][Storage.cpp:803] mark_data(): Data marked and config updated! 
+12:58:15.930 > [I][main.cpp:338] vAcquireData(): Cycle number: 1
+12:58:15.938 > 
+12:58:16.062 > [E][AQISensor.cpp:356] readSGP30(): SGP30 measurement failed!
+12:58:16.078 > [I][main.cpp:382] vAcquireData(): 2025-06-05 12:58:14,testu,25.0, 53.0, 984.0, 1, 1, 1, 96.87, 47.11, 0.32, 0, 0, 0
+12:58:16.239 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+12:58:16.239 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+12:58:16.239 > [D][Storage.cpp:223] write_data(): File written
+12:58:16.239 > [D][main.cpp:431] vStorage(): Data Written: 2025-06-05 12:58:14,testu,25.0, 53.0, 984.0, 1, 1, 1, 96.87, 47.11, 0.32, 0, 0, 0
+12:58:16.239 > [I][main.cpp:432] vStorage(): data written to storage
+12:58:16.687 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+12:58:16.735 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.

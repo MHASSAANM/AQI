@@ -2,6 +2,8 @@
 #include "Preferences.h"
 #include "FirebaseESP32.h"
 #include "rtc.h"
+#include "DataTransfer.h"
+#include "ESP32Ping.h"
 
 #define FIREBASE_HOST "aqimeter-default-rtdb.asia-southeast1.firebasedatabase.app"
 #define FIREBASE_AUTH "TlI7Pp5AMhnXSa3x0UzWG2FMVBYoeGDbqLe2Vbvl"
@@ -257,4 +259,50 @@ void processDataRequests()
         current = nextPacket;
     }
     pendingDataRequests = nullptr;
+}
+
+
+bool live_broadcast(String broadcastData)
+{
+    if (broadcastData == "")
+    {
+        log_d("Empty String Invalid Data");
+        return false;
+    }
+
+    if (!WiFi.isConnected())
+    {
+        log_e("WiFi isn't Connected");
+        return false;
+    }
+
+    if (!wf.check_Internet())
+    {
+        log_e("No ping received for live data");
+        return false;
+    }
+
+    if (!flags[cloud_f])
+    {
+        log_e("MQTT Client isn't setup");
+        return false;
+    }
+
+    if (!mqttClient.connected())
+    {
+        log_e("MQTT Client Disconnected");
+        flags[cloud_f] = 0;
+        return false;
+    }
+
+    if (mqttClient.publish((String(MQTT_TOPIC) + "/Live").c_str(), broadcastData.c_str()))
+    {
+        log_d("Live data is being broadcasted on MQTT");
+        return true;  // Success
+    }
+    else
+    {
+        log_e("Error Broadcasting live data, check server");
+        return false;
+    }
 }
