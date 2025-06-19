@@ -20,6 +20,7 @@
 
 #define NVS_NAMESPACE_FILE_INFO "pointer"
 #define NVS_KEY_FILE_NAME "file-name"
+#define NVS_NAMESPACE_LAST_FILE_SET "file-set-time"
 
 /// @brief Read and write to Non-Volatile Storage using arguments.
 namespace myNVS
@@ -35,6 +36,7 @@ namespace myNVS
     namespace write
     {
         void restartData(int restart_count, uint32_t restart_time);
+        void lastfilesettime(const uint32_t current_file_set_time);
         void mqttData(String mqtt_server, uint16_t mqtt_port);
         void sensorName(String sensor_name);
         void currentFileName(String file_name);

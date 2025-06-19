@@ -3,11 +3,7 @@
 #include <Preferences.h>
 #include <ESP32Ping.h>
 #include <FirebaseESP32.h>
-
-#ifdef Storage_init
-  #include "Storage.h"
-#endif
-
+#include "Storage.h"
 #include "AQISensor.h"
 #include "config.h"
 #include "ESPWiFi.h"
@@ -16,6 +12,8 @@
 #include "myNVS.h"
 #include "Restart.h"
 #include "DataTransfer.h"
+#include "webServer.h"
+
 
 // libraries for OLED
 #ifdef OLED_DISPLAY
@@ -31,6 +29,7 @@
 
 String dataPullTopic = "pull/";
 String dataPushTopic = "push/";
+String restartTopic = "restart/";
 DataRequest *pendingDataRequests = nullptr;
 
 AQISensor aqiSensor;
@@ -41,31 +40,20 @@ PubSubClient mqttClient(espClient1);
 PubSubClient dataClient(espClient2);
 String sensorID = "";
 
-const uint8_t LEDS[] = {AQ_LED, STORAGE_LED, WIFI_LED, CLOUD_LED};
+// const uint8_t LEDS[] = {AQ_LED, STORAGE_LED, WIFI_LED, CLOUD_LED};
 
 byte flags[10];
 
 String serverWifiCreds[2];
 
 void vAcquireData(void *pvParameters);
-
-#ifdef Storage_init
- void vStorage(void *pvParameters);
-#endif
-
-#ifdef data_pull
- void vDataPull(void *pvParameters);
-#endif
-
-#ifdef wifi_ini
- void vWifiTransfer(void *pvParameters);
-#endif
-
-#ifdef led_status
+void vLiveBroadcast(void *pvParameters);
+void vStorage(void *pvParameters);
+void vDataPull(void *pvParameters);
+void vWifiTransfer(void *pvParameters);
 void vStatusLed(void *pvParameters);
-#endif
 
-TaskHandle_t dataTask, storageTask, wifiTask, ledTask, pullTask; 
+TaskHandle_t dataTask, storageTask, wifiTask, ledTask, pullTask, liveBroadcastTask; 
 
 SemaphoreHandle_t semaAqData1 , semaStorage1, semaWifi1;
 
@@ -77,10 +65,13 @@ bool oled_data = false;
 String time_oled = "";
 #endif
 
-String towrite = "" , towrite_s = "", toTransfer = "";
+String towrite = "" , towrite_s = "", toTransfer = "", towrite_inst = "";
 String latestVersion = "";
 
 unsigned long reboottime;
+
+byte _stg_fail_count = 0;
+byte _rtc_fail_count = 0;
 
 
 void setup() {
@@ -101,16 +92,16 @@ void setup() {
 
     flags[aq_f] = 1;
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(AQ_LED, OUTPUT);
-  pinMode(STORAGE_LED, OUTPUT);
-  pinMode(WIFI_LED, OUTPUT);
-  pinMode(CLOUD_LED, OUTPUT);
+  // pinMode(AQ_LED, OUTPUT);
+  // pinMode(STORAGE_LED, OUTPUT);
+  // pinMode(WIFI_LED, OUTPUT);
+  // pinMode(CLOUD_LED, OUTPUT);
 
   digitalWrite(LED_BUILTIN, LOW);
-  digitalWrite(AQ_LED, LOW);
-  digitalWrite(STORAGE_LED, LOW);
-  digitalWrite(WIFI_LED, LOW);
-  digitalWrite(CLOUD_LED, LOW);
+  // digitalWrite(AQ_LED, LOW);
+  // digitalWrite(STORAGE_LED, LOW);
+  // digitalWrite(WIFI_LED, LOW);
+  // digitalWrite(CLOUD_LED, LOW);
 
 
 
@@ -127,25 +118,21 @@ void setup() {
   display.display();
 #endif
 
-  if (!aqiSensor.init())
-  {
-    log_d("Failed to initialize AQI sensors!");
-    } else {
-        log_d("AQI sensor initialized successfully!");
-    }
-
-#ifdef Storage_init
-if (storage.init_storage())
-  {
-    log_d("Storage initialization success!");
-    flags[sd_f] = 1;
-  }
-  else
-  {
-    flags[sd_f] = 0;
-    log_e("Storage initialization failed!");
-  }
-  #endif
+while (storage.init_storage() == false && _stg_fail_count < FAIL_LIMIT)
+{
+  _stg_fail_count++;
+  flags[sd_f] = 0;
+  log_e("Storage initialization failed!");
+}
+if (_stg_fail_count >= FAIL_LIMIT)
+{
+  log_e("Storage failed after 3 tries...!");
+}
+else
+{
+  log_d("Storage initialization success!");
+  flags[sd_f] = 1;
+}
 
   if (wf.init())
   {
@@ -162,14 +149,13 @@ if (storage.init_storage())
     log_e("Wifi not Initialized");
   }
 
-if (initRTC())
+  myServerInitialize();
+
+
+  while (initRTC() == false && _rtc_fail_count < FAIL_LIMIT)
   {
-    _set_esp_time();
-    flags[rtc_f] = 1;
-  }
-else
-  {
-    flags[rtc_f] = 0;
+    _rtc_fail_count++;
+    flags[rtc_f] = 0; // the system time would be 000 from start. The data would be ? I guess 1/1/2000, or maybe 1970..
     if (flags[sd_f])
     { // if storage is working    //This part of code isn't particularly needed.
       String curr_file = storage.curr_read_file;
@@ -183,10 +169,19 @@ else
       _set_esp_time(iyear, imonth, iday);
     }
   }
+  if (_rtc_fail_count >= FAIL_LIMIT)
+  {
+    log_e("RTC failed after 3 tries...!");
+  }
+  else
+  {
+    _set_esp_time();
+    flags[rtc_f] = 1;
+  }
 
   {
     myNVS::read::sensorName(sensorID);
-    sensorID = "testu";
+    // sensorID = "testuu";
     if (sensorID != "")
     {
       log_i("ID found!\r\nDevice name: %s\r\n", sensorID.c_str());
@@ -219,10 +214,11 @@ else
     }
   }
 
-//wf.start_soft_ap();
+  wf.start_soft_ap();
   // MQTT topics for handling data requests
   dataPullTopic += sensorID;
   dataPushTopic += sensorID;
+  restartTopic += sensorID;
 
   flags[cloud_f] = 0;
   flags[cloud_blink_f] = 0;
@@ -240,6 +236,14 @@ else
       downloadUpdate();
 #endif
       setRtcTime();
+
+      if (!aqiSensor.init())
+  {
+    log_d("Failed to initialize AQI sensors!");
+    } else {
+        log_d("AQI sensor initialized successfully!");
+    }
+
       mqttClient.setServer(mqtt_server.c_str(), mqtt_port);
       mqttClient.setBufferSize(MAX_CHUNK_SIZE_B + 20);
       flags[cloud_setup_f] = 1;
@@ -293,20 +297,11 @@ else
 
     reboottime = time(nullptr);
 
-  xTaskCreatePinnedToCore(vAcquireData, "Data Acquisition", 10000, NULL, 4, &dataTask, 1);
-
-  #ifdef Storage_init
-  xTaskCreatePinnedToCore(vStorage, "Storage Handler", 6000, NULL, 3, &storageTask, 1);
-  #endif
-
-  #ifdef data_pull
+  xTaskCreatePinnedToCore(vAcquireData, "Data Acquisition", 9000, NULL, 4, &dataTask, 1);
+  xTaskCreatePinnedToCore(vLiveBroadcast, "Live Broadcast", 4000, NULL, 4, &liveBroadcastTask, 0);
+  xTaskCreatePinnedToCore(vStorage, "Storage Handler", 5000, NULL, 3, &storageTask, 1);
   xTaskCreatePinnedToCore(vDataPull, "Data pull on Wifi", 7000, NULL, 2, &pullTask, 0);
-  #endif
-
-  #ifdef wifi_ini
-  xTaskCreatePinnedToCore(vWifiTransfer, "Transfer data on Wifi", 7000, NULL, 2, &wifiTask, 0);
-  #endif
-
+  xTaskCreatePinnedToCore(vWifiTransfer, "Transfer data on Wifi", 6000, NULL, 2, &wifiTask, 0);
   #ifdef led_status
   xTaskCreatePinnedToCore(vStatusLed, "Status LED", 5000, NULL, 1, &ledTask, 1);
   #endif
@@ -343,6 +338,7 @@ void vAcquireData(void *pvParameters) {
             AQIData aqiData = {0};  // Ensures all sensor values are initialized to 0
 
             aqiData = aqiSensor.getData();
+
 
 
             #ifdef ENABLE_SO2_SENSOR
@@ -389,9 +385,65 @@ void vAcquireData(void *pvParameters) {
         xSemaphoreGive(semaAqData1); // Release semaphore
         xSemaphoreGive(semaStorage1);
         vTaskDelay(1);
-
+        UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(NULL);
+        log_v("Stack usage of acquiredata Task: %d", (int)uxHighWaterMark);
         vTaskDelayUntil(&xLastWakeTime, (DATA_ACQUISITION_TIME * MS_IN_SECOND));
     }
+}
+
+/**
+ * @brief RTOS task for handling live data broadcast.
+ *
+ * - Receives data from `vAcquireData`.
+ * - Tries to publish data over MQTT.
+ * - If transmission fails, logs data to `/liveData/1.txt` or `/liveData/2.txt` (alternating every 10 minutes).
+ * - If internet is restored, attempts to send stored backup files.
+ *
+ * Runs every DATA_ACQUISITION Times and is synchronized with data acquisition via `semaphores`.
+ */
+void vLiveBroadcast(void *pvParameters)
+{
+  // TickType_t xLastWakeTime = xTaskGetTickCount();
+  for (;;)
+  {
+    if (towrite_inst != "")
+    {
+      if (xSemaphoreTake(semaAqData1, portMAX_DELAY) == pdTRUE)
+      {
+        String towrite_live = towrite_inst;
+        if (flags[wf_f])
+        {
+          if (towrite != "" && !flags[sd_f])
+          {
+            toTransfer = "";
+            toTransfer = towrite;
+            towrite = "";
+            handleLiveTransfer();
+          }
+        }
+        xSemaphoreGive(semaAqData1); // Release immediately after copying
+
+        if (!live_broadcast(towrite_live))
+        {
+          if (flags[sd_f] && flags[rtc_f])
+          {
+            if (!storage.handleLiveDataFailure(towrite_live))
+            {
+              log_e("Storage write failed, possible SD issue!");
+              flags[sd_f] = 0;
+            }
+          }
+        }
+        else
+        {
+          attemptLiveDataRecovery();
+        }
+      }
+    }
+    vTaskDelay(DATA_ACQUISITION_TIME * MS_IN_SECOND);
+    UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(NULL);
+    log_v("Stack usage of liveBroadCast Task: %d", (int)uxHighWaterMark);
+  }
 }
 
 
@@ -405,10 +457,8 @@ void vAcquireData(void *pvParameters) {
  *
  * @param pvParameters void
  */
-#ifdef Storage_init
 void vStorage(void *pvParameters)
 {
-  int storage_fail = 0;
   for (;;)
   { // infinite loop
     if (flags[sd_f])
@@ -426,21 +476,29 @@ void vStorage(void *pvParameters)
         if (getUnixTime() > cutoff_time)
         {
           flags[rtc_f] = 1;
-          if (storage.write_data(getTime2(), towrite_s))
+          bool _data_wrote = 0;
+          uint8_t _write_counter = 0;
+          while (_data_wrote == 0 && _write_counter < STORAGE_WRITE_FAILURE_LIMIT)
           {
-            log_d("Data Written: %s", towrite_s.c_str());
-            log_i("data written to storage");
-            flags[sd_f] = 1;
-            flags[sd_blink_f] = 1;
-            if (storage_fail)
-              storage_fail = 0;
-          }
-          else
-          {
-            log_e("Storage stopped working!");
-            storage_fail++;
-            if (storage_fail == STORAGE_WRITE_FAILURE_LIMIT)
+            if (storage.write_data(getTime2(), towrite_s))
+            {
+              _data_wrote = 1;
+              log_d("Data Written: %s", towrite_s.c_str());
+              flags[sd_f] = 1;
+              flags[sd_blink_f] = 1;
+              log_i("data written to storage");
+            }
+            else
+            {
+              _data_wrote = 0;
+              log_e("Storage stopped working!");
+              _write_counter++;
               flags[sd_f] = 0;
+            }
+          }
+          if (_write_counter >= STORAGE_WRITE_FAILURE_LIMIT)
+          {
+            log_e("Storage write failed after 3 tries...!");
           }
         }
         else
@@ -448,22 +506,31 @@ void vStorage(void *pvParameters)
           log_e("RTC time is incorrect! Data not logging...");
           flags[rtc_f] = 0;
         }
+        UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(NULL);
+        log_v("Stack usage of Storage Task: %d", (int)uxHighWaterMark);
       }
       xSemaphoreGive(semaStorage1);
       // else
       // log_d("No data received");
-    }
+    }        
     else
     {
-      vTaskDelay(10 * DATA_STORAGE_TIME * MS_IN_SECOND); // storage is not working, delay 10 minutes
+      int restartCount;
+      uint32_t restartTime;
+      myNVS::read::restartData(restartCount, restartTime);
+      if (restartCount == 4)
+      { 
+        log_d("Restart count reached 4, restarting ESP after 10 mins...");
+        vTaskDelay(10 * DATA_STORAGE_TIME * MS_IN_SECOND); // storage is not working, delay 10 minutes
+      }
+
+      log_i("ESP Restarting Due to storage failure...");
       ESP.restart();
     }
   } // end for
 } // end vStorage task
-#endif
 
 
-#ifdef data_pull
 void vDataPull(void *pvParameters)
 {
   for (;;)
@@ -473,79 +540,78 @@ void vDataPull(void *pvParameters)
     vTaskDelay(1);
 
     if (flags[wf_f])
-    {
-    if (dataClient.loop())
-    {
-      if (flags[sd_f] && pendingDataRequests)
+    {                                 
+      if (dataClient.loop())
       {
-        xSemaphoreTake(semaStorage1, portMAX_DELAY);
-        processDataRequests();
-        xSemaphoreGive(semaStorage1);
-        vTaskDelay(10000);
-      }
-    }
-    else
-    {
-      dataClient.setServer(mqtt_server.c_str(), mqtt_port);
-      dataClient.setBufferSize(PUSH_BUFFER_SIZE);
-      dataClient.setCallback(onDataRequest);
-      String deviceName = sensorID + "-data";
-
-      if (dataClient.connect(deviceName.c_str()))
-      {
-        if (dataClient.subscribe(dataPullTopic.c_str()))
+        if (flags[sd_f] && pendingDataRequests)
         {
-          log_d("Subscribed to topic %s", dataPullTopic.c_str());
+          xSemaphoreTake(semaStorage1, portMAX_DELAY);
+          processDataRequests();
+          xSemaphoreGive(semaStorage1);
+          vTaskDelay(1000);
         }
       }
       else
       {
-        vTaskDelay(1000);
+        dataClient.setServer(mqtt_server.c_str(), mqtt_port);
+        dataClient.setBufferSize(PUSH_BUFFER_SIZE);
+        dataClient.setCallback(onDataRequest);
+        String deviceName = sensorID + "-data";
+
+        if (dataClient.connect(deviceName.c_str()))
+        {
+          if (dataClient.subscribe(dataPullTopic.c_str()))
+          {
+            log_d("Subscribed to topic %s", dataPullTopic.c_str());
+          }
+          if (dataClient.subscribe(restartTopic.c_str()))
+          {
+            log_d("Subscribed to topic %s", restartTopic.c_str());
+          } 
+  
+
+        }
+        else
+        {
+          vTaskDelay(1000);
+        }
       }
+      vTaskDelay(10);
     }
-    vTaskDelay(10);
-  }
-  xSemaphoreGive(semaWifi1);
+    xSemaphoreGive(semaWifi1);
   }
 }
-#endif
 
 
-#ifdef wifi_ini
 void vWifiTransfer(void *pvParameters)
 {
   for (;;)
   {
     xSemaphoreTake(semaWifi1, portMAX_DELAY);
-    handleWifiConnection();
+    handleWifiConnection(); // Ensure Wi-Fi is connected
     xSemaphoreGive(semaWifi1);
     vTaskDelay(1);
-
     if (flags[wf_f])
     {
       if (wf.check_Internet())
-    {
-      if (flags[sd_f])
       {
-        handleStorageTransfer();
+        if (flags[sd_f])
+        {
+          handleStorageTransfer();
+        }
       }
       else
-      {
-        handleLiveTransfer();
-      }
-    }
-    else
         log_e("Ping not received");
     }
-
     else if (!flags[sd_f])
       vTaskDelay(10 * 60 * MS_IN_SECOND);
     else
       vTaskDelay(DATA_STORAGE_TIME * MS_IN_SECOND);
+      UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(NULL);
+    log_v("Stack usage of Wifi Task: %d", (int)uxHighWaterMark);
     vTaskDelay(DATA_ACQUISITION_TIME * MS_IN_SECOND);
   }
 }
-#endif
 
 #ifdef led_status
 void vStatusLed(void *pvParameters)

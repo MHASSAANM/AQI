@@ -230,8 +230,8 @@ bool ESP_WiFi::start_soft_ap()
     if (WiFi.softAP(sensorID.c_str(), SOFT_AP_PASSWORD))
     {
         log_d("Soft AP IP: %s", WiFi.softAPIP().toString().c_str());
-        //myServerInitialize();
-        //log_d("Web server initalized.");
+        myServerInitialize();
+        log_d("Web server initalized.");
         return true;
     }
     return false;

@@ -306,3 +306,15 @@ bool live_broadcast(String broadcastData)
         return false;
     }
 }
+
+void attemptLiveDataRecovery() {
+    for (int i = 1; i <= 2; i++) {
+        String fileName = "/liveData/" + String(i) + ".txt";
+        if (SD.exists(fileName)) {
+            if (sendFile(fileName.c_str(), (String(MQTT_TOPIC) + "/" + String(sensorID) + "/LiveBackup/" +String(i)).c_str())) {
+                SD.remove(fileName);
+                log_d("Successfully sent and deleted %s", fileName.c_str());
+            }
+        }
+    }
+  }

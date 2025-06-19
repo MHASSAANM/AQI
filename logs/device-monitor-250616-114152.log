@@ -1,0 +1,107 @@
+11:41:52.151 > ets Jun  8 2016 00:22:57
+11:41:52.151 > 
+11:41:52.151 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:41:52.151 > configsip: 0, SPIWP:0xee
+11:41:52.151 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:41:52.151 > mode:DIO, clock div:2
+11:41:52.151 > load:0x3fff0018,len:4
+11:41:52.151 > load:0x3fff001c,len:1044
+11:41:52.151 > load:0x40078000,len:10124
+11:41:52.151 > load:0x40080400,len:5828
+11:41:52.151 > entry 0x400806a8
+11:41:52.151 > �[D][main.cpp:79] setup(): 
+11:41:52.151 > Current Version: 1.1.1
+11:41:52.151 > Description: AQI Meter OTA Updates have been added
+11:41:52.151 > Commit Date: 3 March 2025
+11:41:52.151 > [D][AQISensor.cpp:446] init(): AHT20 initialized
+11:41:52.151 > [E][AQISensor.cpp:459] init(): Could not find BMP280 sensor! Check wiring.
+11:41:52.151 > [D][AQISensor.cpp:463] init(): BMP280 initialized on address 0x77
+11:41:52.151 > [D][AQISensor.cpp:474] init(): Scanning SGP30 I2C bus...
+11:41:52.151 > [D][AQISensor.cpp:479] init(): SGP30 detected at address 0x58
+11:41:52.151 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 1 failed, retrying...
+11:41:53.121 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 2 failed, retrying...
+11:41:54.132 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 3 failed, retrying...
+11:41:55.119 > [E][AQISensor.cpp:513] init(): SGP30 failed to initialize after 3 attempts!
+11:41:57.134 > [E][AQISensor.cpp:721] readPMS5007(): Timeout waiting for data!
+11:41:57.134 > [E][AQISensor.cpp:530] init(): PM5007 not detected!
+11:41:57.134 > [D][AQISensor.cpp:555] init(): MICS6814 sensor initialized
+11:41:58.834 > [E][AQISensor.cpp:605] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+11:41:58.834 > [D][AQISensor.cpp:567] init(): O3 sensor failed to initialize!
+11:42:30.851 > [E][AQISensor.cpp:651] initSO2Sensor(): SO2 sensor failed to confirm QA mode! Received 0 bytes
+11:42:30.851 > [D][AQISensor.cpp:575] init(): SO₂ sensor failed to initialize!
+11:42:30.863 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+11:42:30.868 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+11:42:31.168 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:31.168 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:31.168 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:42:31.178 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:42:31.468 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:31.468 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:31.485 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+11:42:31.490 > [E][main.cpp:132] setup(): Storage initialization failed!
+11:42:31.492 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+11:42:31.793 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:31.795 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:31.800 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:42:31.805 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:42:32.105 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:32.105 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:32.106 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+11:42:32.116 > [E][main.cpp:132] setup(): Storage initialization failed!
+11:42:32.121 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+11:42:32.419 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:32.419 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:32.419 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:42:32.431 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:42:32.729 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:32.729 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:32.737 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+11:42:32.742 > [E][main.cpp:132] setup(): Storage initialization failed!
+11:42:32.744 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+11:42:33.043 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:33.043 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:33.043 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+11:42:33.056 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+11:42:33.347 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+11:42:33.347 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+11:42:33.361 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+11:42:33.368 > [E][main.cpp:136] setup(): Storage failed after 3 tries...!
+11:42:33.481 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+11:42:33.481 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:42:33.497 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+11:42:33.503 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+11:42:33.508 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+11:42:33.514 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+11:42:33.520 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+11:42:33.525 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+11:42:33.525 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+11:42:33.529 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+11:42:33.849 > ets Jun  8 2016 00:22:57
+11:42:33.849 > 
+11:42:33.849 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+11:42:33.859 > configsip: 0, SPIWP:0xee
+11:42:33.859 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+11:42:33.869 > mode:DIO, clock div:2
+11:42:33.874 > load:0x3fff0018,len:4
+11:42:33.874 > load:0x3fff001c,len:1044
+11:42:33.880 > load:0x40078000,len:10124
+11:42:33.880 > load:0x40080400,len:5828
+11:42:33.880 > entry 0x400806a8
+11:42:34.444 > �[D][main.cpp:79] setup(): 
+11:42:34.450 > Current Version: 1.1.1
+11:42:34.450 > Description: AQI Meter OTA Updates have been added
+11:42:34.457 > Commit Date: 3 March 2025
+11:42:34.583 > [D][AQISensor.cpp:446] init(): AHT20 initialized
+11:42:34.599 > [E][AQISensor.cpp:459] init(): Could not find BMP280 sensor! Check wiring.
+11:42:34.707 > [D][AQISensor.cpp:463] init(): BMP280 initialized on address 0x77
+11:42:35.208 > [D][AQISensor.cpp:474] init(): Scanning SGP30 I2C bus...
+11:42:35.227 > [D][AQISensor.cpp:479] init(): SGP30 detected at address 0x58
+11:42:35.227 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 1 failed, retrying...
+11:42:36.224 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 2 failed, retrying...
+11:42:37.240 > [W][AQISensor.cpp:489] init(): SGP30 initialization attempt 3 failed, retrying...
+11:42:38.242 > [E][AQISensor.cpp:513] init(): SGP30 failed to initialize after 3 attempts!
+11:42:40.249 > [E][AQISensor.cpp:721] readPMS5007(): Timeout waiting for data!
+11:42:40.253 > [E][AQISensor.cpp:530] init(): PM5007 not detected!
+11:42:40.253 > [D][AQISensor.cpp:555] init(): MICS6814 sensor initialized
+11:42:41.950 > [E][AQISensor.cpp:605] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+11:42:41.950 > [D][AQISensor.cpp:567] init(): O3 sensor failed to initialize!

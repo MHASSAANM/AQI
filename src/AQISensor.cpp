@@ -9,34 +9,98 @@ AQISensor::AQISensor() : ozoneSerial(&Serial1), aqiData{0.0, 0.0, 0.0, 0, 0, 0, 
 TwoWire SGP30_Wire = TwoWire(1);
 
 bool AQISensor::init() {
-
-    SGP30_Wire.begin(15, 27);  // SDA , SCL
+    // Initialize main I2C bus first
+    Wire.begin();
     delay(100);
-
-    sgp30Initialized = sgp.begin(&SGP30_Wire);
-    if (!sgp30Initialized) {
-        log_e("Could not find SGP30 sensor on custom I2C bus!");
-    } else {
-        log_d("SGP30 initialized on separate I2C bus (GPIO27, GPIO15)");
-    }
-
+    
+    // Initialize AHT20 and BMP280 on main I2C bus
     aht20Initialized = aht.begin();
     if (!aht20Initialized) {
         log_e("Could not find AHT20 sensor! Check wiring.");
     } else {
         log_d("AHT20 initialized");
     }
-    
+
+    // Initialize BMP280
     bmp280Initialized = bmp.begin(0x76);
     if (!bmp280Initialized) {
-        log_e("Could not find BMP280 sensor! Check wiring.");
+        log_e("Could not find BMP280 sensor on address 0x76! Trying alternate address 0x77...");
+        // Try alternate address
+        bmp280Initialized = bmp.begin(0x77);
+        if (bmp280Initialized) {
+            log_d("BMP280 initialized on address 0x77");
+        }
     } else {
-        log_d("BMP280 initialized");
+        log_d("BMP280 initialized successfully on address 0x76");
     }
+    
+        // Initialize SGP30 sensor and check baseline
+        SGP30_Wire.begin(15, 27, 100000);  // SDA=15, SCL=27, 100kHz
+        delay(500);
+        log_d("Scanning SGP30 I2C bus...");
+        SGP30_Wire.beginTransmission(0x58);
+        uint8_t error = SGP30_Wire.endTransmission();
+    
+        if (error == 0) {
+            log_d("SGP30 detected at address 0x58");
+    
+            int retryCount = 0;
+            const int maxRetries = 3;
+            while (!sgp30Initialized && retryCount < maxRetries) {
+                sgp30Initialized = sgp.begin(&SGP30_Wire);
+                if (!sgp30Initialized) {
+                    retryCount++;
+                    log_w("SGP30 initialization attempt %d failed, retrying...", retryCount);
+                    delay(1000);
+                }
+            }
+    
+            if (sgp30Initialized) {
+                log_d("SGP30 initialized successfully");
+    
+                preferences.begin("sgp30", false);
+                uint16_t eCO2_base = preferences.getUShort("eCO2_base", 0);
+                uint16_t TVOC_base = preferences.getUShort("TVOC_base", 0);
+                unsigned long lastCalibrationTime = preferences.getULong("lastCalibTime", 0);
+                calibrationInProgress = preferences.getBool("calibInProgress", false);
+                calibrationStartMillis = preferences.getULong("calibStartTime", 0);
+                preferences.end();
 
+                log_d("Loaded preferences:");
+                log_d("  eCO2_base: %d", eCO2_base);
+                log_d("  TVOC_base: %d", TVOC_base);
+                log_d("  lastCalibrationTime: %lu", lastCalibrationTime);
+                log_d("  calibrationInProgress: %s", calibrationInProgress ? "true" : "false");
+                log_d("  calibrationStartMillis: %lu", calibrationStartMillis);
+    
+                time_t now = time(nullptr);
+                log_d("Current time: %lu", now);
+                if (eCO2_base != 0 && TVOC_base != 0 && (now - lastCalibrationTime) < (SEVEN_DAYS / 1000)) {
+                    sgp.setIAQBaseline(eCO2_base, TVOC_base);
+                    log_d("Restored SGP30 baseline: eCO2: %d, TVOC: %d", eCO2_base, TVOC_base);
+                } else if (!calibrationInProgress) {
+                    calibrationStartMillis = now;
+                    preferences.begin("sgp30", false);
+                    preferences.putULong("calibStartTime", now);
+                    preferences.putBool("calibInProgress", true);
+                    preferences.end();
+                    calibrationInProgress = true;
+                    log_d("Starting 12-hour calibration (baseline too old or missing)...");
+                } else {
+                    log_d("Resuming calibration started at: %lu", calibrationStartMillis);
+                }
+            } else {
+                log_e("SGP30 failed to initialize after %d attempts!", maxRetries);
+            }
+        } else {
+            log_e("SGP30 not detected! I2C error: %d", error);
+        }
+    
+
+    // Initialize PMS5007
     Serial2.begin(9600, SERIAL_8N1, PMS_RX_PIN, PMS_TX_PIN);
     Serial2.write(setPassiveCommand, sizeof(setPassiveCommand));
-    vTaskDelay(1000);
+    delay(1000);
     
     uint16_t dummy_pm;
     pm5007Initialized = readPMS5007(dummy_pm, dummy_pm, dummy_pm);
@@ -46,8 +110,7 @@ bool AQISensor::init() {
         log_e("PM5007 not detected!");
     }
 
-
-
+    // Initialize MICS6814
     analogReadResolution(12);
     analogSetAttenuation(ADC_11db);
     pinMode(CO_SENSOR_PIN, INPUT);
@@ -74,30 +137,10 @@ bool AQISensor::init() {
         log_e("MICS6814 sensor not detected!");
     }
 
-    
-    if (sgp30Initialized) {
-        preferences.begin("sgp30", false);
-        uint16_t eCO2_base = preferences.getUShort("eCO2_base", 0);
-        uint16_t TVOC_base = preferences.getUShort("TVOC_base", 0);
-        unsigned long lastCalibrationTime = preferences.getULong("lastCalibTime", 0);
-        preferences.end();
-
-        unsigned long timeSinceLastCalibration = millis() - lastCalibrationTime;
-        if (eCO2_base != 0 && TVOC_base != 0 && timeSinceLastCalibration < SEVEN_DAYS) {
-            sgp.setIAQBaseline(eCO2_base, TVOC_base);
-            log_d("Restored SGP30 baseline: eCO2: %d, TVOC: %d", eCO2_base, TVOC_base);
-        } else {
-            log_d("Baseline too old or not found. Running 12-hour calibration...");
-            startTime = millis();
-        }
-    }
-
-
+    // Initialize ozone sensor
     ozoneSerial->begin(9600, SERIAL_8N1, OZONE_TX_PIN, OZONE_RX_PIN);
-
-    delay(100);
+    delay(500);
     ozoneSensorInitialized = initOzoneSensor();
-
 
     float testOzonePPM;
     ozoneSensorInitialized = ozoneSensorInitialized && readOzoneData(testOzonePPM);
@@ -115,19 +158,18 @@ bool AQISensor::init() {
     return true;
 }
 
+// Rest of the methods remain the same...
 bool AQISensor::initOzoneSensor() {
     uint8_t disableCmd[9] = {0xFF, 0x01, 0x78, 0x41, 0x00, 0x00, 0x00, 0x00, 0x46};
-
     ozoneSerial->write(disableCmd, 9);
-    delay(100);  // Allow time for mode switch
-
-    return true; // Assume command was sent correctly
+    delay(200);
+    return true;
 }
 
 bool AQISensor::readOzoneData(float &ozonePPM) {
     uint8_t requestCmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
     ozoneSerial->write(requestCmd, 9);
-    delay(500);  // Wait for sensor response
+    delay(500);
 
     uint8_t buffer[9];
     int bytesRead = 0;
@@ -141,7 +183,7 @@ bool AQISensor::readOzoneData(float &ozonePPM) {
 
     if (bytesRead != 9) {
         log_e("O3 Sensor: No valid response! Check wiring.");
-        return false; // No valid data received
+        return false;
     }
 
     if (buffer[0] != 0xFF || buffer[1] != 0x17) {
@@ -155,22 +197,10 @@ bool AQISensor::readOzoneData(float &ozonePPM) {
         return false;
     }
 
-    // Extract ozone concentration
     int ozonePPB = (buffer[4] << 8) | buffer[5];
     ozonePPM = ozonePPB / 1000.0;
-
-    return true; // Sensor responded correctly
+    return true;
 }
-
-// bool AQISensor::initSO2Sensor() {
-//     if (!so2Serial) return false;
-
-//     uint8_t set_QA_mode[] = {0xFF, 0x01, 0x78, 0x04, 0x00, 0x00, 0x00, 0x00, 0x83};
-//     so2Serial->write(set_QA_mode, sizeof(set_QA_mode));
-//     delay(500);
-
-//     return true; // Assuming command was sent correctly
-// }
 
 #ifdef ENABLE_SO2_SENSOR
 bool AQISensor::initSO2Sensor() {
@@ -179,9 +209,7 @@ bool AQISensor::initSO2Sensor() {
         return false;
     }
 
-    // Optional: Warm-up delay
-    delay(30000); // Adjust per datasheet
-
+    delay(1000);
     uint8_t set_QA_mode[] = {0xFF, 0x01, 0x78, 0x04, 0x00, 0x00, 0x00, 0x00, 0x83};
     so2Serial->write(set_QA_mode, sizeof(set_QA_mode));
     delay(500);
@@ -196,7 +224,7 @@ bool AQISensor::initSO2Sensor() {
         }
     }
 
-    if (bytesRead == 9 && buffer[0] == 0xFF && buffer[1] == 0x78) { // Adjust per datasheet
+    if (bytesRead == 9 && buffer[0] == 0xFF && buffer[1] == 0x78) {
         log_d("SO2 sensor confirmed QA mode");
         return true;
     } else {
@@ -204,32 +232,6 @@ bool AQISensor::initSO2Sensor() {
         return false;
     }
 }
-
-
-// bool AQISensor::readSO2Sensor(float &so2PPM) {
-//     if (!so2Serial) return false;
-
-//     uint8_t requestCmd[] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
-//     so2Serial->write(requestCmd, sizeof(requestCmd));
-//     delay(500);
-
-//     if (so2Serial->available() >= 9) {
-//         uint8_t response[9];
-//         so2Serial->readBytes(response, 9);
-
-//         if (response[0] == 0xFF && response[1] == 0x86) {
-//             int so2_value = (response[2] << 8) | response[3];
-//             so2PPM = so2_value / 1000.0; // Convert to ppm
-//             return true;
-//         } else {
-//             log_e("SO₂ sensor: Invalid response format!");
-//             return false;
-//         }
-//     } else {
-//         log_e("SO₂ sensor: No valid response received!");
-//         return false;
-//     }
-// }
 
 bool AQISensor::readSO2Sensor(float &so2PPM) {
     if (!so2Serial) {
@@ -239,20 +241,18 @@ bool AQISensor::readSO2Sensor(float &so2PPM) {
 
     uint8_t requestCmd[] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
     so2Serial->write(requestCmd, sizeof(requestCmd));
-    delay(500); // Adjust based on sensor specs
+    delay(500);
 
     uint8_t buffer[9];
     int bytesRead = 0;
     unsigned long startTime = millis();
 
-    // Read response
     while (bytesRead < 9 && millis() - startTime < 1000) {
         if (so2Serial->available()) {
             buffer[bytesRead++] = so2Serial->read();
         }
     }
 
-    // Debug received bytes
     if (bytesRead > 0) {
         log_d("SO2 received %d bytes: ", bytesRead);
         for (int i = 0; i < bytesRead; i++) {
@@ -265,13 +265,11 @@ bool AQISensor::readSO2Sensor(float &so2PPM) {
         return false;
     }
 
-    // Validate response
     if (buffer[0] != 0xFF || buffer[1] != 0x86) {
         log_e("SO₂ sensor: Invalid response format!");
         return false;
     }
 
-    // Verify checksum
     uint8_t checksum = 0;
     for (int i = 1; i < 8; i++) {
         checksum += buffer[i];
@@ -282,15 +280,12 @@ bool AQISensor::readSO2Sensor(float &so2PPM) {
         return false;
     }
 
-    // Extract value
     int so2_value = (buffer[2] << 8) | buffer[3];
-    so2PPM = so2_value / 1000.0; // Convert to ppm
+    so2PPM = so2_value / 1000.0;
     return true;
 }
 #endif
 
-
-// Read PM5007 data
 bool AQISensor::readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0) {
     uint8_t buffer[FRAME_LENGTH];
     uint16_t checksum = 0;
@@ -333,8 +328,6 @@ bool AQISensor::readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0) 
     return true;
 }
 
-
-
 void AQISensor::readMiCS6814(float &co_ppm, float &nh3_ppm, float &no2_ppm) {
     int co_raw = analogRead(CO_SENSOR_PIN);
     int nh3_raw = analogRead(NH3_SENSOR_PIN);
@@ -345,12 +338,20 @@ void AQISensor::readMiCS6814(float &co_ppm, float &nh3_ppm, float &no2_ppm) {
     no2_ppm = (no2_raw / 4095.0f) * 200.0f * NO2_SCALE;
 }
 
-// Read SGP30 sensor data
 void AQISensor::readSGP30(uint16_t &eCO2, uint16_t &TVOC) {
+    if (!sgp30Initialized) {
+        log_e("SGP30 not initialized!");
+        eCO2 = 0;
+        TVOC = 0;
+        return;
+    }
+
     sensors_event_t humidity, temp;
-    aht.getEvent(&humidity, &temp);
-    uint32_t absoluteHumidity = getAbsoluteHumidity(temp.temperature, humidity.relative_humidity);
-    sgp.setHumidity(absoluteHumidity);
+    if (aht20Initialized) {
+        aht.getEvent(&humidity, &temp);
+        uint32_t absoluteHumidity = getAbsoluteHumidity(temp.temperature, humidity.relative_humidity);
+        sgp.setHumidity(absoluteHumidity);
+    }
 
     if (!sgp.IAQmeasure()) {
         log_e("SGP30 measurement failed!");
@@ -363,21 +364,27 @@ void AQISensor::readSGP30(uint16_t &eCO2, uint16_t &TVOC) {
 
     updateSGP30Baseline();
 }
-// Get absolute humidity
+
 uint32_t AQISensor::getAbsoluteHumidity(float temperature, float humidity) {
     return static_cast<uint32_t>(1000.0f * 216.7f * ((humidity / 100.0f) * 6.112f * exp((17.62f * temperature) / (243.12f + temperature)) / (273.15f + temperature)));
 }
-// Update SGP30 baseline
+
 void AQISensor::updateSGP30Baseline() {
-    if (!baselineUpdated && millis() - startTime >= CALIBRATION_DURATION) {
+    if (!sgp30Initialized || !calibrationInProgress)
+        return;
+
+    time_t now = time(nullptr);
+    if ((now - calibrationStartMillis) >= (CALIBRATION_DURATION / 1000)) {
         uint16_t eCO2_base, TVOC_base;
         if (sgp.getIAQBaseline(&eCO2_base, &TVOC_base)) {
             preferences.begin("sgp30", false);
             preferences.putUShort("eCO2_base", eCO2_base);
             preferences.putUShort("TVOC_base", TVOC_base);
-            preferences.putULong("lastCalibTime", millis());
+            preferences.putULong("lastCalibTime", now);
+            preferences.putBool("calibInProgress", false);
             preferences.end();
             baselineUpdated = true;
+            calibrationInProgress = false;
             log_d("Stored new SGP30 baseline: eCO2: %d, TVOC: %d", eCO2_base, TVOC_base);
         } else {
             log_e("Failed to get SGP30 baseline.");
@@ -385,42 +392,60 @@ void AQISensor::updateSGP30Baseline() {
     }
 }
 
-// Get AQI data
 AQIData AQISensor::getData() {
-    sensors_event_t tempEvent, humidityEvent;
-    aht.getEvent(&humidityEvent, &tempEvent);
-    aqiData.temperature = tempEvent.temperature;
-    aqiData.humidity = humidityEvent.relative_humidity;
-    aqiData.pressure = bmp.readPressure() / 100.0;
+    if (aht20Initialized) {
+        sensors_event_t tempEvent, humidityEvent;
+        aht.getEvent(&humidityEvent, &tempEvent);
+        aqiData.temperature = tempEvent.temperature;
+        aqiData.humidity = humidityEvent.relative_humidity;
+    } else {
+        aqiData.temperature = 0.0;
+        aqiData.humidity = 0.0;
+    }
+    
+    if (bmp280Initialized) {
+        aqiData.pressure = bmp.readPressure() / 100.0;
+    } else {
+        aqiData.pressure = 0.0;
+    }
 
-    readPMS5007(aqiData.pm1_0, aqiData.pm2_5, aqiData.pm10_0);
-    readSGP30(aqiData.eCO2, aqiData.TVOC);
+    if (pm5007Initialized) {
+        readPMS5007(aqiData.pm1_0, aqiData.pm2_5, aqiData.pm10_0);
+    } else {
+        aqiData.pm1_0 = aqiData.pm2_5 = aqiData.pm10_0 = 0;
+    }
+    
+    if (sgp30Initialized) {
+        readSGP30(aqiData.eCO2, aqiData.TVOC);
+    } else {
+        aqiData.eCO2 = aqiData.TVOC = 0;
+    }
 
     if (ozoneSensorInitialized) {
         float ozonePPM;
         aqiData.ozone_ppb = readOzoneData(ozonePPM) ? ozonePPM * 1000 : 0;
+    } else {
+        aqiData.ozone_ppb = 0;
     }
 
     #ifdef ENABLE_SO2_SENSOR
     if (so2SensorInitialized) {
         float so2PPM;
         aqiData.so2_ppm = readSO2Sensor(so2PPM) ? so2PPM : 0.0;
+    } else {
+        aqiData.so2_ppm = 0.0;
     }
     #endif
 
-    
-
     if (mics6814Initialized) {
-    float co, nh3, no2;
-    readMiCS6814(co, nh3, no2);
-    aqiData.co_ppm = co;
-    aqiData.nh3_ppm = nh3;
-    aqiData.no2_ppm = no2;
+        float co, nh3, no2;
+        readMiCS6814(co, nh3, no2);
+        aqiData.co_ppm = co;
+        aqiData.nh3_ppm = nh3;
+        aqiData.no2_ppm = no2;
+    } else {
+        aqiData.co_ppm = aqiData.nh3_ppm = aqiData.no2_ppm = 0.0;
     }
-
     
     return aqiData;
 }
-
-
-

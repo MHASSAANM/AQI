@@ -30,6 +30,7 @@ void onDataRequest(char *topic, uint8_t *buff, unsigned int size);
 bool sendFile(const char *fileName, const char *topic);
 void processDataRequests();
 bool live_broadcast(String broadcastData);
+void attemptLiveDataRecovery();
 
 void update_essentials(void);
 

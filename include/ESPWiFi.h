@@ -5,7 +5,7 @@
 #include <WiFiMulti.h> // for multiple APs and connecting to the closest
 #include <Storage.h>   // to access APs.txt
 #include "config.h"
-//#include "webServer.h"
+#include "webServer.h"
 
 extern String sensorID;
 

@@ -1,0 +1,1453 @@
+10:34:05.506 > ets Jun  8 2016 00:22:57
+10:34:05.506 > 
+10:34:05.506 > rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+10:34:05.506 > configsip: 0, SPIWP:0xee
+10:34:05.506 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:34:05.506 > mode:DIO, clock div:2
+10:34:05.506 > load:0x3fff0018,len:4
+10:34:05.506 > load:0x3fff001c,len:1044
+10:34:05.506 > load:0x40078000,len:10124
+10:34:05.506 > load:0x40080400,len:5828
+10:34:05.506 > entry 0x400806a8
+10:34:05.506 > �[D][main.cpp:79] setup(): 
+10:34:05.506 > Current Version: 1.1.1
+10:34:05.506 > Description: AQI Meter OTA Updates have been added
+10:34:05.506 > Commit Date: 3 March 2025
+10:34:05.506 > [D][AQISensor.cpp:446] init(): AHT20 initialized
+10:34:05.506 > [E][AQISensor.cpp:459] init(): Could not find BMP280 sensor on address 0x76! Trying alternate address 0x77...
+10:34:05.506 > [D][AQISensor.cpp:463] init(): BMP280 initialized on address 0x77
+10:34:05.506 > [D][AQISensor.cpp:474] init(): Scanning SGP30 I2C bus...
+10:34:05.506 > [D][AQISensor.cpp:479] init(): SGP30 detected at address 0x58
+10:34:05.506 > [D][AQISensor.cpp:495] init(): SGP30 initialized successfully on separate I2C bus (GPIO27=SCL, GPIO15=SDA)
+10:34:05.506 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: eCO2_base NOT_FOUND
+10:34:05.506 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: TVOC_base NOT_FOUND
+10:34:05.506 > [V][Preferences.cpp:389] getUInt(): nvs_get_u32 fail: lastCalibTime NOT_FOUND
+10:34:05.506 > [D][AQISensor.cpp:509] init(): Baseline too old or not found. Running 12-hour calibration...
+10:34:05.506 > [D][AQISensor.cpp:528] init(): PM5007 initialized
+10:34:05.506 > [D][AQISensor.cpp:555] init(): MICS6814 sensor initialized
+10:34:05.506 > [D][AQISensor.cpp:567] init(): O3 sensor initialized
+10:34:05.506 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+10:34:05.506 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:34:05.506 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:34:05.506 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:34:05.506 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:34:05.506 > [D][Storage.cpp:63] init_storage(): Previous data found! 
+10:34:05.506 > [D][Storage.cpp:82] init_storage(): File is: 
+10:34:05.506 > [D][Storage.cpp:83] init_storage(): /20250617.txt 
+10:34:05.506 > [D][Storage.cpp:84] init_storage(): Position is: 
+10:34:05.506 > [D][Storage.cpp:85] init_storage(): 257 
+10:34:05.506 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:34:05.506 > [D][main.cpp:140] setup(): Storage initialization success!
+10:34:05.506 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:34:05.506 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:34:05.506 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:34:05.506 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:34:05.506 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:34:05.506 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:34:05.506 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:34:05.506 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:34:05.506 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:34:05.506 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:34:05.506 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:34:05.506 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:34:05.506 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:34:05.506 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:34:05.506 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+10:34:06.560 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:34:06.575 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 22
+10:34:06.576 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:34:06.576 > [I][WiFiMulti.cpp:119] run(): [WIFI] 22 networks found
+10:34:06.586 > [D][WiFiMulti.cpp:151] run():        0: [11][00:A6:CA:47:AC:A2] LUMS-Events (-50) *
+10:34:06.593 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A1] TV-LED (-50) *
+10:34:06.593 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A3] LUMS (-50) *
+10:34:06.608 > [D][WiFiMulti.cpp:149] run():  --->   3: [5][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+10:34:06.617 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A0] Wireless (-51) *
+10:34:06.624 > [D][WiFiMulti.cpp:151] run():        5: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-58) *
+10:34:06.629 > [D][WiFiMulti.cpp:151] run():        6: [11][08:5A:11:23:67:E0] Wireless-LEC (-75) *
+10:34:06.641 > [D][WiFiMulti.cpp:151] run():        7: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:34:06.645 > [D][WiFiMulti.cpp:151] run():        8: [1][BC:67:1C:64:33:23] LUMS (-77) *
+10:34:06.651 > [D][WiFiMulti.cpp:151] run():        9: [1][BC:67:1C:64:33:20] Wireless (-78) *
+10:34:06.661 > [D][WiFiMulti.cpp:151] run():        10: [1][BC:67:1C:64:33:22] LUMS-Events (-78) *
+10:34:06.667 > [D][WiFiMulti.cpp:151] run():        11: [1][BC:67:1C:64:33:21] TV-LED (-80) *
+10:34:06.669 > [D][WiFiMulti.cpp:151] run():        12: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-80) *
+10:34:06.683 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-83) *
+10:34:06.685 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F4] wireless (-84) *
+10:34:06.699 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F2] LUMS (-84) *
+10:34:06.703 > [D][WiFiMulti.cpp:151] run():        16: [11][F8:A7:3A:87:EE:E5] LUMS-Events (-87) *
+10:34:06.703 > [D][WiFiMulti.cpp:151] run():        17: [11][F8:A7:3A:87:EE:E2] LUMS (-87) *
+10:34:06.721 > [D][WiFiMulti.cpp:151] run():        18: [1][4C:E1:75:1D:01:65] LUMS-Events (-88) *
+10:34:06.721 > [D][WiFiMulti.cpp:151] run():        19: [11][F8:A7:3A:87:EE:E4] wireless (-88) *
+10:34:06.721 > [D][WiFiMulti.cpp:151] run():        20: [11][4C:E1:75:3C:A2:43] LUMS (-89) *
+10:34:06.737 > [D][WiFiMulti.cpp:151] run():        21: [11][28:6F:7F:DF:D3:30] Wireless (-89) *
+10:34:06.748 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 5 (-51)
+10:34:10.241 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:34:10.256 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:34:10.256 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.148, MASK: 255.255.255.0, GW: 192.168.0.1
+10:34:10.273 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:34:10.278 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:34:10.284 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.148
+10:34:10.290 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:34:10.295 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 5
+10:34:10.300 > [I][ESPWiFi.cpp:232] connect_to_nearest(): Connection established 
+10:34:10.305 > [D][main.cpp:149] setup(): Initialized wifi successfully
+10:34:10.311 > [D][main.cpp:150] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:34:10.316 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:34:10.321 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:34:10.327 > [I][main.cpp:194] setup(): ID found!
+10:34:10.327 > Device name: testuu
+10:34:10.327 > 
+10:34:10.361 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:10.361 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:10.372 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:10.377 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:10.383 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:10.387 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:10.393 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 212456
+10:34:10.399 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:34:10.446 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:34:10.446 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:34:10.458 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:34:10.458 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:34:10.473 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:34:12.389 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:34:12.389 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:34:12.406 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 168768
+10:34:12.408 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+10:34:12.417 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:12.428 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:34:12.920 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+10:34:12.920 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:12.939 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:34:13.422 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+10:34:13.422 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:13.434 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:34:13.928 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+10:34:13.928 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:13.949 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+10:34:13.951 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+10:34:13.961 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+10:34:13.970 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+10:34:14.447 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+10:34:14.447 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:14.459 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+10:34:14.460 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+10:34:14.957 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:34:14.957 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:14.969 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+10:34:14.972 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+10:34:15.400 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+10:34:15.416 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:34:15.423 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+10:34:15.424 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+10:34:15.440 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+10:34:15.442 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+10:34:15.979 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:15.979 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:15.994 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:34:15.995 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+10:34:16.006 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:16.017 > [D][main.cpp:255] setup(): Cloud IoT Setup Complete
+10:34:16.034 > [D][main.cpp:268] setup(): Subscribed to topic pull/testuu
+10:34:16.034 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 0
+10:34:16.047 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1750138370
+10:34:16.049 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1750138456
+10:34:16.057 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:16.063 > 
+10:34:16.063 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+10:34:16.109 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:16.160 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:17.184 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:16,testuu,22.2, 60.1, 978.1, 22.9, 5, 7, 7, 100.00, 30.63, 0.10, 400, 0, 0.00
+10:34:17.244 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:17.244 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:17.254 > [D][Storage.cpp:224] write_data(): File written
+10:34:17.260 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:16,testuu,22.2, 60.1, 978.1, 22.9, 5, 7, 7, 100.00, 30.63, 0.10, 400, 0, 0.00
+10:34:17.271 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:17.284 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:17.296 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:17.393 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:32:56,testu,22.6, 60.2, 978.1, 3, 5, 5, 100.00, 6.79, 0.04, 400, 0, 0.00
+10:34:17.409 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:17.421 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:17.423 > [I][Storage.cpp:803] mark_data(): Size: 536,   Pos: 258,   Chunk: 88,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:17.558 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:17.573 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:17.587 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:17.677 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:32:59,testu,22.5, 60.2, 978.1, 3, 5, 5, 100.00, 7.44, 0.04, 400, 0, 0.00
+10:34:17.693 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:17.709 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:17.711 > [I][Storage.cpp:803] mark_data(): Size: 536,   Pos: 348,   Chunk: 88,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:17.813 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:17.813 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:17.834 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:17.943 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:16,testuu,22.2, 60.1, 978.1, 22.9, 5, 7, 7, 100.00, 30.63, 0.10, 400, 0, 0.00
+10:34:17.943 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:17.961 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:17.963 > [I][Storage.cpp:803] mark_data(): Size: 536,   Pos: 438,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:18.072 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:19.048 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:19.048 > 
+10:34:19.844 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:19,testuu,22.2, 60.1, 978.1, 22.9, 5, 8, 8, 96.17, 30.66, 0.09, 400, 0, 0.00
+10:34:19.924 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:19.924 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:19.942 > [D][Storage.cpp:224] write_data(): File written
+10:34:19.979 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:19,testuu,22.2, 60.1, 978.1, 22.9, 5, 8, 8, 96.17, 30.66, 0.09, 400, 0, 0.00
+10:34:19.997 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:21.072 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:21.072 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:34:22.049 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:22.049 > 
+10:34:23.363 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:22,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 31.25, 0.10, 400, 0, 0.00
+10:34:23.405 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:23.406 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:23.409 > [D][Storage.cpp:224] write_data(): File written
+10:34:23.409 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:22,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 31.25, 0.10, 400, 0, 0.00
+10:34:23.432 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:24.120 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:24.172 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:24.176 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:24.197 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:24.306 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:19,testuu,22.2, 60.1, 978.1, 22.9, 5, 8, 8, 96.17, 30.66, 0.09, 400, 0, 0.00
+10:34:24.306 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:24.323 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:24.328 > [I][Storage.cpp:803] mark_data(): Size: 731,   Pos: 536,   Chunk: 95,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:24.469 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:24.469 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:24.491 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:24.593 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:22,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 31.25, 0.10, 400, 0, 0.00
+10:34:24.593 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:24.612 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:24.613 > [I][Storage.cpp:803] mark_data(): Size: 731,   Pos: 633,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:24.722 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:25.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:25.054 > 
+10:34:26.020 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:25,testuu,22.2, 60.0, 978.1, 22.9, 5, 7, 7, 100.00, 31.53, 0.10, 411, 0, 0.00
+10:34:27.019 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+10:34:27.019 > 
+10:34:27.711 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:27.711 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:34:28.026 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+10:34:28.026 > 
+10:34:28.090 > [I][ESPWiFi.cpp:301] check_Internet(): TCP connection established
+10:34:28.090 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:28.108 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:28.109 > 
+10:34:28.109 > [D][Storage.cpp:224] write_data(): File written
+10:34:28.966 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+10:34:28.966 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+10:34:28.966 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+10:34:29.070 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:25,testuu,22.2, 60.0, 978.1, 22.9, 5, 7, 7, 100.00, 31.53, 0.10, 411, 0, 0.00
+10:34:29.080 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:29.534 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:28,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 32.69, 0.11, 400, 0, 0.00
+10:34:29.578 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:29.578 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:29.591 > [D][Storage.cpp:224] write_data(): File written
+10:34:29.596 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:28,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 32.69, 0.11, 400, 0, 0.00
+10:34:29.596 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:30.767 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:30.810 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:30.825 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:30.844 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:30.953 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:25,testuu,22.2, 60.0, 978.1, 22.9, 5, 7, 7, 100.00, 31.53, 0.10, 411, 0, 0.00
+10:34:30.953 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:30.970 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:30.976 > [I][Storage.cpp:803] mark_data(): Size: 927,   Pos: 731,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:31.118 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:31.118 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:31.118 > 
+10:34:32.194 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:31,testuu,22.2, 59.9, 978.1, 22.9, 5, 8, 8, 100.00, 32.88, 0.12, 400, 0, 0.00
+10:34:32.235 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:32.247 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:32.248 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:32.259 > [D][Storage.cpp:224] write_data(): File written
+10:34:32.305 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:31,testuu,22.2, 59.9, 978.1, 22.9, 5, 8, 8, 100.00, 32.88, 0.12, 400, 0, 0.00
+10:34:32.308 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:32.321 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:32.406 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:28,testuu,22.2, 60.0, 978.1, 22.9, 5, 8, 8, 100.00, 32.69, 0.11, 400, 0, 0.00
+10:34:32.422 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:32.436 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:32.441 > [I][Storage.cpp:803] mark_data(): Size: 1025,   Pos: 829,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:32.569 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:34.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:34.053 > 
+10:34:34.862 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:34,testuu,22.2, 59.9, 978.0, 22.9, 5, 7, 7, 100.00, 33.02, 0.12, 404, 2, 0.00
+10:34:35.582 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:35.582 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:34:35.860 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+10:34:35.860 > 
+10:34:36.863 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+10:34:36.863 > 
+10:34:36.912 > [I][ESPWiFi.cpp:301] check_Internet(): TCP connection established
+10:34:36.912 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:36.924 > [D][Storage.cpp:224] write_data(): File written
+10:34:36.963 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:34,testuu,22.2, 59.9, 978.0, 22.9, 5, 7, 7, 100.00, 33.02, 0.12, 404, 2, 0.00
+10:34:36.978 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:37.041 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:37.041 > 
+10:34:38.442 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:37,testuu,22.3, 59.9, 978.1, 22.9, 5, 7, 7, 100.00, 32.31, 0.11, 419, 0, 0.00
+10:34:38.477 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:38.477 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:38.494 > [D][Storage.cpp:224] write_data(): File written
+10:34:38.494 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:37,testuu,22.3, 59.9, 978.1, 22.9, 5, 7, 7, 100.00, 32.31, 0.11, 419, 0, 0.00
+10:34:38.497 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:38.624 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:38.693 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:38.712 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:38.725 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:38.822 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:31,testuu,22.2, 59.9, 978.1, 22.9, 5, 8, 8, 100.00, 32.88, 0.12, 400, 0, 0.00
+10:34:38.841 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:38.844 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:38.851 > [I][Storage.cpp:803] mark_data(): Size: 1221,   Pos: 927,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:38.985 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:39.001 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:39.016 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:39.119 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:34,testuu,22.2, 59.9, 978.0, 22.9, 5, 7, 7, 100.00, 33.02, 0.12, 404, 2, 0.00
+10:34:39.119 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:39.138 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:39.145 > [I][Storage.cpp:803] mark_data(): Size: 1221,   Pos: 1025,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:39.288 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:39.288 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:39.305 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:39.403 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:37,testuu,22.3, 59.9, 978.1, 22.9, 5, 7, 7, 100.00, 32.31, 0.11, 419, 0, 0.00
+10:34:39.421 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:39.426 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:39.431 > [I][Storage.cpp:803] mark_data(): Size: 1221,   Pos: 1123,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:39.523 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:40.045 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:40.045 > 
+10:34:41.104 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:40,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.54, 0.11, 410, 0, 0.00
+10:34:41.142 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:41.142 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:41.156 > [D][Storage.cpp:224] write_data(): File written
+10:34:41.196 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:40,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.54, 0.11, 410, 0, 0.00
+10:34:41.210 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:42.525 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:42.525 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:34:43.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:43.054 > 
+10:34:43.756 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:43,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.76, 0.11, 400, 0, 0.00
+10:34:43.794 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:43.794 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:43.807 > [D][Storage.cpp:224] write_data(): File written
+10:34:43.807 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:43,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.76, 0.11, 400, 0, 0.00
+10:34:43.824 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:45.578 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:45.630 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:45.648 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:45.656 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:45.760 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:40,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.54, 0.11, 410, 0, 0.00
+10:34:45.771 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:45.777 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:45.783 > [I][Storage.cpp:803] mark_data(): Size: 1417,   Pos: 1221,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:45.926 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:45.936 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:45.944 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:46.045 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:43,testuu,22.2, 59.8, 978.1, 23.0, 5, 7, 7, 100.00, 32.76, 0.11, 400, 0, 0.00
+10:34:46.060 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:46.064 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:46.070 > [I][Storage.cpp:803] mark_data(): Size: 1417,   Pos: 1319,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:46.176 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:46.176 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:46.176 > 
+10:34:47.263 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:46,testuu,22.3, 59.7, 978.1, 23.0, 5, 6, 6, 100.00, 32.91, 0.12, 400, 0, 0.00
+10:34:47.306 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:47.306 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:47.318 > [D][Storage.cpp:224] write_data(): File written
+10:34:47.361 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:46,testuu,22.3, 59.7, 978.1, 23.0, 5, 6, 6, 100.00, 32.91, 0.12, 400, 0, 0.00
+10:34:47.373 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:49.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:49.054 > 
+10:34:49.179 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:49.179 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:34:49.927 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:49,testuu,22.3, 59.7, 978.0, 23.0, 5, 6, 6, 100.00, 33.37, 0.12, 402, 0, 0.00
+10:34:49.970 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:49.970 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:49.980 > [D][Storage.cpp:224] write_data(): File written
+10:34:49.988 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:49,testuu,22.3, 59.7, 978.0, 23.0, 5, 6, 6, 100.00, 33.37, 0.12, 402, 0, 0.00
+10:34:49.999 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:52.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:52.054 > 
+10:34:52.241 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:52.290 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:53.438 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:52,testuu,22.3, 59.6, 978.1, 23.0, 5, 7, 7, 100.00, 34.19, 0.13, 404, 0, 0.00
+10:34:53.481 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:53.482 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:53.493 > [D][Storage.cpp:224] write_data(): File written
+10:34:53.499 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:52,testuu,22.3, 59.6, 978.1, 23.0, 5, 7, 7, 100.00, 34.19, 0.13, 404, 0, 0.00
+10:34:53.510 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:53.515 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:53.524 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:53.628 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:46,testuu,22.3, 59.7, 978.1, 23.0, 5, 6, 6, 100.00, 32.91, 0.12, 400, 0, 0.00
+10:34:53.639 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:53.644 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:53.649 > [I][Storage.cpp:803] mark_data(): Size: 1711,   Pos: 1417,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:53.797 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:53.807 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:53.818 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:53.923 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:49,testuu,22.3, 59.7, 978.0, 23.0, 5, 6, 6, 100.00, 33.37, 0.12, 402, 0, 0.00
+10:34:53.934 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:53.939 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:53.945 > [I][Storage.cpp:803] mark_data(): Size: 1711,   Pos: 1515,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:54.054 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:54.064 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:34:54.075 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:34:54.181 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:52,testuu,22.3, 59.6, 978.1, 23.0, 5, 7, 7, 100.00, 34.19, 0.13, 404, 0, 0.00
+10:34:54.193 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:34:54.197 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:34:54.204 > [I][Storage.cpp:803] mark_data(): Size: 1711,   Pos: 1613,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:34:54.311 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:34:55.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:55.054 > 
+10:34:56.098 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:55,testuu,22.3, 59.6, 978.1, 23.1, 4, 7, 7, 100.00, 34.32, 0.13, 400, 0, 0.00
+10:34:56.174 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:56.174 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:56.184 > [D][Storage.cpp:224] write_data(): File written
+10:34:56.228 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:55,testuu,22.3, 59.6, 978.1, 23.1, 4, 7, 7, 100.00, 34.32, 0.13, 400, 0, 0.00
+10:34:56.239 > [I][main.cpp:485] vStorage(): data written to storage
+10:34:57.307 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:34:57.307 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:34:58.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:34:58.054 > 
+10:34:58.739 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:34:58,testuu,22.3, 59.5, 978.1, 23.1, 4, 6, 6, 100.00, 34.41, 0.13, 400, 0, 0.00
+10:34:58.789 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:34:58.790 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:34:58.793 > [D][Storage.cpp:224] write_data(): File written
+10:34:58.793 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:34:58,testuu,22.3, 59.5, 978.1, 23.1, 4, 6, 6, 100.00, 34.41, 0.13, 400, 0, 0.00
+10:34:58.816 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:00.356 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:00.415 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:00.439 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:00.440 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:00.541 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:55,testuu,22.3, 59.6, 978.1, 23.1, 4, 7, 7, 100.00, 34.32, 0.13, 400, 0, 0.00
+10:35:00.557 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:00.569 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:00.574 > [I][Storage.cpp:803] mark_data(): Size: 1907,   Pos: 1711,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:00.707 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:00.728 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:00.740 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:00.841 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:34:58,testuu,22.3, 59.5, 978.1, 23.1, 4, 6, 6, 100.00, 34.41, 0.13, 400, 0, 0.00
+10:35:00.855 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:00.860 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:00.861 > [I][Storage.cpp:803] mark_data(): Size: 1907,   Pos: 1809,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:00.972 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:01.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:01.054 > 
+10:35:02.328 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:01,testuu,22.3, 59.4, 978.1, 23.1, 5, 7, 7, 100.00, 33.82, 0.12, 431, 3, 0.00
+10:35:02.372 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:02.372 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:02.378 > [D][Storage.cpp:224] write_data(): File written
+10:35:02.425 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:01,testuu,22.3, 59.4, 978.1, 23.1, 5, 7, 7, 100.00, 33.82, 0.12, 431, 3, 0.00
+10:35:02.438 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:03.972 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:03.972 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:35:04.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:04.054 > 
+10:35:04.994 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:04,testuu,22.4, 59.4, 978.0, 23.1, 5, 7, 7, 100.00, 34.07, 0.12, 440, 0, 0.00
+10:35:05.033 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:05.033 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:05.044 > [D][Storage.cpp:224] write_data(): File written
+10:35:05.049 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:04,testuu,22.4, 59.4, 978.0, 23.1, 5, 7, 7, 100.00, 34.07, 0.12, 440, 0, 0.00
+10:35:05.062 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:07.021 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:07.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:07.054 > 
+10:35:07.069 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:08.503 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:07,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.60, 0.13, 427, 0, 0.00
+10:35:08.551 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:08.551 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:08.561 > [D][Storage.cpp:224] write_data(): File written
+10:35:08.568 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:07,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.60, 0.13, 427, 0, 0.00
+10:35:08.578 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:08.583 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:08.591 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:08.699 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:01,testuu,22.3, 59.4, 978.1, 23.1, 5, 7, 7, 100.00, 33.82, 0.12, 431, 3, 0.00
+10:35:08.709 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:08.715 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:08.720 > [I][Storage.cpp:803] mark_data(): Size: 2201,   Pos: 1907,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:08.863 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:08.874 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:08.884 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:08.993 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:04,testuu,22.4, 59.4, 978.0, 23.1, 5, 7, 7, 100.00, 34.07, 0.12, 440, 0, 0.00
+10:35:09.004 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:09.009 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:09.014 > [I][Storage.cpp:803] mark_data(): Size: 2201,   Pos: 2005,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:09.119 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:09.130 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:09.137 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:09.243 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:07,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.60, 0.13, 427, 0, 0.00
+10:35:09.254 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:09.259 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:09.264 > [I][Storage.cpp:803] mark_data(): Size: 2201,   Pos: 2103,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:09.368 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:10.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:10.054 > 
+10:35:11.166 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:10,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.77, 0.13, 423, 0, 0.00
+10:35:11.209 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:11.209 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:11.221 > [D][Storage.cpp:224] write_data(): File written
+10:35:11.264 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:10,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.77, 0.13, 423, 0, 0.00
+10:35:11.276 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:12.368 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:12.369 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:35:13.042 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:13.042 > 
+10:35:13.823 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:13,testuu,22.4, 59.2, 978.1, 23.2, 5, 8, 8, 100.00, 34.90, 0.13, 432, 0, 0.00
+10:35:13.856 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:13.869 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:13.875 > [D][Storage.cpp:224] write_data(): File written
+10:35:13.875 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:13,testuu,22.4, 59.2, 978.1, 23.2, 5, 8, 8, 100.00, 34.90, 0.13, 432, 0, 0.00
+10:35:13.895 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:15.406 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:15.461 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:15.486 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:15.491 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:15.590 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:10,testuu,22.4, 59.3, 978.1, 23.2, 5, 7, 7, 100.00, 34.77, 0.13, 423, 0, 0.00
+10:35:15.607 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:15.611 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:15.611 > [I][Storage.cpp:803] mark_data(): Size: 2397,   Pos: 2201,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:15.758 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:15.772 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:15.775 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:15.875 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:13,testuu,22.4, 59.2, 978.1, 23.2, 5, 8, 8, 100.00, 34.90, 0.13, 432, 0, 0.00
+10:35:15.890 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:15.901 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:15.907 > [I][Storage.cpp:803] mark_data(): Size: 2397,   Pos: 2299,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:16.008 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:16.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:16.054 > 
+10:35:17.336 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:16,testuu,22.4, 59.1, 978.1, 23.2, 5, 8, 8, 100.00, 35.56, 0.14, 428, 0, 0.00
+10:35:17.375 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:17.375 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:17.386 > [D][Storage.cpp:224] write_data(): File written
+10:35:17.427 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:16,testuu,22.4, 59.1, 978.1, 23.2, 5, 8, 8, 100.00, 35.56, 0.14, 428, 0, 0.00
+10:35:17.440 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:19.009 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:19.009 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:35:19.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:19.054 > 
+10:35:19.994 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:19,testuu,22.4, 59.0, 978.1, 23.2, 5, 7, 7, 100.00, 35.73, 0.14, 435, 2, 0.00
+10:35:20.039 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:20.047 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:20.051 > [D][Storage.cpp:224] write_data(): File written
+10:35:20.057 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:19,testuu,22.4, 59.0, 978.1, 23.2, 5, 7, 7, 100.00, 35.73, 0.14, 435, 2, 0.00
+10:35:20.075 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:22.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:22.054 > 
+10:35:22.066 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:22.122 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:23.578 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:22,testuu,22.5, 59.0, 978.1, 23.3, 5, 7, 7, 100.00, 34.98, 0.13, 438, 0, 0.00
+10:35:23.621 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:23.621 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:23.637 > [D][Storage.cpp:224] write_data(): File written
+10:35:23.642 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:22,testuu,22.5, 59.0, 978.1, 23.3, 5, 7, 7, 100.00, 34.98, 0.13, 438, 0, 0.00
+10:35:23.654 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:23.659 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:23.663 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:23.769 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:16,testuu,22.4, 59.1, 978.1, 23.2, 5, 8, 8, 100.00, 35.56, 0.14, 428, 0, 0.00
+10:35:23.782 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:23.786 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:23.791 > [I][Storage.cpp:803] mark_data(): Size: 2691,   Pos: 2397,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:23.930 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:23.944 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:23.954 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:24.061 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:19,testuu,22.4, 59.0, 978.1, 23.2, 5, 7, 7, 100.00, 35.73, 0.14, 435, 2, 0.00
+10:35:24.072 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:24.077 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:24.083 > [I][Storage.cpp:803] mark_data(): Size: 2691,   Pos: 2495,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:24.188 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:24.198 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:24.209 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:24.315 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:22,testuu,22.5, 59.0, 978.1, 23.3, 5, 7, 7, 100.00, 34.98, 0.13, 438, 0, 0.00
+10:35:24.329 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:24.333 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:24.340 > [I][Storage.cpp:803] mark_data(): Size: 2691,   Pos: 2593,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:24.444 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:25.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:25.054 > 
+10:35:26.240 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:25,testuu,22.4, 58.9, 978.1, 23.3, 5, 7, 7, 100.00, 35.08, 0.13, 434, 0, 0.00
+10:35:26.281 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:26.281 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:26.292 > [D][Storage.cpp:224] write_data(): File written
+10:35:26.336 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:25,testuu,22.4, 58.9, 978.1, 23.3, 5, 7, 7, 100.00, 35.08, 0.13, 434, 0, 0.00
+10:35:26.347 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:27.445 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:27.445 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:35:28.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:28.054 > 
+10:35:28.902 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:28,testuu,22.5, 58.8, 978.1, 23.3, 4, 7, 7, 100.00, 35.26, 0.13, 414, 1, 0.00
+10:35:28.948 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:28.948 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:28.959 > [D][Storage.cpp:224] write_data(): File written
+10:35:28.959 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:28,testuu,22.5, 58.8, 978.1, 23.3, 4, 7, 7, 100.00, 35.26, 0.13, 414, 1, 0.00
+10:35:28.975 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:30.490 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:30.544 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:30.556 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:30.575 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:30.672 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:25,testuu,22.4, 58.9, 978.1, 23.3, 5, 7, 7, 100.00, 35.08, 0.13, 434, 0, 0.00
+10:35:30.693 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:30.697 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:30.703 > [I][Storage.cpp:803] mark_data(): Size: 2887,   Pos: 2691,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:30.840 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:30.854 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:30.858 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:30.972 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:28,testuu,22.5, 58.8, 978.1, 23.3, 4, 7, 7, 100.00, 35.26, 0.13, 414, 1, 0.00
+10:35:30.974 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:30.988 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:30.994 > [I][Storage.cpp:803] mark_data(): Size: 2887,   Pos: 2789,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:31.087 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:31.103 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:31.103 > 
+10:35:32.408 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:31,testuu,22.5, 58.7, 978.1, 23.3, 5, 7, 7, 100.00, 35.30, 0.13, 400, 0, 0.00
+10:35:32.453 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:32.453 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:32.465 > [D][Storage.cpp:224] write_data(): File written
+10:35:32.509 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:31,testuu,22.5, 58.7, 978.1, 23.3, 5, 7, 7, 100.00, 35.30, 0.13, 400, 0, 0.00
+10:35:32.520 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:34.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:34.054 > 
+10:35:34.098 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:34.098 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:35:35.073 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:34,testuu,22.5, 58.7, 978.1, 23.3, 5, 8, 8, 100.00, 35.43, 0.13, 404, 5, 0.00
+10:35:35.112 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:35.112 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:35.124 > [D][Storage.cpp:224] write_data(): File written
+10:35:35.131 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:34,testuu,22.5, 58.7, 978.1, 23.3, 5, 8, 8, 100.00, 35.43, 0.13, 404, 5, 0.00
+10:35:35.141 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:37.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:37.054 > 
+10:35:37.143 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:37.210 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:37.997 > [E][AQISensor.cpp:731] readPMS5007(): Invalid frame header!
+10:35:38.571 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:37,testuu,22.5, 58.6, 978.1, 23.3, 5, 8, 8, 100.00, 36.48, 0.14, 421, 0, 0.00
+10:35:38.609 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:38.609 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:38.622 > [D][Storage.cpp:224] write_data(): File written
+10:35:38.628 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:37,testuu,22.5, 58.6, 978.1, 23.3, 5, 8, 8, 100.00, 36.48, 0.14, 421, 0, 0.00
+10:35:38.639 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:38.644 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:38.645 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:38.747 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:31,testuu,22.5, 58.7, 978.1, 23.3, 5, 7, 7, 100.00, 35.30, 0.13, 400, 0, 0.00
+10:35:38.761 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:38.765 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:38.771 > [I][Storage.cpp:803] mark_data(): Size: 3181,   Pos: 2887,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:38.912 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:38.924 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:38.936 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:39.041 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:34,testuu,22.5, 58.7, 978.1, 23.3, 5, 8, 8, 100.00, 35.43, 0.13, 404, 5, 0.00
+10:35:39.053 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:39.058 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:39.063 > [I][Storage.cpp:803] mark_data(): Size: 3181,   Pos: 2985,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:39.165 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:39.178 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:39.186 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:39.291 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:37,testuu,22.5, 58.6, 978.1, 23.3, 5, 8, 8, 100.00, 36.48, 0.14, 421, 0, 0.00
+10:35:39.296 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:39.307 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:39.313 > [I][Storage.cpp:803] mark_data(): Size: 3181,   Pos: 3083,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:39.461 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:40.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:40.054 > 
+10:35:41.244 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:40,testuu,22.5, 58.5, 978.1, 23.3, 5, 7, 7, 100.00, 36.53, 0.14, 411, 8, 0.00
+10:35:41.283 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:41.284 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:41.294 > [D][Storage.cpp:224] write_data(): File written
+10:35:41.338 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:40,testuu,22.5, 58.5, 978.1, 23.3, 5, 7, 7, 100.00, 36.53, 0.14, 411, 8, 0.00
+10:35:41.349 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:42.461 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:42.461 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:35:43.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:43.053 > 
+10:35:43.906 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:43,testuu,22.5, 58.4, 978.1, 23.3, 5, 7, 7, 100.00, 36.74, 0.15, 400, 0, 0.00
+10:35:43.949 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:43.949 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:43.960 > [D][Storage.cpp:224] write_data(): File written
+10:35:43.960 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:43,testuu,22.5, 58.4, 978.1, 23.3, 5, 7, 7, 100.00, 36.74, 0.15, 400, 0, 0.00
+10:35:43.976 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:45.507 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:45.558 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:45.581 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:45.586 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:45.692 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:40,testuu,22.5, 58.5, 978.1, 23.3, 5, 7, 7, 100.00, 36.53, 0.14, 411, 8, 0.00
+10:35:45.703 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:45.707 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:45.713 > [I][Storage.cpp:803] mark_data(): Size: 3377,   Pos: 3181,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:45.852 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:45.852 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:45.871 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:45.969 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:43,testuu,22.5, 58.4, 978.1, 23.3, 5, 7, 7, 100.00, 36.74, 0.15, 400, 0, 0.00
+10:35:45.986 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:45.999 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:46.004 > [I][Storage.cpp:803] mark_data(): Size: 3377,   Pos: 3279,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:46.103 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:46.103 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:46.103 > 
+10:35:47.470 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:46,testuu,22.5, 58.3, 978.1, 23.3, 5, 7, 7, 100.00, 36.00, 0.14, 400, 3, 0.00
+10:35:47.528 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:47.528 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:47.542 > [D][Storage.cpp:224] write_data(): File written
+10:35:47.585 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:46,testuu,22.5, 58.3, 978.1, 23.3, 5, 7, 7, 100.00, 36.00, 0.14, 400, 3, 0.00
+10:35:47.589 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:49.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:49.053 > 
+10:35:49.108 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:49.108 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:35:50.140 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:49,testuu,22.5, 58.3, 978.1, 23.4, 5, 7, 7, 100.00, 36.12, 0.14, 400, 0, 0.00
+10:35:50.190 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:50.190 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:50.194 > [D][Storage.cpp:224] write_data(): File written
+10:35:50.194 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:49,testuu,22.5, 58.3, 978.1, 23.4, 5, 7, 7, 100.00, 36.12, 0.14, 400, 0, 0.00
+10:35:50.212 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:52.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:52.054 > 
+10:35:52.159 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:52.208 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:52.809 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:52,testuu,22.5, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.23, 0.14, 400, 0, 0.00
+10:35:52.847 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:52.848 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:52.864 > [D][Storage.cpp:224] write_data(): File written
+10:35:52.872 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:52,testuu,22.5, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.23, 0.14, 400, 0, 0.00
+10:35:52.883 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:52.888 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:52.894 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:52.995 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:46,testuu,22.5, 58.3, 978.1, 23.3, 5, 7, 7, 100.00, 36.00, 0.14, 400, 3, 0.00
+10:35:53.006 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:53.012 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:53.017 > [I][Storage.cpp:803] mark_data(): Size: 3671,   Pos: 3377,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:53.159 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:53.170 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:53.179 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:53.288 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:49,testuu,22.5, 58.3, 978.1, 23.4, 5, 7, 7, 100.00, 36.12, 0.14, 400, 0, 0.00
+10:35:53.299 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:53.304 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:53.309 > [I][Storage.cpp:803] mark_data(): Size: 3671,   Pos: 3475,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:53.412 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:53.423 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:53.433 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:53.542 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:52,testuu,22.5, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.23, 0.14, 400, 0, 0.00
+10:35:53.553 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:53.559 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:53.564 > [I][Storage.cpp:803] mark_data(): Size: 3671,   Pos: 3573,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:35:53.668 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:35:55.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:55.054 > 
+10:35:56.316 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:55,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.34, 0.14, 400, 0, 0.00
+10:35:56.359 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:56.359 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:56.370 > [D][Storage.cpp:224] write_data(): File written
+10:35:56.413 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:55,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.34, 0.14, 400, 0, 0.00
+10:35:56.424 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:56.669 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:35:56.669 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:35:58.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:35:58.054 > 
+10:35:58.981 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:35:58,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 95.58, 33.05, 0.11, 444, 0, 0.00
+10:35:59.027 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:59.027 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:35:59.037 > [D][Storage.cpp:224] write_data(): File written
+10:35:59.037 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:35:58,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 95.58, 33.05, 0.11, 444, 0, 0.00
+10:35:59.054 > [I][main.cpp:485] vStorage(): data written to storage
+10:35:59.726 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:59.778 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:35:59.797 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:35:59.810 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:35:59.917 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:55,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 100.00, 36.34, 0.14, 400, 0, 0.00
+10:35:59.929 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:35:59.933 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:35:59.939 > [I][Storage.cpp:803] mark_data(): Size: 3866,   Pos: 3671,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:00.081 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:00.091 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:00.102 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:00.214 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:35:58,testuu,22.6, 58.2, 978.1, 23.4, 5, 7, 7, 95.58, 33.05, 0.11, 444, 0, 0.00
+10:36:00.224 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:00.230 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:00.235 > [I][Storage.cpp:803] mark_data(): Size: 3866,   Pos: 3769,   Chunk: 95,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:00.338 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:01.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:01.054 > 
+10:36:02.488 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:01,testuu,22.6, 58.1, 978.1, 23.4, 4, 6, 6, 100.00, 37.50, 0.15, 448, 4, 0.00
+10:36:02.528 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:02.528 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:02.542 > [D][Storage.cpp:224] write_data(): File written
+10:36:02.585 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:01,testuu,22.6, 58.1, 978.1, 23.4, 4, 6, 6, 100.00, 37.50, 0.15, 448, 4, 0.00
+10:36:02.588 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:03.337 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:03.337 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:04.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:04.054 > 
+10:36:05.152 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:04,testuu,22.6, 57.9, 978.0, 23.4, 4, 7, 7, 100.00, 37.70, 0.15, 448, 1, 0.00
+10:36:05.191 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:05.192 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:05.202 > [D][Storage.cpp:224] write_data(): File written
+10:36:05.202 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:04,testuu,22.6, 57.9, 978.0, 23.4, 4, 7, 7, 100.00, 37.70, 0.15, 448, 1, 0.00
+10:36:05.218 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:06.387 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:06.441 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:06.473 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:06.473 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:06.587 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:01,testuu,22.6, 58.1, 978.1, 23.4, 4, 6, 6, 100.00, 37.50, 0.15, 448, 4, 0.00
+10:36:06.590 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:06.603 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:06.609 > [I][Storage.cpp:803] mark_data(): Size: 4062,   Pos: 3866,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:06.752 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:06.756 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:06.775 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:06.875 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:04,testuu,22.6, 57.9, 978.0, 23.4, 4, 7, 7, 100.00, 37.70, 0.15, 448, 1, 0.00
+10:36:06.892 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:06.894 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:06.903 > [I][Storage.cpp:803] mark_data(): Size: 4062,   Pos: 3964,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:07.007 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:07.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:07.054 > 
+10:36:07.810 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:07,testuu,22.6, 57.9, 978.1, 23.5, 5, 7, 7, 100.00, 37.79, 0.15, 414, 0, 0.00
+10:36:07.854 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:07.854 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:07.865 > [D][Storage.cpp:224] write_data(): File written
+10:36:07.908 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:07,testuu,22.6, 57.9, 978.1, 23.5, 5, 7, 7, 100.00, 37.79, 0.15, 414, 0, 0.00
+10:36:07.921 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:10.009 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:10.009 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:10.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:10.053 > 
+10:36:11.393 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:10,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.06, 0.15, 415, 0, 0.00
+10:36:11.432 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:11.432 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:11.445 > [D][Storage.cpp:224] write_data(): File written
+10:36:11.445 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:10,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.06, 0.15, 415, 0, 0.00
+10:36:11.460 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:13.051 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:13.052 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:13.056 > 
+10:36:13.103 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:14.055 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:13,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.19, 0.15, 402, 0, 0.00
+10:36:14.095 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:14.095 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:14.107 > [D][Storage.cpp:224] write_data(): File written
+10:36:14.113 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:13,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.19, 0.15, 402, 0, 0.00
+10:36:14.123 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:14.128 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:14.140 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:14.248 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:07,testuu,22.6, 57.9, 978.1, 23.5, 5, 7, 7, 100.00, 37.79, 0.15, 414, 0, 0.00
+10:36:14.258 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:14.264 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:14.269 > [I][Storage.cpp:803] mark_data(): Size: 4356,   Pos: 4062,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:14.412 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:14.422 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:14.429 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:14.535 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:10,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.06, 0.15, 415, 0, 0.00
+10:36:14.545 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:14.549 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:14.556 > [I][Storage.cpp:803] mark_data(): Size: 4356,   Pos: 4160,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:14.660 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:14.669 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:14.677 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:14.783 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:13,testuu,22.6, 57.8, 978.1, 23.5, 4, 6, 6, 100.00, 37.19, 0.15, 402, 0, 0.00
+10:36:14.794 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:14.799 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:14.804 > [I][Storage.cpp:803] mark_data(): Size: 4356,   Pos: 4258,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:14.910 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:16.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:16.054 > 
+10:36:17.562 > [E][AQISensor.cpp:616] readOzoneData(): O3 Sensor: Checksum mismatch!
+10:36:17.567 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:16,testuu,22.6, 57.6, 978.1, 23.5, 4, 6, 6, 100.00, 37.08, 0.15, 403, 0, 0.00
+10:36:17.623 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:17.623 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:17.635 > [D][Storage.cpp:224] write_data(): File written
+10:36:17.678 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:16,testuu,22.6, 57.6, 978.1, 23.5, 4, 6, 6, 100.00, 37.08, 0.15, 403, 0, 0.00
+10:36:17.689 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:17.911 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:17.911 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:36:19.052 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:19.052 > 
+10:36:20.221 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:20.221 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:19,testuu,22.6, 57.6, 978.1, 23.5, 5, 6, 6, 100.00, 37.23, 0.15, 400, 0, 0.00
+10:36:20.274 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:20.275 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:20.287 > [D][Storage.cpp:224] write_data(): File written
+10:36:20.289 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:19,testuu,22.6, 57.6, 978.1, 23.5, 5, 6, 6, 100.00, 37.23, 0.15, 400, 0, 0.00
+10:36:20.304 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:20.970 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:21.021 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:21.037 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:21.037 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:21.141 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:16,testuu,22.6, 57.6, 978.1, 23.5, 4, 6, 6, 100.00, 37.08, 0.15, 403, 0, 0.00
+10:36:21.160 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:21.162 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:21.170 > [I][Storage.cpp:803] mark_data(): Size: 4552,   Pos: 4356,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:21.312 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:21.322 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:21.323 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:21.436 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:19,testuu,22.6, 57.6, 978.1, 23.5, 5, 6, 6, 100.00, 37.23, 0.15, 400, 0, 0.00
+10:36:21.441 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:21.451 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:21.456 > [I][Storage.cpp:803] mark_data(): Size: 4552,   Pos: 4454,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:21.558 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:22.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:22.054 > 
+10:36:22.886 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:22.889 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:22,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 37.29, 0.15, 400, 0, 0.00
+10:36:22.937 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:22.937 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:22.949 > [D][Storage.cpp:224] write_data(): File written
+10:36:22.993 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:22,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 37.29, 0.15, 400, 0, 0.00
+10:36:23.006 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:24.560 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:24.560 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:25.054 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:25.054 > 
+10:36:26.395 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:26.395 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:25,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 38.32, 0.16, 400, 0, 0.00
+10:36:26.441 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:26.441 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:26.451 > [D][Storage.cpp:224] write_data(): File written
+10:36:26.451 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:25,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 38.32, 0.16, 400, 0, 0.00
+10:36:26.468 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:27.613 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:27.669 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:27.686 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:27.695 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:27.803 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:22,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 37.29, 0.15, 400, 0, 0.00
+10:36:27.813 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:27.819 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:27.824 > [I][Storage.cpp:803] mark_data(): Size: 4748,   Pos: 4552,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:27.961 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:27.977 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:27.988 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:28.093 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:25,testuu,22.6, 57.5, 978.1, 23.5, 5, 6, 6, 100.00, 38.32, 0.16, 400, 0, 0.00
+10:36:28.104 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:28.121 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:28.121 > [I][Storage.cpp:803] mark_data(): Size: 4748,   Pos: 4650,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:28.219 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:28.225 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:28.225 > 
+10:36:29.057 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:29.062 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:28,testuu,22.6, 57.5, 978.0, 23.5, 5, 6, 6, 100.00, 38.42, 0.16, 401, 0, 0.00
+10:36:29.115 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:29.118 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:29.129 > [D][Storage.cpp:224] write_data(): File written
+10:36:29.173 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:28,testuu,22.6, 57.5, 978.0, 23.5, 5, 6, 6, 100.00, 38.42, 0.16, 401, 0, 0.00
+10:36:29.181 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:31.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:31.054 > 
+10:36:31.220 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:31.220 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:32.637 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:32.643 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:31,testuu,22.7, 57.4, 978.1, 23.5, 5, 6, 7, 100.00, 37.58, 0.15, 412, 0, 0.00
+10:36:32.690 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:32.690 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:32.702 > [D][Storage.cpp:224] write_data(): File written
+10:36:32.707 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:31,testuu,22.7, 57.4, 978.1, 23.5, 5, 6, 7, 100.00, 37.58, 0.15, 412, 0, 0.00
+10:36:32.718 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:34.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:34.054 > 
+10:36:34.269 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:34.327 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:35.285 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:35.303 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:34,testuu,22.7, 57.4, 978.1, 23.5, 5, 7, 8, 100.00, 37.74, 0.16, 400, 0, 0.00
+10:36:35.351 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:35.351 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:35.363 > [D][Storage.cpp:224] write_data(): File written
+10:36:35.370 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:34,testuu,22.7, 57.4, 978.1, 23.5, 5, 7, 8, 100.00, 37.74, 0.16, 400, 0, 0.00
+10:36:35.377 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:35.387 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:35.392 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:35.485 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:28,testuu,22.6, 57.5, 978.0, 23.5, 5, 6, 6, 100.00, 38.42, 0.16, 401, 0, 0.00
+10:36:35.505 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:35.506 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:35.515 > [I][Storage.cpp:803] mark_data(): Size: 5042,   Pos: 4748,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:35.654 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:35.654 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:35.674 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:35.784 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:31,testuu,22.7, 57.4, 978.1, 23.5, 5, 6, 7, 100.00, 37.58, 0.15, 412, 0, 0.00
+10:36:35.785 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:35.801 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:35.806 > [I][Storage.cpp:803] mark_data(): Size: 5042,   Pos: 4846,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:35.904 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:35.918 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:35.924 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:36.034 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:34,testuu,22.7, 57.4, 978.1, 23.5, 5, 7, 8, 100.00, 37.74, 0.16, 400, 0, 0.00
+10:36:36.038 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:36.051 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:36.056 > [I][Storage.cpp:803] mark_data(): Size: 5042,   Pos: 4944,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:36.154 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:37.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:37.054 > 
+10:36:37.954 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:37.954 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:37,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.66, 0.15, 420, 0, 0.00
+10:36:38.008 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:38.008 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:38.019 > [D][Storage.cpp:224] write_data(): File written
+10:36:38.065 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:37,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.66, 0.15, 420, 0, 0.00
+10:36:38.076 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:39.155 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:39.155 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:36:40.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:40.054 > 
+10:36:41.470 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:41.474 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:40,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.89, 0.15, 410, 0, 0.00
+10:36:41.524 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:41.524 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:41.534 > [D][Storage.cpp:224] write_data(): File written
+10:36:41.534 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:40,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.89, 0.15, 410, 0, 0.00
+10:36:41.551 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:42.210 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:42.264 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:42.282 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:42.291 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:42.397 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:37,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.66, 0.15, 420, 0, 0.00
+10:36:42.408 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:42.413 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:42.418 > [I][Storage.cpp:803] mark_data(): Size: 5238,   Pos: 5042,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:42.561 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:42.571 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:42.578 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:42.676 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:40,testuu,22.7, 57.3, 978.1, 23.5, 5, 7, 8, 100.00, 37.89, 0.15, 410, 0, 0.00
+10:36:42.694 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:42.700 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:42.705 > [I][Storage.cpp:803] mark_data(): Size: 5238,   Pos: 5140,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:42.851 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:43.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:43.053 > 
+10:36:44.128 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:44.138 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:43,testuu,22.7, 57.2, 978.1, 23.5, 5, 7, 8, 100.00, 37.95, 0.15, 422, 0, 0.00
+10:36:44.180 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:44.180 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:44.192 > [D][Storage.cpp:224] write_data(): File written
+10:36:44.236 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:43,testuu,22.7, 57.2, 978.1, 23.5, 5, 7, 8, 100.00, 37.95, 0.15, 422, 0, 0.00
+10:36:44.247 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:45.851 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:45.862 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:46.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:46.054 > 
+10:36:46.794 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:46.798 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:46,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 8, 100.00, 38.10, 0.15, 429, 0, 0.00
+10:36:46.842 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:46.842 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:46.853 > [D][Storage.cpp:224] write_data(): File written
+10:36:46.853 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:46,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 8, 100.00, 38.10, 0.15, 429, 0, 0.00
+10:36:46.869 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:48.905 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:48.954 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:48.974 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:48.980 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:49.087 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:43,testuu,22.7, 57.2, 978.1, 23.5, 5, 7, 8, 100.00, 37.95, 0.15, 422, 0, 0.00
+10:36:49.097 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:49.103 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:49.108 > [I][Storage.cpp:803] mark_data(): Size: 5434,   Pos: 5238,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:49.251 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:49.256 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:49.256 > 
+10:36:50.289 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:50.306 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:49,testuu,22.7, 57.1, 978.1, 23.5, 5, 8, 9, 100.00, 39.21, 0.17, 431, 0, 0.00
+10:36:50.351 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:50.351 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:50.354 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:50.368 > [D][Storage.cpp:224] write_data(): File written
+10:36:50.410 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:49,testuu,22.7, 57.1, 978.1, 23.5, 5, 8, 9, 100.00, 39.21, 0.17, 431, 0, 0.00
+10:36:50.421 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:50.426 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:50.516 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:46,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 8, 100.00, 38.10, 0.15, 429, 0, 0.00
+10:36:50.516 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:50.536 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:50.537 > [I][Storage.cpp:803] mark_data(): Size: 5532,   Pos: 5336,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:50.676 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:52.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:52.054 > 
+10:36:52.964 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:52.972 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:52,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 9, 100.00, 39.35, 0.17, 412, 0, 0.00
+10:36:53.009 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:53.013 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:53.021 > [D][Storage.cpp:224] write_data(): File written
+10:36:53.052 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:52,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 9, 100.00, 39.35, 0.17, 412, 0, 0.00
+10:36:53.074 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:53.684 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:36:53.684 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:36:55.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:55.054 > 
+10:36:56.541 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:56.541 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:55,testuu,22.7, 57.0, 978.1, 23.5, 4, 7, 7, 100.00, 38.57, 0.16, 403, 0, 0.00
+10:36:56.594 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:56.594 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:56.610 > [D][Storage.cpp:224] write_data(): File written
+10:36:56.614 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:55,testuu,22.7, 57.0, 978.1, 23.5, 4, 7, 7, 100.00, 38.57, 0.16, 403, 0, 0.00
+10:36:56.626 > [I][main.cpp:485] vStorage(): data written to storage
+10:36:56.739 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:56.793 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:56.815 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:56.824 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:56.923 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:49,testuu,22.7, 57.1, 978.1, 23.5, 5, 8, 9, 100.00, 39.21, 0.17, 431, 0, 0.00
+10:36:56.939 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:56.944 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:56.950 > [I][Storage.cpp:803] mark_data(): Size: 5728,   Pos: 5434,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:57.090 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:57.105 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:57.117 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:57.223 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:52,testuu,22.7, 57.1, 978.0, 23.5, 5, 8, 9, 100.00, 39.35, 0.17, 412, 0, 0.00
+10:36:57.234 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:57.240 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:57.245 > [I][Storage.cpp:803] mark_data(): Size: 5728,   Pos: 5532,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:57.354 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:57.357 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:36:57.376 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:36:57.485 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:55,testuu,22.7, 57.0, 978.1, 23.5, 4, 7, 7, 100.00, 38.57, 0.16, 403, 0, 0.00
+10:36:57.495 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:36:57.501 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:36:57.505 > [I][Storage.cpp:803] mark_data(): Size: 5728,   Pos: 5630,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:36:57.607 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:36:58.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:36:58.054 > 
+10:36:59.206 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:36:59.209 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:36:58,testuu,22.7, 57.0, 978.0, 23.6, 4, 7, 7, 100.00, 38.72, 0.16, 400, 0, 0.00
+10:36:59.257 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:36:59.257 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:36:59.268 > [D][Storage.cpp:224] write_data(): File written
+10:36:59.311 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:36:58,testuu,22.7, 57.0, 978.0, 23.6, 4, 7, 7, 100.00, 38.72, 0.16, 400, 0, 0.00
+10:36:59.323 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:00.610 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:00.610 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:37:01.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:01.054 > 
+10:37:01.868 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:01.874 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:01,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.73, 0.16, 413, 0, 0.00
+10:37:01.913 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:01.913 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:01.924 > [D][Storage.cpp:224] write_data(): File written
+10:37:01.924 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:01,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.73, 0.16, 413, 0, 0.00
+10:37:01.940 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:03.661 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:03.739 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:03.756 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:03.765 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:03.870 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:36:58,testuu,22.7, 57.0, 978.0, 23.6, 4, 7, 7, 100.00, 38.72, 0.16, 400, 0, 0.00
+10:37:03.881 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:03.886 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:03.891 > [I][Storage.cpp:803] mark_data(): Size: 5924,   Pos: 5728,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:04.035 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:04.044 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:04.055 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:04.161 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:01,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.73, 0.16, 413, 0, 0.00
+10:37:04.171 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:04.176 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:04.182 > [I][Storage.cpp:803] mark_data(): Size: 5924,   Pos: 5826,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:04.285 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:04.291 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:04.291 > 
+10:37:05.377 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:05.382 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:04,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.62, 0.16, 400, 0, 0.00
+10:37:05.423 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:05.423 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:05.434 > [D][Storage.cpp:224] write_data(): File written
+10:37:05.478 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:04,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.62, 0.16, 400, 0, 0.00
+10:37:05.488 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:07.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:07.054 > 
+10:37:07.286 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:07.286 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:37:08.039 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:08.039 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:07,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.64, 0.16, 403, 0, 0.00
+10:37:08.088 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:08.088 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:08.100 > [D][Storage.cpp:224] write_data(): File written
+10:37:08.100 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:07,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.64, 0.16, 403, 0, 0.00
+10:37:08.115 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:10.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:10.053 > 
+10:37:10.337 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:10.391 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:11.546 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:11.553 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:10,testuu,22.7, 56.8, 978.0, 23.6, 4, 6, 6, 100.00, 39.54, 0.17, 454, 4, 0.00
+10:37:11.599 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:11.600 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:11.612 > [D][Storage.cpp:224] write_data(): File written
+10:37:11.623 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:10,testuu,22.7, 56.8, 978.0, 23.6, 4, 6, 6, 100.00, 39.54, 0.17, 454, 4, 0.00
+10:37:11.633 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:11.639 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:11.641 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:11.738 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:04,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.62, 0.16, 400, 0, 0.00
+10:37:11.759 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:11.761 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:11.770 > [I][Storage.cpp:803] mark_data(): Size: 6218,   Pos: 5924,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:11.905 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:11.922 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:11.935 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:12.038 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:07,testuu,22.7, 56.9, 978.0, 23.6, 4, 6, 6, 100.00, 38.64, 0.16, 403, 0, 0.00
+10:37:12.051 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:12.057 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:12.062 > [I][Storage.cpp:803] mark_data(): Size: 6218,   Pos: 6022,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:12.167 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:12.177 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:12.188 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:12.291 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:10,testuu,22.7, 56.8, 978.0, 23.6, 4, 6, 6, 100.00, 39.54, 0.17, 454, 4, 0.00
+10:37:12.308 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:12.309 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:12.319 > [I][Storage.cpp:803] mark_data(): Size: 6218,   Pos: 6120,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:12.422 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:13.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:13.053 > 
+10:37:14.350 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:14.356 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:13,testuu,22.8, 56.7, 978.0, 23.6, 5, 6, 8, 100.00, 40.05, 0.18, 441, 0, 0.00
+10:37:14.403 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:14.403 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:14.414 > [D][Storage.cpp:224] write_data(): File written
+10:37:14.458 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:13,testuu,22.8, 56.7, 978.0, 23.6, 5, 6, 8, 100.00, 40.05, 0.18, 441, 0, 0.00
+10:37:14.468 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:15.424 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:15.424 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:37:16.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:16.053 > 
+10:37:17.154 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:17.159 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:16,testuu,22.8, 56.7, 978.1, 23.6, 6, 7, 10, 100.00, 39.62, 0.18, 432, 0, 0.00
+10:37:17.205 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:17.205 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:17.217 > [D][Storage.cpp:224] write_data(): File written
+10:37:17.217 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:16,testuu,22.8, 56.7, 978.1, 23.6, 6, 7, 10, 100.00, 39.62, 0.18, 432, 0, 0.00
+10:37:17.228 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:18.470 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:18.519 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:18.537 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:18.544 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:18.652 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:13,testuu,22.8, 56.7, 978.0, 23.6, 5, 6, 8, 100.00, 40.05, 0.18, 441, 0, 0.00
+10:37:18.664 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:18.668 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:18.674 > [I][Storage.cpp:803] mark_data(): Size: 6415,   Pos: 6218,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:18.812 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:18.825 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:18.832 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:18.939 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:16,testuu,22.8, 56.7, 978.1, 23.6, 6, 7, 10, 100.00, 39.62, 0.18, 432, 0, 0.00
+10:37:18.949 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:18.955 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:18.960 > [I][Storage.cpp:803] mark_data(): Size: 6415,   Pos: 6316,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:19.062 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:19.070 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:19.070 > 
+10:37:19.958 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:19.963 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:19,testuu,22.8, 56.7, 978.0, 23.6, 6, 7, 14, 100.00, 39.83, 0.18, 423, 0, 0.00
+10:37:20.004 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:20.004 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:20.016 > [D][Storage.cpp:224] write_data(): File written
+10:37:20.059 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:19,testuu,22.8, 56.7, 978.0, 23.6, 6, 7, 14, 100.00, 39.83, 0.18, 423, 0, 0.00
+10:37:20.070 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:22.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:22.053 > 
+10:37:22.064 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:22.064 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:37:22.743 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:22.752 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:22,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 40.05, 0.18, 404, 0, 0.00
+10:37:22.801 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:22.801 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:22.803 > [D][Storage.cpp:224] write_data(): File written
+10:37:22.803 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:22,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 40.05, 0.18, 404, 0, 0.00
+10:37:22.822 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:25.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:25.053 > 
+10:37:25.122 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:25.183 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:26.319 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:26.337 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:25,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 39.35, 0.17, 407, 0, 0.00
+10:37:26.383 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:26.383 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:26.397 > [D][Storage.cpp:224] write_data(): File written
+10:37:26.405 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:25,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 39.35, 0.17, 407, 0, 0.00
+10:37:26.411 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:26.421 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:26.423 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:26.520 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:19,testuu,22.8, 56.7, 978.0, 23.6, 6, 7, 14, 100.00, 39.83, 0.18, 423, 0, 0.00
+10:37:26.540 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:26.540 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:26.550 > [I][Storage.cpp:803] mark_data(): Size: 6712,   Pos: 6415,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:26.686 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:26.704 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:26.707 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:26.820 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:22,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 40.05, 0.18, 404, 0, 0.00
+10:37:26.833 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:26.839 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:26.840 > [I][Storage.cpp:803] mark_data(): Size: 6712,   Pos: 6514,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:26.937 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:28.051 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:28.051 > 
+10:37:28.994 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:29.000 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:28,testuu,22.8, 56.5, 978.0, 23.6, 5, 6, 11, 100.00, 39.47, 0.17, 405, 0, 0.00
+10:37:29.043 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:29.092 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:29.092 > [D][Storage.cpp:224] write_data(): File written
+10:37:29.121 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:28,testuu,22.8, 56.5, 978.0, 23.6, 5, 6, 11, 100.00, 39.47, 0.17, 405, 0, 0.00
+10:37:29.121 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:29.942 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:29.942 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:37:31.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:31.053 > 
+10:37:32.502 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:32.509 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:31,testuu,22.8, 56.6, 978.0, 23.7, 4, 6, 11, 100.00, 39.15, 0.17, 401, 0, 0.00
+10:37:32.546 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:32.546 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:32.560 > [D][Storage.cpp:224] write_data(): File written
+10:37:32.560 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:31,testuu,22.8, 56.6, 978.0, 23.7, 4, 6, 11, 100.00, 39.15, 0.17, 401, 0, 0.00
+10:37:32.576 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:33.005 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:33.055 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:33.073 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:33.083 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:33.188 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:25,testuu,22.8, 56.6, 978.0, 23.6, 4, 6, 13, 100.00, 39.35, 0.17, 407, 0, 0.00
+10:37:33.198 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:33.205 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:33.211 > [I][Storage.cpp:803] mark_data(): Size: 6910,   Pos: 6613,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:33.353 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:33.363 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:33.373 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:33.480 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:28,testuu,22.8, 56.5, 978.0, 23.6, 5, 6, 11, 100.00, 39.47, 0.17, 405, 0, 0.00
+10:37:33.491 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:33.496 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:33.513 > [I][Storage.cpp:803] mark_data(): Size: 6910,   Pos: 6712,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:33.605 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:33.615 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:33.625 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:33.730 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:31,testuu,22.8, 56.6, 978.0, 23.7, 4, 6, 11, 100.00, 39.15, 0.17, 401, 0, 0.00
+10:37:33.744 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:33.749 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:33.755 > [I][Storage.cpp:803] mark_data(): Size: 6910,   Pos: 6811,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:33.844 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:34.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:34.053 > 
+10:37:35.164 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:35.170 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:34,testuu,22.8, 56.5, 978.0, 23.7, 4, 6, 10, 100.00, 39.79, 0.17, 418, 0, 0.00
+10:37:35.217 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:35.220 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:35.230 > [D][Storage.cpp:224] write_data(): File written
+10:37:35.272 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:34,testuu,22.8, 56.5, 978.0, 23.7, 4, 6, 10, 100.00, 39.79, 0.17, 418, 0, 0.00
+10:37:35.358 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:36.851 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:36.851 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:37:37.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:37.053 > 
+10:37:37.826 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:37.832 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:37,testuu,22.8, 56.4, 978.0, 23.7, 4, 6, 9, 100.00, 39.27, 0.17, 414, 0, 0.00
+10:37:37.872 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:37.872 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:37.882 > [D][Storage.cpp:224] write_data(): File written
+10:37:37.882 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:37,testuu,22.8, 56.4, 978.0, 23.7, 4, 6, 9, 100.00, 39.27, 0.17, 414, 0, 0.00
+10:37:37.901 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:39.913 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:39.964 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:39.984 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:39.986 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:40.101 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:34,testuu,22.8, 56.5, 978.0, 23.7, 4, 6, 10, 100.00, 39.79, 0.17, 418, 0, 0.00
+10:37:40.104 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:40.119 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:40.123 > [I][Storage.cpp:803] mark_data(): Size: 7107,   Pos: 6910,   Chunk: 97,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:40.260 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:40.273 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:40.273 > 
+10:37:41.336 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:41.336 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:40,testuu,22.8, 56.4, 978.0, 23.7, 5, 6, 9, 100.00, 40.22, 0.18, 412, 2, 0.00
+10:37:41.386 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:41.386 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:41.393 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:41.403 > [D][Storage.cpp:224] write_data(): File written
+10:37:41.447 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:40,testuu,22.8, 56.4, 978.0, 23.7, 5, 6, 9, 100.00, 40.22, 0.18, 412, 2, 0.00
+10:37:41.459 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:41.465 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:41.552 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:37,testuu,22.8, 56.4, 978.0, 23.7, 4, 6, 9, 100.00, 39.27, 0.17, 414, 0, 0.00
+10:37:41.573 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:41.579 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:41.585 > [I][Storage.cpp:803] mark_data(): Size: 7205,   Pos: 7009,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:41.732 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:43.051 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:43.051 > 
+10:37:43.989 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:44.002 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:43,testuu,22.8, 56.3, 978.0, 23.7, 5, 6, 8, 100.00, 40.26, 0.18, 423, 0, 0.00
+10:37:44.041 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:44.041 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:44.058 > [D][Storage.cpp:224] write_data(): File written
+10:37:44.101 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:43,testuu,22.8, 56.3, 978.0, 23.7, 5, 6, 8, 100.00, 40.26, 0.18, 423, 0, 0.00
+10:37:44.112 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:44.732 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:44.732 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:37:46.052 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:46.052 > 
+10:37:47.578 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:47.578 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:46,testuu,22.8, 56.3, 978.0, 23.7, 5, 7, 7, 100.00, 39.44, 0.17, 400, 0, 0.00
+10:37:47.627 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:47.627 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:47.640 > [D][Storage.cpp:224] write_data(): File written
+10:37:47.645 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:46,testuu,22.8, 56.3, 978.0, 23.7, 5, 7, 7, 100.00, 39.44, 0.17, 400, 0, 0.00
+10:37:47.652 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:47.785 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:47.837 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:47.857 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:47.857 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:47.978 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:40,testuu,22.8, 56.4, 978.0, 23.7, 5, 6, 9, 100.00, 40.22, 0.18, 412, 2, 0.00
+10:37:47.981 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:47.995 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:48.000 > [I][Storage.cpp:803] mark_data(): Size: 7401,   Pos: 7107,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:48.145 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:48.152 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:48.161 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:48.267 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:43,testuu,22.8, 56.3, 978.0, 23.7, 5, 6, 8, 100.00, 40.26, 0.18, 423, 0, 0.00
+10:37:48.278 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:48.286 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:48.292 > [I][Storage.cpp:803] mark_data(): Size: 7401,   Pos: 7205,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:48.431 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:48.447 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:48.453 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:48.565 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:46,testuu,22.8, 56.3, 978.0, 23.7, 5, 7, 7, 100.00, 39.44, 0.17, 400, 0, 0.00
+10:37:48.566 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:48.582 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:48.585 > [I][Storage.cpp:803] mark_data(): Size: 7401,   Pos: 7303,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:48.688 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:49.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:49.053 > 
+10:37:50.240 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:50.242 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:49,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.49, 0.17, 402, 0, 0.00
+10:37:50.286 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:50.286 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:50.304 > [D][Storage.cpp:224] write_data(): File written
+10:37:50.346 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:49,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.49, 0.17, 402, 0, 0.00
+10:37:50.358 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:51.688 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:51.688 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 3 data chunks to cloud.
+10:37:52.052 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:52.052 > 
+10:37:52.903 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:52.905 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:52,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.54, 0.17, 400, 0, 0.00
+10:37:52.943 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:52.953 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:52.960 > [D][Storage.cpp:224] write_data(): File written
+10:37:52.964 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:52,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.54, 0.17, 400, 0, 0.00
+10:37:52.969 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:54.739 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:54.802 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:54.820 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:54.826 > [D][Storage.cpp:620] read_data(): Parsed successfully
+10:37:54.931 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:49,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.49, 0.17, 402, 0, 0.00
+10:37:54.932 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:54.948 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:54.952 > [I][Storage.cpp:803] mark_data(): Size: 7597,   Pos: 7401,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:55.099 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:55.100 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:55.100 > 
+10:37:56.407 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:56.417 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:55,testuu,22.8, 56.1, 978.0, 23.7, 6, 7, 7, 100.00, 39.63, 0.17, 431, 11, 0.00
+10:37:56.456 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:56.457 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:56.468 > [D][Storage.cpp:468] read_data(): Reading file: /20250617.txt
+10:37:56.473 > [D][Storage.cpp:224] write_data(): File written
+10:37:56.518 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:55,testuu,22.8, 56.1, 978.0, 23.7, 6, 7, 7, 100.00, 39.63, 0.17, 431, 11, 0.00
+10:37:56.522 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:56.535 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:56.626 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-17 10:37:52,testuu,22.8, 56.2, 978.0, 23.7, 6, 7, 7, 100.00, 39.54, 0.17, 400, 0, 0.00
+10:37:56.638 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+10:37:56.643 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+10:37:56.649 > [I][Storage.cpp:803] mark_data(): Size: 7696,   Pos: 7499,   Chunk: 96,   Write: /20250617.txt,   Read: /20250617.txt
+10:37:56.786 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+10:37:58.051 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:37:58.051 > 
+10:37:59.071 > [E][AQISensor.cpp:610] readOzoneData(): O3 Sensor: Invalid response format!
+10:37:59.071 > [I][main.cpp:377] vAcquireData(): 2025-06-17 10:37:58,testuu,22.9, 56.1, 978.0, 23.7, 7, 7, 7, 100.00, 39.66, 0.17, 406, 0, 0.00
+10:37:59.126 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+10:37:59.126 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+10:37:59.138 > [D][Storage.cpp:224] write_data(): File written
+10:37:59.181 > [D][main.cpp:482] vStorage(): Data Written: 2025-06-17 10:37:58,testuu,22.9, 56.1, 978.0, 23.7, 7, 7, 7, 100.00, 39.66, 0.17, 406, 0, 0.00
+10:37:59.193 > [I][main.cpp:485] vStorage(): data written to storage
+10:37:59.790 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+10:37:59.790 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+10:38:01.053 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+10:38:01.053 > 
+10:38:01.996 > [E][AQISensor.cpp:731] readPMS5007(): Invalid frame header!

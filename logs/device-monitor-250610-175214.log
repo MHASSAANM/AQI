@@ -1,0 +1,403 @@
+17:52:14.717 > ets Jun  8 2016 00:22:57
+17:52:14.717 > 
+17:52:14.717 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:52:14.717 > configsip: 0, SPIWP:0xee
+17:52:14.717 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:52:14.717 > mode:DIO, clock div:2
+17:52:14.717 > load:0x3fff0018,len:4
+17:52:14.717 > load:0x3fff001c,len:1044
+17:52:14.717 > load:0x40078000,len:10124
+17:52:14.717 > load:0x40080400,len:5828
+17:52:14.717 > entry 0x400806a8
+17:52:14.717 > �[D][main.cpp:79] setup(): 
+17:52:14.717 > Current Version: 1.1.1
+17:52:14.717 > Description: AQI Meter OTA Updates have been added
+17:52:14.717 > Commit Date: 3 March 2025
+17:52:14.717 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+17:52:14.717 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+17:52:14.717 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+17:52:16.590 > [E][AQISensor.cpp:306] readPMS5007(): Timeout waiting for data!
+17:52:16.595 > [E][AQISensor.cpp:46] init(): PM5007 not detected!
+17:52:16.595 > [E][AQISensor.cpp:74] init(): MICS6814 sensor not detected!
+17:52:18.295 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+17:52:18.300 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+17:52:50.307 > [E][AQISensor.cpp:203] initSO2Sensor(): SO2 sensor failed to confirm QA mode! Received 0 bytes
+17:52:50.313 > [D][AQISensor.cpp:112] init(): SO₂ sensor failed to initialize!
+17:52:50.318 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+17:52:50.323 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:52:50.623 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:50.623 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:50.629 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:52:50.633 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:52:50.934 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:50.934 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:50.939 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:52:50.945 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:52:50.950 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:52:51.248 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:51.248 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:51.254 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:52:51.259 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:52:51.559 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:51.559 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:51.565 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:52:51.571 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:52:51.576 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:52:51.875 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:51.875 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:51.880 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:52:51.885 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:52:52.185 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:52.185 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:52.191 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:52:52.196 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:52:52.202 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:52:52.501 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:52.501 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:52.506 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:52:52.512 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:52:52.812 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:52:52.812 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:52:52.817 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:52:52.822 > [E][main.cpp:136] setup(): Storage failed after 3 tries...!
+17:52:52.945 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+17:52:52.951 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:52:52.956 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+17:52:52.961 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:52:52.966 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+17:52:52.972 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+17:52:52.977 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+17:52:52.983 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+17:52:52.983 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+17:52:52.988 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+17:52:56.421 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:52:56.426 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 31
+17:52:56.431 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:52:56.431 > [I][WiFiMulti.cpp:119] run(): [WIFI] 31 networks found
+17:52:56.437 > [D][WiFiMulti.cpp:149] run():  --->   0: [9][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+17:52:56.448 > [D][WiFiMulti.cpp:151] run():        1: [1][3C:8A:1F:3B:7B:59] ESP_3B7B59 (-57)  
+17:52:56.453 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A0] Wireless (-58) *
+17:52:56.458 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A2] LUMS-Events (-58) *
+17:52:56.469 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A1] TV-LED (-58) *
+17:52:56.474 > [D][WiFiMulti.cpp:151] run():        5: [6][00:A6:CA:47:AC:A3] LUMS (-58) *
+17:52:56.480 > [D][WiFiMulti.cpp:151] run():        6: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-60) *
+17:52:56.490 > [D][WiFiMulti.cpp:151] run():        7: [6][90:9A:4A:B8:CD:83] Airbus380 (-62) *
+17:52:56.496 > [D][WiFiMulti.cpp:151] run():        8: [1][BC:67:1C:64:33:22] LUMS-Events (-73) *
+17:52:56.501 > [D][WiFiMulti.cpp:151] run():        9: [1][BC:67:1C:64:33:21] TV-LED (-74) *
+17:52:56.512 > [D][WiFiMulti.cpp:151] run():        10: [1][BC:67:1C:64:33:23] LUMS (-74) *
+17:52:56.517 > [D][WiFiMulti.cpp:151] run():        11: [1][BC:67:1C:64:33:20] Wireless (-74) *
+17:52:56.523 > [D][WiFiMulti.cpp:151] run():        12: [11][F8:A7:3A:87:EE:E0] wireless-apple (-74) *
+17:52:56.533 > [D][WiFiMulti.cpp:151] run():        13: [11][F8:A7:3A:87:EE:E2] LUMS (-74) *
+17:52:56.540 > [D][WiFiMulti.cpp:151] run():        14: [11][F8:A7:3A:87:EE:E4] wireless (-74) *
+17:52:56.544 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:A7:3A:87:EE:E5] LUMS-Events (-75) *
+17:52:56.557 > [D][WiFiMulti.cpp:151] run():        16: [1][70:70:8B:DD:0B:F5] LUMS-Events (-76) *
+17:52:56.560 > [D][WiFiMulti.cpp:151] run():        17: [1][70:70:8B:DD:0B:F1] wireless (-76) *
+17:52:56.565 > [D][WiFiMulti.cpp:151] run():        18: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-76) *
+17:52:56.577 > [D][WiFiMulti.cpp:151] run():        19: [1][70:70:8B:DD:0B:F6] LUMS (-76) *
+17:52:56.582 > [D][WiFiMulti.cpp:151] run():        20: [11][08:5A:11:23:67:E0] Wireless-LEC (-77) *
+17:52:56.589 > [D][WiFiMulti.cpp:151] run():        21: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-78) *
+17:52:56.599 > [D][WiFiMulti.cpp:151] run():        22: [6][32:13:8B:F7:A6:F5] DIRECT-F5-HP Color LJ 4303 (-79) *
+17:52:56.609 > [D][WiFiMulti.cpp:151] run():        23: [11][28:6F:7F:DF:D3:30] Wireless (-84) *
+17:52:56.614 > [D][WiFiMulti.cpp:151] run():        24: [11][28:6F:7F:DF:D3:32] LUMS-Events (-84) *
+17:52:56.619 > [D][WiFiMulti.cpp:151] run():        25: [11][28:6F:7F:DF:D3:33] LUMS (-84) *
+17:52:56.631 > [D][WiFiMulti.cpp:151] run():        26: [1][4C:E1:75:3C:A2:40] Wireless (-85) *
+17:52:56.636 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:3C:A2:41] TV-LED (-85) *
+17:52:56.642 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+17:52:56.652 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:3C:A2:42] LUMS-Events (-86) *
+17:52:56.658 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:3C:A2:43] LUMS (-87) *
+17:52:56.663 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 9 (-49)
+17:52:59.945 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+17:52:59.994 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+17:52:59.999 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.149, MASK: 255.255.255.0, GW: 192.168.0.1
+17:53:00.005 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+17:53:00.010 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+17:53:00.016 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.149
+17:53:00.020 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+17:53:00.026 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 9
+17:53:00.031 > [I][ESPWiFi.cpp:232] connect_to_nearest(): Connection established 
+17:53:00.037 > [D][main.cpp:149] setup(): Initialized wifi successfully
+17:53:00.043 > [D][main.cpp:150] setup(): MAC: 3C:8A:1F:3A:1A:C0
+17:53:00.048 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+17:53:00.053 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+17:53:00.060 > [I][main.cpp:194] setup(): ID found!
+17:53:00.060 > Device name: testu
+17:53:00.060 > 
+17:53:00.096 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+17:53:00.096 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:00.106 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:00.112 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:00.118 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:00.123 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:00.128 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 238712
+17:53:00.133 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+17:53:00.334 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+17:53:00.339 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+17:53:00.345 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+17:53:00.355 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+17:53:00.360 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+17:53:02.452 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+17:53:02.458 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+17:53:02.463 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 195176
+17:53:02.468 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+17:53:02.474 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:02.484 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:02.970 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+17:53:02.975 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:02.981 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:03.482 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+17:53:03.487 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:03.492 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:03.995 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+17:53:04.000 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:04.005 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:04.011 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:04.022 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+17:53:04.027 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:04.505 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+17:53:04.511 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:04.516 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:04.522 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+17:53:05.024 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+17:53:05.030 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:05.035 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:05.040 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+17:53:05.531 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+17:53:05.536 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:05.542 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+17:53:05.548 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:05.558 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+17:53:05.563 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:06.043 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:06.048 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:06.053 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:06.059 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+17:53:06.064 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+17:53:06.072 > [E][WiFiClient.cpp:258] connect(): socket error on fd 56, errno: 104, "Connection reset by peer"
+17:53:06.078 > [E][WiFiClient.cpp:258] connect(): socket error on fd 57, errno: 104, "Connection reset by peer"
+17:53:06.088 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 7
+17:53:06.094 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1749556370
+17:53:06.099 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1749559986
+17:53:06.104 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+17:53:06.110 > 
+17:53:06.110 > [I][main.cpp:520] vStorage(): ESP Restarting Due to storage failure...
+17:53:06.115 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+17:53:06.121 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+17:53:06.126 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+17:53:07.115 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+17:53:07.115 > 
+17:53:07.149 > [E][AQISensor.cpp:306] readPMS5007(): Timeout waiting for data!
+17:53:07.155 > ets Jun  8 2016 00:22:57
+17:53:07.155 > 
+17:53:07.155 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:53:07.161 > configsip: 0, SPIWP:0xee
+17:53:07.161 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:53:07.167 > mode:DIO, clock div:2
+17:53:07.172 > load:0x3fff0018,len:4
+17:53:07.172 > load:0x3fff001c,len:1044
+17:53:07.178 > load:0x40078000,len:10124
+17:53:07.178 > load:0x40080400,len:5828
+17:53:07.178 > entry 0x400806a8
+17:53:07.748 > [D][main.cpp:79] setup(): 
+17:53:07.748 > Current Version: 1.1.1
+17:53:07.748 > Description: AQI Meter OTA Updates have been added
+17:53:07.754 > Commit Date: 3 March 2025
+17:53:07.865 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+17:53:07.907 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+17:53:08.015 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+17:53:10.018 > [E][AQISensor.cpp:306] readPMS5007(): Timeout waiting for data!
+17:53:10.024 > [E][AQISensor.cpp:46] init(): PM5007 not detected!
+17:53:10.024 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+17:53:11.723 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+17:53:11.729 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+17:53:43.735 > [E][AQISensor.cpp:203] initSO2Sensor(): SO2 sensor failed to confirm QA mode! Received 0 bytes
+17:53:43.741 > [D][AQISensor.cpp:112] init(): SO₂ sensor failed to initialize!
+17:53:43.746 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+17:53:43.752 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:53:44.051 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:44.051 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:44.057 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:53:44.062 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:53:44.362 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:44.362 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:44.367 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:53:44.373 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:53:44.378 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:53:44.677 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:44.677 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:44.683 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:53:44.688 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:53:44.988 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:44.988 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:44.994 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:53:44.999 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:53:45.004 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:53:45.303 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:45.303 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:45.309 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:53:45.314 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:53:45.614 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:45.614 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:45.619 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:53:45.625 > [E][main.cpp:132] setup(): Storage initialization failed!
+17:53:45.630 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+17:53:45.929 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:45.929 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:45.935 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+17:53:45.940 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+17:53:46.240 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+17:53:46.240 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+17:53:46.246 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+17:53:46.251 > [E][main.cpp:136] setup(): Storage failed after 3 tries...!
+17:53:46.370 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+17:53:46.376 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:53:46.381 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+17:53:46.387 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+17:53:46.392 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+17:53:46.397 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+17:53:46.403 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+17:53:46.408 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+17:53:46.408 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+17:53:46.413 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+17:53:50.046 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+17:53:50.052 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 33
+17:53:50.056 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+17:53:50.056 > [I][WiFiMulti.cpp:119] run(): [WIFI] 33 networks found
+17:53:50.063 > [D][WiFiMulti.cpp:151] run():        0: [1][3C:8A:1F:3B:7B:59] ESP_3B7B59 (-47)  
+17:53:50.073 > [D][WiFiMulti.cpp:149] run():  --->   1: [9][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+17:53:50.078 > [D][WiFiMulti.cpp:151] run():        2: [6][00:A6:CA:47:AC:A0] Wireless (-55) *
+17:53:50.084 > [D][WiFiMulti.cpp:151] run():        3: [6][00:A6:CA:47:AC:A2] LUMS-Events (-55) *
+17:53:50.095 > [D][WiFiMulti.cpp:151] run():        4: [6][00:A6:CA:47:AC:A1] TV-LED (-55) *
+17:53:50.100 > [D][WiFiMulti.cpp:151] run():        5: [6][00:A6:CA:47:AC:A3] LUMS (-55) *
+17:53:50.105 > [D][WiFiMulti.cpp:151] run():        6: [6][90:9A:4A:B8:CD:83] Airbus380 (-58) *
+17:53:50.116 > [D][WiFiMulti.cpp:151] run():        7: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-68) *
+17:53:50.122 > [D][WiFiMulti.cpp:151] run():        8: [1][BC:67:1C:64:33:23] LUMS (-72) *
+17:53:50.127 > [D][WiFiMulti.cpp:151] run():        9: [1][BC:67:1C:64:33:22] LUMS-Events (-73) *
+17:53:50.138 > [D][WiFiMulti.cpp:151] run():        10: [1][70:70:8B:DD:0B:F5] LUMS-Events (-73) *
+17:53:50.144 > [D][WiFiMulti.cpp:151] run():        11: [1][BC:67:1C:64:33:20] Wireless (-74) *
+17:53:50.149 > [D][WiFiMulti.cpp:151] run():        12: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-74) *
+17:53:50.159 > [D][WiFiMulti.cpp:151] run():        13: [1][BC:67:1C:64:33:21] TV-LED (-74) *
+17:53:50.165 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F6] LUMS (-74) *
+17:53:50.170 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F1] wireless (-74) *
+17:53:50.181 > [D][WiFiMulti.cpp:151] run():        16: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-74) *
+17:53:50.186 > [D][WiFiMulti.cpp:151] run():        17: [11][08:5A:11:23:67:E0] Wireless-LEC (-74) *
+17:53:50.197 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E2] LUMS (-82) *
+17:53:50.202 > [D][WiFiMulti.cpp:151] run():        19: [1][4C:E1:75:3C:A2:40] Wireless (-83) *
+17:53:50.209 > [D][WiFiMulti.cpp:151] run():        20: [1][4C:E1:75:3C:A2:41] TV-LED (-83) *
+17:53:50.213 > [D][WiFiMulti.cpp:151] run():        21: [1][4C:E1:75:3C:A2:43] LUMS (-83) *
+17:53:50.224 > [D][WiFiMulti.cpp:151] run():        22: [11][F8:A7:3A:87:EE:E0] wireless-apple (-83) *
+17:53:50.229 > [D][WiFiMulti.cpp:151] run():        23: [11][F8:A7:3A:87:EE:E4] wireless (-83) *
+17:53:50.234 > [D][WiFiMulti.cpp:151] run():        24: [11][F8:A7:3A:87:EE:E5] LUMS-Events (-83) *
+17:53:50.246 > [D][WiFiMulti.cpp:151] run():        25: [1][4C:E1:75:3C:A2:42] LUMS-Events (-85) *
+17:53:50.251 > [D][WiFiMulti.cpp:151] run():        26: [3][A8:42:A1:C4:9B:59] TP-Link_9B59 (-85) *
+17:53:50.261 > [D][WiFiMulti.cpp:151] run():        27: [6][32:13:8B:F7:A6:F5] DIRECT-F5-HP Color LJ 4303 (-85) *
+17:53:50.267 > [D][WiFiMulti.cpp:151] run():        28: [11][28:6F:7F:DF:D3:33] LUMS (-85) *
+17:53:50.272 > [D][WiFiMulti.cpp:151] run():        29: [11][28:6F:7F:DF:D3:31] TV-LED (-85) *
+17:53:50.283 > [D][WiFiMulti.cpp:151] run():        30: [11][28:6F:7F:DF:D3:32] LUMS-Events (-86) *
+17:53:50.288 > [D][WiFiMulti.cpp:151] run():        31: [13][0C:54:15:74:2D:31] arkWiFi5 (-86) *
+17:53:50.293 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:30] Wireless (-89) *
+17:53:50.304 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 9 (-49)
+17:53:53.988 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+17:53:54.064 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+17:53:54.069 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.149, MASK: 255.255.255.0, GW: 192.168.0.1
+17:53:54.074 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+17:53:54.080 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+17:53:54.085 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.149
+17:53:54.091 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+17:53:54.097 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 9
+17:53:54.101 > [I][ESPWiFi.cpp:232] connect_to_nearest(): Connection established 
+17:53:54.107 > [D][main.cpp:149] setup(): Initialized wifi successfully
+17:53:54.112 > [D][main.cpp:150] setup(): MAC: 3C:8A:1F:3A:1A:C0
+17:53:54.117 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+17:53:54.123 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+17:53:54.128 > [I][main.cpp:194] setup(): ID found!
+17:53:54.128 > Device name: testu
+17:53:54.129 > 
+17:53:54.171 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+17:53:54.171 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:54.182 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:54.187 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:54.192 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:54.198 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:54.203 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 238708
+17:53:54.209 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+17:53:54.368 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+17:53:54.373 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+17:53:54.378 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+17:53:54.389 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+17:53:54.394 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+17:53:56.317 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+17:53:56.323 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+17:53:56.328 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 195020
+17:53:56.334 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+17:53:56.339 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:56.349 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:56.835 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+17:53:56.840 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:56.845 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:57.352 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+17:53:57.357 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:57.363 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+17:53:57.861 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+17:53:57.867 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:57.872 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:57.877 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:57.888 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+17:53:57.893 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:58.369 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+17:53:58.374 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:58.379 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:58.386 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+17:53:58.881 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+17:53:58.886 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:58.891 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+17:53:58.897 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+17:53:59.393 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+17:53:59.399 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+17:53:59.404 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+17:53:59.410 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:59.421 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+17:53:59.426 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+17:53:59.908 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:59.913 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:59.918 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+17:53:59.924 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+17:53:59.929 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+17:53:59.938 > [E][WiFiClient.cpp:258] connect(): socket error on fd 56, errno: 104, "Connection reset by peer"
+17:53:59.949 > [E][WiFiClient.cpp:258] connect(): socket error on fd 57, errno: 104, "Connection reset by peer"
+17:53:59.954 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 0
+17:53:59.960 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1749559986
+17:53:59.970 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1749560040
+17:53:59.976 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+17:53:59.980 > 
+17:53:59.980 > [I][main.cpp:520] vStorage(): ESP Restarting Due to storage failure...
+17:53:59.987 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+17:53:59.992 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+17:53:59.996 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+17:54:00.003 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+17:54:00.007 > [D][WiFiMulti.cpp:195] run(): [WIFI] delete old wifi config...
+17:54:00.013 > [E][WiFiSTA.cpp:259] disconnect(): disconnect failed!
+17:54:00.019 > [D][WiFiets Jun  8 2016 00:22:57
+17:54:00.024 > 
+17:54:00.024 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+17:54:00.029 > configsip: 0, SPIWP:0xee
+17:54:00.029 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+17:54:00.036 > mode:DIO, clock div:2
+17:54:00.040 > load:0x3fff0018,len:4
+17:54:00.040 > load:0x3fff001c,len:1044
+17:54:00.045 > load:0x40078000,len:10124
+17:54:00.045 > load:0x40080400,len:5828
+17:54:00.045 > entry 0x400806a8
+17:54:00.616 > [D][main.cpp:79] setup(): 
+17:54:00.616 > Current Version: 1.1.1
+17:54:00.616 > Description: AQI Meter OTA Updates have been added
+17:54:00.622 > Commit Date: 3 March 2025
+17:54:00.734 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+17:54:00.775 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+17:54:00.884 > [D][AQISensor.cpp:34] init(): BMP280 initialized
+17:54:02.887 > [E][AQISensor.cpp:306] readPMS5007(): Timeout waiting for data!
+17:54:02.893 > [E][AQISensor.cpp:46] init(): PM5007 not detected!
+17:54:02.893 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+17:54:04.592 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+17:54:04.598 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+17:54:35.628 > 
+17:54:35.628 > Browno�

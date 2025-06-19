@@ -1,0 +1,23 @@
+16:50:21.372 > ets Jun  8 2016 00:22:57
+16:50:21.372 > 
+16:50:21.372 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+16:50:21.372 > configsip: 0, SPIWP:0xee
+16:50:21.372 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+16:50:21.372 > mode:DIO, clock div:2
+16:50:21.372 > load:0x3fff0018,len:4
+16:50:21.372 > load:0x3fff001c,len:1044
+16:50:21.372 > load:0x40078000,len:10124
+16:50:21.372 > load:0x40080400,len:5828
+16:50:21.372 > entry 0x400806a8
+16:50:21.372 > �[D][main.cpp:79] setup(): 
+16:50:21.372 > Current Version: 1.1.1
+16:50:21.372 > Description: AQI Meter OTA Updates have been added
+16:50:21.372 > Commit Date: 3 March 2025
+16:50:21.372 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+16:50:21.372 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+16:50:21.372 > [E][AQISensor.cpp:32] init(): Could not find BMP280 sensor! Check wiring.
+16:50:21.928 > [E][AQISensor.cpp:306] readPMS5007(): Timeout waiting for data!
+16:50:21.934 > [E][AQISensor.cpp:46] init(): PM5007 not detected!
+16:50:21.934 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+16:50:23.633 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+16:50:23.639 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!

@@ -29,6 +29,18 @@ void myNVS::write::restartData(int restart_count, uint32_t restart_time)
     preferences.end();
 }
 
+void myNVS::write::lastfilesettime(const uint32_t current_file_set_time)
+{
+    Preferences preferences;
+
+    preferences.begin(NVS_NAMESPACE_LAST_FILE_SET);
+
+    preferences.putUInt("lastfiletime",current_file_set_time);
+
+    preferences.end();
+    
+}
+
 void myNVS::read::mqttData(String &mqtt_server, uint16_t &mqtt_port)
 {
     Preferences preferences;

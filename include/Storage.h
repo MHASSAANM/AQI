@@ -7,12 +7,13 @@
 
 #define FILE_START_POS 80 // depends on size of header placed at start of file.
 #define MIN_CHUNK_SIZE_B 47
-#define MAX_CHUNK_SIZE_B 110  //2025-05-27 12:59:59,AQIMeter100,85.0,100.0,1100.0,1000,1000,1000,1000.0,500.0,10.0,60000,60000,9.999,20.0
+#define MAX_CHUNK_SIZE_B 200  //2025-05-27 12:59:59,AQIMeter100,85.0,100.0,1100.0,1000,1000,1000,1000.0,500.0,10.0,60000,60000,9.999,20.0
 #define FILE_HEADER "Time,ID,Temp,Humidity,Pressure,PM1.0,PM2.5,PM10.0,CO,NH3,NO2,eCO2,TVOC,O3,SO2\n"
 
 
 #define CARD_SIZE_LIMIT_MB 30000
 #define LOW_SPACE_LIMIT_MB 1024
+#define FAIL_LIMIT 3
 
 extern Preferences configuration__;
 
@@ -29,7 +30,7 @@ private:
     long curr_read_pos;
     int curr_chunk_size;
     bool mount_success;
-    void remove_oldest_file();
+    void remove_oldest_file(const String &folderPath);
     String next_file(String);
     void create_header(File);
     bool APList_exists;
@@ -47,6 +48,8 @@ public:
     long get_unsent_data(String timenow); // return unsent data in MBs
     void update_config();                 // update config with next file and start pos
     String curr_read_file;
+    bool handleLiveDataFailure(String data);
+    String findOldestFile(const String &folderPath);
 };
 
 extern Storage storage;

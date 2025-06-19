@@ -85,7 +85,8 @@ private:
     const float NH3_SCALE = 0.1;
     const float NO2_SCALE = 0.01;
 
-
+    time_t calibrationStartMillis = 0;
+    bool calibrationInProgress = false;
 
 
     bool readPMS5007(uint16_t &pm1_0, uint16_t &pm2_5, uint16_t &pm10_0);

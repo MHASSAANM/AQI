@@ -1,0 +1,48 @@
+16:07:32.193 > ets Jun  8 2016 00:22:57
+16:07:32.193 > 
+16:07:32.193 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+16:07:32.198 > configsip: 0, SPIWP:0xee
+16:07:32.198 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+16:07:32.204 > mode:DIO, clock div:2
+16:07:32.209 > load:0x3fff0018,len:4
+16:07:32.209 > load:0x3fff001c,len:1044
+16:07:32.214 > load:0x40078000,len:10124
+16:07:32.214 > load:0x40080400,len:5828
+16:07:32.214 > entry 0x400806a8
+16:07:32.782 > �[D][main.cpp:79] setup(): 
+16:07:32.788 > Current Version: 1.1.1
+16:07:32.788 > Description: AQI Meter OTA Updates have been added
+16:07:32.793 > Commit Date: 3 March 2025
+16:07:32.893 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+16:07:32.935 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+16:07:32.936 > [E][AQISensor.cpp:32] init(): Could not find BMP280 sensor! Check wiring.
+16:07:33.977 > [D][AQISensor.cpp:44] init(): PM5007 initialized
+16:07:33.977 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+16:07:35.680 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+16:07:35.685 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+16:07:45.614 > ets Jun  8 2016 00:22:57
+16:07:45.614 > 
+16:07:45.614 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+16:07:45.619 > configsip: 0, SPIWP:0xee
+16:07:45.619 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+16:07:45.624 > mode:DIO, clock div:2
+16:07:45.629 > load:0x3fff0018,len:4
+16:07:45.629 > load:0x3fff001c,len:1044
+16:07:45.634 > load:0x40078000,len:10124
+16:07:45.634 > load:0x40080400,len:5828
+16:07:45.634 > entry 0x400806a8
+16:07:46.203 > �[D][main.cpp:79] setup(): 
+16:07:46.209 > Current Version: 1.1.1
+16:07:46.209 > Description: AQI Meter OTA Updates have been added
+16:07:46.214 > Commit Date: 3 March 2025
+16:07:46.314 > [E][AQISensor.cpp:18] init(): Could not find SGP30 sensor on custom I2C bus!
+16:07:46.357 > [D][AQISensor.cpp:27] init(): AHT20 initialized
+16:07:46.357 > [E][AQISensor.cpp:32] init(): Could not find BMP280 sensor! Check wiring.
+16:07:47.398 > [D][AQISensor.cpp:44] init(): PM5007 initialized
+16:07:47.398 > [D][AQISensor.cpp:72] init(): MICS6814 sensor initialized
+16:07:49.100 > [E][AQISensor.cpp:143] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+16:07:49.106 > [D][AQISensor.cpp:104] init(): O3 sensor failed to initialize!
+16:08:02.201 > ets Jun  8 2016 00:22:57
+16:08:02.201 > 
+16:08:02.201 > rst:0x1 (POWERON_RESET),boot:0x7 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+16:08:02.205 > waiting for download

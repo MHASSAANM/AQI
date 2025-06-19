@@ -1,0 +1,830 @@
+16:27:22.237 > ets Jun  8 2016 00:22:57
+16:27:22.237 > 
+16:27:22.237 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+16:27:22.237 > configsip: 0, SPIWP:0xee
+16:27:22.237 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+16:27:22.237 > mode:DIO, clock div:2
+16:27:22.237 > load:0x3fff0018,len:4
+16:27:22.237 > load:0x3fff001c,len:1044
+16:27:22.237 > load:0x40078000,len:10124
+16:27:22.237 > load:0x40080400,len:5828
+16:27:22.237 > entry 0x400806a8
+16:27:22.237 > �[D][main.cpp:79] setup(): 
+16:27:22.237 > Current Version: 1.1.1
+16:27:22.237 > Description: AQI Meter OTA Updates have been added
+16:27:22.237 > Commit Date: 3 March 2025
+16:27:22.237 > [D][AQISensor.cpp:21] init(): AHT20 initialized
+16:27:22.237 > [D][AQISensor.cpp:35] init(): BMP280 initialized successfully on address 0x76
+16:27:22.237 > [D][AQISensor.cpp:43] init(): Scanning SGP30 I2C bus...
+16:27:22.237 > [D][AQISensor.cpp:48] init(): SGP30 detected at address 0x58
+16:27:22.237 > [D][AQISensor.cpp:64] init(): SGP30 initialized successfully on separate I2C bus (GPIO27=SCL, GPIO15=SDA)
+16:27:22.237 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: eCO2_base NOT_FOUND
+16:27:22.237 > [V][Preferences.cpp:365] getUShort(): nvs_get_u16 fail: TVOC_base NOT_FOUND
+16:27:22.237 > [V][Preferences.cpp:389] getUInt(): nvs_get_u32 fail: lastCalibTime NOT_FOUND
+16:27:22.237 > [D][AQISensor.cpp:78] init(): Baseline too old or not found. Running 12-hour calibration...
+16:27:22.237 > [D][AQISensor.cpp:97] init(): PM5007 initialized
+16:27:22.237 > [D][AQISensor.cpp:124] init(): MICS6814 sensor initialized
+16:27:22.237 > [D][AQISensor.cpp:142] init(): Initializing ozone sensor...
+16:27:25.759 > [E][AQISensor.cpp:272] readOzoneData(): O3 Sensor: Incomplete response! Received 0 bytes, expected 9
+16:27:25.759 > [E][AQISensor.cpp:240] initOzoneSensor(): Ozone sensor initialization failed
+16:27:25.759 > [E][AQISensor.cpp:152] init(): Ozone sensor failed to initialize!
+16:27:25.778 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+16:27:25.786 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+16:27:25.793 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+16:27:25.799 > [D][Storage.cpp:45] init_storage(): SDHC 
+16:27:25.804 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+16:27:25.810 > [D][Storage.cpp:63] init_storage(): Previous data found! 
+16:27:25.815 > [D][Storage.cpp:82] init_storage(): File is: 
+16:27:25.816 > [D][Storage.cpp:83] init_storage(): /20250616.txt 
+16:27:25.821 > [D][Storage.cpp:84] init_storage(): Position is: 
+16:27:25.822 > [D][Storage.cpp:85] init_storage(): 80 
+16:27:25.831 > [I][Storage.cpp:142] init_storage(): AP storage found!
+16:27:25.831 > [D][main.cpp:140] setup(): Storage initialization success!
+16:27:25.942 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+16:27:25.954 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:27:25.959 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+16:27:25.962 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+16:27:25.971 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+16:27:25.974 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+16:27:25.981 > [D][Storage.cpp:746] return_APList(): 12344321 
+16:27:25.981 > [D][Storage.cpp:757] return_APList(): New AP returned 
+16:27:25.986 > [D][Storage.cpp:772] return_APList(): End of data reached 
+16:27:25.990 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+16:27:25.995 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+16:27:26.002 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+16:27:26.006 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+16:27:26.014 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+16:27:26.018 > [E][ESPWiFi.cpp:258] check_connection(): WiFi not connected. Establishing connection 
+16:27:29.449 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+16:27:29.449 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 37
+16:27:29.459 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+16:27:29.459 > [I][WiFiMulti.cpp:119] run(): [WIFI] 37 networks found
+16:27:29.464 > [D][WiFiMulti.cpp:149] run():  --->   0: [6][50:0F:F5:80:A3:39] EnergyInformatics (-47) *
+16:27:29.472 > [D][WiFiMulti.cpp:151] run():        1: [2][50:D4:F7:10:A0:06] TP-Link_A006 (-49) *
+16:27:29.472 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A0] Wireless (-53) *
+16:27:29.485 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A1] TV-LED (-53) *
+16:27:29.492 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A3] LUMS (-53) *
+16:27:29.502 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A2] LUMS-Events (-54) *
+16:27:29.508 > [D][WiFiMulti.cpp:151] run():        6: [6][8A:B4:61:63:E7:4D] NeuBolt1 (-63) *
+16:27:29.519 > [D][WiFiMulti.cpp:151] run():        7: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-66) *
+16:27:29.524 > [D][WiFiMulti.cpp:151] run():        8: [10][90:9A:4A:B8:CD:83] Airbus380 (-67) *
+16:27:29.534 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F6] LUMS (-71) *
+16:27:29.541 > [D][WiFiMulti.cpp:151] run():        10: [11][08:5A:11:23:67:E0] Wireless-LEC (-71) *
+16:27:29.542 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F5] LUMS-Events (-72) *
+16:27:29.557 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F1] wireless (-72) *
+16:27:29.557 > [D][WiFiMulti.cpp:151] run():        13: [11][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+16:27:29.568 > [D][WiFiMulti.cpp:151] run():        14: [11][F8:A7:3A:87:EE:E4] wireless (-77) *
+16:27:29.575 > [D][WiFiMulti.cpp:151] run():        15: [11][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+16:27:29.582 > [D][WiFiMulti.cpp:151] run():        16: [1][4C:E1:75:1D:01:62] LUMS (-78) *
+16:27:29.589 > [D][WiFiMulti.cpp:151] run():        17: [1][4C:E1:75:1D:01:64] wireless (-78) *
+16:27:29.600 > [D][WiFiMulti.cpp:151] run():        18: [11][F8:A7:3A:87:EE:E2] LUMS (-78) *
+16:27:29.605 > [D][WiFiMulti.cpp:151] run():        19: [11][BC:67:1C:64:33:21] TV-LED (-78) *
+16:27:29.610 > [D][WiFiMulti.cpp:151] run():        20: [11][BC:67:1C:64:33:23] LUMS (-78) *
+16:27:29.619 > [D][WiFiMulti.cpp:151] run():        21: [11][BC:67:1C:64:33:20] Wireless (-78) *
+16:27:29.622 > [D][WiFiMulti.cpp:151] run():        22: [11][BC:67:1C:64:33:22] LUMS-Events (-78) *
+16:27:29.632 > [D][WiFiMulti.cpp:151] run():        23: [1][4C:E1:75:1D:01:65] LUMS-Events (-79) *
+16:27:29.642 > [D][WiFiMulti.cpp:151] run():        24: [1][4C:E1:75:1D:01:60] wireless-apple (-79) *
+16:27:29.645 > [D][WiFiMulti.cpp:151] run():        25: [6][4C:E1:75:3C:A2:40] Wireless (-79) *
+16:27:29.653 > [D][WiFiMulti.cpp:151] run():        26: [6][4C:E1:75:3C:A2:43] LUMS (-79) *
+16:27:29.661 > [D][WiFiMulti.cpp:151] run():        27: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-80) *
+16:27:29.669 > [D][WiFiMulti.cpp:151] run():        28: [6][4C:E1:75:3C:A2:41] TV-LED (-80) *
+16:27:29.672 > [D][WiFiMulti.cpp:151] run():        29: [6][4C:E1:75:3C:A2:42] LUMS-Events (-80) *
+16:27:29.685 > [D][WiFiMulti.cpp:151] run():        30: [11][28:6F:7F:DF:D3:33] LUMS (-86) *
+16:27:29.691 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:30] Wireless (-86) *
+16:27:29.693 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:31] TV-LED (-86) *
+16:27:29.705 > [D][WiFiMulti.cpp:151] run():        33: [6][08:5A:11:23:77:F0] Wirless-LEC (-88) *
+16:27:29.712 > [D][WiFiMulti.cpp:151] run():        34: [13][E0:0E:DA:51:D4:21] LUMS-Events (-88) *
+16:27:29.718 > [D][WiFiMulti.cpp:151] run():        35: [13][E0:0E:DA:51:D4:23] LUMS (-89) *
+16:27:29.725 > [D][WiFiMulti.cpp:151] run():        36: [13][E0:0E:DA:51:D4:20] Wireless (-89) *
+16:27:29.735 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 6 (-47)
+16:27:33.233 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+16:27:33.299 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+16:27:33.300 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.118, MASK: 255.255.255.0, GW: 192.168.0.1
+16:27:33.308 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+16:27:33.314 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+16:27:33.319 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.118
+16:27:33.326 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+16:27:33.329 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 6
+16:27:33.335 > [I][ESPWiFi.cpp:232] connect_to_nearest(): Connection established 
+16:27:33.342 > [D][main.cpp:149] setup(): Initialized wifi successfully
+16:27:33.345 > [D][main.cpp:150] setup(): MAC: 3C:8A:1F:3B:0D:F8
+16:27:33.352 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+16:27:33.356 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+16:27:33.362 > [I][main.cpp:194] setup(): ID found!
+16:27:33.362 > Device name: testu
+16:27:33.362 > 
+16:27:33.406 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:33.406 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:33.415 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:33.420 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:33.428 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:33.432 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:33.439 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 212564
+16:27:33.444 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+16:27:33.489 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+16:27:33.501 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+16:27:33.505 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+16:27:33.515 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+16:27:33.520 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+16:27:35.349 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+16:27:35.355 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+16:27:35.360 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 168868
+16:27:35.365 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 36 bytes...
+16:27:35.371 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:35.374 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+16:27:35.864 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 38 bytes...
+16:27:35.864 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:35.878 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+16:27:36.367 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 29 bytes...
+16:27:36.383 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:36.391 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+16:27:36.892 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+16:27:36.894 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:36.902 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+16:27:36.908 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+16:27:36.918 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 5 bytes...
+16:27:36.924 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+16:27:37.705 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 41 bytes...
+16:27:37.715 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:37.723 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+16:27:37.723 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+16:27:38.101 > dhcps: send_nak>>udp_sendto result 0
+16:27:38.233 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+16:27:38.233 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:38.245 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 283 bytes...
+16:27:38.250 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 4 bytes...
+16:27:38.723 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 45 bytes...
+16:27:38.738 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+16:27:38.747 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 284 bytes...
+16:27:38.749 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+16:27:38.762 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 19 bytes...
+16:27:38.768 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 1 bytes...
+16:27:39.265 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:39.271 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:39.280 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+16:27:39.282 > [D][OTA.cpp:22] downloadUpdate(): Already running latest version [1.1.1]
+16:27:39.291 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+16:27:39.304 > [D][main.cpp:255] setup(): Cloud IoT Setup Complete
+16:27:39.328 > [D][main.cpp:268] setup(): Subscribed to topic pull/testu
+16:27:39.328 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 0
+16:27:39.337 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1750073181
+16:27:39.348 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1750073252
+16:27:39.353 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:39.358 > 
+16:27:39.358 > [I][WiFiClient.cpp:517] connected(): Unexpected: RES: 0, ERR: 0
+16:27:39.412 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:39.466 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:39.501 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:32,testu,31.3, 34.4, 973.8, 3, 4, 4, 100.00, 48.28, 0.24, 400, 0, 0
+16:27:39.551 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:39.551 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+16:27:39.563 > [D][Storage.cpp:224] write_data(): File written
+16:27:39.602 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:32,testu,31.3, 34.4, 973.8, 3, 4, 4, 100.00, 48.28, 0.24, 400, 0, 0
+16:27:39.610 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:39.628 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:39.635 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:39.733 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:26:21,testu,30.8, 35.5, 973.8, 3, 4, 4, 100.00, 47.46, 0.22, 400, 0, 0
+16:27:39.750 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:39.755 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:39.759 > [I][Storage.cpp:803] mark_data(): Size: 256,   Pos: 80,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:39.905 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:39.915 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:39.921 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:40.026 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:27:32,testu,31.3, 34.4, 973.8, 3, 4, 4, 100.00, 48.28, 0.24, 400, 0, 0
+16:27:40.026 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:40.043 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:40.048 > [I][Storage.cpp:803] mark_data(): Size: 256,   Pos: 168,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:40.150 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:42.343 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:42.350 > 
+16:27:42.502 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:35,testu,31.0, 34.6, 973.8, 3, 4, 4, 100.00, 48.18, 0.24, 400, 0, 0
+16:27:42.552 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:42.552 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+16:27:42.564 > [D][Storage.cpp:224] write_data(): File written
+16:27:42.607 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:35,testu,31.0, 34.6, 973.8, 3, 4, 4, 100.00, 48.18, 0.24, 400, 0, 0
+16:27:42.615 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:43.145 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+16:27:43.145 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+16:27:44.054 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.080 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.080 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.219 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.260 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.265 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.460 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.494 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.500 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.672 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.728 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.734 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.804 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.841 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.841 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.884 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:44.922 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:44.922 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:44.982 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.014 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.031 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.061 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.095 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.099 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.145 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.171 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.186 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.221 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.269 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.279 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.305 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.346 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:45.346 > 
+16:27:45.384 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.392 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.438 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.522 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:38,testu,30.9, 34.8, 973.8, 3, 4, 4, 100.00, 50.00, 0.28, 400, 0, 0
+16:27:45.537 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.537 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.583 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:45.583 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.592 > [E][espMQTT.cpp:293] live_broadcast(): MQTT Client Disconnected
+16:27:45.602 > [D][Storage.cpp:224] write_data(): File written
+16:27:45.602 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:38,testu,30.9, 34.8, 973.8, 3, 4, 4, 100.00, 50.00, 0.28, 400, 0, 0
+16:27:45.613 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:45.654 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.703 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.703 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.744 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.777 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.786 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.816 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.843 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.851 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.881 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:45.914 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:45.919 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:45.956 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.007 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.011 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.039 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.081 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.088 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.121 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.171 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.171 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.232 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:46.301 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.336 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:46.341 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.360 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.368 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:46.373 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:46.416 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.454 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.454 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.483 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:27:35,testu,31.0, 34.6, 973.8, 3, 4, 4, 100.00, 48.18, 0.24, 400, 0, 0
+16:27:46.495 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:46.499 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:46.506 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.510 > [I][Storage.cpp:803] mark_data(): Size: 432,   Pos: 256,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:46.568 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.573 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.645 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.659 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:46.668 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:46.689 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:46.694 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.699 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.733 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.768 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.777 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.797 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:27:38,testu,30.9, 34.8, 973.8, 3, 4, 4, 100.00, 50.00, 0.28, 400, 0, 0
+16:27:46.804 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:46.813 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:46.818 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.824 > [I][Storage.cpp:803] mark_data(): Size: 432,   Pos: 344,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:46.849 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.849 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.900 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:46.954 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:46.960 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:46.969 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:46.997 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.026 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.026 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.069 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.107 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.117 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.156 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.177 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.177 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.328 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.368 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.373 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.405 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.433 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.437 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.475 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.500 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.508 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.549 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.585 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.590 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.620 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.661 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.667 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.699 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.723 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.726 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.769 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.799 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.803 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.848 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.886 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.889 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:47.918 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:47.965 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:47.970 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.004 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.033 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.039 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.070 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.115 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.120 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.157 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.203 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.207 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.250 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.310 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.313 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.341 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.350 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:48.350 > 
+16:27:48.370 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.380 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.419 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.455 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.460 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.499 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:41,testu,30.8, 34.8, 973.8, 3, 4, 4, 100.00, 48.41, 0.25, 400, 0, 0
+16:27:48.503 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.534 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.541 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.553 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:48.557 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.566 > [E][espMQTT.cpp:293] live_broadcast(): MQTT Client Disconnected
+16:27:48.570 > [D][Storage.cpp:224] write_data(): File written
+16:27:48.585 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 104
+16:27:48.591 > [E][WiFiClient.cpp:485] flush(): fail on fd 56, errno: 104, "Connection reset by peer"
+16:27:48.612 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:41,testu,30.8, 34.8, 973.8, 3, 4, 4, 100.00, 48.41, 0.25, 400, 0, 0
+16:27:48.621 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:48.621 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.635 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.667 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.691 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.702 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.727 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.758 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.769 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.802 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.820 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.820 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.866 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.896 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.903 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:48.935 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:48.959 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:48.971 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.001 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.024 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.024 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.070 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.108 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.115 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.148 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.179 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.179 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.218 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.254 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.268 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.308 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.346 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.353 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.386 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.423 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.427 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.471 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.516 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.523 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.557 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.595 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.603 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.677 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.709 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.711 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.743 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.782 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.786 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.818 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.841 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.855 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.900 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:49.953 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:49.953 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:49.966 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+16:27:49.970 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+16:27:50.035 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.086 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.099 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.149 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.204 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.209 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.249 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.285 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.292 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.345 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.389 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.393 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.464 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.518 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.518 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.552 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.583 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.584 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.622 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.655 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.660 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.692 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: -1, ERR: 104
+16:27:50.736 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.747 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.782 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.828 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.836 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.867 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.902 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:50.905 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:50.960 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:50.989 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.028 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.033 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.064 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.069 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.098 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.150 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.150 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.199 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.238 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.243 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.274 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.316 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.321 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.350 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:51.350 > 
+16:27:51.353 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.384 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.387 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.440 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.482 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.488 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.520 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:44,testu,30.8, 34.7, 973.8, 3, 4, 4, 100.00, 48.93, 0.27, 400, 7, 0
+16:27:51.530 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.566 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.571 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.577 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:51.583 > [E][espMQTT.cpp:287] live_broadcast(): MQTT Client isn't setup
+16:27:51.583 > [D][Storage.cpp:224] write_data(): File written
+16:27:51.583 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:44,testu,30.8, 34.7, 973.8, 3, 4, 4, 100.00, 48.93, 0.27, 400, 7, 0
+16:27:51.600 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:51.605 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.650 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.650 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.688 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.720 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.720 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.760 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.792 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.801 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.829 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.859 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.859 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.902 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:51.936 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:51.950 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:51.981 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.004 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.004 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.047 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.087 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.087 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.123 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.166 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.171 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.211 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.247 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.254 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.287 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.323 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.335 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.375 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.418 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.423 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.459 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.498 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.502 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.536 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.566 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.571 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.608 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.633 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.641 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.681 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.705 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.710 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.753 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.792 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.798 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.827 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.871 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.871 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:52.905 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:52.935 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:52.942 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.015 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:53.078 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.102 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.120 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.134 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:53.154 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:53.166 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.185 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:53.206 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.217 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.251 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.287 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:27:41,testu,30.8, 34.8, 973.8, 3, 4, 4, 100.00, 48.41, 0.25, 400, 0, 0
+16:27:53.300 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.306 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:53.312 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.318 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:53.323 > [I][Storage.cpp:803] mark_data(): Size: 608,   Pos: 432,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:53.350 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.386 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.396 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.443 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.479 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:53.491 > [D][Storage.cpp:468] read_data(): Reading file: /20250616.txt
+16:27:53.509 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.517 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.519 > [D][Storage.cpp:620] read_data(): Parsed successfully
+16:27:53.611 > [D][DataTransfer.cpp:117] handleStorageTransfer(): Data Sent: 2025-06-16 16:27:44,testu,30.8, 34.7, 973.8, 3, 4, 4, 100.00, 48.93, 0.27, 400, 7, 0
+16:27:53.633 > [D][DataTransfer.cpp:118] handleStorageTransfer(): sent data to cloud 
+16:27:53.642 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+16:27:53.646 > [I][Storage.cpp:803] mark_data(): Size: 608,   Pos: 520,   Chunk: 86,   Write: /20250616.txt,   Read: /20250616.txt
+16:27:53.683 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.734 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.734 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.778 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+16:27:53.883 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:53.932 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:53.935 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:53.972 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.004 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.009 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.051 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.093 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.099 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.116 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.149 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.154 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.195 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.232 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.237 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.273 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.314 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.316 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.346 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:54.346 > 
+16:27:54.346 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.378 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.384 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.433 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.465 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.474 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.505 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.505 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:47,testu,30.8, 34.8, 973.8, 3, 4, 4, 100.00, 48.25, 0.26, 400, 4, 0
+16:27:54.545 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.549 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.561 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:54.561 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.572 > [E][espMQTT.cpp:293] live_broadcast(): MQTT Client Disconnected
+16:27:54.581 > [D][Storage.cpp:224] write_data(): File written
+16:27:54.581 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.610 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.616 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.622 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:47,testu,30.8, 34.8, 973.8, 3, 4, 4, 100.00, 48.25, 0.26, 400, 4, 0
+16:27:54.633 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:54.650 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.679 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.684 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.724 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.747 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.765 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.786 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.836 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.836 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.872 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.904 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.917 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:54.949 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:54.976 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:54.976 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.021 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.053 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.067 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.099 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.135 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.138 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.190 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.222 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.238 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.282 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.326 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.332 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.391 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.444 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.460 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.516 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.540 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.559 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.589 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.616 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.631 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.657 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.683 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.693 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.733 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.780 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.780 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.822 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.852 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.852 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.891 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.929 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:55.936 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:55.965 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:55.996 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.000 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.041 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.072 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.072 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.119 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.149 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.165 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.186 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.220 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.220 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.260 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.293 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.301 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.330 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.367 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.374 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.411 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.448 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.457 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.483 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.516 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.520 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.566 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.598 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.603 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.619 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.675 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.677 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.749 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.772 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+16:27:56.772 > [I][DataTransfer.cpp:144] handleStorageTransfer(): Sent 2 data chunks to cloud.
+16:27:56.802 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.802 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.841 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.886 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.897 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.927 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:56.952 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:56.968 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:56.992 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.022 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.024 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.064 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.101 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.101 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.136 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.177 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.185 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.215 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.242 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.252 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.282 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.318 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.323 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.349 > [I][main.cpp:330] vAcquireData(): Cycle number: 1
+16:27:57.349 > 
+16:27:57.358 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.395 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.398 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.431 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.466 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.470 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.501 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.524 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.535 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.538 > [I][main.cpp:376] vAcquireData(): 2025-06-16 16:27:50,testu,30.9, 34.7, 973.7, 2, 3, 3, 100.00, 48.28, 0.26, 407, 4, 0
+16:27:57.575 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.584 > [I][ESPWiFi.cpp:279] check_Internet(): Ping1 successful
+16:27:57.584 > [E][espMQTT.cpp:287] live_broadcast(): MQTT Client isn't setup
+16:27:57.591 > [D][Storage.cpp:224] write_data(): File written
+16:27:57.595 > [D][main.cpp:481] vStorage(): Data Written: 2025-06-16 16:27:50,testu,30.9, 34.7, 973.7, 2, 3, 3, 100.00, 48.28, 0.26, 407, 4, 0
+16:27:57.607 > [I][main.cpp:484] vStorage(): data written to storage
+16:27:57.618 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.619 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.653 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.699 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.699 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.733 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.763 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.766 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.811 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.843 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.843 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.882 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.906 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.923 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:57.956 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:57.984 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:57.984 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.021 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.065 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.071 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.107 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.143 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.146 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.186 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.228 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.232 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.274 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.335 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.354 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.370 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.406 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.413 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.440 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.472 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.477 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.512 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.535 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.546 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.589 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.632 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.637 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.665 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.698 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.704 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.737 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.772 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.776 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.807 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.835 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.839 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.868 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.898 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.912 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:58.940 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:58.972 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:58.972 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.021 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.062 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.066 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.100 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.138 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.143 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.186 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.221 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.228 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.258 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.291 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.291 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.333 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.372 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.372 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.416 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.440 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.456 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.488 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.520 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.533 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.560 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.601 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.611 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.640 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.679 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.683 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.717 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128
+16:27:59.743 > [D][main.cpp:558] vDataPull(): Subscribed to topic pull/testu
+16:27:59.751 > [D][main.cpp:562] vDataPull(): Subscribed to topic restart/testu
+16:27:59.781 > [D][WiFiClient.cpp:514] connected(): Disconnected: RES: 0, ERR: 128

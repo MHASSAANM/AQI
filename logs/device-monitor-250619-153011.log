@@ -1,0 +1,1958 @@
+15:30:11.478 > ets Jun  8 2016 00:22:57
+15:30:11.478 > 
+15:30:11.478 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:30:11.478 > configsip: 0, SPIWP:0xee
+15:30:11.478 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15:30:11.478 > mode:DIO, clock div:2
+15:30:11.478 > load:0x3fff0018,len:4
+15:30:11.478 > load:0x3fff001c,len:1044
+15:30:11.478 > load:0x40078000,len:10124
+15:30:11.478 > load:0x40080400,len:5828
+15:30:11.478 > entry 0x400806a8
+15:30:11.478 > �[D][main.cpp:79] setup(): 
+15:30:11.478 > Current Version: 1.1.1
+15:30:11.478 > Description: AQI Meter OTA Updates have been added
+15:30:11.478 > Commit Date: 3 March 2025
+15:30:11.478 > [D][AQISensor.cpp:21] init(): AHT20 initialized
+15:30:11.478 > [E][AQISensor.cpp:27] init(): Could not find BMP280 sensor on address 0x76! Trying alternate address 0x77...
+15:30:11.478 > [D][AQISensor.cpp:31] init(): BMP280 initialized on address 0x77
+15:30:11.478 > [D][AQISensor.cpp:91] init(): Scanning SGP30 I2C bus...
+15:30:11.478 > [D][AQISensor.cpp:96] init(): SGP30 detected at address 0x58
+15:30:11.478 > [D][AQISensor.cpp:110] init(): SGP30 initialized successfully
+15:30:11.478 > [D][AQISensor.cpp:120] init(): Loaded preferences:
+15:30:11.478 > [D][AQISensor.cpp:121] init():   eCO2_base: 0
+15:30:11.478 > [D][AQISensor.cpp:122] init():   TVOC_base: 0
+15:30:11.478 > [D][AQISensor.cpp:123] init():   lastCalibrationTime: 1750328886
+15:30:11.478 > [D][AQISensor.cpp:124] init():   calibrationInProgress: false
+15:30:11.478 > [D][AQISensor.cpp:125] init():   calibrationStartMillis: 1609459200
+15:30:11.478 > [D][AQISensor.cpp:128] init(): Current time: 1609459200
+15:30:11.478 > [D][AQISensor.cpp:139] init(): Starting 12-hour calibration (baseline too old or missing)...
+15:30:11.478 > [D][AQISensor.cpp:159] init(): PM5007 initialized
+15:30:11.478 > [D][AQISensor.cpp:186] init(): MICS6814 sensor initialized
+15:30:11.478 > [E][AQISensor.cpp:236] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+15:30:11.478 > [D][AQISensor.cpp:198] init(): O3 sensor failed to initialize!
+15:30:11.478 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+15:30:11.478 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+15:30:11.478 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+15:30:11.478 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+15:30:11.478 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+15:30:11.478 > [E][main.cpp:132] setup(): Storage initialization failed!
+15:30:11.478 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+15:30:11.478 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+15:30:11.478 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+15:30:11.478 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+15:30:11.478 > [E][main.cpp:132] setup(): Storage initialization failed!
+15:30:11.478 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [W][sd_diskio.cpp:169] sdCommand(): no token received
+15:30:11.478 > [E][sd_diskio.cpp:194] sdCommand(): Card Failed! cmd: 0x00
+15:30:11.478 > [W][sd_diskio.cpp:505] ff_sd_initialize(): GO_IDLE_STATE failed
+15:30:11.478 > [E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+15:30:11.478 > [W][sd_diskio.cpp:181] sdCommand(): token error [0] 0x13
+15:30:11.478 > [E][Storage.cpp:25] init_storage(): Card Initialization Failed 
+15:30:11.478 > [E][main.cpp:132] setup(): Storage initialization failed!
+15:30:11.478 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:30:11.478 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+15:30:11.478 > [D][Storage.cpp:45] init_storage(): SDHC 
+15:30:11.480 > [I][Storage.cpp:54] init_storagecpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_stocpp:85] init_storage(): 282324 
+15:30:11.482 > [I][Storage.cpp:142] init_storage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.482 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage rage(): AP storage found!
+15:30:11.483 > [E][main.cpp:136] setup(): Storage failed after 3 tries...!
+15:30:11.483 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.484 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.485 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.486 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.487 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.488 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.489 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.490 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.491 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.492 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.493 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.494 > failed after 3 tries...!
+15:30:11.495 > failed after 3 tries...!
+15:30:11.495 > failed after 3 tries...!
+15:30:11.495 > failed after 3 tries...!
+15:30:11.495 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.496 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.497 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.498 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.499 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.500 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.501 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.502 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.504 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.512 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.514 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.515 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.516 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.517 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.518 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.519 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.520 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.521 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.522 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.523 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.529 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.530 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.531 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.532 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.534 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.535 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.536 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.537 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.538 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.539 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.540 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.541 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.547 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.548 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.549 > failed after 3 tries...!
+15:30:11.550 > failed after 3 tries...!
+15:30:11.550 > failed after 3 tries...!
+15:30:11.550 > failed after 3 tries...!
+15:30:11.550 > failed after 3 tries...!
+15:30:11.550 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.551 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.552 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.553 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.555 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.556 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.557 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.558 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.559 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.563 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.564 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.565 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.566 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.567 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.569 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.570 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.571 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.572 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.573 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.574 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.575 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.576 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.577 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.578 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.579 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.582 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.584 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.591 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.593 > failed after 3 tries...!
+15:30:11.595 > failed after 3 tries...!
+15:30:11.595 > failed after 3 tries...!
+15:30:11.595 > failed after 3 tries...!
+15:30:11.595 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.596 > failed after 3 tries...!
+15:30:11.597 > failed after 3 tries...!
+15:30:11.597 > failed after 3 tries...!
+15:30:11.597 > failed after 3 tries...!
+15:30:11.597 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.598 > failed after 3 tries...!
+15:30:11.599 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+15:30:11.600 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:30:11.600 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+15:30:11.615 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:30:11.618 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: Hassaan
+15:30:11.623 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+15:30:11.623 > [V][ESPWiFi.cpp:68] update_APs(): SSID: Hassaan 
+15:30:11.631 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+15:30:11.634 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+15:30:11.641 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:30:14.873 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:30:14.880 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 14
+15:30:14.885 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+15:30:14.885 > [I][WiFiMulti.cpp:119] run(): [WIFI] 14 networks found
+15:30:14.887 > [D][WiFiMulti.cpp:151] run():        0: [2][50:0F:F5:80:A3:39] EnergyInformatics (-40) *
+15:30:14.901 > [D][WiFiMulti.cpp:151] run():        1: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+15:30:14.907 > [D][WiFiMulti.cpp:151] run():        2: [10][90:9A:4A:B8:CD:83] Airbus380 (-64) *
+15:30:14.912 > [D][WiFiMulti.cpp:151] run():        3: [6][F2:0B:49:27:71:61] TR (-70) *
+15:30:14.923 > [D][WiFiMulti.cpp:151] run():        4: [1][4C:E1:75:1D:01:64] wireless (-78) *
+15:30:14.928 > [D][WiFiMulti.cpp:151] run():        5: [1][4C:E1:75:1D:01:65] LUMS-Events (-78) *
+15:30:14.934 > [D][WiFiMulti.cpp:151] run():        6: [1][BC:67:1C:64:33:20] Wireless (-78) *
+15:30:14.942 > [D][WiFiMulti.cpp:151] run():        7: [1][BC:67:1C:64:33:23] LUMS (-79) *
+15:30:14.949 > [D][WiFiMulti.cpp:151] run():        8: [6][08:5A:11:23:67:E0] Wireless-LEC (-80) *
+15:30:14.952 > [D][WiFiMulti.cpp:151] run():        9: [1][70:70:8B:DD:0B:F5] LUMS-Events (-80) *
+15:30:14.965 > [D][WiFiMulti.cpp:151] run():        10: [11][7A:45:97:20:91:2A] Chik chik zig zig (-82) *
+15:30:14.972 > [D][WiFiMulti.cpp:151] run():        11: [6][F8:A7:3A:87:EE:E4] wireless (-85) *
+15:30:14.977 > [D][WiFiMulti.cpp:151] run():        12: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-85) *
+15:30:14.989 > [D][WiFiMulti.cpp:151] run():        13: [11][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-92) *
+15:30:15.004 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+15:30:15.004 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:30:15.004 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+15:30:15.009 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+15:30:15.014 > [I][main.cpp:195] setup(): ID found!
+15:30:15.019 > Device name: testuu
+15:30:15.019 > 
+15:30:15.019 > [D][ESPWiFi.cpp:232] start_soft_ap(): Soft AP IP: 192.168.4.1
+15:30:15.024 > [D][ESPWiFi.cpp:234] start_soft_ap(): Web server initalized.
+15:30:15.030 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:30:20.329 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:30:20.346 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 17
+15:30:20.352 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+15:30:20.352 > [I][WiFiMulti.cpp:119] run(): [WIFI] 17 networks found
+15:30:20.354 > [D][WiFiMulti.cpp:151] run():        0: [2][50:0F:F5:80:A3:39] EnergyInformatics (-43) *
+15:30:20.369 > [D][WiFiMulti.cpp:151] run():        1: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+15:30:20.374 > [D][WiFiMulti.cpp:151] run():        2: [10][90:9A:4A:B8:CD:83] Airbus380 (-67) *
+15:30:20.379 > [D][WiFiMulti.cpp:151] run():        3: [6][F2:0B:49:27:71:61] TR (-76) *
+15:30:20.387 > [D][WiFiMulti.cpp:151] run():        4: [1][4C:E1:75:1D:01:62] LUMS (-77) *
+15:30:20.396 > [D][WiFiMulti.cpp:151] run():        5: [1][4C:E1:75:1D:01:60] wireless-apple (-77) *
+15:30:20.399 > [D][WiFiMulti.cpp:151] run():        6: [1][4C:E1:75:1D:01:64] wireless (-78) *
+15:30:20.409 > [D][WiFiMulti.cpp:151] run():        7: [1][70:70:8B:DD:0B:F4] wireless (-79) *
+15:30:20.415 > [D][WiFiMulti.cpp:151] run():        8: [1][BC:67:1C:64:33:21] TV-LED (-79) *
+15:30:20.422 > [D][WiFiMulti.cpp:151] run():        9: [6][08:5A:11:23:67:E0] Wireless-LEC (-79) *
+15:30:20.433 > [D][WiFiMulti.cpp:151] run():        10: [1][70:70:8B:DD:0B:F5] LUMS-Events (-80) *
+15:30:20.439 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F2] LUMS (-80) *
+15:30:20.444 > [D][WiFiMulti.cpp:151] run():        12: [1][BC:67:1C:64:33:22] LUMS-Events (-80) *
+15:30:20.454 > [D][WiFiMulti.cpp:151] run():        13: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-82) *
+15:30:20.455 > [D][WiFiMulti.cpp:151] run():        14: [6][F8:A7:3A:87:EE:E0] wireless-apple (-83) *
+15:30:20.466 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E4] wireless (-83) *
+15:30:20.467 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E2] LUMS (-84) *
+15:30:20.481 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+15:30:20.484 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:30:20.493 > [I][main.cpp:285] setup(): Internet not availaible
+15:30:20.497 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 2
+15:30:20.503 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1750328155
+15:30:20.509 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1750329020
+15:30:20.517 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:30:20.517 > 
+15:30:20.517 > [I][main.cpp:528] vStorage(): ESP Restarting Due to storage failure...
+15:30:20.531 > ets Jun  8 2016 00:22:57
+15:30:20.531 > 
+15:30:20.531 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:30:20.535 > configsip: 0, SPIWP:0xee
+15:30:20.535 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15:30:20.547 > mode:DIO, clock div:2
+15:30:20.547 > load:0x3fff0018,len:4
+15:30:20.547 > load:0x3fff001c,len:1044
+15:30:20.549 > load:0x40078000,len:10124
+15:30:20.549 > load:0x40080400,len:5828
+15:30:20.549 > entry 0x400806a8
+15:30:21.133 > [D][main.cpp:79] setup(): 
+15:30:21.133 > Current Version: 1.1.1
+15:30:21.133 > Description: AQI Meter OTA Updates have been added
+15:30:21.139 > Commit Date: 3 March 2025
+15:30:21.280 > [D][AQISensor.cpp:21] init(): AHT20 initialized
+15:30:21.281 > [E][AQISensor.cpp:27] init(): Could not find BMP280 sensor on address 0x76! Trying alternate address 0x77...
+15:30:21.392 > [D][AQISensor.cpp:31] init(): BMP280 initialized on address 0x77
+15:30:21.892 > [D][AQISensor.cpp:91] init(): Scanning SGP30 I2C bus...
+15:30:21.892 > [D][AQISensor.cpp:96] init(): SGP30 detected at address 0x58
+15:30:21.915 > [D][AQISensor.cpp:110] init(): SGP30 initialized successfully
+15:30:21.932 > [D][AQISensor.cpp:120] init(): Loaded preferences:
+15:30:21.932 > [D][AQISensor.cpp:121] init():   eCO2_base: 0
+15:30:21.937 > [D][AQISensor.cpp:122] init():   TVOC_base: 0
+15:30:21.942 > [D][AQISensor.cpp:123] init():   lastCalibrationTime: 1750328886
+15:30:21.948 > [D][AQISensor.cpp:124] init():   calibrationInProgress: true
+15:30:21.954 > [D][AQISensor.cpp:125] init():   calibrationStartMillis: 1609459200
+15:30:21.958 > [D][AQISensor.cpp:128] init(): Current time: 1609459200
+15:30:21.965 > [D][AQISensor.cpp:141] init(): Resuming calibration started at: 1609459200
+15:30:23.003 > [D][AQISensor.cpp:159] init(): PM5007 initialized
+15:30:23.003 > [D][AQISensor.cpp:186] init(): MICS6814 sensor initialized
+15:30:25.204 > [E][AQISensor.cpp:236] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+15:30:25.210 > [D][AQISensor.cpp:198] init(): O3 sensor failed to initialize!
+15:30:25.216 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+15:30:25.222 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:30:25.226 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+15:30:25.233 > [D][Storage.cpp:45] init_storage(): SDHC 
+15:30:25.238 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+15:30:25.240 > [D][Storage.cpp:63] init_storage(): Previous data found! 
+15:30:25.248 > [D][Storage.cpp:82] init_storage(): File is: 
+15:30:25.251 > [D][Storage.cpp:83] init_storage(): /20250619.txt 
+15:30:25.259 > [D][Storage.cpp:84] init_storage(): Position is: 
+15:30:25.259 > [D][Storage.cpp:85] init_storage(): 282324 
+15:30:25.265 > [I][Storage.cpp:142] init_storage(): AP storage found!
+15:30:25.271 > [D][main.cpp:140] setup(): Storage initialization success!
+15:30:25.392 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+15:30:25.395 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:30:25.402 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+15:30:25.404 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:30:25.413 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+15:30:25.418 > [D][Storage.cpp:729] return_APList(): Hassaan 
+15:30:25.418 > [D][Storage.cpp:746] return_APList(): 12344321 
+15:30:25.424 > [D][Storage.cpp:757] return_APList(): New AP returned 
+15:30:25.429 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+15:30:25.434 > [D][Storage.cpp:729] return_APList(): LUMS-Events 
+15:30:25.440 > [D][Storage.cpp:746] return_APList(): Epple@2025 
+15:30:25.445 > [D][Storage.cpp:757] return_APList(): New AP returned 
+15:30:25.451 > [D][Storage.cpp:772] return_APList(): End of data reached 
+15:30:25.456 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: Hassaan
+15:30:25.462 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+15:30:25.462 > [V][ESPWiFi.cpp:68] update_APs(): SSID: Hassaan 
+15:30:25.467 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+15:30:25.473 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: LUMS-Events
+15:30:25.478 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+15:30:25.483 > [V][ESPWiFi.cpp:68] update_APs(): SSID: LUMS-Events 
+15:30:25.488 > [V][ESPWiFi.cpp:69] update_APs(): Password: Epple@2025 
+15:30:25.490 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 2 
+15:30:25.499 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:30:28.927 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:30:28.933 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 17
+15:30:28.938 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+15:30:28.938 > [I][WiFiMulti.cpp:119] run(): [WIFI] 17 networks found
+15:30:28.943 > [D][WiFiMulti.cpp:151] run():        0: [2][50:0F:F5:80:A3:39] EnergyInformatics (-40) *
+15:30:28.954 > [D][WiFiMulti.cpp:151] run():        1: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-58) *
+15:30:28.956 > [D][WiFiMulti.cpp:151] run():        2: [6][F2:0B:49:27:71:61] TR (-66) *
+15:30:28.965 > [D][WiFiMulti.cpp:151] run():        3: [10][90:9A:4A:B8:CD:83] Airbus380 (-71) *
+15:30:28.966 > [D][WiFiMulti.cpp:151] run():        4: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-76) *
+15:30:28.980 > [D][WiFiMulti.cpp:151] run():        5: [1][4C:E1:75:1D:01:62] LUMS (-77) *
+15:30:28.983 > [D][WiFiMulti.cpp:151] run():        6: [1][4C:E1:75:1D:01:60] wireless-apple (-78) *
+15:30:28.997 > [D][WiFiMulti.cpp:151] run():        7: [6][08:5A:11:23:67:E0] Wireless-LEC (-78) *
+15:30:29.000 > [D][WiFiMulti.cpp:149] run():  --->   8: [1][BC:67:1C:64:33:22] LUMS-Events (-79) *
+15:30:29.013 > [D][WiFiMulti.cpp:151] run():        9: [1][BC:67:1C:64:33:21] TV-LED (-79) *
+15:30:29.019 > [D][WiFiMulti.cpp:151] run():        10: [1][BC:67:1C:64:33:20] Wireless (-79) *
+15:30:29.024 > [D][WiFiMulti.cpp:151] run():        11: [1][BC:67:1C:64:33:23] LUMS (-79) *
+15:30:29.029 > [D][WiFiMulti.cpp:151] run():        12: [11][7A:45:97:20:91:2A] Chik chik zig zig (-80) *
+15:30:29.040 > [D][WiFiMulti.cpp:149] run():  --->   13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-80) *
+15:30:29.045 > [D][WiFiMulti.cpp:149] run():  --->   14: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-83) *
+15:30:29.050 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E4] wireless (-84) *
+15:30:29.062 > [D][WiFiMulti.cpp:151] run():        16: [10][FC:DD:55:C3:5F:A2] ZONG4G New (-95) *
+15:30:29.067 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: BC:67:1C:64:33:22 SSID: LUMS-Events Channel: 1 (-79)
+15:30:33.395 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+15:30:33.395 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 4 - ASSOC_EXPIRE
+15:30:44.145 > [E][WiFiMulti.cpp:187] run(): [WIFI] Connecting Failed (6).
+15:30:44.145 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:30:44.148 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+15:30:44.148 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+15:30:44.161 > [I][main.cpp:195] setup(): ID found!
+15:30:44.166 > Device name: testuu
+15:30:44.166 > 
+15:30:44.166 > [D][ESPWiFi.cpp:232] start_soft_ap(): Soft AP IP: 192.168.4.1
+15:30:44.172 > [D][ESPWiFi.cpp:234] start_soft_ap(): Web server initalized.
+15:30:44.173 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:30:49.487 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:30:49.492 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 14
+15:30:49.498 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+15:30:49.498 > [I][WiFiMulti.cpp:119] run(): [WIFI] 14 networks found
+15:30:49.500 > [D][WiFiMulti.cpp:151] run():        0: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-57) *
+15:30:49.514 > [D][WiFiMulti.cpp:151] run():        1: [10][90:9A:4A:B8:CD:83] Airbus380 (-66) *
+15:30:49.519 > [D][WiFiMulti.cpp:151] run():        2: [6][F2:0B:49:27:71:61] TR (-74) *
+15:30:49.525 > [D][WiFiMulti.cpp:151] run():        3: [1][BC:67:1C:64:33:23] LUMS (-81) *
+15:30:49.530 > [D][WiFiMulti.cpp:151] run():        4: [1][4C:E1:75:1D:01:60] wireless-apple (-81) *
+15:30:49.541 > [D][WiFiMulti.cpp:151] run():        5: [1][BC:67:1C:64:33:21] TV-LED (-82) *
+15:30:49.546 > [D][WiFiMulti.cpp:151] run():        6: [1][4C:E1:75:1D:01:64] wireless (-82) *
+15:30:49.551 > [D][WiFiMulti.cpp:151] run():        7: [11][7A:45:97:20:91:2A] Chik chik zig zig (-82) *
+15:30:49.563 > [D][WiFiMulti.cpp:151] run():        8: [1][BC:67:1C:64:33:20] Wireless (-83) *
+15:30:49.568 > [D][WiFiMulti.cpp:149] run():  --->   9: [1][BC:67:1C:64:33:22] LUMS-Events (-83) *
+15:30:49.578 > [D][WiFiMulti.cpp:151] run():        10: [6][08:5A:11:23:67:E0] Wireless-LEC (-83) *
+15:30:49.583 > [D][WiFiMulti.cpp:151] run():        11: [1][4C:E1:75:1D:01:62] LUMS (-83) *
+15:30:49.589 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F2] LUMS (-84) *
+15:30:49.600 > [D][WiFiMulti.cpp:151] run():        13: [11][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-91) *
+15:30:49.604 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: BC:67:1C:64:33:22 SSID: LUMS-Events Channel: 1 (-83)
+15:30:55.515 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+15:30:55.536 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+15:30:55.545 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 10.130.215.94, MASK: 255.255.0.0, GW: 10.130.0.1
+15:30:55.550 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+15:30:55.556 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: LUMS-Events
+15:30:55.557 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 10.130.215.94
+15:30:55.567 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: BC:67:1C:64:33:22
+15:30:55.572 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 1
+15:30:55.577 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+15:30:55.729 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+15:30:55.729 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:30:55.748 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:30:55.751 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:30:55.758 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:30:55.764 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:30:55.769 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 209628
+15:30:55.774 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:30:56.084 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:30:56.096 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:30:56.102 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:30:56.113 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:30:56.118 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:31:06.117 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:31:06.122 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:06.128 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:06.133 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:06.138 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 207120
+15:31:06.144 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:31:06.212 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:31:06.218 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:31:06.223 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:31:06.234 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:31:06.240 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:31:16.239 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:31:16.244 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:16.249 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:16.250 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:16.260 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 207500
+15:31:16.266 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:31:24.814 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:31:24.820 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:31:24.825 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:31:24.836 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:31:24.841 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:31:34.841 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:31:34.844 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:34.852 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:34.853 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:34.862 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 206884
+15:31:34.868 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:31:43.676 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:31:43.682 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:31:43.687 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:31:43.698 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:31:43.704 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:31:53.698 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:31:53.698 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:53.713 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:53.719 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:31:53.724 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 207152
+15:31:53.730 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:31:56.309 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:31:56.314 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:31:56.319 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:31:56.330 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:31:56.331 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:32:06.335 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:32:06.340 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:06.345 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:06.346 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:06.356 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 206764
+15:32:06.362 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:32:07.346 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:32:07.346 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:32:07.363 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:32:07.364 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:32:07.379 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:32:17.378 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:32:17.383 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:17.389 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:17.393 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:17.399 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 206396
+15:32:17.404 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:32:18.871 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:32:18.876 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:32:18.881 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:32:18.892 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:32:18.896 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:32:24.614 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 16 - AP_STACONNECTED
+15:32:25.860 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 18 - AP_STAIPASSIGNED
+15:32:28.243 > [D][AQISensor.cpp:456] updateSGP30Baseline(): Stored new SGP30 baseline: eCO2: 37708, TVOC: 36069
+15:32:28.893 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:32:28.893 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:28.908 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:28.911 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:28.919 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 202764
+15:32:28.922 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:32:30.679 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:32:30.686 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:32:30.691 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:32:30.701 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:32:30.708 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:32:40.693 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:32:40.709 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:40.715 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:40.721 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:40.726 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 203960
+15:32:40.731 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+15:32:41.044 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+15:32:41.051 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+15:32:41.058 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+15:32:41.070 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+15:32:41.071 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+15:32:51.075 > [E][WiFiClientSecure.cpp:133] connect(): start_ssl_client: -1
+15:32:51.080 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:51.085 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:51.091 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:51.096 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+15:32:51.101 > [D][OTA.cpp:16] downloadUpdate(): Latest version not defined in Firebase! Skipping update...
+15:32:51.107 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+15:32:52.693 > [E][AQISensor.cpp:408] readSGP30(): SGP30 measurement failed!
+15:32:54.509 > [E][esp32-hal-i2c.c:318] i2cDumpI2c(): i2c=0x3ffbdff8
+15:32:54.509 > [I][esp32-hal-i2c.c:319] i2cDumpI2c(): dev=0x60013000 date=0x16042000
+15:32:54.520 > [I][esp32-hal-i2c.c:321] i2cDumpI2c(): lock=0x3ffb844c
+15:32:54.520 > [I][esp32-hal-i2c.c:323] i2cDumpI2c(): num=0
+15:32:54.525 > [I][esp32-hal-i2c.c:324] i2cDumpI2c(): mode=1
+15:32:54.530 > [I][esp32-hal-i2c.c:325] i2cDumpI2c(): stage=3
+15:32:54.535 > [I][esp32-hal-i2c.c:326] i2cDumpI2c(): error=5
+15:32:54.535 > [I][esp32-hal-i2c.c:327] i2cDumpI2c(): event=0x3ffb84f4 bits=312
+15:32:54.548 > [I][esp32-hal-i2c.c:328] i2cDumpI2c(): intr_handle=0x3ffb8528
+15:32:54.553 > [I][esp32-hal-i2c.c:329] i2cDumpI2c(): dq=0x3ffdd648
+15:32:54.553 > [I][esp32-hal-i2c.c:330] i2cDumpI2c(): queueCount=2
+15:32:54.558 > [I][esp32-hal-i2c.c:331] i2cDumpI2c(): queuePos=1
+15:32:54.563 > [I][esp32-hal-i2c.c:332] i2cDumpI2c(): errorByteCnt=-1
+15:32:54.570 > [I][esp32-hal-i2c.c:333] i2cDumpI2c(): errorQueue=0
+15:32:54.574 > [I][esp32-hal-i2c.c:334] i2cDumpI2c(): debugFlags=0x00000000
+15:32:54.580 > [I][esp32-hal-i2c.c:311] i2cDumpDqData(): Debug Buffer not Enabled
+15:32:54.585 > [I][esp32-hal-i2c.c:354] i2cDumpInts(): Debug Buffer not Enabled
+15:32:54.590 > [I][esp32-hal-i2c.c:1138] i2cProcQueue(): Bus busy, reinit
+15:32:54.595 > [W][esp32-hal-i2c.c:1419] i2cCheckLineState(): invalid state sda(21)=0, scl(22)=1
+15:32:54.602 > [D][esp32-hal-i2c.c:1427] i2cCheckLineState(): Recovered after 1 Cycles
+15:32:54.692 > [E][AQISensor.cpp:408] readSGP30(): SGP30 measurement failed!
+15:32:56.567 > [E][AQISensor.cpp:408] readSGP30(): SGP30 measurement failed!
+15:33:01.692 > [D][main.cpp:258] setup(): Cloud IoT Setup Complete
+15:33:08.645 > [E][AQISensor.cpp:408] readSGP30(): SGP30 measurement failed!
+15:33:10.592 > [E][AQISensor.cpp:408] readSGP30(): SGP30 measurement failed!
+15:33:20.684 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 3
+15:33:20.689 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1750328155
+15:33:20.696 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1750329200
+15:33:20.701 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:33:20.703 > 
+15:33:20.858 > [I][main.cpp:379] vAcquireData(): 2025-06-19 15:33:20,testuu,23.9, 59.1, 971.0, 2, 3, 3, 100.00, 44.73, 0.75, 415, 13, 0
+15:33:21.861 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+15:33:21.861 > 
+15:33:22.864 > [D][ping.cpp:203] ping_recv(): Request timeout for icmp_seq 1
+15:33:22.864 > 
+15:33:23.692 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 3524
+15:33:26.692 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2452
+15:33:29.692 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2452
+15:33:32.694 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2452
+15:33:35.729 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2452
+15:33:36.381 > [E][WiFiGeneric.cpp:739] hostByName(): DNS Failed for www.google.com
+15:33:36.388 > [E][ESPWiFi.cpp:310] check_Internet(): DNS resolution failed: Invalid IP (0.0.0.0)
+15:33:36.393 > [E][espMQTT.cpp:281] live_broadcast(): No ping received for live data
+15:33:36.393 > [V][main.cpp:390] vAcquireData(): Stack usage of acquiredata Task: 6972
+15:33:36.404 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:33:36.409 > 
+15:33:36.409 > [D][Storage.cpp:224] write_data(): File written
+15:33:36.416 > [D][main.cpp:487] vStorage(): Data Written: 2025-06-19 15:33:20,testuu,23.9, 59.1, 971.0, 2, 3, 3, 100.00, 44.73, 0.75, 415, 13, 0
+15:33:36.428 > [I][main.cpp:490] vStorage(): data written to storage
+15:33:36.433 > [V][main.cpp:511] vStorage(): Stack usage of Storage Task: 2748
+15:33:36.450 > [I][esp32-hal-i2c.c:1138] i2cProcQueue(): Bus busy, reinit
+15:33:36.494 > Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+15:33:36.508 > Core 0 register dump:
+15:33:36.508 > PC      : 0x40101e1f  PS      : 0x00060430  A0      : 0x8010239c  A1      : 0x3ffdab80  
+15:33:36.515 > A2      : 0x00000020  A3      : 0x3ffdac1c  A4      : 0x00000032  A5      : 0x3ffbdff8  
+15:33:36.524 > A6      : 0x60013000  A7      : 0x00004e20  A8      : 0x80101e15  A9      : 0x3ffdab60  
+15:33:36.527 > A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3ffdb2b0  A13     : 0x3ffc2b34  
+15:33:36.541 > A14     : 0x0000000d  A15     : 0x3ffbdff8  SAR     : 0x00000013  EXCCAUSE: 0x00000006  
+15:33:36.545 > EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+15:33:36.557 > 
+15:33:36.557 > ELF file SHA256: 0000000000000000
+15:33:36.561 > 
+15:33:36.561 > Backtrace: 0x40101e1f:0x3ffdab80 0x40102399:0x3ffdabc0 0x400dd889:0x3ffdabe0 0x400dd93d:0x3ffdac10 0x400dd9ad:0x3ffdac40 0x401abd15:0x3ffdac60 0x401abd62:0x3ffdac80 0x400f2256:0x3ffdaca0 0x400f2408:0x3ffdacd0 0x400d2e26:0x3ffdad00 0x400dc28a:0x3ffdad70 0x400dc8d3:0x3ffdaee0 0x400f6695:0x3ffdaf20 0x400f47c5:0x3ffdaf60 0x400f488d:0x3ffdafa0 0x400f4ae1:0x3ffdaff0 0x401aca25:0x3ffdb010 0x401ad08e:0x3ffdb050 0x401ad217:0x3ffdb070 0x4008a426:0x3ffdb0a0
+15:33:36.599 > 
+15:33:36.599 > Rebooting...
+15:33:36.604 > ets Jun  8 2016 00:22:57
+15:33:36.604 > 
+15:33:36.604 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+15:33:36.609 > configsip: 0, SPIWP:0xee
+15:33:36.609 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+15:33:36.613 > mode:DIO, clock div:2
+15:33:36.620 > load:0x3fff0018,len:4
+15:33:36.620 > load:0x3fff001c,len:1044
+15:33:36.626 > load:0x40078000,len:10124
+15:33:36.626 > load:0x40080400,len:5828
+15:33:36.626 > entry 0x400806a8
+15:33:37.207 > [D][main.cpp:79] setup(): 
+15:33:37.207 > Current Version: 1.1.1
+15:33:37.207 > Description: AQI Meter OTA Updates have been added
+15:33:37.212 > Commit Date: 3 March 2025
+15:33:37.341 > [D][AQISensor.cpp:21] init(): AHT20 initialized
+15:33:37.341 > [E][AQISensor.cpp:27] init(): Could not find BMP280 sensor on address 0x76! Trying alternate address 0x77...
+15:33:37.465 > [D][AQISensor.cpp:31] init(): BMP280 initialized on address 0x77
+15:33:37.965 > [D][AQISensor.cpp:91] init(): Scanning SGP30 I2C bus...
+15:33:37.965 > [D][AQISensor.cpp:96] init(): SGP30 detected at address 0x58
+15:33:37.999 > [D][AQISensor.cpp:110] init(): SGP30 initialized successfully
+15:33:37.999 > [D][AQISensor.cpp:120] init(): Loaded preferences:
+15:33:37.999 > [D][AQISensor.cpp:121] init():   eCO2_base: 37708
+15:33:38.010 > [D][AQISensor.cpp:122] init():   TVOC_base: 36069
+15:33:38.011 > [D][AQISensor.cpp:123] init():   lastCalibrationTime: 1750329148
+15:33:38.020 > [D][AQISensor.cpp:124] init():   calibrationInProgress: false
+15:33:38.026 > [D][AQISensor.cpp:125] init():   calibrationStartMillis: 1609459200
+15:33:38.031 > [D][AQISensor.cpp:128] init(): Current time: 1609459200
+15:33:38.032 > [D][AQISensor.cpp:139] init(): Starting 12-hour calibration (baseline too old or missing)...
+15:33:39.079 > [D][AQISensor.cpp:159] init(): PM5007 initialized
+15:33:39.079 > [D][AQISensor.cpp:186] init(): MICS6814 sensor initialized
+15:33:41.281 > [E][AQISensor.cpp:236] readOzoneData(): O3 Sensor: No valid response! Check wiring.
+15:33:41.287 > [D][AQISensor.cpp:198] init(): O3 sensor failed to initialize!
+15:33:41.292 > [D][main.cpp:125] setup(): AQI sensor initialized successfully!
+15:33:41.293 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+15:33:41.302 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+15:33:41.308 > [D][Storage.cpp:45] init_storage(): SDHC 
+15:33:41.314 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+15:33:41.319 > [D][Storage.cpp:63] init_storage(): Previous data found! 
+15:33:41.319 > [D][Storage.cpp:82] init_storage(): File is: 
+15:33:41.329 > [D][Storage.cpp:83] init_storage(): /20250619.txt 
+15:33:41.330 > [D][Storage.cpp:84] init_storage(): Position is: 
+15:33:41.330 > [D][Storage.cpp:85] init_storage(): 282324 
+15:33:41.340 > [I][Storage.cpp:142] init_storage(): AP storage found!
+15:33:41.346 > [D][main.cpp:140] setup(): Storage initialization success!
+15:33:41.469 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+15:33:41.474 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:33:41.479 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+15:33:41.485 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+15:33:41.490 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+15:33:41.494 > [D][Storage.cpp:729] return_APList(): Hassaan 
+15:33:41.494 > [D][Storage.cpp:746] return_APList(): 12344321 
+15:33:41.501 > [D][Storage.cpp:757] return_APList(): New AP returned 
+15:33:41.506 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+15:33:41.511 > [D][Storage.cpp:729] return_APList(): LUMS-Events 
+15:33:41.513 > [D][Storage.cpp:746] return_APList(): Epple@2025 
+15:33:41.522 > [D][Storage.cpp:757] return_APList(): New AP returned 
+15:33:41.528 > [D][Storage.cpp:772] return_APList(): End of data reached 
+15:33:41.535 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: Hassaan
+15:33:41.539 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+15:33:41.539 > [V][ESPWiFi.cpp:68] update_APs(): SSID: Hassaan 
+15:33:41.543 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+15:33:41.550 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: LUMS-Events
+15:33:41.555 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+15:33:41.560 > [V][ESPWiFi.cpp:68] update_APs(): SSID: LUMS-Events 
+15:33:41.566 > [V][ESPWiFi.cpp:69] update_APs(): Password: Epple@2025 
+15:33:41.569 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 2 
+15:33:41.577 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:33:44.995 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:33:45.011 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 20
+15:33:45.016 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+15:33:45.016 > [I][WiFiMulti.cpp:119] run(): [WIFI] 20 networks found
+15:33:45.022 > [D][WiFiMulti.cpp:151] run():        0: [1][92:E4:98:BE:7F:54] NeuBolt (-43) *
+15:33:45.033 > [D][WiFiMulti.cpp:151] run():        1: [2][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+15:33:45.037 > [D][WiFiMulti.cpp:151] run():        2: [10][50:D4:F7:10:A0:06] TP-Link_A006 (-59) *
+15:33:45.043 > [D][WiFiMulti.cpp:151] run():        3: [10][90:9A:4A:B8:CD:83] Airbus380 (-64) *
+15:33:45.054 > [D][WiFiMulti.cpp:151] run():        4: [6][F2:0B:49:27:71:61] TR (-67) *
+15:33:45.059 > [D][WiFiMulti.cpp:151] run():        5: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+15:33:45.065 > [D][WiFiMulti.cpp:151] run():        6: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+15:33:45.076 > [D][WiFiMulti.cpp:149] run():  --->   7: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+15:33:45.080 > [D][WiFiMulti.cpp:151] run():        8: [6][08:5A:11:23:67:E0] Wireless-LEC (-77) *
+15:33:45.086 > [D][WiFiMulti.cpp:151] run():        9: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+15:33:45.097 > [D][WiFiMulti.cpp:149] run():  --->   10: [1][70:70:8B:DD:0B:F5] LUMS-Events (-81) *
+15:33:45.099 > [D][WiFiMulti.cpp:151] run():        11: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-81) *
+15:33:45.114 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-81) *
+15:33:45.116 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-82) *
+15:33:45.124 > [D][WiFiMulti.cpp:151] run():        14: [1][4C:E1:75:1D:01:60] wireless-apple (-82) *
+15:33:45.135 > [D][WiFiMulti.cpp:151] run():        15: [1][4C:E1:75:1D:01:62] LUMS (-82) *
+15:33:45.140 > [D][WiFiMulti.cpp:151] run():        16: [1][BC:67:1C:64:33:21] TV-LED (-83) *
+15:33:45.145 > [D][WiFiMulti.cpp:151] run():        17: [11][7A:45:97:20:91:2A] Chik chik zig zig (-83) *
+15:33:45.155 > [D][WiFiMulti.cpp:149] run():  --->   18: [1][BC:67:1C:64:33:22] LUMS-Events (-84) *
+15:33:45.162 > [D][WiFiMulti.cpp:151] run():        19: [11][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-86) *
+15:33:45.166 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: F8:A7:3A:87:EE:E5 SSID: LUMS-Events Channel: 6 (-77)
+15:33:49.268 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 5 - STA_DISCONNECTED
+15:33:49.273 > [W][WiFiGeneric.cpp:391] _eventCallback(): Reason: 203 - ASSOC_FAIL
+15:33:49.278 > [E][WiFiMulti.cpp:184] run(): [WIFI] Connecting Failed.
+15:33:49.284 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:33:49.289 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+15:33:49.295 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+15:33:49.300 > [I][main.cpp:195] setup(): ID found!
+15:33:49.300 > Device name: testuu
+15:33:49.306 > 
+15:33:49.306 > [D][ESPWiFi.cpp:232] start_soft_ap(): Soft AP IP: 192.168.4.1
+15:33:49.310 > [D][ESPWiFi.cpp:234] start_soft_ap(): Web server initalized.
+15:33:49.316 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:33:49.318 > [D][WiFiMulti.cpp:195] run(): [WIFI] delete old wifi config...
+15:33:49.327 > [D][WiFiMulti.cpp:198] run(): [WIFI] start scan
+15:33:49.333 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:33:49.335 > [I][main.cpp:285] setup(): Internet not availaible
+15:33:49.343 > [I][Restart.cpp:10] incrementRestartCount(): Previous Restart Count: 4
+15:33:49.345 > [I][Restart.cpp:11] incrementRestartCount(): Previous Restart Time: 1750328155
+15:33:49.354 > [I][Restart.cpp:12] incrementRestartCount(): Current Restart Time: 1750329228
+15:33:49.364 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:33:49.367 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:33:49.375 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:33:49.393 > 
+15:33:49.393 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:33:49.393 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+15:33:49.541 > [D][AQISensor.cpp:456] updateSGP30Baseline(): Stored new SGP30 baseline: eCO2: 0, TVOC: 0
+15:33:49.541 > [I][main.cpp:379] vAcquireData(): 2025-06-19 15:33:48,testuu,23.8, 59.9, 971.0, 1, 1, 1, 100.00, 45.32, 0.75, 400, 0, 0
+15:33:49.563 > [D][espMQTT.cpp:269] live_broadcast(): Empty String Invalid Data
+15:33:49.568 > [V][main.cpp:390] vAcquireData(): Stack usage of acquiredata Task: 7180
+15:33:49.574 > [D][Storage.cpp:224] write_data(): File written
+15:33:49.579 > [D][main.cpp:487] vStorage(): Data Written: 2025-06-19 15:33:48,testuu,23.8, 59.9, 971.0, 1, 1, 1, 100.00, 45.32, 0.75, 400, 0, 0
+15:33:49.580 > [I][main.cpp:490] vStorage(): data written to storage
+15:33:49.595 > [V][main.cpp:511] vStorage(): Stack usage of Storage Task: 2748
+15:33:51.843 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+15:33:51.845 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 19
+15:33:51.881 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 16 - AP_STACONNECTED
+15:33:52.331 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 18 - AP_STAIPASSIGNED
+15:33:52.364 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:33:52.364 > 
+15:33:52.364 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 3524
+15:33:52.386 > [V][main.cpp:612] vWifiTransfer(): Stack usage of Wifi Task: 4460
+15:33:52.531 > [I][main.cpp:379] vAcquireData(): 2025-06-19 15:33:51,testuu,23.8, 60.0, 971.0, 1, 1, 1, 100.00, 44.99, 0.73, 400, 0, 0
+15:33:52.536 > [D][espMQTT.cpp:269] live_broadcast(): Empty String Invalid Data
+15:33:52.545 > [V][main.cpp:390] vAcquireData(): Stack usage of acquiredata Task: 7180
+15:33:52.552 > [D][Storage.cpp:224] write_data(): File written
+15:33:52.552 > [D][main.cpp:487] vStorage(): Data Written: 2025-06-19 15:33:51,testuu,23.8, 60.0, 971.0, 1, 1, 1, 100.00, 44.99, 0.73, 400, 0, 0
+15:33:52.568 > [I][main.cpp:490] vStorage(): data written to storage
+15:33:52.568 > [V][main.cpp:511] vStorage(): Stack usage of Storage Task: 2748
+15:33:55.367 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+15:33:55.367 > 
+15:33:55.373 > [V][main.cpp:446] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2644
+15:33:55.386 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+15:33:55.528 > [I][main.cpp:379] vAcquireData(): 2025-06-19 15:33:54,testuu,23.8, 60.1, 971.0, 1, 1, 1, 100.00, 44.35, 0.71, 400, 3, 0
+15:33:55.533 > [D][espMQTT.cpp:269] live_broadcast(): Empty String Invalid Data
+15:33:55.541 > [V][main.cpp:390] vAcquireData(): Stack usage of acquiredata Task: 7180
+15:33:55.541 > [D][Storage.cpp:224] write_data(): File written
+15:33:55.541 > [D][main.cpp:487] vStorage(): Data Written: 2025-06-19 15:33:54,testuu,23.8, 60.1, 971.0, 1, 1, 1, 100.00, 44.35, 0.71, 400, 3, 0
+15:33:55.561 > [I][main.cpp:490] vStorage(): data written to storage
+15:33:55.561 > [V][main.cpp:511] vStorage(): Stack usage of Storage Task: 2748

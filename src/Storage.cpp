@@ -1,5 +1,6 @@
 #include <Storage.h>
 #include <rtc.h>
+#include <myNVS.h>
 
 Preferences configuration__;
 
@@ -98,7 +99,7 @@ bool Storage::init_storage()
             curr_read_file = configuration__.getString("file-name", "");
             configuration__.end();
 
-            curr_read_pos = FILE_START_POS;
+            curr_read_pos = FILE_START_POS ;
 
             if (curr_read_file != "")
             {
@@ -191,7 +192,7 @@ bool Storage::write_data(String timenow, String data)
         if ((CARD_SIZE_LIMIT_MB - SD.usedBytes() / 1048576) < LOW_SPACE_LIMIT_MB)
         { // check if there is low space.
             log_w("Space low! Deleting oldest file ");
-            this->remove_oldest_file();
+            this->remove_oldest_file("/");
         }
         String path = "/" + timenow + ".txt";
         File file;
@@ -316,6 +317,7 @@ bool Storage::write_AP(String SSID, String Password) // made with small edits to
     }
 }
 
+
 /**
  * @brief This function clears the APs.txt file and adds new credentials according to
  * the String passed to it. It is called whenever the AP list exceeds a set
@@ -394,34 +396,60 @@ void Storage::create_header(File file)
     file.println(FILE_HEADER);
 }
 
+
+String Storage:: findOldestFile(const String &folderPath)
+{
+    File root = SD.open(folderPath);
+    if (!root || !root.isDirectory())
+    {
+        log_e("Failed to open directory: %s", folderPath.c_str());
+        return "";
+    }
+
+    String oldestFile = "";
+    while (File file = root.openNextFile())
+    {
+        if (!file.isDirectory())
+        {
+            String fileName = file.name();
+            file.close();
+            if (fileName.endsWith(".txt"))
+            {
+                fileName = fileName.substring(0, fileName.length() - 4);
+                if (oldestFile == "" || fileName < oldestFile)
+                {
+                    oldestFile = fileName;
+                }
+            }
+        }
+    }
+    return oldestFile;
+}
+
 /**
  * @brief remove_oldest_file() function removes the oldest file based on filename.
  * - it converts the filenames to integers and loops over all files to check the smallest.
  * - then the smallest files is removed.
  */
-void Storage::remove_oldest_file()
+void Storage::remove_oldest_file(const String &folderPath)
 {
-    log_w("Space is low! Removing oldest file.. ");
-    File file = SD.open("/");
-    int oldest = 99999999; // initialized so that first file detected is oldest file
-    while (file.openNextFile())
-    { // convert filename to number and compare to get the oldest
-        String name = file.name();
-        if (name != "/config.txt" && name != "/APs.txt")
-        { // do not check the config.txt file
-            name.remove(0, 1);
-            int temp = name.toInt();
-            if (temp < oldest)
-                oldest = temp;
-        }
+    String oldestFile = findOldestFile(folderPath);
+    if (oldestFile.isEmpty())
+    {
+        log_w("No files found to remove in %s", folderPath.c_str());
+        return;
     }
-    file.close();
-    String path = "/" + String(oldest) + ".txt"; // convert number back to filename
-    SD.remove(path);
-    log_d("File removed at: ");
-    log_d("%s ", path);
-}
 
+    String filePath = folderPath + oldestFile + ".txt";
+    if (SD.remove(filePath))
+    {
+        log_d("Successfully removed file: %s", filePath.c_str());
+    }
+    else
+    {
+        log_e("Failed to remove file: %s", filePath.c_str());
+    }
+}
 /**
  * @brief read_data() function reads the data starting with < character
  * - it returns data by removing encapsulation "<>"
@@ -600,10 +628,18 @@ void Storage::update_config()
     if (getTime2().toDouble() > (curr_read_file.substring(1, 9)).toDouble())
     {
         curr_read_file = next_file(curr_read_file);
+
         while (!SD.exists(curr_read_file) && getTime2().toDouble() > (curr_read_file.substring(1, 9)).toDouble())
         {
             log_d("Moving onto next file, %s does not exist", curr_read_file.c_str());
             curr_read_file = next_file(curr_read_file);
+        }
+
+        String curr_read_file_tmp; 
+        myNVS::read::currentFileName(curr_read_file_tmp);
+        if (curr_read_file_tmp != curr_read_file)
+        {
+            myNVS::write::currentFileName(curr_read_file);
         }
     }
     // update the curr_read_pos
@@ -778,10 +814,10 @@ void Storage::mark_data(String timenow)
             {
                 curr_read_pos = FILE_START_POS;
                 curr_read_file = next_filename;
-
                 configuration__.begin("pointer", false);
                 configuration__.putString("file-name", curr_read_file);
                 configuration__.end();
+                myNVS::write::lastfilesettime(getUnixTime());
             }
         }
         else
@@ -884,6 +920,71 @@ long Storage::get_unsent_data(String timenow)
     }
     else
         return 0;
+}
+
+bool Storage::handleLiveDataFailure(String data) {
+    static unsigned long lastFailTime = 0;
+    static int fileIndex = 1; // Start with file 1
+    static bool isLogging = false;
+    unsigned long currentTime = millis();
+
+    if (!isLogging) {
+        lastFailTime = currentTime;
+        isLogging = true;
+    }
+
+    // Switch files every 10 minutes
+    if (currentTime - lastFailTime >= LIVE_DATA_BACKUP_TIME * 60 * MS_IN_SECOND) {
+        // Toggle between file 1 and 2
+        fileIndex = (fileIndex == 1) ? 2 : 1;
+
+        // Delete the new current file if it exists (to start fresh)
+        String filePath = "/liveData/" + String(fileIndex) + ".txt";
+        if (SD.exists(filePath)) {
+            SD.remove(filePath); // Remove the file to start fresh
+        }
+
+        lastFailTime = currentTime; // Reset the timer
+    }
+
+    // Ensure the /liveData directory exists
+    String dirPath = "/liveData";
+    if (!SD.exists(dirPath)) {
+        if (!SD.mkdir(dirPath)) {
+            log_e("Failed to create liveData directory");
+            return false;
+        }
+    }
+
+    // Open the current file in APPEND mode (to add data every 3 seconds)
+    String filePath = "/liveData/" + String(fileIndex) + ".txt";
+    File file = SD.open(filePath, FILE_APPEND); // Always append to the current file
+
+    if (!file) {
+        log_e("Failed to open %s for writing", filePath.c_str());
+        return false;
+    }
+
+    // Add CSV header only if the file is new (size == 0)
+    if (file.size() == 0) {
+        this->create_header(file);
+    }
+
+    // Write the data
+    String temp = "<" + data + ">";
+    bool writeSuccess = false;
+
+    if (temp.length() > MIN_CHUNK_SIZE_B) {
+        if (file.println(temp)) {
+            log_d("File written at Path: %s\n%s", filePath.c_str(), data.c_str());
+            writeSuccess = true;
+        } else {
+            log_e("Write failed");
+        }
+    }
+
+    file.close();
+    return writeSuccess;
 }
 
 Storage storage; // storage object created for storing data
