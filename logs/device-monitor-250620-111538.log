@@ -1,0 +1,218 @@
+11:15:39.044 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:39.044 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:39.044 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:39.064 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:39.067 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:39.067 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:39.067 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:39.079 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:39.086 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:39.090 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:39.090 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:39.110 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:37,testuu,23.9, 60.7, 975.2, 2, 3, 3, 100.00, 42.93, 0.70, 400, 0, 0.00
+11:15:39.144 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:39.144 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:39.144 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:39.161 > [D][Storage.cpp:224] write_data(): File written
+11:15:39.277 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:37,testuu,23.9, 60.7, 975.2, 2, 3, 3, 100.00, 42.93, 0.70, 400, 0, 0.00
+11:15:39.300 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:39.301 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:40.039 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:40.093 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:40.114 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:40.127 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:40.231 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:31,testuu,23.9, 60.6, 975.2, 2, 2, 2, 99.71, 42.36, 0.68, 400, 0, 0.00
+11:15:40.242 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:40.247 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:40.253 > [I][Storage.cpp:803] mark_data(): Size: 49200,   Pos: 48926,   Chunk: 89,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:40.359 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:40.359 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:40.381 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:40.486 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:34,testuu,23.9, 60.7, 975.1, 1, 2, 2, 99.63, 42.44, 0.68, 400, 0, 0.00
+11:15:40.497 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:40.497 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:40.508 > [I][Storage.cpp:803] mark_data(): Size: 49200,   Pos: 49017,   Chunk: 89,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:40.609 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:40.626 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:40.642 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:40.749 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:37,testuu,23.9, 60.7, 975.2, 2, 3, 3, 100.00, 42.93, 0.70, 400, 0, 0.00
+11:15:40.760 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:40.764 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:40.770 > [I][Storage.cpp:803] mark_data(): Size: 49200,   Pos: 49108,   Chunk: 90,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:40.879 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:41.292 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:41.293 > 
+11:15:41.362 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:42.044 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:42.044 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:42.044 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:42.063 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:42.070 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:42.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:42.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:42.080 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:42.087 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:42.091 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:42.091 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:42.100 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:40,testuu,23.9, 60.7, 975.2, 1, 2, 2, 99.95, 42.47, 0.69, 400, 0, 0.00
+11:15:42.149 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:42.149 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:42.160 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:42.166 > [D][Storage.cpp:224] write_data(): File written
+11:15:42.209 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:40,testuu,23.9, 60.7, 975.2, 1, 2, 2, 99.95, 42.47, 0.69, 400, 0, 0.00
+11:15:42.221 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:42.225 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:43.879 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+11:15:43.879 > [I][DataTransfer.cpp:143] handleStorageTransfer(): Sent 3 data chunks to cloud.
+11:15:43.890 > [V][main.cpp:611] vWifiTransfer(): Stack usage of Wifi Task: 3524
+11:15:44.292 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:44.293 > 
+11:15:44.360 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:45.053 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:45.058 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:45.058 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:45.063 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:45.065 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:45.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:45.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:45.080 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:45.085 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:45.086 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:45.086 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:45.099 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:43,testuu,23.8, 60.7, 975.2, 1, 2, 2, 99.73, 42.41, 0.68, 400, 0, 0.00
+11:15:45.147 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:45.147 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:45.161 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:45.166 > [D][Storage.cpp:224] write_data(): File written
+11:15:45.172 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:43,testuu,23.8, 60.7, 975.2, 1, 2, 2, 99.73, 42.41, 0.68, 400, 0, 0.00
+11:15:45.183 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:45.187 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:46.927 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:46.996 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:46.999 > [I][DataTransfer.cpp:136] handleStorageTransfer(): No Data to be sent!
+11:15:47.293 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:47.293 > 
+11:15:47.359 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:48.053 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:48.058 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:48.058 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:48.064 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:48.066 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:48.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:48.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:48.080 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:48.085 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:48.087 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:48.087 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:48.100 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:46,testuu,23.8, 60.7, 975.2, 1, 2, 2, 100.00, 43.38, 0.71, 400, 0, 0.00
+11:15:48.149 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:48.149 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:48.165 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:48.166 > [D][Storage.cpp:224] write_data(): File written
+11:15:48.177 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:46,testuu,23.8, 60.7, 975.2, 1, 2, 2, 100.00, 43.38, 0.71, 400, 0, 0.00
+11:15:48.196 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:48.196 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:50.006 > [V][main.cpp:611] vWifiTransfer(): Stack usage of Wifi Task: 3524
+11:15:50.160 > dhcps: send_nak>>udp_sendto result 0
+11:15:50.292 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:50.293 > 
+11:15:50.367 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:51.042 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:51.058 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:51.058 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:51.064 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:51.066 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:51.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:51.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:51.079 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:51.085 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:51.088 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:51.088 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:51.099 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:49,testuu,23.8, 60.8, 975.2, 1, 2, 2, 99.71, 42.61, 0.69, 400, 0, 0.00
+11:15:51.151 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:51.151 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:51.162 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:51.166 > [D][Storage.cpp:224] write_data(): File written
+11:15:51.172 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:49,testuu,23.8, 60.8, 975.2, 1, 2, 2, 99.71, 42.61, 0.69, 400, 0, 0.00
+11:15:51.183 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:51.188 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:53.059 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:53.134 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:53.146 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:53.159 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:53.259 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:40,testuu,23.9, 60.7, 975.2, 1, 2, 2, 99.95, 42.47, 0.69, 400, 0, 0.00
+11:15:53.274 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:53.279 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:53.285 > [I][Storage.cpp:803] mark_data(): Size: 49565,   Pos: 49200,   Chunk: 89,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:53.359 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:53.426 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:53.430 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:53.430 > 
+11:15:54.176 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:54.192 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:54.192 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:54.198 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:54.201 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:54.201 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:54.201 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:54.213 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:54.219 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:54.222 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:54.222 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:54.235 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:52,testuu,23.8, 60.9, 975.2, 2, 2, 2, 99.71, 42.39, 0.68, 400, 0, 0.00
+11:15:54.294 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:54.294 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:54.294 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:54.310 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:54.316 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:54.417 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:43,testuu,23.8, 60.7, 975.2, 1, 2, 2, 99.73, 42.41, 0.68, 400, 0, 0.00
+11:15:54.428 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:54.432 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:54.440 > [I][Storage.cpp:803] mark_data(): Size: 49565,   Pos: 49291,   Chunk: 89,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:54.547 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:54.558 > [D][Storage.cpp:224] write_data(): File written
+11:15:54.558 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:54.599 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:52,testuu,23.8, 60.9, 975.2, 2, 2, 2, 99.71, 42.39, 0.68, 400, 0, 0.00
+11:15:54.613 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:54.619 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:54.620 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:54.717 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:46,testuu,23.8, 60.7, 975.2, 1, 2, 2, 100.00, 43.38, 0.71, 400, 0, 0.00
+11:15:54.733 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:54.738 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:54.743 > [I][Storage.cpp:803] mark_data(): Size: 49656,   Pos: 49382,   Chunk: 90,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:54.889 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:54.899 > [D][Storage.cpp:468] read_data(): Reading file: /20250620.txt
+11:15:54.908 > [D][Storage.cpp:620] read_data(): Parsed successfully
+11:15:55.009 > [D][DataTransfer.cpp:116] handleStorageTransfer(): Data Sent: 2025-06-20 11:15:49,testuu,23.8, 60.8, 975.2, 1, 2, 2, 99.71, 42.61, 0.69, 400, 0, 0.00
+11:15:55.024 > [D][DataTransfer.cpp:117] handleStorageTransfer(): sent data to cloud 
+11:15:55.029 > [D][Storage.cpp:792] mark_data(): Marking current chunk of data 
+11:15:55.035 > [I][Storage.cpp:803] mark_data(): Size: 49656,   Pos: 49474,   Chunk: 89,   Write: /20250620.txt,   Read: /20250620.txt
+11:15:55.140 > [D][Storage.cpp:839] mark_data(): Data marked and config updated! 
+11:15:56.293 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:56.293 > 
+11:15:56.360 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460
+11:15:57.042 > [D][AQISensor.cpp:237] readOzoneData(): O3 Sensor received bytes: 
+11:15:57.057 > [D][AQISensor.cpp:239] readOzoneData(): 0xFF 
+11:15:57.057 > [D][AQISensor.cpp:239] readOzoneData(): 0x17 
+11:15:57.063 > [D][AQISensor.cpp:239] readOzoneData(): 0x04 
+11:15:57.065 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:57.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:57.074 > [D][AQISensor.cpp:239] readOzoneData(): 0x00 
+11:15:57.079 > [D][AQISensor.cpp:239] readOzoneData(): 0x27 
+11:15:57.081 > [D][AQISensor.cpp:239] readOzoneData(): 0x0F 
+11:15:57.081 > [D][AQISensor.cpp:239] readOzoneData(): 0xAF 
+11:15:57.081 > [D][AQISensor.cpp:261] readOzoneData(): O3 Sensor: Successfully read 0 PPB (0.000 PPM) on attempt 1
+11:15:57.101 > [I][main.cpp:378] vAcquireData(): 2025-06-20 11:15:55,testuu,23.8, 60.9, 975.1, 2, 2, 2, 99.73, 42.39, 0.68, 400, 0, 0.00
+11:15:57.148 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+11:15:57.149 > [D][espMQTT.cpp:300] live_broadcast(): Live data is being broadcasted on MQTT
+11:15:57.159 > [V][main.cpp:389] vAcquireData(): Stack usage of acquiredata Task: 6604
+11:15:57.164 > [D][Storage.cpp:224] write_data(): File written
+11:15:57.208 > [D][main.cpp:486] vStorage(): Data Written: 2025-06-20 11:15:55,testuu,23.8, 60.9, 975.1, 2, 2, 2, 99.73, 42.39, 0.68, 400, 0, 0.00
+11:15:57.219 > [I][main.cpp:489] vStorage(): data written to storage
+11:15:57.226 > [V][main.cpp:510] vStorage(): Stack usage of Storage Task: 2612
+11:15:58.143 > [I][rtc.cpp:233] setRtcTime(): Set RTC time
+11:15:58.143 > [I][DataTransfer.cpp:143] handleStorageTransfer(): Sent 4 data chunks to cloud.
+11:15:58.153 > [V][main.cpp:611] vWifiTransfer(): Stack usage of Wifi Task: 3524
+11:15:59.293 > [I][main.cpp:333] vAcquireData(): Cycle number: 1
+11:15:59.293 > 
+11:15:59.358 > [V][main.cpp:445] vLiveBroadcast(): Stack usage of liveBroadCast Task: 2460

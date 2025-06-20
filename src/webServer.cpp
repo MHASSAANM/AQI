@@ -476,7 +476,6 @@ String aqiDataAsJson()
     json += ",\"so2_ppm\":\"" + String(data.so2_ppm, 2) + "\"";
     #endif
     json += "}";
-    //log_d("%s", json.c_str());
     return json;
 }
 
@@ -493,7 +492,6 @@ String sensorStatusAsJson()
     json += ",\"so2\":" + String(aqiSensor.so2SensorInitialized ? "true" : "false");
     #endif
     json += "}";
-    //log_d("%s", json.c_str());
     return json;
 }
 
@@ -504,11 +502,11 @@ void myServerInitialize()
 
     // serve html
     server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
-              { request->send_P(200, "text/html", index_html); });
+              { request->send(200, "text/html", index_html); });
 
     // serve css
     server.on("/styles.css", HTTP_GET, [](AsyncWebServerRequest *request)
-              { request->send_P(200, "text/css", styles_css); });
+              { request->send(200, "text/css", styles_css); });
 
     // serve js
     server.on("/index.js", HTTP_GET, [](AsyncWebServerRequest *request)

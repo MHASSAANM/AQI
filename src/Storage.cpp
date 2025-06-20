@@ -233,6 +233,7 @@ bool Storage::write_data(String timenow, String data)
             if (!resume)
             { // if this is the first time system has started, create config.txt and update variables
                 String name = file.name();
+                curr_read_file = "/" + name;
                 curr_read_file = name;
                 File file2 = SD.open("/config.txt", FILE_WRITE);
                 file2.print(curr_read_file);

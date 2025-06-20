@@ -158,7 +158,6 @@ bool AQISensor::init() {
     return true;
 }
 
-// Rest of the methods remain the same...
 bool AQISensor::initOzoneSensor() {
     uint8_t disableCmd[9] = {0xFF, 0x01, 0x78, 0x41, 0x00, 0x00, 0x00, 0x00, 0x46};
     ozoneSerial->write(disableCmd, 9);
@@ -167,40 +166,55 @@ bool AQISensor::initOzoneSensor() {
 }
 
 bool AQISensor::readOzoneData(float &ozonePPM) {
-    uint8_t requestCmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
-    ozoneSerial->write(requestCmd, 9);
-    delay(500);
-
-    uint8_t buffer[9];
-    int bytesRead = 0;
-    unsigned long startTime = millis();
-
-    while (bytesRead < 9 && millis() - startTime < 1000) {
-        if (ozoneSerial->available()) {
-            buffer[bytesRead++] = ozoneSerial->read();
+    const int maxRetries = 3;
+    
+    for (int attempt = 0; attempt < maxRetries; attempt++) {
+        while (ozoneSerial->available()) {
+            ozoneSerial->read();
         }
+        delay(100);
+        uint8_t requestCmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
+        ozoneSerial->write(requestCmd, 9);
+        delay(500);
+        uint8_t buffer[9];
+        int bytesRead = 0;
+        unsigned long startTime = millis();
+        while (bytesRead < 9 && millis() - startTime < 1000) {
+            if (ozoneSerial->available()) {
+                buffer[bytesRead++] = ozoneSerial->read();
+            }
+        }
+        if (bytesRead != 9) {
+            log_w("O3 Sensor: Attempt %d - No valid response! Received %d bytes", attempt + 1, bytesRead);
+            if (attempt < maxRetries - 1) continue;
+            log_e("O3 Sensor: Failed after %d attempts!", maxRetries);
+            return false;
+        }
+        log_d("O3 Sensor received bytes: ");
+        for (int i = 0; i < 9; i++) {
+            log_d("0x%02X ", buffer[i]);
+        }
+        if (buffer[0] != 0xFF || buffer[1] != 0x17) {
+            log_w("O3 Sensor: Attempt %d - Invalid response format! Header: 0x%02X 0x%02X", attempt + 1, buffer[0], buffer[1]);
+            if (attempt < maxRetries - 1) continue;
+            log_e("O3 Sensor: Invalid format after %d attempts!", maxRetries);
+            return false;
+        }
+        uint8_t checksum = ~(buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7]) + 1;
+        if (checksum != buffer[8]) {
+            log_w("O3 Sensor: Attempt %d - Checksum mismatch! Expected: 0x%02X, Received: 0x%02X", attempt + 1, checksum, buffer[8]);
+            if (attempt < maxRetries - 1) continue;
+            log_e("O3 Sensor: Checksum failed after %d attempts!", maxRetries);
+            return false;
+        }
+        int ozonePPB = (buffer[4] << 8) | buffer[5];
+        ozonePPM = ozonePPB / 1000.0;
+        log_d("O3 Sensor: Successfully read %d PPB (%.3f PPM) on attempt %d", ozonePPB, ozonePPM, attempt + 1);
+        return true;
     }
-
-    if (bytesRead != 9) {
-        log_e("O3 Sensor: No valid response! Check wiring.");
-        return false;
-    }
-
-    if (buffer[0] != 0xFF || buffer[1] != 0x17) {
-        log_e("O3 Sensor: Invalid response format!");
-        return false;
-    }
-
-    uint8_t checksum = ~(buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7]) + 1;
-    if (checksum != buffer[8]) {
-        log_e("O3 Sensor: Checksum mismatch!");
-        return false;
-    }
-
-    int ozonePPB = (buffer[4] << 8) | buffer[5];
-    ozonePPM = ozonePPB / 1000.0;
-    return true;
+    return false;
 }
+
 
 #ifdef ENABLE_SO2_SENSOR
 bool AQISensor::initSO2Sensor() {

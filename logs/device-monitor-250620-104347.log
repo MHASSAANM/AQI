@@ -1,0 +1,1755 @@
+10:43:47.581 > ets Jun  8 2016 00:22:57
+10:43:47.581 > 
+10:43:47.581 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:43:47.581 > configsip: 0, SPIWP:0xee
+10:43:47.581 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:43:47.581 > mode:DIO, clock div:2
+10:43:47.581 > load:0x3fff0018,len:4
+10:43:47.581 > load:0x3fff001c,len:1044
+10:43:47.581 > load:0x40078000,len:10124
+10:43:47.581 > load:0x40080400,len:5828
+10:43:47.581 > entry 0x400806a8
+10:43:47.581 > �[D][main.cpp:79] setup(): 
+10:43:47.581 > Current Version: 1.1.0
+10:43:47.581 > Description: AQI Meter 1st firmware release
+10:43:47.581 > Commit Date: 19 June 2025
+10:43:47.581 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:43:47.581 > [W][sd_diskio.cpp:101] sdWait(): Wait Failed
+10:43:47.581 > [E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+10:43:47.581 > [W][sd_diskio.cpp:175] sdCommand(): crc error
+10:43:47.581 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:43:47.581 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:43:47.581 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:43:47.581 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:43:47.581 > [I][Storage.cpp:154] init_storage(): AP storage not found. Creating new file 
+10:43:47.581 > [D][main.cpp:133] setup(): Storage initialization success!
+10:43:47.581 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:43:47.581 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:43:47.581 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:43:47.581 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:43:47.581 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:43:47.581 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:43:47.581 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:43:47.581 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:43:47.581 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:43:47.581 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:43:47.581 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:43:47.581 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:43:47.581 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:43:47.581 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:43:47.581 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:43:50.181 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:43:50.186 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 32
+10:43:50.186 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:43:50.186 > [I][WiFiMulti.cpp:119] run(): [WIFI] 32 networks found
+10:43:50.197 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+10:43:50.207 > [D][WiFiMulti.cpp:151] run():        1: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-52) *
+10:43:50.212 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-53) *
+10:43:50.218 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-53) *
+10:43:50.220 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-53) *
+10:43:50.235 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-59) *
+10:43:50.236 > [D][WiFiMulti.cpp:151] run():        6: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:43:50.250 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:43:50.256 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:44] wireless (-72) *
+10:43:50.260 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-72) *
+10:43:50.270 > [D][WiFiMulti.cpp:151] run():        10: [11][08:5A:11:23:67:E0] Wireless-LEC (-72) *
+10:43:50.270 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F4] wireless (-75) *
+10:43:50.283 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:43:50.287 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:43:50.299 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:43:50.303 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E0] wireless-apple (-79) *
+10:43:50.315 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E2] LUMS (-79) *
+10:43:50.320 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-79) *
+10:43:50.332 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E4] wireless (-79) *
+10:43:50.332 > [D][WiFiMulti.cpp:151] run():        19: [13][E0:0E:DA:51:D4:22] LUMS (-79) *
+10:43:50.343 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:20] Wireless (-80) *
+10:43:50.347 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:21] TV-LED (-80) *
+10:43:50.347 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:23] LUMS (-80) *
+10:43:50.364 > [D][WiFiMulti.cpp:151] run():        23: [13][E0:0E:DA:51:D4:25] LUMS-Events (-80) *
+10:43:50.364 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:22] LUMS-Events (-81) *
+10:43:50.377 > [D][WiFiMulti.cpp:151] run():        25: [1][4C:E1:75:1D:01:62] LUMS (-83) *
+10:43:50.383 > [D][WiFiMulti.cpp:151] run():        26: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:43:50.391 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:60] wireless-apple (-83) *
+10:43:50.398 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:65] LUMS-Events (-83) *
+10:43:50.407 > [D][WiFiMulti.cpp:151] run():        29: [11][28:6F:7F:DF:D3:32] LUMS (-87) *
+10:43:50.410 > [D][WiFiMulti.cpp:151] run():        30: [11][28:6F:7F:DF:D3:35] LUMS-Events (-89) *
+10:43:50.414 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:34] wireless (-89) *
+10:43:50.426 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-52)
+10:43:54.886 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:43:58.029 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:43:58.030 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:43:58.039 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:43:58.040 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:43:58.051 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:43:58.055 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:43:58.057 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:43:58.066 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:43:58.069 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:43:58.077 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:43:58.082 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:43:58.089 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:43:58.090 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:43:58.139 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:43:58.140 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:43:58.150 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:43:58.155 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:43:58.155 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:43:58.165 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:43:58.170 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213980
+10:43:58.176 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:43:58.478 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:43:58.480 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:43:58.489 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:43:58.500 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:43:58.505 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:44:00.897 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:44:00.898 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:44:00.908 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170300
+10:44:00.913 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:44:00.918 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:44:00.930 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:44:01.415 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:01.421 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:44:01.425 > [I][main.cpp:211] setup(): Restarting...
+10:44:02.425 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:44:02.430 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:02.435 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:02.456 > ets Jun  8 2016 00:22:57
+10:44:02.456 > 
+10:44:02.456 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:44:02.461 > configsip: 0, SPIWP:0xee
+10:44:02.461 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:44:02.466 > mode:DIO, clock div:2
+10:44:02.473 > load:0x3fff0018,len:4
+10:44:02.473 > load:0x3fff001c,len:1044
+10:44:02.475 > load:0x40078000,len:10124
+10:44:02.475 > load:0x40080400,len:5828
+10:44:02.475 > entry 0x400806a8
+10:44:03.052 > [D][main.cpp:79] setup(): 
+10:44:03.052 > Current Version: 1.1.0
+10:44:03.052 > Description: AQI Meter 1st firmware release
+10:44:03.058 > Commit Date: 19 June 2025
+10:44:03.063 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:44:03.068 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:44:03.073 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:44:03.074 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:44:03.085 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:44:03.085 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:44:03.085 > [D][main.cpp:133] setup(): Storage initialization success!
+10:44:03.209 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:44:03.214 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:03.219 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:44:03.225 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:03.230 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:44:03.236 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:44:03.241 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:44:03.241 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:44:03.246 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:44:03.251 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:44:03.257 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:44:03.258 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:44:03.267 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:44:03.274 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:44:03.279 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:44:07.110 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:44:07.115 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 34
+10:44:07.120 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:44:07.120 > [I][WiFiMulti.cpp:119] run(): [WIFI] 34 networks found
+10:44:07.126 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+10:44:07.138 > [D][WiFiMulti.cpp:151] run():        1: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-51) *
+10:44:07.141 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-53) *
+10:44:07.147 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-53) *
+10:44:07.157 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A4] wireless (-54) *
+10:44:07.163 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-60) *
+10:44:07.169 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-68) *
+10:44:07.180 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:44] wireless (-70) *
+10:44:07.184 > [D][WiFiMulti.cpp:151] run():        8: [11][08:5A:11:23:67:E0] Wireless-LEC (-70) *
+10:44:07.190 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:40] wireless-apple (-71) *
+10:44:07.201 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-71) *
+10:44:07.206 > [D][WiFiMulti.cpp:151] run():        11: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:44:07.212 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-75) *
+10:44:07.222 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-76) *
+10:44:07.225 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F2] LUMS (-76) *
+10:44:07.233 > [D][WiFiMulti.cpp:151] run():        15: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:44:07.235 > [D][WiFiMulti.cpp:151] run():        16: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-80) *
+10:44:07.250 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-80) *
+10:44:07.253 > [D][WiFiMulti.cpp:151] run():        18: [13][E0:0E:DA:51:D4:25] LUMS-Events (-80) *
+10:44:07.265 > [D][WiFiMulti.cpp:151] run():        19: [1][BC:67:1C:64:33:22] LUMS-Events (-81) *
+10:44:07.277 > [D][WiFiMulti.cpp:151] run():        20: [6][F8:A7:3A:87:EE:E0] wireless-apple (-81) *
+10:44:07.282 > [D][WiFiMulti.cpp:151] run():        21: [6][F8:A7:3A:87:EE:E2] LUMS (-81) *
+10:44:07.284 > [D][WiFiMulti.cpp:151] run():        22: [6][F8:A7:3A:87:EE:E4] wireless (-81) *
+10:44:07.297 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:20] Wireless (-82) *
+10:44:07.305 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:23] LUMS (-82) *
+10:44:07.307 > [D][WiFiMulti.cpp:151] run():        25: [1][BC:67:1C:64:33:21] TV-LED (-83) *
+10:44:07.314 > [D][WiFiMulti.cpp:151] run():        26: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:44:07.324 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:60] wireless-apple (-84) *
+10:44:07.331 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:65] LUMS-Events (-84) *
+10:44:07.335 > [D][WiFiMulti.cpp:151] run():        29: [11][28:6F:7F:DF:D3:32] LUMS (-87) *
+10:44:07.346 > [D][WiFiMulti.cpp:151] run():        30: [1][8E:17:59:DD:9B:63] DIRECT-rSDESKTOP-4C5H5QDOPQF (-88) *
+10:44:07.351 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:35] LUMS-Events (-88) *
+10:44:07.361 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:34] wireless (-89) *
+10:44:07.368 > [D][WiFiMulti.cpp:151] run():        33: [3][30:16:9D:9A:EB:84] NeuBolt (-90) *
+10:44:07.374 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-51)
+10:44:10.869 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:44:10.920 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:44:10.931 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:44:10.931 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:44:10.945 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:44:10.951 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:44:10.957 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:44:10.959 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:44:10.967 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:44:10.972 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:44:10.974 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:44:10.983 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:44:10.987 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:44:10.994 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:44:11.035 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:44:11.035 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:11.055 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:11.060 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:11.065 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:11.071 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:11.073 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 214004
+10:44:11.081 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:44:11.134 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:44:11.137 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:44:11.145 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:44:11.157 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:44:11.161 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:44:13.286 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:44:13.286 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:44:13.300 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170324
+10:44:13.306 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:44:13.311 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:44:13.319 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:44:13.804 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:13.810 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:44:13.814 > [I][main.cpp:211] setup(): Restarting...
+10:44:14.814 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:44:14.819 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:14.824 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:14.853 > ets Jun  8 2016 00:22:57
+10:44:14.853 > 
+10:44:14.853 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:44:14.853 > configsip: 0, SPIWP:0xee
+10:44:14.853 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:44:14.865 > mode:DIO, clock div:2
+10:44:14.870 > load:0x3fff0018,len:4
+10:44:14.870 > load:0x3fff001c,len:1044
+10:44:14.875 > load:0x40078000,len:10124
+10:44:14.875 > load:0x40080400,len:5828
+10:44:14.875 > entry 0x400806a8
+10:44:15.450 > [D][main.cpp:79] setup(): 
+10:44:15.450 > Current Version: 1.1.0
+10:44:15.450 > Description: AQI Meter 1st firmware release
+10:44:15.452 > Commit Date: 19 June 2025
+10:44:15.461 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:44:15.466 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:44:15.473 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:44:15.475 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:44:15.483 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:44:15.486 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:44:15.486 > [D][main.cpp:133] setup(): Storage initialization success!
+10:44:15.607 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:44:15.612 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:15.617 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:44:15.623 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:15.628 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:44:15.633 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:44:15.641 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:44:15.641 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:44:15.649 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:44:15.649 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:44:15.659 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:44:15.664 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:44:15.666 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:44:15.671 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:44:15.678 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:44:21.179 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:44:21.179 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 37
+10:44:21.197 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:44:21.197 > [I][WiFiMulti.cpp:119] run(): [WIFI] 37 networks found
+10:44:21.203 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-50) *
+10:44:21.213 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:44:21.219 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:44:21.224 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:44:21.234 > [D][WiFiMulti.cpp:151] run():        4: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-58) *
+10:44:21.234 > [D][WiFiMulti.cpp:151] run():        5: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:44:21.246 > [D][WiFiMulti.cpp:151] run():        6: [6][4C:E1:75:3C:A2:44] wireless (-69) *
+10:44:21.258 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:40] wireless-apple (-70) *
+10:44:21.258 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-70) *
+10:44:21.267 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:44:21.273 > [D][WiFiMulti.cpp:151] run():        10: [1][70:70:8B:DD:0B:F4] wireless (-74) *
+10:44:21.284 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F2] LUMS (-74) *
+10:44:21.284 > [D][WiFiMulti.cpp:151] run():        12: [11][08:5A:11:23:67:E0] Wireless-LEC (-74) *
+10:44:21.299 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:44:21.301 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-76) *
+10:44:21.311 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E2] LUMS (-78) *
+10:44:21.321 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E4] wireless (-78) *
+10:44:21.324 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-79) *
+10:44:21.332 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E0] wireless-apple (-79) *
+10:44:21.341 > [D][WiFiMulti.cpp:151] run():        19: [13][E0:0E:DA:51:D4:25] LUMS-Events (-80) *
+10:44:21.348 > [D][WiFiMulti.cpp:151] run():        20: [13][E0:0E:DA:51:D4:22] LUMS (-80) *
+10:44:21.351 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:20] Wireless (-81) *
+10:44:21.364 > [D][WiFiMulti.cpp:151] run():        22: [13][E0:0E:DA:51:D4:24] wireless (-81) *
+10:44:21.368 > [D][WiFiMulti.cpp:151] run():        23: [1][4C:E1:75:1D:01:62] LUMS (-82) *
+10:44:21.376 > [D][WiFiMulti.cpp:151] run():        24: [1][4C:E1:75:1D:01:64] wireless (-82) *
+10:44:21.386 > [D][WiFiMulti.cpp:151] run():        25: [1][BC:67:1C:64:33:22] LUMS-Events (-82) *
+10:44:21.391 > [D][WiFiMulti.cpp:151] run():        26: [1][BC:67:1C:64:33:23] LUMS (-82) *
+10:44:21.397 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:60] wireless-apple (-83) *
+10:44:21.402 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:65] LUMS-Events (-83) *
+10:44:21.413 > [D][WiFiMulti.cpp:151] run():        29: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-86) *
+10:44:21.418 > [D][WiFiMulti.cpp:151] run():        30: [1][BC:67:1C:64:33:21] TV-LED (-87) *
+10:44:21.426 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:32] LUMS (-87) *
+10:44:21.435 > [D][WiFiMulti.cpp:151] run():        32: [13][0C:54:15:74:2D:31] arkWiFi5 (-88) *
+10:44:21.440 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:34] wireless (-89) *
+10:44:21.450 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:35] LUMS-Events (-89) *
+10:44:21.452 > [D][WiFiMulti.cpp:151] run():        35: [11][2C:3E:CF:61:F4:81] LUMS (-90) *
+10:44:21.461 > [D][WiFiMulti.cpp:151] run():        36: [6][08:5A:11:23:77:F0] Wirless-LEC (-95) *
+10:44:21.472 > [E][WiFiMulti.cpp:191] run(): [WIFI] no matching wifi found!
+10:44:21.475 > [E][ESPWiFi.cpp:252] connect_to_nearest(): Connection timed out 
+10:44:21.482 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:44:21.488 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:44:21.491 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:44:21.499 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:44:27.209 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:44:27.214 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 35
+10:44:27.219 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:44:27.219 > [I][WiFiMulti.cpp:119] run(): [WIFI] 35 networks found
+10:44:27.225 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-50) *
+10:44:27.235 > [D][WiFiMulti.cpp:151] run():        1: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-52) *
+10:44:27.240 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:44:27.247 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:44:27.251 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:44:27.263 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-60) *
+10:44:27.267 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-65) *
+10:44:27.277 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:44] wireless (-69) *
+10:44:27.284 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:40] wireless-apple (-71) *
+10:44:27.291 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:42] LUMS (-71) *
+10:44:27.300 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-71) *
+10:44:27.305 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-73) *
+10:44:27.311 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-77) *
+10:44:27.322 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-77) *
+10:44:27.326 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:44:27.333 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:44:27.341 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:44:27.349 > [D][WiFiMulti.cpp:151] run():        17: [1][70:70:8B:DD:0B:F5] LUMS-Events (-78) *
+10:44:27.353 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-78) *
+10:44:27.365 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E0] wireless-apple (-78) *
+10:44:27.367 > [D][WiFiMulti.cpp:151] run():        20: [13][E0:0E:DA:51:D4:25] LUMS-Events (-80) *
+10:44:27.381 > [D][WiFiMulti.cpp:151] run():        21: [13][E0:0E:DA:51:D4:24] wireless (-80) *
+10:44:27.385 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:44:27.392 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:21] TV-LED (-82) *
+10:44:27.397 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:20] Wireless (-82) *
+10:44:27.407 > [D][WiFiMulti.cpp:151] run():        25: [1][BC:67:1C:64:33:22] LUMS-Events (-82) *
+10:44:27.414 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:22] LUMS (-83) *
+10:44:27.419 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:65] LUMS-Events (-84) *
+10:44:27.429 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:64] wireless (-85) *
+10:44:27.434 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:60] wireless-apple (-85) *
+10:44:27.442 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:62] LUMS (-86) *
+10:44:27.451 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:44:27.456 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:32] LUMS (-89) *
+10:44:27.457 > [D][WiFiMulti.cpp:151] run():        33: [11][2C:3E:CF:61:F4:80] Wireless (-91) *
+10:44:27.467 > [D][WiFiMulti.cpp:151] run():        34: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:44:27.478 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-50)
+10:44:33.429 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:44:33.560 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:44:33.566 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:44:33.571 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:44:33.577 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:44:33.581 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:44:33.588 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:44:33.590 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:44:33.598 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:44:33.652 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:44:33.652 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:33.662 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:33.667 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:33.673 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:33.678 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:33.684 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 214136
+10:44:33.688 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:44:33.754 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:44:33.760 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:44:33.765 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:44:33.776 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:44:33.781 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:44:36.019 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:44:36.024 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:44:36.030 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170304
+10:44:36.033 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:44:36.041 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:44:36.051 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:44:36.502 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:36.502 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:44:36.516 > [I][main.cpp:211] setup(): Restarting...
+10:44:37.515 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:44:37.520 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:37.525 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:37.554 > ets Jun  8 2016 00:22:57
+10:44:37.554 > 
+10:44:37.554 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:44:37.554 > configsip: 0, SPIWP:0xee
+10:44:37.554 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:44:37.567 > mode:DIO, clock div:2
+10:44:37.569 > load:0x3fff0018,len:4
+10:44:37.569 > load:0x3fff001c,len:1044
+10:44:37.578 > load:0x40078000,len:10124
+10:44:37.578 > load:0x40080400,len:5828
+10:44:37.578 > entry 0x400806a8
+10:44:38.153 > [D][main.cpp:79] setup(): 
+10:44:38.153 > Current Version: 1.1.0
+10:44:38.153 > Description: AQI Meter 1st firmware release
+10:44:38.158 > Commit Date: 19 June 2025
+10:44:38.163 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:44:38.167 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:44:38.167 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:44:38.179 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:44:38.184 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:44:38.184 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:44:38.184 > [D][main.cpp:133] setup(): Storage initialization success!
+10:44:38.309 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:44:38.314 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:38.319 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:44:38.325 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:38.330 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:44:38.336 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:44:38.340 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:44:38.340 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:44:38.346 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:44:38.352 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:44:38.355 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:44:38.362 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:44:38.368 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:44:38.373 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:44:38.378 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:44:42.210 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:44:42.215 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 31
+10:44:42.220 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:44:42.220 > [I][WiFiMulti.cpp:119] run(): [WIFI] 31 networks found
+10:44:42.226 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-50) *
+10:44:42.262 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A5] LUMS-Events (-50) *
+10:44:42.262 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-50) *
+10:44:42.262 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-51) *
+10:44:42.262 > [D][WiFiMulti.cpp:149] run():  --->   4: [7][50:0F:F5:80:A3:39] EnergyInformatics (-52) *
+10:44:42.268 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-56) *
+10:44:42.270 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:44:42.280 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:44:42.286 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:40] wireless-apple (-71) *
+10:44:42.297 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:42] LUMS (-71) *
+10:44:42.301 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:44] wireless (-71) *
+10:44:42.307 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-72) *
+10:44:42.309 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-76) *
+10:44:42.322 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-76) *
+10:44:42.328 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:44:42.333 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F5] LUMS-Events (-77) *
+10:44:42.340 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:44:42.350 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:44:42.353 > [D][WiFiMulti.cpp:151] run():        18: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-78) *
+10:44:42.365 > [D][WiFiMulti.cpp:151] run():        19: [1][BC:67:1C:64:33:22] LUMS-Events (-80) *
+10:44:42.368 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:44:42.382 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:21] TV-LED (-81) *
+10:44:42.385 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:20] Wireless (-82) *
+10:44:42.393 > [D][WiFiMulti.cpp:151] run():        23: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-84) *
+10:44:42.405 > [D][WiFiMulti.cpp:151] run():        24: [13][E0:0E:DA:51:D4:25] LUMS-Events (-84) *
+10:44:42.408 > [D][WiFiMulti.cpp:151] run():        25: [11][28:6F:7F:DF:D3:32] LUMS (-86) *
+10:44:42.414 > [D][WiFiMulti.cpp:151] run():        26: [11][28:6F:7F:DF:D3:35] LUMS-Events (-86) *
+10:44:42.424 > [D][WiFiMulti.cpp:151] run():        27: [11][28:6F:7F:DF:D3:34] wireless (-86) *
+10:44:42.431 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:64] wireless (-87) *
+10:44:42.435 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:60] wireless-apple (-88) *
+10:44:42.447 > [D][WiFiMulti.cpp:151] run():        30: [10][00:E0:4C:E8:53:A0] dlink-53A0 (-90) *
+10:44:42.451 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-52)
+10:44:46.129 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:44:46.258 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:44:46.264 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:44:46.269 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:44:46.274 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:44:46.280 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:44:46.285 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:44:46.285 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:44:46.296 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:44:46.301 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:44:46.302 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:44:46.312 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:44:46.317 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:44:46.320 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:44:46.364 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:44:46.364 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:46.369 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:46.381 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:46.385 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:46.385 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:46.396 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213860
+10:44:46.402 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:44:46.439 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:44:46.449 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:44:46.456 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:44:46.465 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:44:46.470 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:44:48.632 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:44:48.632 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:44:48.649 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170312
+10:44:48.650 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:44:48.660 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:44:48.670 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:44:49.229 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:49.229 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:44:49.247 > [I][main.cpp:211] setup(): Restarting...
+10:44:50.247 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:44:50.253 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:50.257 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:44:50.285 > ets Jun  8 2016 00:22:57
+10:44:50.285 > 
+10:44:50.285 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:44:50.285 > configsip: 0, SPIWP:0xee
+10:44:50.285 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:44:50.298 > mode:DIO, clock div:2
+10:44:50.304 > load:0x3fff0018,len:4
+10:44:50.304 > load:0x3fff001c,len:1044
+10:44:50.308 > load:0x40078000,len:10124
+10:44:50.308 > load:0x40080400,len:5828
+10:44:50.308 > entry 0x400806a8
+10:44:50.881 > [D][main.cpp:79] setup(): 
+10:44:50.881 > Current Version: 1.1.0
+10:44:50.881 > Description: AQI Meter 1st firmware release
+10:44:50.881 > Commit Date: 19 June 2025
+10:44:50.895 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:44:50.900 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:44:50.906 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:44:50.909 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:44:50.916 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:44:50.922 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:44:50.922 > [D][main.cpp:133] setup(): Storage initialization success!
+10:44:51.031 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:44:51.031 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:51.050 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:44:51.056 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:44:51.061 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:44:51.066 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:44:51.072 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:44:51.072 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:44:51.077 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:44:51.082 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:44:51.092 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:44:51.106 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:44:51.106 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:44:51.106 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:44:51.112 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:44:54.729 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:44:54.746 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 35
+10:44:54.751 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:44:54.751 > [I][WiFiMulti.cpp:119] run(): [WIFI] 35 networks found
+10:44:54.756 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-51) *
+10:44:54.767 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A4] wireless (-51) *
+10:44:54.772 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-51) *
+10:44:54.778 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-51) *
+10:44:54.789 > [D][WiFiMulti.cpp:149] run():  --->   4: [7][50:0F:F5:80:A3:39] EnergyInformatics (-53) *
+10:44:54.794 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+10:44:54.800 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:44:54.806 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:40] wireless-apple (-70) *
+10:44:54.815 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-70) *
+10:44:54.816 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:44] wireless (-70) *
+10:44:54.831 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:44:54.833 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-73) *
+10:44:54.843 > [D][WiFiMulti.cpp:151] run():        12: [6][F8:A7:3A:87:EE:E0] wireless-apple (-76) *
+10:44:54.853 > [D][WiFiMulti.cpp:151] run():        13: [6][F8:A7:3A:87:EE:E4] wireless (-76) *
+10:44:54.856 > [D][WiFiMulti.cpp:151] run():        14: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-76) *
+10:44:54.868 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E2] LUMS (-76) *
+10:44:54.875 > [D][WiFiMulti.cpp:151] run():        16: [1][70:70:8B:DD:0B:F2] LUMS (-77) *
+10:44:54.880 > [D][WiFiMulti.cpp:151] run():        17: [1][70:70:8B:DD:0B:F5] LUMS-Events (-77) *
+10:44:54.886 > [D][WiFiMulti.cpp:151] run():        18: [1][70:70:8B:DD:0B:F4] wireless (-77) *
+10:44:54.895 > [D][WiFiMulti.cpp:151] run():        19: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:44:54.900 > [D][WiFiMulti.cpp:151] run():        20: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-79) *
+10:44:54.912 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:21] TV-LED (-81) *
+10:44:54.916 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:44:54.923 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:22] LUMS-Events (-81) *
+10:44:54.934 > [D][WiFiMulti.cpp:151] run():        24: [13][E0:0E:DA:51:D4:24] wireless (-81) *
+10:44:54.940 > [D][WiFiMulti.cpp:151] run():        25: [1][4C:E1:75:1D:01:65] LUMS-Events (-82) *
+10:44:54.945 > [D][WiFiMulti.cpp:151] run():        26: [1][BC:67:1C:64:33:20] Wireless (-82) *
+10:44:54.955 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:25] LUMS-Events (-82) *
+10:44:54.956 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:62] LUMS (-84) *
+10:44:54.966 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:64] wireless (-84) *
+10:44:54.969 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:60] wireless-apple (-84) *
+10:44:54.982 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:32] LUMS (-87) *
+10:44:54.983 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:34] wireless (-87) *
+10:44:54.998 > [D][WiFiMulti.cpp:151] run():        33: [1][8E:17:59:DD:9B:63] DIRECT-rSDESKTOP-4C5H5QDOPQF (-90) *
+10:44:55.000 > [D][WiFiMulti.cpp:151] run():        34: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:44:55.015 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-53)
+10:44:58.901 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:44:58.955 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:44:58.961 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:44:58.966 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:44:58.972 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:44:58.977 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:44:58.982 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:44:58.987 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:44:58.993 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:44:58.998 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:44:59.004 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:44:59.006 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:44:59.014 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:44:59.018 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:44:59.079 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:44:59.079 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:59.079 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:59.098 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:59.098 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:59.106 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:44:59.109 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213704
+10:44:59.117 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:44:59.196 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:44:59.201 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:44:59.206 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:44:59.218 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:44:59.223 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:45:01.519 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:45:01.524 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:45:01.529 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170156
+10:45:01.530 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:45:01.540 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:45:01.551 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:45:02.129 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:02.144 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:45:02.149 > [I][main.cpp:211] setup(): Restarting...
+10:45:03.150 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:45:03.155 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:03.160 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:03.200 > ets Jun  8 2016 00:22:57
+10:45:03.200 > 
+10:45:03.200 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:45:03.200 > configsip: 0, SPIWP:0xee
+10:45:03.200 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:45:03.211 > mode:DIO, clock div:2
+10:45:03.216 > load:0x3fff0018,len:4
+10:45:03.216 > load:0x3fff001c,len:1044
+10:45:03.221 > load:0x40078000,len:10124
+10:45:03.221 > load:0x40080400,len:5828
+10:45:03.221 > entry 0x400806a8
+10:45:03.794 > [D][main.cpp:79] setup(): 
+10:45:03.795 > Current Version: 1.1.0
+10:45:03.795 > Description: AQI Meter 1st firmware release
+10:45:03.800 > Commit Date: 19 June 2025
+10:45:03.805 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:45:03.810 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:45:03.816 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:45:03.821 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:45:03.825 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:45:03.832 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:45:03.832 > [D][main.cpp:133] setup(): Storage initialization success!
+10:45:03.949 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:45:03.954 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:03.960 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:45:03.965 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:03.970 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:45:03.976 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:45:03.981 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:45:03.981 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:45:03.988 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:45:03.991 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:45:03.997 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:45:03.999 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:45:04.008 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:45:04.013 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:45:04.020 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:45:07.651 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:45:07.656 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 38
+10:45:07.661 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:45:07.661 > [I][WiFiMulti.cpp:119] run(): [WIFI] 38 networks found
+10:45:07.667 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-49) *
+10:45:07.677 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A4] wireless (-50) *
+10:45:07.682 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-50) *
+10:45:07.689 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-50) *
+10:45:07.700 > [D][WiFiMulti.cpp:149] run():  --->   4: [7][50:0F:F5:80:A3:39] EnergyInformatics (-54) *
+10:45:07.702 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-59) *
+10:45:07.710 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:45:07.722 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:44] wireless (-71) *
+10:45:07.726 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:45:07.731 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-72) *
+10:45:07.739 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:45:07.747 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-73) *
+10:45:07.751 > [D][WiFiMulti.cpp:151] run():        12: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-75) *
+10:45:07.764 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-76) *
+10:45:07.767 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F2] LUMS (-77) *
+10:45:07.775 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F4] wireless (-77) *
+10:45:07.785 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:45:07.789 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:45:07.796 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:45:07.805 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+10:45:07.812 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:21] TV-LED (-80) *
+10:45:07.818 > [D][WiFiMulti.cpp:151] run():        21: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-80) *
+10:45:07.829 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:20] Wireless (-81) *
+10:45:07.834 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:22] LUMS-Events (-81) *
+10:45:07.839 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:45:07.850 > [D][WiFiMulti.cpp:151] run():        25: [13][E0:0E:DA:51:D4:24] wireless (-81) *
+10:45:07.855 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:25] LUMS-Events (-82) *
+10:45:07.866 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:22] LUMS (-82) *
+10:45:07.869 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:64] wireless (-85) *
+10:45:07.877 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:62] LUMS (-85) *
+10:45:07.889 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+10:45:07.893 > [D][WiFiMulti.cpp:151] run():        31: [1][4C:E1:75:1D:01:60] wireless-apple (-86) *
+10:45:07.898 > [D][WiFiMulti.cpp:151] run():        32: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-87) *
+10:45:07.907 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:45:07.915 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:32] LUMS (-88) *
+10:45:07.917 > [D][WiFiMulti.cpp:151] run():        35: [11][28:6F:7F:DF:D3:35] LUMS-Events (-88) *
+10:45:07.930 > [D][WiFiMulti.cpp:151] run():        36: [11][2C:3E:CF:61:F4:81] LUMS (-92) *
+10:45:07.934 > [D][WiFiMulti.cpp:151] run():        37: [13][0C:54:15:74:2D:31] arkWiFi5 (-93) *
+10:45:07.942 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-54)
+10:45:11.228 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:45:11.347 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:45:11.352 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:45:11.357 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:45:11.363 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:45:11.368 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:45:11.374 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:45:11.379 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:45:11.385 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:45:11.390 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:45:11.395 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:45:11.401 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:45:11.405 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:45:11.411 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:45:11.473 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:45:11.473 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:11.479 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:11.489 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:11.495 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:11.500 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:11.500 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213712
+10:45:11.511 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:45:11.568 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:45:11.573 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:45:11.578 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:45:11.579 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:45:11.594 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:45:13.828 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:45:13.828 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:45:13.838 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170024
+10:45:13.839 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:45:13.850 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:45:13.857 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:45:14.424 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:14.428 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:45:14.434 > [I][main.cpp:211] setup(): Restarting...
+10:45:15.432 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:45:15.432 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:15.444 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:15.472 > ets Jun  8 2016 00:22:57
+10:45:15.472 > 
+10:45:15.472 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:45:15.480 > configsip: 0, SPIWP:0xee
+10:45:15.480 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:45:15.485 > mode:DIO, clock div:2
+10:45:15.487 > load:0x3fff0018,len:4
+10:45:15.487 > load:0x3fff001c,len:1044
+10:45:15.495 > load:0x40078000,len:10124
+10:45:15.495 > load:0x40080400,len:5828
+10:45:15.495 > entry 0x400806a8
+10:45:16.069 > [D][main.cpp:79] setup(): 
+10:45:16.069 > Current Version: 1.1.0
+10:45:16.069 > Description: AQI Meter 1st firmware release
+10:45:16.075 > Commit Date: 19 June 2025
+10:45:16.079 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:45:16.082 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:45:16.082 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:45:16.096 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:45:16.103 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:45:16.106 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:45:16.106 > [D][main.cpp:133] setup(): Storage initialization success!
+10:45:16.224 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:45:16.228 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:16.236 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:45:16.237 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:16.246 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:45:16.253 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:45:16.256 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:45:16.256 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:45:16.263 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:45:16.268 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:45:16.270 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:45:16.278 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:45:16.284 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:45:16.289 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:45:16.295 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:45:19.926 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:45:19.928 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 38
+10:45:19.937 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:45:19.937 > [I][WiFiMulti.cpp:119] run(): [WIFI] 38 networks found
+10:45:19.939 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-48) *
+10:45:19.953 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:45:19.958 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:45:19.964 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:45:19.972 > [D][WiFiMulti.cpp:149] run():  --->   4: [7][50:0F:F5:80:A3:39] EnergyInformatics (-55) *
+10:45:19.980 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-59) *
+10:45:19.984 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:45:19.995 > [D][WiFiMulti.cpp:151] run():        7: [11][08:5A:11:23:67:E0] Wireless-LEC (-71) *
+10:45:20.000 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:45:20.012 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:45:20.017 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:44] wireless (-72) *
+10:45:20.023 > [D][WiFiMulti.cpp:151] run():        11: [6][4C:E1:75:3C:A2:45] LUMS-Events (-72) *
+10:45:20.026 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-75) *
+10:45:20.039 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:45:20.044 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-76) *
+10:45:20.055 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F2] LUMS (-76) *
+10:45:20.057 > [D][WiFiMulti.cpp:151] run():        16: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-78) *
+10:45:20.066 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E0] wireless-apple (-78) *
+10:45:20.073 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E2] LUMS (-78) *
+10:45:20.082 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E4] wireless (-78) *
+10:45:20.088 > [D][WiFiMulti.cpp:151] run():        20: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-78) *
+10:45:20.098 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:22] LUMS-Events (-81) *
+10:45:20.105 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:21] TV-LED (-81) *
+10:45:20.107 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:20] Wireless (-81) *
+10:45:20.121 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:23] LUMS (-82) *
+10:45:20.123 > [D][WiFiMulti.cpp:151] run():        25: [13][E0:0E:DA:51:D4:22] LUMS (-82) *
+10:45:20.130 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:25] LUMS-Events (-82) *
+10:45:20.139 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:24] wireless (-83) *
+10:45:20.146 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:65] LUMS-Events (-84) *
+10:45:20.151 > [D][WiFiMulti.cpp:151] run():        29: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-84) *
+10:45:20.163 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:62] LUMS (-85) *
+10:45:20.167 > [D][WiFiMulti.cpp:151] run():        31: [1][4C:E1:75:1D:01:64] wireless (-85) *
+10:45:20.173 > [D][WiFiMulti.cpp:151] run():        32: [1][4C:E1:75:1D:01:60] wireless-apple (-85) *
+10:45:20.184 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:35] LUMS-Events (-88) *
+10:45:20.189 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:45:20.195 > [D][WiFiMulti.cpp:151] run():        35: [11][28:6F:7F:DF:D3:32] LUMS (-89) *
+10:45:20.214 > [D][WiFiMulti.cpp:151] run():        36: [13][0C:54:15:74:2D:31] arkWiFi5 (-92) *
+10:45:20.214 > [D][WiFiMulti.cpp:151] run():        37: [11][4E:4D:FF:82:CA:4B] Redmi A3x (-93) *
+10:45:20.217 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-55)
+10:45:23.907 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:45:23.933 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:45:23.946 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:45:23.951 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:45:23.957 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:45:23.963 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:45:23.966 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:45:23.972 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:45:23.978 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:45:23.984 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:45:23.989 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:45:23.995 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:45:24.001 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:45:24.006 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:45:24.056 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:45:24.058 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:24.071 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:24.074 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:24.079 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:24.089 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:24.089 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213712
+10:45:24.093 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:45:24.142 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:45:24.147 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:45:24.154 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:45:24.164 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:45:24.170 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:45:26.403 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:45:26.408 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:45:26.414 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170028
+10:45:26.419 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:45:26.424 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:45:26.436 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:45:26.919 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:26.925 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:45:26.929 > [I][main.cpp:211] setup(): Restarting...
+10:45:27.928 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:45:27.930 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:27.939 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:27.958 > ets Jun  8 2016 00:22:57
+10:45:27.960 > 
+10:45:27.960 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:45:27.965 > configsip: 0, SPIWP:0xee
+10:45:27.965 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:45:27.970 > mode:DIO, clock div:2
+10:45:27.975 > load:0x3fff0018,len:4
+10:45:27.975 > load:0x3fff001c,len:1044
+10:45:27.980 > load:0x40078000,len:10124
+10:45:27.980 > load:0x40080400,len:5828
+10:45:27.980 > entry 0x400806a8
+10:45:28.555 > [D][main.cpp:79] setup(): 
+10:45:28.555 > Current Version: 1.1.0
+10:45:28.555 > Description: AQI Meter 1st firmware release
+10:45:28.560 > Commit Date: 19 June 2025
+10:45:28.564 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:45:28.566 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:45:28.566 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:45:28.582 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:45:28.587 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:45:28.591 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:45:28.591 > [D][main.cpp:133] setup(): Storage initialization success!
+10:45:28.710 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:45:28.716 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:28.721 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:45:28.727 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:28.732 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:45:28.737 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:45:28.738 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:45:28.738 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:45:28.748 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:45:28.751 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:45:28.759 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:45:28.763 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:45:28.770 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:45:28.772 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:45:28.780 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:45:34.678 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:45:34.697 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 37
+10:45:34.702 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:45:34.702 > [I][WiFiMulti.cpp:119] run(): [WIFI] 37 networks found
+10:45:34.707 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-46) *
+10:45:34.720 > [D][WiFiMulti.cpp:149] run():  --->   1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-48) *
+10:45:34.722 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:45:34.729 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:45:34.736 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:45:34.745 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-56) *
+10:45:34.749 > [D][WiFiMulti.cpp:151] run():        6: [6][4C:E1:75:3C:A2:40] wireless-apple (-70) *
+10:45:34.759 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:42] LUMS (-70) *
+10:45:34.764 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:44] wireless (-70) *
+10:45:34.772 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:45:34.783 > [D][WiFiMulti.cpp:151] run():        10: [2][90:9A:4A:B8:CD:83] Airbus380 (-72) *
+10:45:34.788 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-74) *
+10:45:34.793 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-75) *
+10:45:34.804 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:45:34.807 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:45:34.814 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E0] wireless-apple (-75) *
+10:45:34.818 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-75) *
+10:45:34.831 > [D][WiFiMulti.cpp:151] run():        17: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-76) *
+10:45:34.833 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E2] LUMS (-76) *
+10:45:34.848 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E4] wireless (-76) *
+10:45:34.851 > [D][WiFiMulti.cpp:151] run():        20: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-77) *
+10:45:34.863 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:22] LUMS-Events (-79) *
+10:45:34.863 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:20] Wireless (-80) *
+10:45:34.874 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:45:34.886 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:21] TV-LED (-81) *
+10:45:34.890 > [D][WiFiMulti.cpp:151] run():        25: [13][E0:0E:DA:51:D4:25] LUMS-Events (-81) *
+10:45:34.896 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:24] wireless (-81) *
+10:45:34.905 > [D][WiFiMulti.cpp:151] run():        27: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-82) *
+10:45:34.911 > [D][WiFiMulti.cpp:151] run():        28: [13][E0:0E:DA:51:D4:22] LUMS (-82) *
+10:45:34.916 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:45:34.928 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:62] LUMS (-84) *
+10:45:34.933 > [D][WiFiMulti.cpp:151] run():        31: [1][4C:E1:75:1D:01:65] LUMS-Events (-84) *
+10:45:34.938 > [D][WiFiMulti.cpp:151] run():        32: [1][4C:E1:75:1D:01:60] wireless-apple (-85) *
+10:45:34.949 > [D][WiFiMulti.cpp:151] run():        33: [11][4E:4D:FF:82:CA:4B] Redmi A3x (-86) *
+10:45:34.952 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:45:34.960 > [D][WiFiMulti.cpp:151] run():        35: [11][28:6F:7F:DF:D3:35] LUMS-Events (-89) *
+10:45:34.971 > [D][WiFiMulti.cpp:151] run():        36: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:45:34.974 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-48)
+10:45:40.747 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:45:40.828 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:45:40.842 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:45:40.848 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:45:40.854 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:45:40.859 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:45:40.865 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:45:40.870 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:45:40.871 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:45:40.881 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:45:40.882 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:45:40.892 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:45:40.896 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:45:40.903 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:45:40.961 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:45:40.962 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:40.972 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:40.977 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:40.983 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:40.988 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:40.994 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213708
+10:45:40.999 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:45:41.050 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:45:41.064 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:45:41.069 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:45:41.080 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:45:41.085 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:45:43.297 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:45:43.303 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:45:43.308 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170024
+10:45:43.314 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:45:43.319 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:45:43.330 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:45:43.823 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:43.828 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:45:43.832 > [I][main.cpp:211] setup(): Restarting...
+10:45:44.828 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:45:44.828 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:44.843 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:44.863 > ets Jun  8 2016 00:22:57
+10:45:44.863 > 
+10:45:44.863 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:45:44.869 > configsip: 0, SPIWP:0xee
+10:45:44.869 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:45:44.872 > mode:DIO, clock div:2
+10:45:44.879 > load:0x3fff0018,len:4
+10:45:44.879 > load:0x3fff001c,len:1044
+10:45:44.882 > load:0x40078000,len:10124
+10:45:44.882 > load:0x40080400,len:5828
+10:45:44.882 > entry 0x400806a8
+10:45:45.459 > [D][main.cpp:79] setup(): 
+10:45:45.459 > Current Version: 1.1.0
+10:45:45.459 > Description: AQI Meter 1st firmware release
+10:45:45.464 > Commit Date: 19 June 2025
+10:45:45.469 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:45:45.475 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:45:45.480 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:45:45.487 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:45:45.489 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:45:45.497 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:45:45.497 > [D][main.cpp:133] setup(): Storage initialization success!
+10:45:45.658 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:45:45.663 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:45.668 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:45:45.673 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:45.679 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:45:45.685 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:45:45.689 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:45:45.689 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:45:45.695 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:45:45.699 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:45:45.706 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:45:45.711 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:45:45.717 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:45:45.722 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:45:45.727 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:45:49.358 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:45:49.363 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 38
+10:45:49.369 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:45:49.369 > [I][WiFiMulti.cpp:119] run(): [WIFI] 38 networks found
+10:45:49.373 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-45) *
+10:45:49.385 > [D][WiFiMulti.cpp:149] run():  --->   1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-50) *
+10:45:49.389 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-50) *
+10:45:49.396 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-50) *
+10:45:49.402 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-50) *
+10:45:49.411 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-57) *
+10:45:49.416 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-68) *
+10:45:49.428 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:40] wireless-apple (-71) *
+10:45:49.432 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-71) *
+10:45:49.439 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:44] wireless (-71) *
+10:45:49.449 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-71) *
+10:45:49.454 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F4] wireless (-74) *
+10:45:49.454 > [D][WiFiMulti.cpp:151] run():        12: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-75) *
+10:45:49.466 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:45:49.476 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:45:49.481 > [D][WiFiMulti.cpp:151] run():        15: [11][08:5A:11:23:67:E0] Wireless-LEC (-75) *
+10:45:49.489 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:45:49.498 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:45:49.503 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+10:45:49.514 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E4] wireless (-78) *
+10:45:49.515 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:23] LUMS (-80) *
+10:45:49.524 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:22] LUMS-Events (-80) *
+10:45:49.535 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:21] TV-LED (-80) *
+10:45:49.540 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:20] Wireless (-81) *
+10:45:49.546 > [D][WiFiMulti.cpp:151] run():        24: [13][E0:0E:DA:51:D4:25] LUMS-Events (-81) *
+10:45:49.553 > [D][WiFiMulti.cpp:151] run():        25: [13][E0:0E:DA:51:D4:24] wireless (-81) *
+10:45:49.563 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:22] LUMS (-81) *
+10:45:49.565 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:62] LUMS (-83) *
+10:45:49.579 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:64] wireless (-84) *
+10:45:49.581 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:65] LUMS-Events (-84) *
+10:45:49.589 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:60] wireless-apple (-84) *
+10:45:49.601 > [D][WiFiMulti.cpp:151] run():        31: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-84) *
+10:45:49.604 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:35] LUMS-Events (-86) *
+10:45:49.616 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:32] LUMS (-87) *
+10:45:49.622 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:34] wireless (-87) *
+10:45:49.627 > [D][WiFiMulti.cpp:151] run():        35: [3][30:16:9D:9A:EB:84] NeuBolt (-90) *
+10:45:49.632 > [D][WiFiMulti.cpp:151] run():        36: [11][2C:3E:CF:61:F4:81] LUMS (-91) *
+10:45:49.643 > [D][WiFiMulti.cpp:151] run():        37: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:45:49.648 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-50)
+10:45:53.142 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:45:53.228 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:45:53.228 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:45:53.239 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:45:53.244 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:45:53.251 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:45:53.255 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:45:53.259 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:45:53.266 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:45:53.269 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:45:53.276 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:45:53.280 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:45:53.287 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:45:53.292 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:45:53.348 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:45:53.348 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:53.348 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:53.364 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:53.370 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:53.374 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:53.380 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213692
+10:45:53.384 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:45:53.439 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:45:53.446 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:45:53.451 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:45:53.462 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:45:53.467 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:45:55.677 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:45:55.692 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:45:55.699 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170144
+10:45:55.699 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:45:55.699 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:45:55.715 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:45:56.311 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:45:56.316 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:45:56.320 > [I][main.cpp:211] setup(): Restarting...
+10:45:57.312 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:45:57.312 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:57.331 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:45:57.351 > ets Jun  8 2016 00:22:57
+10:45:57.361 > 
+10:45:57.361 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:45:57.366 > configsip: 0, SPIWP:0xee
+10:45:57.366 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:45:57.369 > mode:DIO, clock div:2
+10:45:57.369 > load:0x3fff0018,len:4
+10:45:57.369 > load:0x3fff001c,len:1044
+10:45:57.382 > load:0x40078000,len:10124
+10:45:57.382 > load:0x40080400,len:5828
+10:45:57.382 > entry 0x400806a8
+10:45:57.956 > [D][main.cpp:79] setup(): 
+10:45:57.956 > Current Version: 1.1.0
+10:45:57.956 > Description: AQI Meter 1st firmware release
+10:45:57.961 > Commit Date: 19 June 2025
+10:45:57.966 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:45:57.966 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:45:57.978 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:45:57.983 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:45:57.988 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:45:57.995 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:45:57.995 > [D][main.cpp:133] setup(): Storage initialization success!
+10:45:58.112 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:45:58.118 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:58.123 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:45:58.129 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:45:58.134 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:45:58.139 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:45:58.144 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:45:58.144 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:45:58.149 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:45:58.155 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:45:58.161 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:45:58.166 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:45:58.172 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:45:58.176 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:45:58.182 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:46:04.092 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:46:04.099 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 36
+10:46:04.104 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:46:04.104 > [I][WiFiMulti.cpp:119] run(): [WIFI] 36 networks found
+10:46:04.109 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+10:46:04.115 > [D][WiFiMulti.cpp:151] run():        1: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-50) *
+10:46:04.125 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-51) *
+10:46:04.130 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-51) *
+10:46:04.138 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-51) *
+10:46:04.146 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-58) *
+10:46:04.152 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-67) *
+10:46:04.163 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:42] LUMS (-70) *
+10:46:04.168 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:44] wireless (-70) *
+10:46:04.174 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:46:04.184 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:40] wireless-apple (-70) *
+10:46:04.185 > [D][WiFiMulti.cpp:151] run():        11: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-74) *
+10:46:04.195 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:46:04.199 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F4] wireless (-75) *
+10:46:04.212 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:46:04.214 > [D][WiFiMulti.cpp:151] run():        15: [11][08:5A:11:23:67:E0] Wireless-LEC (-75) *
+10:46:04.227 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:46:04.229 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:46:04.238 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+10:46:04.249 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E0] wireless-apple (-78) *
+10:46:04.252 > [D][WiFiMulti.cpp:151] run():        20: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-79) *
+10:46:04.265 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:22] LUMS-Events (-80) *
+10:46:04.268 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:20] Wireless (-80) *
+10:46:04.276 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:21] TV-LED (-81) *
+10:46:04.280 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:46:04.292 > [D][WiFiMulti.cpp:151] run():        25: [13][E0:0E:DA:51:D4:25] LUMS-Events (-82) *
+10:46:04.296 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:24] wireless (-83) *
+10:46:04.304 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:22] LUMS (-83) *
+10:46:04.312 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:60] wireless-apple (-85) *
+10:46:04.319 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:65] LUMS-Events (-85) *
+10:46:04.330 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:62] LUMS (-86) *
+10:46:04.335 > [D][WiFiMulti.cpp:151] run():        31: [1][4C:E1:75:1D:01:64] wireless (-87) *
+10:46:04.340 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:35] LUMS-Events (-87) *
+10:46:04.346 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:46:04.356 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:32] LUMS (-88) *
+10:46:04.362 > [D][WiFiMulti.cpp:151] run():        35: [13][0C:54:15:74:2D:31] arkWiFi5 (-94) *
+10:46:04.368 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-49)
+10:46:10.128 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:46:10.226 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:46:10.229 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:46:10.238 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:46:10.238 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:46:10.248 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:46:10.254 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:46:10.255 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:46:10.264 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:46:10.265 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:46:10.275 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:46:10.281 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:46:10.286 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:46:10.291 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:46:10.345 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:46:10.345 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:10.346 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:10.361 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:10.365 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:10.372 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:10.377 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213844
+10:46:10.383 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:46:10.428 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:46:10.429 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:46:10.439 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:46:10.450 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:46:10.455 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:46:12.605 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:46:12.610 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:46:12.615 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170296
+10:46:12.621 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:46:12.626 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:46:12.629 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:46:13.206 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:13.211 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:46:13.216 > [I][main.cpp:211] setup(): Restarting...
+10:46:14.216 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:46:14.221 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:14.227 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:14.266 > ets Jun  8 2016 00:22:57
+10:46:14.266 > 
+10:46:14.266 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:46:14.271 > configsip: 0, SPIWP:0xee
+10:46:14.271 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:46:14.277 > mode:DIO, clock div:2
+10:46:14.282 > load:0x3fff0018,len:4
+10:46:14.282 > load:0x3fff001c,len:1044
+10:46:14.288 > load:0x40078000,len:10124
+10:46:14.288 > load:0x40080400,len:5828
+10:46:14.288 > entry 0x400806a8
+10:46:14.862 > [D][main.cpp:79] setup(): 
+10:46:14.862 > Current Version: 1.1.0
+10:46:14.862 > Description: AQI Meter 1st firmware release
+10:46:14.867 > Commit Date: 19 June 2025
+10:46:14.872 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:46:14.878 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:46:14.883 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:46:14.885 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:46:14.894 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:46:14.899 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:46:14.899 > [D][main.cpp:133] setup(): Storage initialization success!
+10:46:15.016 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:46:15.022 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:15.027 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:46:15.032 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:15.038 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:46:15.043 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:46:15.048 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:46:15.048 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:46:15.054 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:46:15.054 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:46:15.064 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:46:15.068 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:46:15.075 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:46:15.079 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:46:15.086 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:46:21.197 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:46:21.202 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 38
+10:46:21.207 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:46:21.207 > [I][WiFiMulti.cpp:119] run(): [WIFI] 38 networks found
+10:46:21.213 > [D][WiFiMulti.cpp:151] run():        0: [11][00:A6:CA:47:AC:A2] LUMS (-50) *
+10:46:21.224 > [D][WiFiMulti.cpp:151] run():        1: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-50) *
+10:46:21.229 > [D][WiFiMulti.cpp:151] run():        2: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-51) *
+10:46:21.233 > [D][WiFiMulti.cpp:149] run():  --->   3: [7][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+10:46:21.245 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A4] wireless (-51) *
+10:46:21.250 > [D][WiFiMulti.cpp:151] run():        5: [11][00:A6:CA:47:AC:A5] LUMS-Events (-51) *
+10:46:21.256 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-68) *
+10:46:21.266 > [D][WiFiMulti.cpp:151] run():        7: [11][08:5A:11:23:67:E0] Wireless-LEC (-71) *
+10:46:21.272 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:46:21.282 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:46:21.288 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:44] wireless (-72) *
+10:46:21.291 > [D][WiFiMulti.cpp:151] run():        11: [6][4C:E1:75:3C:A2:45] LUMS-Events (-72) *
+10:46:21.299 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F5] LUMS-Events (-74) *
+10:46:21.300 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:46:21.314 > [D][WiFiMulti.cpp:151] run():        14: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-76) *
+10:46:21.317 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F4] wireless (-76) *
+10:46:21.331 > [D][WiFiMulti.cpp:151] run():        16: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-80) *
+10:46:21.336 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E4] wireless (-80) *
+10:46:21.344 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E0] wireless-apple (-80) *
+10:46:21.352 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E2] LUMS (-81) *
+10:46:21.353 > [D][WiFiMulti.cpp:151] run():        20: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-81) *
+10:46:21.364 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:22] LUMS-Events (-82) *
+10:46:21.374 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:21] TV-LED (-82) *
+10:46:21.378 > [D][WiFiMulti.cpp:151] run():        23: [13][E0:0E:DA:51:D4:22] LUMS (-82) *
+10:46:21.387 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:23] LUMS (-83) *
+10:46:21.394 > [D][WiFiMulti.cpp:151] run():        25: [1][BC:67:1C:64:33:20] Wireless (-83) *
+10:46:21.401 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:25] LUMS-Events (-83) *
+10:46:21.411 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:24] wireless (-83) *
+10:46:21.417 > [D][WiFiMulti.cpp:151] run():        28: [1][4C:E1:75:1D:01:62] LUMS (-85) *
+10:46:21.422 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:60] wireless-apple (-86) *
+10:46:21.428 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+10:46:21.439 > [D][WiFiMulti.cpp:151] run():        31: [1][4C:E1:75:1D:01:64] wireless (-87) *
+10:46:21.444 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:34] wireless (-88) *
+10:46:21.451 > [D][WiFiMulti.cpp:151] run():        33: [10][00:E0:4C:E8:53:A0] dlink-53A0 (-89) *
+10:46:21.460 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:35] LUMS-Events (-89) *
+10:46:21.461 > [D][WiFiMulti.cpp:151] run():        35: [11][28:6F:7F:DF:D3:32] LUMS (-89) *
+10:46:21.472 > [D][WiFiMulti.cpp:151] run():        36: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-90) *
+10:46:21.478 > [D][WiFiMulti.cpp:151] run():        37: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:46:21.487 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-51)
+10:46:27.661 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:46:27.727 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:46:27.743 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:46:27.748 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:46:27.751 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:46:27.751 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:46:27.764 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:46:27.770 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:46:27.772 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:46:27.780 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:46:27.782 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:46:27.782 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:46:27.797 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:46:27.801 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:46:27.837 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:46:27.837 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:27.853 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:27.855 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:27.863 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:27.868 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:27.868 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213984
+10:46:27.879 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:46:27.936 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:46:27.946 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:46:27.952 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:46:27.962 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:46:27.968 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:46:30.095 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:46:30.102 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:46:30.106 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170168
+10:46:30.112 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:46:30.117 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:46:30.128 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:46:30.615 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:30.621 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:46:30.625 > [I][main.cpp:211] setup(): Restarting...
+10:46:31.611 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:46:31.627 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:31.636 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:31.665 > ets Jun  8 2016 00:22:57
+10:46:31.665 > 
+10:46:31.665 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:46:31.672 > configsip: 0, SPIWP:0xee
+10:46:31.672 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:46:31.676 > mode:DIO, clock div:2
+10:46:31.681 > load:0x3fff0018,len:4
+10:46:31.681 > load:0x3fff001c,len:1044
+10:46:31.687 > load:0x40078000,len:10124
+10:46:31.687 > load:0x40080400,len:5828
+10:46:31.687 > entry 0x400806a8
+10:46:32.260 > [D][main.cpp:79] setup(): 
+10:46:32.260 > Current Version: 1.1.0
+10:46:32.260 > Description: AQI Meter 1st firmware release
+10:46:32.266 > Commit Date: 19 June 2025
+10:46:32.271 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:46:32.277 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:46:32.282 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:46:32.288 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:46:32.291 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:46:32.298 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:46:32.298 > [D][main.cpp:133] setup(): Storage initialization success!
+10:46:32.415 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:46:32.420 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:32.425 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:46:32.429 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:32.436 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:46:32.438 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:46:32.447 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:46:32.447 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:46:32.452 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:46:32.458 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:46:32.464 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:46:32.468 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:46:32.474 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:46:32.480 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:46:32.482 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:46:36.115 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:46:36.121 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 36
+10:46:36.126 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:46:36.126 > [I][WiFiMulti.cpp:119] run(): [WIFI] 36 networks found
+10:46:36.128 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+10:46:36.138 > [D][WiFiMulti.cpp:151] run():        1: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:46:36.147 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:46:36.153 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:46:36.164 > [D][WiFiMulti.cpp:151] run():        4: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-54) *
+10:46:36.169 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-55) *
+10:46:36.171 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-65) *
+10:46:36.180 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:46:36.191 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:46:36.197 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:44] wireless (-72) *
+10:46:36.204 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-72) *
+10:46:36.213 > [D][WiFiMulti.cpp:151] run():        11: [11][08:5A:11:23:67:E0] Wireless-LEC (-72) *
+10:46:36.216 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-73) *
+10:46:36.229 > [D][WiFiMulti.cpp:151] run():        13: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-74) *
+10:46:36.234 > [D][WiFiMulti.cpp:151] run():        14: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:46:36.244 > [D][WiFiMulti.cpp:151] run():        15: [1][70:70:8B:DD:0B:F2] LUMS (-75) *
+10:46:36.250 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:46:36.255 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:46:36.265 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:46:36.271 > [D][WiFiMulti.cpp:151] run():        19: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+10:46:36.277 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:23] LUMS (-82) *
+10:46:36.287 > [D][WiFiMulti.cpp:151] run():        21: [1][4C:E1:75:1D:01:62] LUMS (-83) *
+10:46:36.293 > [D][WiFiMulti.cpp:151] run():        22: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:46:36.297 > [D][WiFiMulti.cpp:151] run():        23: [1][4C:E1:75:1D:01:65] LUMS-Events (-83) *
+10:46:36.304 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:22] LUMS-Events (-83) *
+10:46:36.314 > [D][WiFiMulti.cpp:151] run():        25: [1][4C:E1:75:1D:01:60] wireless-apple (-83) *
+10:46:36.319 > [D][WiFiMulti.cpp:151] run():        26: [1][BC:67:1C:64:33:20] Wireless (-83) *
+10:46:36.332 > [D][WiFiMulti.cpp:151] run():        27: [1][BC:67:1C:64:33:21] TV-LED (-83) *
+10:46:36.337 > [D][WiFiMulti.cpp:151] run():        28: [13][E0:0E:DA:51:D4:25] LUMS-Events (-84) *
+10:46:36.341 > [D][WiFiMulti.cpp:151] run():        29: [13][E0:0E:DA:51:D4:24] wireless (-84) *
+10:46:36.352 > [D][WiFiMulti.cpp:151] run():        30: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-85) *
+10:46:36.362 > [D][WiFiMulti.cpp:151] run():        31: [13][E0:0E:DA:51:D4:22] LUMS (-85) *
+10:46:36.362 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:32] LUMS (-90) *
+10:46:36.373 > [D][WiFiMulti.cpp:151] run():        33: [13][0C:54:15:74:2D:31] arkWiFi5 (-91) *
+10:46:36.379 > [D][WiFiMulti.cpp:151] run():        34: [11][28:6F:7F:DF:D3:35] LUMS-Events (-93) *
+10:46:36.384 > [D][WiFiMulti.cpp:151] run():        35: [11][28:6F:7F:DF:D3:34] wireless (-94) *
+10:46:36.395 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-51)
+10:46:40.076 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:46:40.127 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:46:40.134 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:46:40.138 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:46:40.144 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:46:40.149 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:46:40.154 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:46:40.160 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:46:40.165 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:46:40.170 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:46:40.175 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:46:40.182 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:46:40.187 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:46:40.192 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:46:40.233 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:46:40.238 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:40.244 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:40.250 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:40.251 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:40.260 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:40.266 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213848
+10:46:40.269 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:46:40.317 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:46:40.324 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:46:40.328 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:46:40.331 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:46:40.344 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:46:42.796 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:46:42.802 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:46:42.807 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170308
+10:46:42.813 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:46:42.817 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:46:42.829 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:46:43.312 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:43.317 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:46:43.321 > [I][main.cpp:211] setup(): Restarting...
+10:46:44.320 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:46:44.325 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:44.330 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:44.361 > ets Jun  8 2016 00:22:57
+10:46:44.361 > 
+10:46:44.361 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:46:44.366 > configsip: 0, SPIWP:0xee
+10:46:44.366 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:46:44.372 > mode:DIO, clock div:2
+10:46:44.378 > load:0x3fff0018,len:4
+10:46:44.378 > load:0x3fff001c,len:1044
+10:46:44.383 > load:0x40078000,len:10124
+10:46:44.383 > load:0x40080400,len:5828
+10:46:44.383 > entry 0x400806a8
+10:46:44.957 > [D][main.cpp:79] setup(): 
+10:46:44.957 > Current Version: 1.1.0
+10:46:44.957 > Description: AQI Meter 1st firmware release
+10:46:44.962 > Commit Date: 19 June 2025
+10:46:44.967 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:46:44.973 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:46:44.979 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:46:44.982 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:46:44.989 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:46:44.995 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:46:44.995 > [D][main.cpp:133] setup(): Storage initialization success!
+10:46:45.177 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:46:45.177 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:45.188 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:46:45.193 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:45.199 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:46:45.200 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:46:45.210 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:46:45.210 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:46:45.212 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:46:45.221 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:46:45.222 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:46:45.232 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:46:45.234 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:46:45.234 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:46:45.248 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:46:48.677 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:46:48.677 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 33
+10:46:48.689 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:46:48.689 > [I][WiFiMulti.cpp:119] run(): [WIFI] 33 networks found
+10:46:48.694 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-51) *
+10:46:48.700 > [D][WiFiMulti.cpp:151] run():        1: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-52) *
+10:46:48.710 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:46:48.712 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-52) *
+10:46:48.727 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:46:48.729 > [D][WiFiMulti.cpp:151] run():        5: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-55) *
+10:46:48.737 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-63) *
+10:46:48.749 > [D][WiFiMulti.cpp:151] run():        7: [11][08:5A:11:23:67:E0] Wireless-LEC (-69) *
+10:46:48.751 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:42] LUMS (-71) *
+10:46:48.759 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:44] wireless (-71) *
+10:46:48.762 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:45] LUMS-Events (-71) *
+10:46:48.775 > [D][WiFiMulti.cpp:151] run():        11: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:46:48.779 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F4] wireless (-74) *
+10:46:48.788 > [D][WiFiMulti.cpp:151] run():        13: [6][F8:A7:3A:87:EE:E4] wireless (-75) *
+10:46:48.795 > [D][WiFiMulti.cpp:151] run():        14: [6][F8:A7:3A:87:EE:E2] LUMS (-75) *
+10:46:48.802 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-75) *
+10:46:48.813 > [D][WiFiMulti.cpp:151] run():        16: [1][70:70:8B:DD:0B:F5] LUMS-Events (-76) *
+10:46:48.818 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E0] wireless-apple (-76) *
+10:46:48.828 > [D][WiFiMulti.cpp:151] run():        18: [1][70:70:8B:DD:0B:F2] LUMS (-77) *
+10:46:48.828 > [D][WiFiMulti.cpp:151] run():        19: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-78) *
+10:46:48.840 > [D][WiFiMulti.cpp:151] run():        20: [1][BC:67:1C:64:33:23] LUMS (-81) *
+10:46:48.845 > [D][WiFiMulti.cpp:151] run():        21: [1][4C:E1:75:1D:01:65] LUMS-Events (-82) *
+10:46:48.852 > [D][WiFiMulti.cpp:151] run():        22: [13][E0:0E:DA:51:D4:25] LUMS-Events (-82) *
+10:46:48.861 > [D][WiFiMulti.cpp:151] run():        23: [13][E0:0E:DA:51:D4:22] LUMS (-82) *
+10:46:48.867 > [D][WiFiMulti.cpp:151] run():        24: [13][E0:0E:DA:51:D4:24] wireless (-82) *
+10:46:48.878 > [D][WiFiMulti.cpp:151] run():        25: [1][4C:E1:75:1D:01:62] LUMS (-83) *
+10:46:48.883 > [D][WiFiMulti.cpp:151] run():        26: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:46:48.888 > [D][WiFiMulti.cpp:151] run():        27: [1][BC:67:1C:64:33:20] Wireless (-83) *
+10:46:48.899 > [D][WiFiMulti.cpp:151] run():        28: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-83) *
+10:46:48.901 > [D][WiFiMulti.cpp:151] run():        29: [1][BC:67:1C:64:33:22] LUMS-Events (-84) *
+10:46:48.910 > [D][WiFiMulti.cpp:151] run():        30: [11][28:6F:7F:DF:D3:32] LUMS (-89) *
+10:46:48.913 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:34] wireless (-90) *
+10:46:48.926 > [D][WiFiMulti.cpp:151] run():        32: [11][28:6F:7F:DF:D3:35] LUMS-Events (-90) *
+10:46:48.929 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-51)
+10:46:52.418 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:46:52.519 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:46:52.524 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:46:52.530 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:46:52.535 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:46:52.537 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:46:52.546 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:46:52.548 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:46:52.556 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:46:52.561 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:46:52.568 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:46:52.569 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:46:52.578 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:46:52.579 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:46:52.632 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:46:52.632 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:52.644 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:52.655 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:52.661 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:52.667 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:52.667 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213672
+10:46:52.677 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:46:52.728 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:46:52.728 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:46:52.744 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:46:52.746 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:46:52.760 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:46:54.773 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:46:54.776 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:46:54.783 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 169996
+10:46:54.784 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:46:54.794 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:46:54.801 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:46:55.393 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:46:55.399 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:46:55.403 > [I][main.cpp:211] setup(): Restarting...
+10:46:56.404 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:46:56.409 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:56.414 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:46:56.434 > ets Jun  8 2016 00:22:57
+10:46:56.434 > 
+10:46:56.434 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:46:56.439 > configsip: 0, SPIWP:0xee
+10:46:56.439 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:46:56.444 > mode:DIO, clock div:2
+10:46:56.448 > load:0x3fff0018,len:4
+10:46:56.448 > load:0x3fff001c,len:1044
+10:46:56.455 > load:0x40078000,len:10124
+10:46:56.455 > load:0x40080400,len:5828
+10:46:56.455 > entry 0x400806a8
+10:46:57.026 > [D][main.cpp:79] setup(): 
+10:46:57.026 > Current Version: 1.1.0
+10:46:57.026 > Description: AQI Meter 1st firmware release
+10:46:57.026 > Commit Date: 19 June 2025
+10:46:57.040 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:46:57.044 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:46:57.051 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:46:57.055 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:46:57.061 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:46:57.067 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:46:57.067 > [D][main.cpp:133] setup(): Storage initialization success!
+10:46:57.176 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:46:57.176 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:57.196 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:46:57.197 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:46:57.206 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:46:57.212 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:46:57.217 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:46:57.217 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:46:57.223 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:46:57.228 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:46:57.234 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:46:57.239 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:46:57.245 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:46:57.250 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:46:57.255 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:47:03.167 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:47:03.172 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 35
+10:47:03.177 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:47:03.177 > [I][WiFiMulti.cpp:119] run(): [WIFI] 35 networks found
+10:47:03.180 > [D][WiFiMulti.cpp:149] run():  --->   0: [7][50:0F:F5:80:A3:39] EnergyInformatics (-45) *
+10:47:03.193 > [D][WiFiMulti.cpp:151] run():        1: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-50) *
+10:47:03.195 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A2] LUMS (-50) *
+10:47:03.204 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A4] wireless (-52) *
+10:47:03.215 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-52) *
+10:47:03.217 > [D][WiFiMulti.cpp:151] run():        5: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-57) *
+10:47:03.226 > [D][WiFiMulti.cpp:151] run():        6: [2][90:9A:4A:B8:CD:83] Airbus380 (-69) *
+10:47:03.234 > [D][WiFiMulti.cpp:151] run():        7: [11][08:5A:11:23:67:E0] Wireless-LEC (-69) *
+10:47:03.234 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:40] wireless-apple (-72) *
+10:47:03.248 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:42] LUMS (-72) *
+10:47:03.258 > [D][WiFiMulti.cpp:151] run():        10: [6][4C:E1:75:3C:A2:44] wireless (-72) *
+10:47:03.261 > [D][WiFiMulti.cpp:151] run():        11: [6][4C:E1:75:3C:A2:45] LUMS-Events (-73) *
+10:47:03.269 > [D][WiFiMulti.cpp:151] run():        12: [1][70:70:8B:DD:0B:F5] LUMS-Events (-76) *
+10:47:03.280 > [D][WiFiMulti.cpp:151] run():        13: [1][70:70:8B:DD:0B:F4] wireless (-77) *
+10:47:03.284 > [D][WiFiMulti.cpp:151] run():        14: [5][50:C7:BF:43:21:4C] Distributed Systems Lab (-77) *
+10:47:03.295 > [D][WiFiMulti.cpp:151] run():        15: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:47:03.295 > [D][WiFiMulti.cpp:151] run():        16: [6][F8:A7:3A:87:EE:E2] LUMS (-77) *
+10:47:03.307 > [D][WiFiMulti.cpp:151] run():        17: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:47:03.311 > [D][WiFiMulti.cpp:151] run():        18: [6][F8:A7:3A:87:EE:E5] LUMS-Events (-77) *
+10:47:03.322 > [D][WiFiMulti.cpp:151] run():        19: [1][70:70:8B:DD:0B:F2] LUMS (-79) *
+10:47:03.328 > [D][WiFiMulti.cpp:151] run():        20: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-80) *
+10:47:03.335 > [D][WiFiMulti.cpp:151] run():        21: [1][BC:67:1C:64:33:20] Wireless (-82) *
+10:47:03.344 > [D][WiFiMulti.cpp:151] run():        22: [1][BC:67:1C:64:33:22] LUMS-Events (-84) *
+10:47:03.350 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:21] TV-LED (-84) *
+10:47:03.360 > [D][WiFiMulti.cpp:151] run():        24: [1][4C:E1:75:1D:01:64] wireless (-85) *
+10:47:03.366 > [D][WiFiMulti.cpp:151] run():        25: [1][BC:67:1C:64:33:23] LUMS (-85) *
+10:47:03.371 > [D][WiFiMulti.cpp:151] run():        26: [13][E0:0E:DA:51:D4:25] LUMS-Events (-85) *
+10:47:03.382 > [D][WiFiMulti.cpp:151] run():        27: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+10:47:03.384 > [D][WiFiMulti.cpp:151] run():        28: [11][28:6F:7F:DF:D3:32] LUMS (-86) *
+10:47:03.392 > [D][WiFiMulti.cpp:151] run():        29: [13][E0:0E:DA:51:D4:24] wireless (-86) *
+10:47:03.397 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:60] wireless-apple (-87) *
+10:47:03.409 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:34] wireless (-87) *
+10:47:03.411 > [D][WiFiMulti.cpp:151] run():        32: [13][E0:0E:DA:51:D4:22] LUMS (-87) *
+10:47:03.420 > [D][WiFiMulti.cpp:151] run():        33: [11][28:6F:7F:DF:D3:35] LUMS-Events (-88) *
+10:47:03.428 > [D][WiFiMulti.cpp:151] run():        34: [13][0C:54:15:74:2D:31] arkWiFi5 (-90) *
+10:47:03.436 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-45)
+10:47:09.409 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 4 - STA_CONNECTED
+10:47:09.510 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 7 - STA_GOT_IP
+10:47:09.510 > [D][WiFiGeneric.cpp:419] _eventCallback(): STA IP: 192.168.0.123, MASK: 255.255.255.0, GW: 192.168.0.1
+10:47:09.529 > [I][WiFiMulti.cpp:174] run(): [WIFI] Connecting done.
+10:47:09.532 > [D][WiFiMulti.cpp:175] run(): [WIFI] SSID: EnergyInformatics
+10:47:09.532 > [D][WiFiMulti.cpp:176] run(): [WIFI] IP: 192.168.0.123
+10:47:09.546 > [D][WiFiMulti.cpp:177] run(): [WIFI] MAC: 50:0F:F5:80:A3:39
+10:47:09.550 > [D][WiFiMulti.cpp:178] run(): [WIFI] Channel: 7
+10:47:09.556 > [I][ESPWiFi.cpp:247] connect_to_nearest(): Connection established 
+10:47:09.561 > [D][main.cpp:142] setup(): Initialized wifi successfully
+10:47:09.567 > [D][main.cpp:143] setup(): MAC: 3C:8A:1F:3A:8B:78
+10:47:09.569 > [D][rtc.cpp:21] initRTC(): RTC initialization successful
+10:47:09.578 > [E][Preferences.cpp:49] begin(): nvs_open failed: NOT_FOUND
+10:47:09.580 > [I][main.cpp:191] setup(): Settings not found! Loading from Firebase...
+10:47:09.631 > [I][ESPWiFi.cpp:294] check_Internet(): Ping1 successful
+10:47:09.631 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:09.645 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:09.650 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:09.655 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:09.661 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:09.666 > [V][ssl_client.cpp:59] start_ssl_client(): Free internal heap before TLS 213704
+10:47:09.667 > [V][ssl_client.cpp:65] start_ssl_client(): Starting socket
+10:47:09.712 > [V][ssl_client.cpp:104] start_ssl_client(): Seeding the random number generator
+10:47:09.728 > [V][ssl_client.cpp:113] start_ssl_client(): Setting up the SSL/TLS structure...
+10:47:09.735 > [I][ssl_client.cpp:127] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+10:47:09.746 > [V][ssl_client.cpp:197] start_ssl_client(): Setting hostname for TLS session...
+10:47:09.750 > [V][ssl_client.cpp:212] start_ssl_client(): Performing the SSL/TLS handshake...
+10:47:11.976 > [V][ssl_client.cpp:233] start_ssl_client(): Verifying peer X.509 certificate...
+10:47:11.976 > [V][ssl_client.cpp:242] start_ssl_client(): Certificate verified.
+10:47:11.986 > [V][ssl_client.cpp:257] start_ssl_client(): Free internal heap after TLS 170160
+10:47:11.987 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 42 bytes...
+10:47:11.997 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 40 bytes...
+10:47:12.000 > [V][ssl_client.cpp:295] send_ssl_data(): Writing HTTP request with 266 bytes...
+10:47:12.594 > [V][ssl_client.cpp:265] stop_ssl_socket(): Cleaning SSL connection.
+10:47:12.594 > [I][main.cpp:210] setup(): Got device ID from Firebase: 
+10:47:12.609 > [I][main.cpp:211] setup(): Restarting...
+10:47:13.609 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 3 - STA_STOP
+10:47:13.611 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:47:13.620 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 15 - AP_STOP
+10:47:13.634 > ets Jun  8 2016 00:22:57
+10:47:13.634 > 
+10:47:13.634 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+10:47:13.646 > configsip: 0, SPIWP:0xee
+10:47:13.646 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+10:47:13.651 > mode:DIO, clock div:2
+10:47:13.655 > load:0x3fff0018,len:4
+10:47:13.655 > load:0x3fff001c,len:1044
+10:47:13.661 > load:0x40078000,len:10124
+10:47:13.661 > load:0x40080400,len:5828
+10:47:13.661 > entry 0x400806a8
+10:47:14.228 > [D][main.cpp:79] setup(): 
+10:47:14.228 > Current Version: 1.1.0
+10:47:14.228 > Description: AQI Meter 1st firmware release
+10:47:14.228 > Commit Date: 19 June 2025
+10:47:14.245 > [I][Storage.cpp:21] init_storage(): Initializing SD card... 
+10:47:14.250 > [D][Storage.cpp:34] init_storage(): init_storage() -> storage.cpp -> SD Card Type: 
+10:47:14.250 > [D][Storage.cpp:45] init_storage(): SDHC 
+10:47:14.262 > [I][Storage.cpp:54] init_storage(): SD Card Size: 31960MB
+10:47:14.267 > [W][Storage.cpp:131] init_storage(): Previous data not found! 
+10:47:14.267 > [I][Storage.cpp:142] init_storage(): AP storage found!
+10:47:14.267 > [D][main.cpp:133] setup(): Storage initialization success!
+10:47:14.379 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 0 - WIFI_READY
+10:47:14.397 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:47:14.402 > [I][ESPWiFi.cpp:40] init(): updating AP list from SD card 
+10:47:14.408 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 14 - AP_START
+10:47:14.414 > [D][Storage.cpp:697] return_APList(): Start of frame found 
+10:47:14.418 > [D][Storage.cpp:729] return_APList(): EnergyInformatics 
+10:47:14.421 > [D][Storage.cpp:746] return_APList(): 12344321 
+10:47:14.421 > [D][Storage.cpp:757] return_APList(): New AP returned 
+10:47:14.430 > [D][Storage.cpp:772] return_APList(): End of data reached 
+10:47:14.431 > [I][WiFiMulti.cpp:84] addAP(): [WIFI][APlistAdd] add SSID: EnergyInformatics
+10:47:14.440 > [V][ESPWiFi.cpp:67] update_APs(): Added AP 
+10:47:14.446 > [V][ESPWiFi.cpp:68] update_APs(): SSID: EnergyInformatics 
+10:47:14.451 > [V][ESPWiFi.cpp:69] update_APs(): Password: 12344321 
+10:47:14.456 > [V][ESPWiFi.cpp:73] update_APs(): credential length: 1 
+10:47:14.461 > [E][ESPWiFi.cpp:273] check_connection(): WiFi not connected. Establishing connection 
+10:47:20.163 > [D][WiFiGeneric.cpp:374] _eventCallback(): Event: 1 - SCAN_DONE
+10:47:20.178 > [D][ESPWiFi.cpp:16] onWifiScan(): Number of WiFi Scan results: 34
+10:47:20.184 > [I][WiFiMulti.cpp:114] run(): [WIFI] scan done
+10:47:20.184 > [I][WiFiMulti.cpp:119] run(): [WIFI] 34 networks found
+10:47:20.186 > [D][WiFiMulti.cpp:151] run():        0: [11][B2:D7:A1:3D:86:44] PTCL-BBB (-47) *
+10:47:20.200 > [D][WiFiMulti.cpp:149] run():  --->   1: [7][50:0F:F5:80:A3:39] EnergyInformatics (-49) *
+10:47:20.206 > [D][WiFiMulti.cpp:151] run():        2: [11][00:A6:CA:47:AC:A4] wireless (-51) *
+10:47:20.211 > [D][WiFiMulti.cpp:151] run():        3: [11][00:A6:CA:47:AC:A2] LUMS (-51) *
+10:47:20.222 > [D][WiFiMulti.cpp:151] run():        4: [11][00:A6:CA:47:AC:A5] LUMS-Events (-51) *
+10:47:20.228 > [D][WiFiMulti.cpp:151] run():        5: [4][50:D4:F7:10:A0:06] TP-Link_A006 (-52) *
+10:47:20.233 > [D][WiFiMulti.cpp:151] run():        6: [6][4C:E1:75:3C:A2:40] wireless-apple (-69) *
+10:47:20.243 > [D][WiFiMulti.cpp:151] run():        7: [6][4C:E1:75:3C:A2:42] LUMS (-70) *
+10:47:20.247 > [D][WiFiMulti.cpp:151] run():        8: [6][4C:E1:75:3C:A2:44] wireless (-70) *
+10:47:20.253 > [D][WiFiMulti.cpp:151] run():        9: [6][4C:E1:75:3C:A2:45] LUMS-Events (-70) *
+10:47:20.265 > [D][WiFiMulti.cpp:151] run():        10: [11][08:5A:11:23:67:E0] Wireless-LEC (-74) *
+10:47:20.269 > [D][WiFiMulti.cpp:151] run():        11: [1][70:70:8B:DD:0B:F5] LUMS-Events (-75) *
+10:47:20.280 > [D][WiFiMulti.cpp:151] run():        12: [1][60:32:B1:09:5B:C0] TP-Link_5BC0 (-77) *
+10:47:20.286 > [D][WiFiMulti.cpp:151] run():        13: [6][F8:A7:3A:87:EE:E0] wireless-apple (-77) *
+10:47:20.292 > [D][WiFiMulti.cpp:151] run():        14: [6][F8:A7:3A:87:EE:E4] wireless (-77) *
+10:47:20.303 > [D][WiFiMulti.cpp:151] run():        15: [2][90:9A:4A:B8:CD:83] Airbus380 (-78) *
+10:47:20.303 > [D][WiFiMulti.cpp:151] run():        16: [1][70:70:8B:DD:0B:F4] wireless (-78) *
+10:47:20.313 > [D][WiFiMulti.cpp:151] run():        17: [1][70:70:8B:DD:0B:F2] LUMS (-79) *
+10:47:20.323 > [D][WiFiMulti.cpp:151] run():        18: [1][BC:67:1C:64:33:22] LUMS-Events (-82) *
+10:47:20.329 > [D][WiFiMulti.cpp:151] run():        19: [1][BC:67:1C:64:33:21] TV-LED (-83) *
+10:47:20.334 > [D][WiFiMulti.cpp:151] run():        20: [1][4C:E1:75:1D:01:64] wireless (-83) *
+10:47:20.345 > [D][WiFiMulti.cpp:151] run():        21: [13][E0:0E:DA:51:D4:25] LUMS-Events (-83) *
+10:47:20.350 > [D][WiFiMulti.cpp:151] run():        22: [13][E0:0E:DA:51:D4:24] wireless (-83) *
+10:47:20.356 > [D][WiFiMulti.cpp:151] run():        23: [1][BC:67:1C:64:33:23] LUMS (-84) *
+10:47:20.367 > [D][WiFiMulti.cpp:151] run():        24: [1][BC:67:1C:64:33:20] Wireless (-84) *
+10:47:20.371 > [D][WiFiMulti.cpp:151] run():        25: [11][28:6F:7F:DF:D3:32] LUMS (-84) *
+10:47:20.371 > [D][WiFiMulti.cpp:151] run():        26: [11][28:6F:7F:DF:D3:35] LUMS-Events (-84) *
+10:47:20.386 > [D][WiFiMulti.cpp:151] run():        27: [13][E0:0E:DA:51:D4:22] LUMS (-84) *
+10:47:20.386 > [D][WiFiMulti.cpp:151] run():        28: [4][AC:84:C6:DF:DF:F6] TP-Link_DFF6 (-86) *
+10:47:20.399 > [D][WiFiMulti.cpp:151] run():        29: [1][4C:E1:75:1D:01:60] wireless-apple (-86) *
+10:47:20.403 > [D][WiFiMulti.cpp:151] run():        30: [1][4C:E1:75:1D:01:65] LUMS-Events (-86) *
+10:47:20.403 > [D][WiFiMulti.cpp:151] run():        31: [11][28:6F:7F:DF:D3:34] wireless (-86) *
+10:47:20.420 > [D][WiFiMulti.cpp:151] run():        32: [1][4C:E1:75:1D:01:62] LUMS (-87) *
+10:47:20.429 > [D][WiFiMulti.cpp:151] run():        33: [13][0C:54:15:74:2D:31] arkWiFi5 (-90) *
+10:47:20.437 > [I][WiFiMulti.cpp:160] run(): [WIFI] Connecting BSSID: 50:0F:F5:80:A3:39 SSID: EnergyInformatics Channel: 7 (-49)
+10:47:23.652 > ets Jun  8 2016 00:22:57
+10:47:23.652 > 
+10:47:23.652 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+10:47:23.657 > waiting for download

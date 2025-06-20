@@ -181,7 +181,7 @@ else
 
   {
     myNVS::read::sensorName(sensorID);
-    // sensorID = "testuu";
+     //sensorID = "testuu";
     if (sensorID != "")
     {
       log_i("ID found!\r\nDevice name: %s\r\n", sensorID.c_str());

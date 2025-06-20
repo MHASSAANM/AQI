@@ -5,10 +5,11 @@
 IPAddress remote_ip1(8, 8, 8, 8);
 IPAddress remote_ip2(1, 1, 1, 1);
 
+
 void onWifiScan(WiFiEvent_t event, WiFiEventInfo_t info)
 {
     static uint8_t scanFailureCountdown = WIFI_SCAN_FAILURE_LIMIT;
-    uint8_t numOfScans = info.scan_done.number;
+    uint8_t numOfScans = info.wifi_scan_done.number;
 
     if (numOfScans > 0)
     {
@@ -36,7 +37,32 @@ void onWifiScan(WiFiEvent_t event, WiFiEventInfo_t info)
 bool ESP_WiFi::init()
 {
     WiFi.mode(WIFI_AP_STA);
-    WiFi.onEvent(onWifiScan, SYSTEM_EVENT_SCAN_DONE);
+
+    WiFi.onEvent([](WiFiEvent_t event, WiFiEventInfo_t info)
+    {
+        if (event == ARDUINO_EVENT_WIFI_SCAN_DONE)
+        {
+            static uint8_t scanFailureCountdown = WIFI_SCAN_FAILURE_LIMIT;
+            uint8_t numOfScans = info.wifi_scan_done.number;
+
+            if (numOfScans > 0)
+            {
+                scanFailureCountdown = WIFI_SCAN_FAILURE_LIMIT;
+                log_d("Number of WiFi Scan results: %d", numOfScans);
+            }
+            else
+            {
+                if (--scanFailureCountdown)
+                    log_e("Scan Failure shutdown after %d fails\n", scanFailureCountdown);
+                else
+                {
+                    log_e("Scan Failure Reset\n");
+                    ESP.restart();
+                }
+            }
+        }
+    });
+
     log_i("updating AP list from SD card ");
     this->update_APs();
     return true;
